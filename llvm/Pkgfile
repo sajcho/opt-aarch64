@@ -1,0 +1,42 @@
+# Description:	LLVM compiler backend
+# URL:		http://llvm.org/
+# Maintainer:	Thomas Penteker, tek at serverop dot de
+# Depends on:	cmake libxml2 ninja
+# Modified:	Milan Buska, milan dot buska at gmail dot com
+
+name=llvm
+version=10.0.1
+release=1
+source=(https://github.com/llvm/llvm-project/releases/download/llvmorg-$version/llvm-$version.src.tar.xz)
+
+build() {
+	export CC=gcc
+	export CXX=g++
+
+	cd $name-$version.src
+
+	mkdir build
+	cd build
+
+	cmake .. -G Ninja \
+		-DLLVM_PARALLEL_COMPILE_JOBS="${JOBS:-1}" \
+		-DLLVM_ENABLE_CXX1Y=ON \
+		-DLLVM_INCLUDE_EXAMPLES=OFF \
+		-DLLVM_INCLUDE_TESTS=OFF \
+		-DLLVM_ENABLE_FFI=ON \
+		-DLLVM_ENABLE_RTTI=ON \
+		-DLLVM_ENABLE_OCAMLDOC=OFF \
+		-DLLVM_BUILD_LLVM_DYLIB=ON \
+		-DLLVM_LINK_LLVM_DYLIB=ON \
+		-DLLVM_INSTALL_UTILS=ON \
+		-DLLVM_APPEND_VC_REV=OF \
+		-DCMAKE_BUILD_TYPE=Release \
+		-DCMAKE_INSTALL_PREFIX=/usr \
+		-DLLVM_TARGETS_TO_BUILD='AArch64' \
+		-DLLVM_DEFAULT_TARGET_TRIPLE="aarch64-linux-gnu" \
+		-DLLVM_HOST_TRIPLE="aarch64-linux-gnu" \
+		-Wno-dev
+
+	ninja
+	DESTDIR=$PKG ninja install
+}
