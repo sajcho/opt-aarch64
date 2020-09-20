@@ -1,10 +1,9 @@
 # Description:	Multi-platform support library with a focus on asynchronous I/O
 # URL:		https://dist.libuv.org/
 # Maintainer:	Milan Buska, milan dot buska at gmail dot com
-# Depends on:	libtirpc
 
 name=libuv
-version=1.38.1
+version=1.39.0
 release=1
 source=(https://dist.libuv.org/dist/v$version/$name-v$version.tar.gz)
 
@@ -18,5 +17,7 @@ build() {
 		--disable-static
 
 	make
+	# The libuv test suite cannot be run as root.
+	# make check 
 	make DESTDIR=$PKG install
 }
