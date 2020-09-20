@@ -1,0 +1,3 @@
+Notice:
+
+Recompiling the port using clang makes the package 35MB smaller.
