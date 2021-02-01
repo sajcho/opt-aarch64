@@ -1,5 +1,9 @@
 d:alsa-lib
+d:mpg123
 f:72f78b2c5644ad3750dedb51e32005d3:alsa-lib/fix-dlo.patch
 f:10d488a01535eba0f5fc81fa299fca86:alsa-lib/.md5sum
 f:656f33fab7cffc7f202b30757b1a5838:alsa-lib/Pkgfile
 f:455b08faa6f93b09f78f11fcf31e6fb0:alsa-lib/.footprint
+f:73920a87ad9700291b282dacc5876d71:mpg123/.md5sum
+f:1536d2c31ba7342522bcf8ee36f0b4eb:mpg123/Pkgfile
+f:59449629a4666e201705901f27224f74:mpg123/.footprint
