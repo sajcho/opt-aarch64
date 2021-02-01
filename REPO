@@ -1,0 +1,5 @@
+d:alsa-lib
+f:72f78b2c5644ad3750dedb51e32005d3:alsa-lib/fix-dlo.patch
+f:10d488a01535eba0f5fc81fa299fca86:alsa-lib/.md5sum
+f:656f33fab7cffc7f202b30757b1a5838:alsa-lib/Pkgfile
+f:455b08faa6f93b09f78f11fcf31e6fb0:alsa-lib/.footprint
