@@ -9,6 +9,7 @@ d:npth
 d:cyrus-sasl
 d:libgpg-error
 d:gnupg
+d:swig
 d:fribidi
 f:f5dd0bdd837a52fc313cb352b4e3f905:libassuan/.md5sum
 f:af970965d1bd0d659999eaae341c59a7:libassuan/Pkgfile
@@ -48,9 +49,12 @@ f:60764db04de34345f17a734cf00fcf0b:cyrus-sasl/.footprint
 f:5865a2baba94f0256773e00710c1d48d:libgpg-error/.md5sum
 f:234675fd868e081cdd4dc0373378feb6:libgpg-error/Pkgfile
 f:2a7b061c919d749227d437404dc3a91f:libgpg-error/.footprint
-f:602b97546a66385a043e0d5f233c6e99:gnupg/.md5sum
-f:0a0a3ba365ac41afa0543ad66d3c3ae9:gnupg/Pkgfile
+f:790406de99fb5e7ee734aff0bcb2163f:gnupg/.md5sum
+f:53fadd383fc982f59f4f8b6f39f9256a:gnupg/Pkgfile
 f:f71918e59befefbe64ff1822e0b4a866:gnupg/.footprint
+f:f775b9f6f9bc2f438ac919188bad4069:swig/.md5sum
+f:9b0c361afac915db67fbdbc4247a460e:swig/Pkgfile
+f:04d5da180e5b204334f8d9f924f97fe6:swig/.footprint
 f:28fd79d4d388ea31dd8f9b67c05f92cd:fribidi/.md5sum
 f:84939ff9078a0df230ec859021fe57a0:fribidi/Pkgfile
 f:9f36b3f7ea570ed9ce81608cf9f8a2c3:fribidi/.footprint
