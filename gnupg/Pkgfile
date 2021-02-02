@@ -4,7 +4,7 @@
 # Depends on:	libgcrypt libksba pinentry npth
 
 name=gnupg
-version=2.2.23
+version=2.2.27
 release=0
 source=(https://gnupg.org/ftp/gcrypt/${name}/${name}-${version}.tar.bz2)
 
@@ -21,7 +21,7 @@ build() {
 
 	make
 
-	#make check
+	make check
 
 	make DESTDIR=$PKG install
 
