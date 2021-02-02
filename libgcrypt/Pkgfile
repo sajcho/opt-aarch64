@@ -1,0 +1,29 @@
+# Description:	A general purpose cryptographic library based on GnuPG
+# URL:		http://www.gnupg.org
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	libgpg-error
+
+name=libgcrypt
+version=1.8.7
+release=0
+source=(https://www.gnupg.org/ftp/gcrypt/${name}/${name}-${version}.tar.bz2)
+
+build() {
+	cd ${name}-${version}
+
+	# disable arm assembly for now as it produces TEXTRELs
+	# gcry_cv_gcc_arm_platform_as_ok=no
+
+	./configure \
+		--prefix=/usr \
+		--enable-static \
+		gcry_cv_gcc_arm_platform_as_ok=no
+
+	make
+
+	make check
+
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/usr/share/info
+}
