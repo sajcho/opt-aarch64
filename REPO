@@ -13,7 +13,7 @@ d:swig
 d:fribidi
 f:f5dd0bdd837a52fc313cb352b4e3f905:libassuan/.md5sum
 f:af970965d1bd0d659999eaae341c59a7:libassuan/Pkgfile
-f:082b56eb148f52cf87e90f0795615a7b:libassuan/.footprint
+f:b7757947d2cc79789fc7678eefeb7c1c:libassuan/.footprint
 f:72f78b2c5644ad3750dedb51e32005d3:alsa-lib/fix-dlo.patch
 f:10d488a01535eba0f5fc81fa299fca86:alsa-lib/.md5sum
 f:656f33fab7cffc7f202b30757b1a5838:alsa-lib/Pkgfile
