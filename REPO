@@ -3,6 +3,7 @@ d:alsa-lib
 d:libgcrypt
 d:mpg123
 d:brotli
+d:gpgme
 d:libksba
 d:pinentry
 d:npth
@@ -29,6 +30,9 @@ f:2f7ab0598843ad95b16d157ffb6e3cf6:brotli/Pkgfile
 f:5c5a44b31017d615751dad6324b7678b:brotli/build-tool-against-shared-lib.patch
 f:7acdcd094af5515c54fcfb40ae13d966:brotli/838.patch
 f:c1958d08c116d4c4d8aa462352792bc0:brotli/.footprint
+f:3e97a2fdf216565ae6401ad2105004b7:gpgme/.md5sum
+f:f3a1efd2875b726962fd234c18e9941b:gpgme/Pkgfile
+f:ebb0e82c802f0519cc6aaf1f813ae1ab:gpgme/.footprint
 f:5cde5f51704b8cbb1430bf5724f92616:libksba/.md5sum
 f:a21fdec8f0314fdc407b46a0ade42d6e:libksba/Pkgfile
 f:ef76b7e3ff95b771504e9d810e104e24:libksba/.footprint
