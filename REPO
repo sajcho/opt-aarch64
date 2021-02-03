@@ -7,7 +7,9 @@ d:gpgme
 d:libksba
 d:pinentry
 d:npth
+d:json-c
 d:cyrus-sasl
+d:jsoncpp
 d:libgpg-error
 d:gnupg
 d:swig
@@ -43,6 +45,9 @@ f:567b986e0e96da796032ffbf87858c4b:pinentry/.footprint
 f:2dc9d626228874dbc79f33869eda7ed6:npth/.md5sum
 f:d8f21e38114610c1371076714bae7105:npth/Pkgfile
 f:a1be58dc7c7c6c9b10dbedb471c05b33:npth/.footprint
+f:08ae4fbfa53943d2088627504078511a:json-c/.md5sum
+f:c86b128ca307382ef4b01b2ad9383660:json-c/Pkgfile
+f:97e7dcbf46df7b93964f5a893d951c91:json-c/.footprint
 f:17c65f5cc6c24a26dc281cf88ca21cb2:cyrus-sasl/.md5sum
 f:f53bd63d43b26b8a2cee067d11ca9a1f:cyrus-sasl/saslauthd.run
 f:0e500515c2aeb7c896cc02be96d1f1d0:cyrus-sasl/saslauthd-sv.conf
@@ -50,6 +55,9 @@ f:5ba24be38a3ae94a69cc316121dbab33:cyrus-sasl/Pkgfile
 f:acf98cb40b6b9259d6421b5275d06920:cyrus-sasl/cyrus-sasl-2.1.27-CVE-2019-19906.patch
 f:1a17a2d56984e95382b604833fe9b92d:cyrus-sasl/cyrus-sasl-2.1.27-doc_fixes-1.patch
 f:60764db04de34345f17a734cf00fcf0b:cyrus-sasl/.footprint
+f:9ab763fd51371480913ac43fa49d85fe:jsoncpp/.md5sum
+f:6943e9d42b5feea5382e91df7681bbcc:jsoncpp/Pkgfile
+f:91de4f5d02f6c70ed246e185de0701a6:jsoncpp/.footprint
 f:5865a2baba94f0256773e00710c1d48d:libgpg-error/.md5sum
 f:234675fd868e081cdd4dc0373378feb6:libgpg-error/Pkgfile
 f:2a7b061c919d749227d437404dc3a91f:libgpg-error/.footprint
