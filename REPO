@@ -1,3 +1,4 @@
+d:perl-xml-parser
 d:libassuan
 d:alsa-lib
 d:libgcrypt
@@ -15,8 +16,12 @@ d:cyrus-sasl
 d:jsoncpp
 d:libgpg-error
 d:gnupg
+d:perl-encode-locale
 d:swig
 d:fribidi
+f:41b257c4e6673696e304f7b729d05208:perl-xml-parser/.md5sum
+f:6a458553099b24be5001f671e16ce1ce:perl-xml-parser/Pkgfile
+f:d7814580047003671317cce7d9bfde3d:perl-xml-parser/.footprint
 f:f5dd0bdd837a52fc313cb352b4e3f905:libassuan/.md5sum
 f:af970965d1bd0d659999eaae341c59a7:libassuan/Pkgfile
 f:b7757947d2cc79789fc7678eefeb7c1c:libassuan/.footprint
@@ -81,6 +86,9 @@ f:2a7b061c919d749227d437404dc3a91f:libgpg-error/.footprint
 f:790406de99fb5e7ee734aff0bcb2163f:gnupg/.md5sum
 f:53fadd383fc982f59f4f8b6f39f9256a:gnupg/Pkgfile
 f:f71918e59befefbe64ff1822e0b4a866:gnupg/.footprint
+f:083e2d5b4ccd053cdf2be36932b5eb2b:perl-encode-locale/.md5sum
+f:656b97793e4a9563051d66043762969b:perl-encode-locale/Pkgfile
+f:b8a97af95f23b30a40c6e139fa7edceb:perl-encode-locale/.footprint
 f:f775b9f6f9bc2f438ac919188bad4069:swig/.md5sum
 f:9b0c361afac915db67fbdbc4247a460e:swig/Pkgfile
 f:04d5da180e5b204334f8d9f924f97fe6:swig/.footprint
