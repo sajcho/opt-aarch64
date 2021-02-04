@@ -1,6 +1,7 @@
 d:libassuan
 d:alsa-lib
 d:libgcrypt
+d:ruby
 d:mpg123
 d:yaml
 d:brotli
@@ -26,6 +27,10 @@ f:455b08faa6f93b09f78f11fcf31e6fb0:alsa-lib/.footprint
 f:5e0ae67fe2847c691502b2047825f601:libgcrypt/.md5sum
 f:5b169d9c079b80fd0e4b7b93da1af9ea:libgcrypt/Pkgfile
 f:f0c77a62338000d5821d87882df182b5:libgcrypt/.footprint
+f:101a24f9b00c561049953aad3ebf3b8f:ruby/.md5sum
+f:f5e2f0863037574d76ef75dde5657aa3:ruby/Pkgfile
+f:d7224759494b53ba032a654dad348bad:ruby/rubygems-avoid-platform-specific-gems.patch
+f:34eda61efc8f620656609be9c11656c8:ruby/.footprint
 f:73920a87ad9700291b282dacc5876d71:mpg123/.md5sum
 f:1536d2c31ba7342522bcf8ee36f0b4eb:mpg123/Pkgfile
 f:59449629a4666e201705901f27224f74:mpg123/.footprint
