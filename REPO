@@ -24,6 +24,7 @@ d:gnupg
 d:perl-encode-locale
 d:perl-file-listing
 d:swig
+d:perl-uri
 d:fribidi
 f:17c010af9588693e21027c7a1926e123:perl-io-html/.md5sum
 f:31a6df4cedb31819bf730e35ddc1bf86:perl-io-html/Pkgfile
@@ -116,6 +117,9 @@ f:6dfb6f0607091266dbee2d3f11ef795a:perl-file-listing/.footprint
 f:f775b9f6f9bc2f438ac919188bad4069:swig/.md5sum
 f:9b0c361afac915db67fbdbc4247a460e:swig/Pkgfile
 f:04d5da180e5b204334f8d9f924f97fe6:swig/.footprint
+f:6a0a73f8adf6c71d19676564e4212694:perl-uri/.md5sum
+f:89d4a3c382e977bb07d10ee2755c7eea:perl-uri/Pkgfile
+f:ca7fc943ae803000fdbc8b74c10a4d27:perl-uri/.footprint
 f:28fd79d4d388ea31dd8f9b67c05f92cd:fribidi/.md5sum
 f:84939ff9078a0df230ec859021fe57a0:fribidi/Pkgfile
 f:9f36b3f7ea570ed9ce81608cf9f8a2c3:fribidi/.footprint
