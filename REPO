@@ -5,9 +5,11 @@ d:alsa-lib
 d:libgcrypt
 d:ruby
 d:mpg123
+d:perl-html-tagset
 d:perl-timedate
 d:yaml
 d:brotli
+d:perl-http-date
 d:zip
 d:gpgme
 d:libksba
@@ -19,6 +21,7 @@ d:jsoncpp
 d:libgpg-error
 d:gnupg
 d:perl-encode-locale
+d:perl-file-listing
 d:swig
 d:fribidi
 f:17c010af9588693e21027c7a1926e123:perl-io-html/.md5sum
@@ -44,6 +47,9 @@ f:34eda61efc8f620656609be9c11656c8:ruby/.footprint
 f:73920a87ad9700291b282dacc5876d71:mpg123/.md5sum
 f:1536d2c31ba7342522bcf8ee36f0b4eb:mpg123/Pkgfile
 f:59449629a4666e201705901f27224f74:mpg123/.footprint
+f:a9aef521c0a14a22a4942a4b08d0f35d:perl-html-tagset/.md5sum
+f:a08a3adfb0815f117b3a8b55ba5f44ad:perl-html-tagset/Pkgfile
+f:97c402294a755ad91b721447ca9c5acc:perl-html-tagset/.footprint
 f:f09992f6ee9f00086b1f03b30ce1858f:perl-timedate/.md5sum
 f:cf5fe0855f0e3a9a4b7c4e07db604e8a:perl-timedate/Pkgfile
 f:d7db3dd064e3dbc325aaee409c0233e8:perl-timedate/.footprint
@@ -55,6 +61,9 @@ f:2f7ab0598843ad95b16d157ffb6e3cf6:brotli/Pkgfile
 f:5c5a44b31017d615751dad6324b7678b:brotli/build-tool-against-shared-lib.patch
 f:7acdcd094af5515c54fcfb40ae13d966:brotli/838.patch
 f:c1958d08c116d4c4d8aa462352792bc0:brotli/.footprint
+f:eb85b67c2a475883e3e91036b2f7ad81:perl-http-date/.md5sum
+f:82f852f2004bc5b56900cb3da38de587:perl-http-date/Pkgfile
+f:558b4a12d6edc84dd23583fcbac72bd4:perl-http-date/.footprint
 f:16a9167de621f07469bb8454062cacb7:zip/.md5sum
 f:36499ef1ffdc1c1213505f2776f494ee:zip/Pkgfile
 f:cfb051847ce2552c78033d5b63d2fae0:zip/40-fix-zipnote.patch
@@ -97,6 +106,10 @@ f:f71918e59befefbe64ff1822e0b4a866:gnupg/.footprint
 f:083e2d5b4ccd053cdf2be36932b5eb2b:perl-encode-locale/.md5sum
 f:656b97793e4a9563051d66043762969b:perl-encode-locale/Pkgfile
 f:b8a97af95f23b30a40c6e139fa7edceb:perl-encode-locale/.footprint
+f:b90a9f4037c4bfd8b5f475fea1fbad9c:perl-file-listing/.md5sum
+f:96b7c43aff14a0a6c0f82bc0dd69df1a:perl-file-listing/Pkgfile~
+f:028833d0744a27454e42b40ea3b894b5:perl-file-listing/Pkgfile
+f:1ce29782b78d85f1f2bc744ab2a09f7c:perl-file-listing/APKBUILD
 f:f775b9f6f9bc2f438ac919188bad4069:swig/.md5sum
 f:9b0c361afac915db67fbdbc4247a460e:swig/Pkgfile
 f:04d5da180e5b204334f8d9f924f97fe6:swig/.footprint
