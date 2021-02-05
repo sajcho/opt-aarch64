@@ -1,9 +1,11 @@
+d:perl-io-html
 d:perl-xml-parser
 d:libassuan
 d:alsa-lib
 d:libgcrypt
 d:ruby
 d:mpg123
+d:perl-timedate
 d:yaml
 d:brotli
 d:zip
@@ -19,6 +21,9 @@ d:gnupg
 d:perl-encode-locale
 d:swig
 d:fribidi
+f:17c010af9588693e21027c7a1926e123:perl-io-html/.md5sum
+f:31a6df4cedb31819bf730e35ddc1bf86:perl-io-html/Pkgfile
+f:8215b93726f88842afa4c42cf956907c:perl-io-html/.footprint
 f:41b257c4e6673696e304f7b729d05208:perl-xml-parser/.md5sum
 f:6a458553099b24be5001f671e16ce1ce:perl-xml-parser/Pkgfile
 f:d7814580047003671317cce7d9bfde3d:perl-xml-parser/.footprint
@@ -39,6 +44,9 @@ f:34eda61efc8f620656609be9c11656c8:ruby/.footprint
 f:73920a87ad9700291b282dacc5876d71:mpg123/.md5sum
 f:1536d2c31ba7342522bcf8ee36f0b4eb:mpg123/Pkgfile
 f:59449629a4666e201705901f27224f74:mpg123/.footprint
+f:f09992f6ee9f00086b1f03b30ce1858f:perl-timedate/.md5sum
+f:cf5fe0855f0e3a9a4b7c4e07db604e8a:perl-timedate/Pkgfile
+f:d7db3dd064e3dbc325aaee409c0233e8:perl-timedate/.footprint
 f:a6b369f1b1965a56167fc909c0696185:yaml/.md5sum
 f:16789530941a4158f952d44416c346d3:yaml/Pkgfile
 f:ca9c5a6090ba3b199758360c9114d854:yaml/.footprint
