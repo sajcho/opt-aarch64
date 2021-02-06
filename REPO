@@ -8,6 +8,7 @@ d:perl-pod-parser
 d:perl-test-needs
 d:ruby
 d:mpg123
+d:perl-pod-coverage
 d:perl-html-tagset
 d:perl-timedate
 d:perl-capture-tiny
@@ -63,6 +64,9 @@ f:34eda61efc8f620656609be9c11656c8:ruby/.footprint
 f:73920a87ad9700291b282dacc5876d71:mpg123/.md5sum
 f:1536d2c31ba7342522bcf8ee36f0b4eb:mpg123/Pkgfile
 f:59449629a4666e201705901f27224f74:mpg123/.footprint
+f:23095a98431723055af815d7df388c81:perl-pod-coverage/.md5sum
+f:ccfb7400d84b1360221527b6ed4c5dc4:perl-pod-coverage/Pkgfile
+f:a7885f67bf782db38c0e99faff539f68:perl-pod-coverage/.footprint
 f:a9aef521c0a14a22a4942a4b08d0f35d:perl-html-tagset/.md5sum
 f:a08a3adfb0815f117b3a8b55ba5f44ad:perl-html-tagset/Pkgfile
 f:97c402294a755ad91b721447ca9c5acc:perl-html-tagset/.footprint
