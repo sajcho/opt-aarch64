@@ -1,0 +1,26 @@
+# Description:	Perl bindings for GNU Libidn2
+# URL:		https://search.cpan.org/dist/Net-LibIDN2
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	libidn2 perl perl-module-build
+
+name=perl-net-libidn2
+_realname=Net-LibIDN2
+version=1.01
+release=0
+source=(https://search.cpan.org/CPAN/authors/id/T/TH/THOR/${_realname}-${version}.tar.gz)
+
+build() {
+	cd ${_realname}-${version}
+
+	export CFLAGS=$(perl -MConfig -E 'say $Config{ccflags}')
+
+	perl Build.PL --installdirs=vendor
+	./Build
+
+	./Build test
+
+	./Build install --destdir=$PKG
+
+	find $PKG -name 'perllocal.pod' -or \
+		-name '.packlist' | xargs rm
+}
