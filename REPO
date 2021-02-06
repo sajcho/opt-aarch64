@@ -4,6 +4,7 @@ d:perl-xml-parser
 d:libassuan
 d:alsa-lib
 d:libgcrypt
+d:perl-io-socket-inet6
 d:perl-test-pod
 d:perl-pod-parser
 d:perl-test-needs
@@ -12,6 +13,7 @@ d:mpg123
 d:perl-pod-coverage
 d:perl-html-tagset
 d:perl-timedate
+d:libidn
 d:perl-capture-tiny
 d:yaml
 d:perl-www-robotrules
@@ -60,6 +62,9 @@ f:455b08faa6f93b09f78f11fcf31e6fb0:alsa-lib/.footprint
 f:5e0ae67fe2847c691502b2047825f601:libgcrypt/.md5sum
 f:5b169d9c079b80fd0e4b7b93da1af9ea:libgcrypt/Pkgfile
 f:f0c77a62338000d5821d87882df182b5:libgcrypt/.footprint
+f:3416e678c4fb641b38e0b2785eaa13ad:perl-io-socket-inet6/.md5sum
+f:77712bcf3ddb1a3e58f9b9041b89bdbf:perl-io-socket-inet6/Pkgfile
+f:6e99ced43432e7f242d2a245ac7f67fd:perl-io-socket-inet6/.footprint
 f:73c516b7bd1be001cfcc85e40a12c933:perl-test-pod/.md5sum
 f:67930f4bb77d57b6eacc12b33a9b748f:perl-test-pod/Pkgfile
 f:ba25edf108fc526bdae8abbda17071c7:perl-test-pod/.footprint
@@ -85,6 +90,9 @@ f:97c402294a755ad91b721447ca9c5acc:perl-html-tagset/.footprint
 f:f09992f6ee9f00086b1f03b30ce1858f:perl-timedate/.md5sum
 f:cf5fe0855f0e3a9a4b7c4e07db604e8a:perl-timedate/Pkgfile
 f:d7db3dd064e3dbc325aaee409c0233e8:perl-timedate/.footprint
+f:df1124471bfa22704f3f99a5ccf48eb3:libidn/.md5sum
+f:c8a85082f5268f2042a9f500e67fe50d:libidn/Pkgfile
+f:71a71d1b29773f3588265509e1dcaa34:libidn/.footprint
 f:263020517cfa215229c36e7a96f9397d:perl-capture-tiny/.md5sum
 f:1691b50845ceb61606ff73637eafcdc3:perl-capture-tiny/Pkgfile
 f:6dcfb759e6ac1974edc775b42e23e5d8:perl-capture-tiny/.footprint
