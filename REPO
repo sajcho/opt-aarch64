@@ -28,6 +28,7 @@ d:perl-sub-name
 d:json-c
 d:cyrus-sasl
 d:perl-net-http
+d:perl-socket6
 d:perl-test-cpan-meta
 d:perl-module-build
 d:jsoncpp
@@ -143,6 +144,9 @@ f:60764db04de34345f17a734cf00fcf0b:cyrus-sasl/.footprint
 f:bcfa47c5b10f6bbbce9505b3b8d06b2f:perl-net-http/.md5sum
 f:5e5ec52ca801280ea8271fa8a2ac2d31:perl-net-http/Pkgfile
 f:af926c64a6c62f6dcaecbf806958d8cf:perl-net-http/.footprint
+f:d9eb0af0673fddd17c04e99b6107e9a1:perl-socket6/.md5sum
+f:50bc6e13223601b6975b0485d930e09f:perl-socket6/Pkgfile
+f:5e5da26b2032360473dc65f5a6a6d507:perl-socket6/.footprint
 f:b57e49dad38deedc0794f3fec2df44af:perl-test-cpan-meta/.md5sum
 f:6608b05de8e937d06ccbbe6f97d74f25:perl-test-cpan-meta/Pkgfile
 f:2de8f1211bfa9b7139137581e40c4b01:perl-test-cpan-meta/.footprint
