@@ -24,7 +24,9 @@ d:npth
 d:json-c
 d:cyrus-sasl
 d:perl-test-cpan-meta
+d:perl-module-build
 d:jsoncpp
+d:perl-test-pod-coverage
 d:libgpg-error
 d:gnupg
 d:perl-encode-locale
@@ -123,9 +125,15 @@ f:60764db04de34345f17a734cf00fcf0b:cyrus-sasl/.footprint
 f:b57e49dad38deedc0794f3fec2df44af:perl-test-cpan-meta/.md5sum
 f:6608b05de8e937d06ccbbe6f97d74f25:perl-test-cpan-meta/Pkgfile
 f:2de8f1211bfa9b7139137581e40c4b01:perl-test-cpan-meta/.footprint
+f:e5b632e518b99c736cd57fce2e75772b:perl-module-build/.md5sum
+f:11630576e11b80cdc651234b1f5f632d:perl-module-build/Pkgfile
+f:fa7e6fe3013af266cf1432e32d39a742:perl-module-build/.footprint
 f:9ab763fd51371480913ac43fa49d85fe:jsoncpp/.md5sum
 f:6943e9d42b5feea5382e91df7681bbcc:jsoncpp/Pkgfile
 f:91de4f5d02f6c70ed246e185de0701a6:jsoncpp/.footprint
+f:94affe3fef9775e0d8fd4fb60e01e83d:perl-test-pod-coverage/.md5sum
+f:4274dafb68be628350b6186241bbc9fd:perl-test-pod-coverage/Pkgfile
+f:bdb37e4ae46895bff57ad821794d02e4:perl-test-pod-coverage/.footprint
 f:5865a2baba94f0256773e00710c1d48d:libgpg-error/.md5sum
 f:234675fd868e081cdd4dc0373378feb6:libgpg-error/Pkgfile
 f:2a7b061c919d749227d437404dc3a91f:libgpg-error/.footprint
