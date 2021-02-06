@@ -1,6 +1,7 @@
 d:perl-io-html
 d:perl-test-fatal
 d:perl-xml-parser
+d:perl-net-libidn2
 d:libassuan
 d:alsa-lib
 d:libgcrypt
@@ -13,6 +14,7 @@ d:mpg123
 d:perl-pod-coverage
 d:perl-html-tagset
 d:perl-timedate
+d:perl-net-libidn
 d:libidn
 d:perl-capture-tiny
 d:yaml
@@ -52,6 +54,9 @@ f:1ba58132c53680dc03a202f81ead3ebc:perl-test-fatal/.footprint
 f:41b257c4e6673696e304f7b729d05208:perl-xml-parser/.md5sum
 f:6a458553099b24be5001f671e16ce1ce:perl-xml-parser/Pkgfile
 f:d7814580047003671317cce7d9bfde3d:perl-xml-parser/.footprint
+f:6acd7382b88fb9acd47be1f457a85d23:perl-net-libidn2/.md5sum
+f:15f0ad72cf8bb9a8f1ab8378ecebd66b:perl-net-libidn2/Pkgfile
+f:6da4c8b32ff0a0564b6f85e74eb02382:perl-net-libidn2/.footprint
 f:f5dd0bdd837a52fc313cb352b4e3f905:libassuan/.md5sum
 f:af970965d1bd0d659999eaae341c59a7:libassuan/Pkgfile
 f:b7757947d2cc79789fc7678eefeb7c1c:libassuan/.footprint
@@ -90,6 +95,9 @@ f:97c402294a755ad91b721447ca9c5acc:perl-html-tagset/.footprint
 f:f09992f6ee9f00086b1f03b30ce1858f:perl-timedate/.md5sum
 f:cf5fe0855f0e3a9a4b7c4e07db604e8a:perl-timedate/Pkgfile
 f:d7db3dd064e3dbc325aaee409c0233e8:perl-timedate/.footprint
+f:16b82f02281c97f1b7cd430dc2263219:perl-net-libidn/.md5sum
+f:ff880e7a51d30b97cd6a3f7472ad26a3:perl-net-libidn/Pkgfile
+f:c147ec7835f915b1ad9711c0183b4f89:perl-net-libidn/.footprint
 f:df1124471bfa22704f3f99a5ccf48eb3:libidn/.md5sum
 f:c8a85082f5268f2042a9f500e67fe50d:libidn/Pkgfile
 f:71a71d1b29773f3588265509e1dcaa34:libidn/.footprint
