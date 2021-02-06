@@ -39,7 +39,6 @@ d:perl-module-build
 d:jsoncpp
 d:perl-test-exception
 d:perl-try-tiny
-d:perl-test-simple
 d:perl-test-pod-coverage
 d:libgpg-error
 d:gnupg
@@ -184,9 +183,6 @@ f:bd4f513bea213496d8cb6d6d998cbf24:perl-test-exception/.footprint
 f:5e8e48b4916ec1cdf92f133378557403:perl-try-tiny/.md5sum
 f:59569afe4125889b6f5671aad03b79e5:perl-try-tiny/Pkgfile
 f:f3d5959f04641f5e01d4a2e643a447ab:perl-try-tiny/.footprint
-f:2894cd8c7e4fb34d81e2a98e6d078620:perl-test-simple/.md5sum
-f:5d84f67e44123058d41a22b59373c771:perl-test-simple/Pkgfile
-f:57038e0e5f3ec590865e9aa0e1076591:perl-test-simple/.footprint
 f:94affe3fef9775e0d8fd4fb60e01e83d:perl-test-pod-coverage/.md5sum
 f:4274dafb68be628350b6186241bbc9fd:perl-test-pod-coverage/Pkgfile
 f:bdb37e4ae46895bff57ad821794d02e4:perl-test-pod-coverage/.footprint
