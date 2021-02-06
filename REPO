@@ -24,6 +24,7 @@ d:perl-devel-checkbin
 d:perl-http-date
 d:zip
 d:perl-devel-symdump
+d:perl-sub-uplevel
 d:gpgme
 d:libksba
 d:pinentry
@@ -131,6 +132,9 @@ f:24aa8c89371f67e6b31105844780dbc3:zip/20-zip-3.0-exec-stack.patch
 f:4d4fc38160b450d8bb0489ddf8c78109:perl-devel-symdump/.md5sum
 f:a809c566242efc8daa4b8a11b4df2655:perl-devel-symdump/Pkgfile
 f:52cefb4976e8d4634d1f5a407c46f77f:perl-devel-symdump/.footprint
+f:d1c4ac28a4729a470def5e77b07dcef7:perl-sub-uplevel/.md5sum
+f:1858162328efd1097c106f5f94f9237e:perl-sub-uplevel/Pkgfile
+f:5b68b7035019051dffd1c05d7b0ec394:perl-sub-uplevel/.footprint
 f:3e97a2fdf216565ae6401ad2105004b7:gpgme/.md5sum
 f:f3a1efd2875b726962fd234c18e9941b:gpgme/Pkgfile
 f:ebb0e82c802f0519cc6aaf1f813ae1ab:gpgme/.footprint
