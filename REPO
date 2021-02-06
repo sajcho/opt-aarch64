@@ -22,11 +22,13 @@ d:gpgme
 d:libksba
 d:pinentry
 d:npth
+d:perl-sub-name
 d:json-c
 d:cyrus-sasl
 d:perl-test-cpan-meta
 d:perl-module-build
 d:jsoncpp
+d:perl-try-tiny
 d:perl-test-pod-coverage
 d:libgpg-error
 d:gnupg
@@ -116,6 +118,9 @@ f:567b986e0e96da796032ffbf87858c4b:pinentry/.footprint
 f:2dc9d626228874dbc79f33869eda7ed6:npth/.md5sum
 f:d8f21e38114610c1371076714bae7105:npth/Pkgfile
 f:a1be58dc7c7c6c9b10dbedb471c05b33:npth/.footprint
+f:f1109577484003261ba8d80a0051815d:perl-sub-name/.md5sum
+f:8daa6700a7648b0651d6ba5f5613ab89:perl-sub-name/Pkgfile
+f:0c19e699fdb522686fbc9344453cdb5a:perl-sub-name/.footprint
 f:08ae4fbfa53943d2088627504078511a:json-c/.md5sum
 f:c86b128ca307382ef4b01b2ad9383660:json-c/Pkgfile
 f:97e7dcbf46df7b93964f5a893d951c91:json-c/.footprint
@@ -135,6 +140,9 @@ f:fa7e6fe3013af266cf1432e32d39a742:perl-module-build/.footprint
 f:9ab763fd51371480913ac43fa49d85fe:jsoncpp/.md5sum
 f:6943e9d42b5feea5382e91df7681bbcc:jsoncpp/Pkgfile
 f:91de4f5d02f6c70ed246e185de0701a6:jsoncpp/.footprint
+f:5e8e48b4916ec1cdf92f133378557403:perl-try-tiny/.md5sum
+f:59569afe4125889b6f5671aad03b79e5:perl-try-tiny/Pkgfile
+f:f3d5959f04641f5e01d4a2e643a447ab:perl-try-tiny/.footprint
 f:94affe3fef9775e0d8fd4fb60e01e83d:perl-test-pod-coverage/.md5sum
 f:4274dafb68be628350b6186241bbc9fd:perl-test-pod-coverage/Pkgfile
 f:bdb37e4ae46895bff57ad821794d02e4:perl-test-pod-coverage/.footprint
