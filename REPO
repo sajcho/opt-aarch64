@@ -3,6 +3,7 @@ d:perl-xml-parser
 d:libassuan
 d:alsa-lib
 d:libgcrypt
+d:perl-test-pod
 d:perl-pod-parser
 d:perl-test-needs
 d:ruby
@@ -46,6 +47,9 @@ f:455b08faa6f93b09f78f11fcf31e6fb0:alsa-lib/.footprint
 f:5e0ae67fe2847c691502b2047825f601:libgcrypt/.md5sum
 f:5b169d9c079b80fd0e4b7b93da1af9ea:libgcrypt/Pkgfile
 f:f0c77a62338000d5821d87882df182b5:libgcrypt/.footprint
+f:73c516b7bd1be001cfcc85e40a12c933:perl-test-pod/.md5sum
+f:67930f4bb77d57b6eacc12b33a9b748f:perl-test-pod/Pkgfile
+f:ba25edf108fc526bdae8abbda17071c7:perl-test-pod/.footprint
 f:6eb397326f4bbd474247576853d68d26:perl-pod-parser/.md5sum
 f:e1a7ae610b58a6b03aa6a8fee94f819c:perl-pod-parser/Pkgfile
 f:277861650e8bb0e7a747a47fcbdcc54d:perl-pod-parser/.footprint
