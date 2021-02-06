@@ -14,6 +14,7 @@ d:perl-timedate
 d:perl-capture-tiny
 d:yaml
 d:brotli
+d:perl-devel-checkbin
 d:perl-http-date
 d:zip
 d:perl-devel-symdump
@@ -86,6 +87,9 @@ f:2f7ab0598843ad95b16d157ffb6e3cf6:brotli/Pkgfile
 f:5c5a44b31017d615751dad6324b7678b:brotli/build-tool-against-shared-lib.patch
 f:7acdcd094af5515c54fcfb40ae13d966:brotli/838.patch
 f:c1958d08c116d4c4d8aa462352792bc0:brotli/.footprint
+f:187a8db71c5bfa7d2395bea09b457f5b:perl-devel-checkbin/.md5sum
+f:0812aaa53a94fda68dad5e9dc44e0cbc:perl-devel-checkbin/Pkgfile
+f:ceb5029639b30f093b9288fb54163953:perl-devel-checkbin/.footprint
 f:eb85b67c2a475883e3e91036b2f7ad81:perl-http-date/.md5sum
 f:82f852f2004bc5b56900cb3da38de587:perl-http-date/Pkgfile
 f:558b4a12d6edc84dd23583fcbac72bd4:perl-http-date/.footprint
