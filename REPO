@@ -17,6 +17,7 @@ d:jsoncpp
 d:libgpg-error
 d:gnupg
 d:swig
+d:prt-utils
 d:fribidi
 f:f5dd0bdd837a52fc313cb352b4e3f905:libassuan/.md5sum
 f:af970965d1bd0d659999eaae341c59a7:libassuan/Pkgfile
@@ -88,6 +89,9 @@ f:f71918e59befefbe64ff1822e0b4a866:gnupg/.footprint
 f:f775b9f6f9bc2f438ac919188bad4069:swig/.md5sum
 f:9b0c361afac915db67fbdbc4247a460e:swig/Pkgfile
 f:04d5da180e5b204334f8d9f924f97fe6:swig/.footprint
+f:cf4fc1f2f1b37c8dacdde78be81e715e:prt-utils/.md5sum
+f:f08e36d54ecb51eb3983d0261f06abfe:prt-utils/Pkgfile
+f:e52165bc4afc1cb7a2b5f858359807cd:prt-utils/.footprint
 f:28fd79d4d388ea31dd8f9b67c05f92cd:fribidi/.md5sum
 f:84939ff9078a0df230ec859021fe57a0:fribidi/Pkgfile
 f:9f36b3f7ea570ed9ce81608cf9f8a2c3:fribidi/.footprint
