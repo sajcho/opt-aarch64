@@ -503,7 +503,6 @@ drwxr-xr-x	root/root	usr/lib/ruby/3.0/bundler/templates/newgem/
 -rw-r--r--	root/root	usr/lib/ruby/3.0/bundler/templates/newgem/CODE_OF_CONDUCT.md.tt
 -rw-r--r--	root/root	usr/lib/ruby/3.0/bundler/templates/newgem/Gemfile.tt
 -rw-r--r--	root/root	usr/lib/ruby/3.0/bundler/templates/newgem/LICENSE.txt.tt
--rw-r--r--	root/root	usr/lib/ruby/3.0/bundler/templates/newgem/README.md.tt
 -rw-r--r--	root/root	usr/lib/ruby/3.0/bundler/templates/newgem/Rakefile.tt
 drwxr-xr-x	root/root	usr/lib/ruby/3.0/bundler/templates/newgem/bin/
 -rw-r--r--	root/root	usr/lib/ruby/3.0/bundler/templates/newgem/bin/console.tt
@@ -1481,7 +1480,6 @@ drwxr-xr-x	root/root	usr/lib/ruby/gems/3.0/gems/minitest-5.14.2/
 -rw-r--r--	root/root	usr/lib/ruby/gems/3.0/gems/minitest-5.14.2/.autotest
 -rw-r--r--	root/root	usr/lib/ruby/gems/3.0/gems/minitest-5.14.2/History.rdoc
 -rw-r--r--	root/root	usr/lib/ruby/gems/3.0/gems/minitest-5.14.2/Manifest.txt
--rw-r--r--	root/root	usr/lib/ruby/gems/3.0/gems/minitest-5.14.2/README.rdoc
 -rw-r--r--	root/root	usr/lib/ruby/gems/3.0/gems/minitest-5.14.2/Rakefile
 -rw-r--r--	root/root	usr/lib/ruby/gems/3.0/gems/minitest-5.14.2/design_rationale.rb
 drwxr-xr-x	root/root	usr/lib/ruby/gems/3.0/gems/minitest-5.14.2/lib/
@@ -1528,10 +1526,8 @@ drwxr-xr-x	root/root	usr/lib/ruby/gems/3.0/gems/pathname-0.1.0/
 drwxr-xr-x	root/root	usr/lib/ruby/gems/3.0/gems/power_assert-1.2.0/
 -rw-r--r--	root/root	usr/lib/ruby/gems/3.0/gems/power_assert-1.2.0/.travis.yml
 -rw-r--r--	root/root	usr/lib/ruby/gems/3.0/gems/power_assert-1.2.0/BSDL
--rw-r--r--	root/root	usr/lib/ruby/gems/3.0/gems/power_assert-1.2.0/COPYING
 -rw-r--r--	root/root	usr/lib/ruby/gems/3.0/gems/power_assert-1.2.0/Gemfile
 -rw-r--r--	root/root	usr/lib/ruby/gems/3.0/gems/power_assert-1.2.0/LEGAL
--rw-r--r--	root/root	usr/lib/ruby/gems/3.0/gems/power_assert-1.2.0/README.rdoc
 -rw-r--r--	root/root	usr/lib/ruby/gems/3.0/gems/power_assert-1.2.0/Rakefile
 drwxr-xr-x	root/root	usr/lib/ruby/gems/3.0/gems/power_assert-1.2.0/bin/
 -rw-r--r--	root/root	usr/lib/ruby/gems/3.0/gems/power_assert-1.2.0/bin/console
@@ -1559,7 +1555,6 @@ drwxr-xr-x	root/root	usr/lib/ruby/gems/3.0/gems/rake-13.0.3/
 -rw-r--r--	root/root	usr/lib/ruby/gems/3.0/gems/rake-13.0.3/Gemfile
 -rw-r--r--	root/root	usr/lib/ruby/gems/3.0/gems/rake-13.0.3/History.rdoc
 -rw-r--r--	root/root	usr/lib/ruby/gems/3.0/gems/rake-13.0.3/MIT-LICENSE
--rw-r--r--	root/root	usr/lib/ruby/gems/3.0/gems/rake-13.0.3/README.rdoc
 -rw-r--r--	root/root	usr/lib/ruby/gems/3.0/gems/rake-13.0.3/Rakefile
 drwxr-xr-x	root/root	usr/lib/ruby/gems/3.0/gems/rake-13.0.3/bin/
 -rw-r--r--	root/root	usr/lib/ruby/gems/3.0/gems/rake-13.0.3/bin/bundle
@@ -1635,9 +1630,7 @@ drwxr-xr-x	root/root	usr/lib/ruby/gems/3.0/gems/rbs-1.0.0/
 -rw-r--r--	root/root	usr/lib/ruby/gems/3.0/gems/rbs-1.0.0/.rubocop.yml
 -rw-r--r--	root/root	usr/lib/ruby/gems/3.0/gems/rbs-1.0.0/BSDL
 -rw-r--r--	root/root	usr/lib/ruby/gems/3.0/gems/rbs-1.0.0/CHANGELOG.md
--rw-r--r--	root/root	usr/lib/ruby/gems/3.0/gems/rbs-1.0.0/COPYING
 -rw-r--r--	root/root	usr/lib/ruby/gems/3.0/gems/rbs-1.0.0/Gemfile
--rw-r--r--	root/root	usr/lib/ruby/gems/3.0/gems/rbs-1.0.0/README.md
 -rw-r--r--	root/root	usr/lib/ruby/gems/3.0/gems/rbs-1.0.0/Rakefile
 -rw-r--r--	root/root	usr/lib/ruby/gems/3.0/gems/rbs-1.0.0/Steepfile
 drwxr-xr-x	root/root	usr/lib/ruby/gems/3.0/gems/rbs-1.0.0/bin/
@@ -1941,8 +1934,6 @@ drwxr-xr-x	root/root	usr/lib/ruby/gems/3.0/gems/rexml-3.2.4/
 -rw-r--r--	root/root	usr/lib/ruby/gems/3.0/gems/rexml-3.2.4/.travis.yml
 -rw-r--r--	root/root	usr/lib/ruby/gems/3.0/gems/rexml-3.2.4/Gemfile
 -rw-r--r--	root/root	usr/lib/ruby/gems/3.0/gems/rexml-3.2.4/LICENSE.txt
--rw-r--r--	root/root	usr/lib/ruby/gems/3.0/gems/rexml-3.2.4/NEWS.md
--rw-r--r--	root/root	usr/lib/ruby/gems/3.0/gems/rexml-3.2.4/README.md
 -rw-r--r--	root/root	usr/lib/ruby/gems/3.0/gems/rexml-3.2.4/Rakefile
 drwxr-xr-x	root/root	usr/lib/ruby/gems/3.0/gems/rexml-3.2.4/lib/
 drwxr-xr-x	root/root	usr/lib/ruby/gems/3.0/gems/rexml-3.2.4/lib/rexml/
@@ -2004,8 +1995,6 @@ drwxr-xr-x	root/root	usr/lib/ruby/gems/3.0/gems/rinda-0.1.0/
 drwxr-xr-x	root/root	usr/lib/ruby/gems/3.0/gems/rss-0.2.9/
 -rw-r--r--	root/root	usr/lib/ruby/gems/3.0/gems/rss-0.2.9/Gemfile
 -rw-r--r--	root/root	usr/lib/ruby/gems/3.0/gems/rss-0.2.9/LICENSE.txt
--rw-r--r--	root/root	usr/lib/ruby/gems/3.0/gems/rss-0.2.9/NEWS.md
--rw-r--r--	root/root	usr/lib/ruby/gems/3.0/gems/rss-0.2.9/README.md
 -rw-r--r--	root/root	usr/lib/ruby/gems/3.0/gems/rss-0.2.9/Rakefile
 drwxr-xr-x	root/root	usr/lib/ruby/gems/3.0/gems/rss-0.2.9/lib/
 -rw-r--r--	root/root	usr/lib/ruby/gems/3.0/gems/rss-0.2.9/lib/rss.rb
@@ -2112,15 +2101,12 @@ drwxr-xr-x	root/root	usr/lib/ruby/gems/3.0/gems/syslog-0.1.0/
 drwxr-xr-x	root/root	usr/lib/ruby/gems/3.0/gems/tempfile-0.1.1/
 drwxr-xr-x	root/root	usr/lib/ruby/gems/3.0/gems/test-unit-3.3.7/
 -rw-r--r--	root/root	usr/lib/ruby/gems/3.0/gems/test-unit-3.3.7/BSDL
--rw-r--r--	root/root	usr/lib/ruby/gems/3.0/gems/test-unit-3.3.7/COPYING
 -rw-r--r--	root/root	usr/lib/ruby/gems/3.0/gems/test-unit-3.3.7/PSFL
--rw-r--r--	root/root	usr/lib/ruby/gems/3.0/gems/test-unit-3.3.7/README.md
 -rw-r--r--	root/root	usr/lib/ruby/gems/3.0/gems/test-unit-3.3.7/Rakefile
 drwxr-xr-x	root/root	usr/lib/ruby/gems/3.0/gems/test-unit-3.3.7/doc/
 drwxr-xr-x	root/root	usr/lib/ruby/gems/3.0/gems/test-unit-3.3.7/doc/text/
 -rw-r--r--	root/root	usr/lib/ruby/gems/3.0/gems/test-unit-3.3.7/doc/text/getting-started.md
 -rw-r--r--	root/root	usr/lib/ruby/gems/3.0/gems/test-unit-3.3.7/doc/text/how-to.md
--rw-r--r--	root/root	usr/lib/ruby/gems/3.0/gems/test-unit-3.3.7/doc/text/news.md
 drwxr-xr-x	root/root	usr/lib/ruby/gems/3.0/gems/test-unit-3.3.7/lib/
 -rw-r--r--	root/root	usr/lib/ruby/gems/3.0/gems/test-unit-3.3.7/lib/test-unit.rb
 drwxr-xr-x	root/root	usr/lib/ruby/gems/3.0/gems/test-unit-3.3.7/lib/test/
@@ -2240,7 +2226,6 @@ drwxr-xr-x	root/root	usr/lib/ruby/gems/3.0/gems/typeprof-0.11.0/
 -rw-r--r--	root/root	usr/lib/ruby/gems/3.0/gems/typeprof-0.11.0/Gemfile
 -rw-r--r--	root/root	usr/lib/ruby/gems/3.0/gems/typeprof-0.11.0/Gemfile.lock
 -rw-r--r--	root/root	usr/lib/ruby/gems/3.0/gems/typeprof-0.11.0/LICENSE
--rw-r--r--	root/root	usr/lib/ruby/gems/3.0/gems/typeprof-0.11.0/README.md
 -rw-r--r--	root/root	usr/lib/ruby/gems/3.0/gems/typeprof-0.11.0/Rakefile
 drwxr-xr-x	root/root	usr/lib/ruby/gems/3.0/gems/typeprof-0.11.0/doc/
 -rw-r--r--	root/root	usr/lib/ruby/gems/3.0/gems/typeprof-0.11.0/doc/demo.md
