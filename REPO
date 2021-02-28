@@ -16,6 +16,7 @@ d:cyrus-sasl
 d:jsoncpp
 d:libgpg-error
 d:gnupg
+d:dtc
 d:swig
 d:prt-utils
 d:fribidi
@@ -86,6 +87,10 @@ f:2a7b061c919d749227d437404dc3a91f:libgpg-error/.footprint
 f:790406de99fb5e7ee734aff0bcb2163f:gnupg/.md5sum
 f:53fadd383fc982f59f4f8b6f39f9256a:gnupg/Pkgfile
 f:f71918e59befefbe64ff1822e0b4a866:gnupg/.footprint
+f:fb35f06f7a9405787f66650ae20be50b:dtc/.md5sum
+f:374150c5252aceab4294224a45a08228:dtc/Pkgfile
+f:7fc4c171aed636bef5edcb6ba7264933:dtc/increase_max_srcfile_depth.patch
+f:c3fa4aa57480925a809cb1b52ad1ba1d:dtc/.footprint
 f:f775b9f6f9bc2f438ac919188bad4069:swig/.md5sum
 f:9b0c361afac915db67fbdbc4247a460e:swig/Pkgfile
 f:04d5da180e5b204334f8d9f924f97fe6:swig/.footprint
