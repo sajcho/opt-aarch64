@@ -1,0 +1,26 @@
+# Description:	Perl module - Sub::Name - (Re)name a sub
+# URL:		https://metacpan.org/release/Sub-Name/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	perl-devel-checkbin
+
+name=perl-sub-name
+_realname=Sub-Name
+version=0.26
+release=0
+source=(https://cpan.metacpan.org/authors/id/E/ET/ETHER/${_realname}-${version}.tar.gz)
+
+build() {
+	cd ${_realname}-${version}
+
+	export CFLAGS=$(perl -MConfig -E 'say $Config{ccflags}')
+	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+
+	make
+
+	make test
+
+	make DESTDIR=$PKG install
+
+	find $PKG -name 'perllocal.pod' -or \
+		-name '.packlist' | xargs rm
+}
