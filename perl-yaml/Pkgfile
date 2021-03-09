@@ -1,0 +1,26 @@
+# Description:	YAML Ain't Markup Language (tm)
+# URL:		https://metacpan.org/release/YAML
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	perl-test-deep perl-test-yaml
+
+name=perl-yaml
+_realname=YAML
+version=1.30
+release=0
+source=(https://cpan.metacpan.org/authors/id/T/TI/TINITA/${_realname}-${version}.tar.gz)
+
+build() {
+	cd ${_realname}-${version}
+
+	export CFLAGS=$(perl -MConfig -E 'say $Config{ccflags}')
+	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+
+	make
+
+	make test
+
+	make DESTDIR=$PKG install
+
+	find $PKG -name 'perllocal.pod' -or \
+		-name '.packlist' | xargs rm
+}
