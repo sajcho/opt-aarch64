@@ -1,0 +1,26 @@
+# Description:	Perl bindings for GNU Libidn
+# URL:		http://www.net-dns.org/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	libidn perl
+
+name=perl-net-libidn
+_realname=Net-LibIDN
+version=0.12
+release=0
+source=(https://cpan.metacpan.org/authors/id/T/TH/THOR/${_realname}-${version}.tar.gz)
+
+build() {
+	cd ${_realname}-${version}
+
+	export CFLAGS=$(perl -MConfig -E 'say $Config{ccflags}')
+	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+
+	make
+
+	make test
+
+	make DESTDIR=$PKG install
+
+	find $PKG -name 'perllocal.pod' -or \
+		-name '.packlist' | xargs rm
+}
