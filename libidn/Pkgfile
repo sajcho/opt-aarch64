@@ -4,18 +4,21 @@
 
 name=libidn
 version=1.36
-release=0
+release=1
 source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.gz)
 
 build() {
 	cd ${name}-${version}
 
 	./configure \
-		--prefix=/usr
+		--prefix=/usr \
+		--disable-nls
 
 	make
 
 	make check
 
 	make DESTDIR=$PKG install
+
+	rm -r $PKG/usr/share/info
 }
