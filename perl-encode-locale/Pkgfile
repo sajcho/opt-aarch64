@@ -1,0 +1,25 @@
+# Description:	Determine the locale encoding
+# URL:		https://metacpan.org/pod/Encode::Locale
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+
+name=perl-encode-locale
+_realname=Encode-Locale
+version=1.05
+release=0
+source=(https://cpan.metacpan.org/authors/id/G/GA/GAAS/${_realname}-${version}.tar.gz)
+
+build() {
+	cd ${_realname}-${version}
+
+	export CFLAGS=$(perl -MConfig -E 'say $Config{ccflags}')
+	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+
+	make
+
+	make test
+
+	make DESTDIR=$PKG install
+
+	find $PKG -name 'perllocal.pod' -or \
+		-name '.packlist' | xargs rm
+}
