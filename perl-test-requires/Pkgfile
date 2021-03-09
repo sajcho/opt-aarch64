@@ -1,0 +1,25 @@
+# Description:	Checks to see if the module can be loaded
+# URL:		https://metacpan.org/release/Test-Requires/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+
+name=perl-test-requires
+_realname=Test-Requires
+version=0.11
+release=0
+source=(https://cpan.metacpan.org/authors/id/T/TO/TOKUHIROM/${_realname}-${version}.tar.gz)
+
+build() {
+	cd ${_realname}-${version}
+
+	export CFLAGS=$(perl -MConfig -E 'say $Config{ccflags}')
+	PERL_MM_USE_DEFAULT=1 perl Makefile.PL INSTALLDIRS=vendor
+
+	make
+
+	make test
+
+	make DESTDIR=$PKG install
+
+	find $PKG -name 'perllocal.pod' -or \
+		-name '.packlist' | xargs rm
+}
