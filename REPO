@@ -41,6 +41,7 @@ d:perl-http-cookies
 d:pinentry
 d:npth
 d:perl-net-ssleay
+d:rlwrap
 d:perl-http-daemon
 d:perl-sub-name
 d:json-c
@@ -201,6 +202,9 @@ f:a1be58dc7c7c6c9b10dbedb471c05b33:npth/.footprint
 f:684118ac8a9efa1a29467385a0fe4626:perl-net-ssleay/.md5sum
 f:be37cce79892f8f5040a291f37ba7233:perl-net-ssleay/Pkgfile
 f:dd16079f46088bbb91b68cba0ec99395:perl-net-ssleay/.footprint
+f:1aa692d23995d3a96c7a9afd7ed17728:rlwrap/.md5sum
+f:d13a2dc3e335075547c4210a6362f585:rlwrap/Pkgfile
+f:a4c04dfd8b67a4672469f50a908b5167:rlwrap/.footprint
 f:c8bedf84c37badfb32e841f3375974f0:perl-http-daemon/.md5sum
 f:fa332a3d20465675d0114471d5a2a83b:perl-http-daemon/Pkgfile
 f:c2ca66035c03e3f3f6e6fa2f48ebc41f:perl-http-daemon/.footprint
