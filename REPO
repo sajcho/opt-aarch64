@@ -64,6 +64,7 @@ d:prt-utils
 d:perl-uri
 d:perl-clone
 d:fribidi
+d:translate-shell
 f:17c010af9588693e21027c7a1926e123:perl-io-html/.md5sum
 f:517cb8264059d44907dfe80134e3b0af:perl-io-html/Pkgfile
 f:8215b93726f88842afa4c42cf956907c:perl-io-html/.footprint
@@ -276,3 +277,6 @@ f:1936c667cbb5caafa3799724b2550818:perl-clone/.footprint
 f:28fd79d4d388ea31dd8f9b67c05f92cd:fribidi/.md5sum
 f:84939ff9078a0df230ec859021fe57a0:fribidi/Pkgfile
 f:9f36b3f7ea570ed9ce81608cf9f8a2c3:fribidi/.footprint
+f:b71b956e8f15d42a93ed9c9ce2aebe75:translate-shell/.md5sum
+f:1656e1cbfc2e161d1c7f36fcf89b63c7:translate-shell/Pkgfile
+f:0aef8fafecd3aabc559f30d40e4d3031:translate-shell/.footprint
