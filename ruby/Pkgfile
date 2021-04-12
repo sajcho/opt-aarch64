@@ -4,8 +4,8 @@
 # Depends on:	gmp openssl yaml
 
 name=ruby
-version=3.0.0
-release=1
+version=3.0.1
+release=0
 source=(http://cache.ruby-lang.org/pub/${name}/${version%.*}/${name}-${version}.tar.xz \
 	rubygems-avoid-platform-specific-gems.patch)
 
@@ -25,6 +25,12 @@ build() {
 	make test
 
 	make DESTDIR=$PKG install
+
+	install -d $PKG/usr/share/man/man{1,5}
+	mv $PKG/usr/lib/ruby/3.0/bundler/man/*.1 $PKG/usr/share/man/man1
+	mv $PKG/usr/lib/ruby/3.0/bundler/man/*.5 $PKG/usr/share/man/man5
+
+	rm -r $PKG/usr/lib/ruby/3.0/bundler/man
 
 	find $PKG -iname 'COPYING' -or \
 		-iname 'NEWS*' -or \
