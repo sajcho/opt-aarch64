@@ -2,6 +2,8 @@ drwxr-xr-x	root/root	etc/
 drwxr-xr-x	root/root	etc/sv/
 drwxr-xr-x	root/root	etc/sv/earlyoom/
 -rw-r--r--	root/root	etc/sv/earlyoom/conf
+drwxr-xr-x	root/root	etc/sv/earlyoom/log/
+-rwxr-xr-x	root/root	etc/sv/earlyoom/log/run
 -rwxr-xr-x	root/root	etc/sv/earlyoom/run
 lrwxrwxrwx	root/root	etc/sv/earlyoom/supervise -> /run/runit/supervise.earlyoom
 drwxr-xr-x	root/root	usr/
