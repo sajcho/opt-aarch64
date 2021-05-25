@@ -4,13 +4,12 @@
 # Depends on:	llvm-toolchain
 
 name=rust
-version=1.51.0
+version=1.52.1
 release=0
 
-source=(
-	https://static.rust-lang.org/dist/${name}c-${version}-src.tar.gz \
+source=(https://static.rust-lang.org/dist/${name}c-${version}-src.tar.gz \
 	libexec.patch)
- 
+
 build() {
 	cd "${name}c-${version}-src"
 
@@ -18,10 +17,10 @@ build() {
 	patch -p1 -i $SRC/libexec.patch
 
 cat <<- EOF > $SRC/config.toml
+	changelog-seen = 2
+
 	[llvm]
-	ninja = true
 	targets = "AArch64"
-	experimental-targets = ""
 	link-shared = true
 
 	[install]
@@ -32,18 +31,19 @@ cat <<- EOF > $SRC/config.toml
 	rpath = false
 	codegen-units-std = 1
 	debuginfo-level-std = 0
-	[target.aarch64-unknown-linux-gnu]
-	llvm-config = "/usr/bin/llvm-config"
 
 	[build]
 	target = ["aarch64-unknown-linux-gnu"]
-	docs = false
 	extended = true
-	cargo = "/usr/bin/cargo"
-	rustc = "/usr/bin/rustc"
-	python = "python3"
+	profiler = true
 	vendor = true
+	sanitizers = false
+	docs = false
+	python = "/usr/bin/python3"
 	tools = ["cargo", "rls", "clippy", "miri", "rustfmt", "analysis", "src"]
+
+	[target.aarch64-unknown-linux-gnu]
+	llvm-config = "/usr/bin/llvm-config"
 EOF
 
 	cat $SRC/config.toml
@@ -51,28 +51,24 @@ EOF
 	mkdir "$PKGMK_SOURCE_DIR/rust" || true
 	export CARGO_HOME="$PKGMK_SOURCE_DIR/rust"
 
-	export RUSTFLAGS="$RUSTFLAGS -C link-args=-lffi"
 	export RUST_BACKTRACE=1
+
 	/usr/bin/python3 ./x.py build --config="${SRC}"/config.toml ${JOBS:+-j ${JOBS}}
 
-	export LIBSSH2_SYS_USE_PKG_CONFIG=1
 	DESTDIR=$PKG /usr/bin/python3 ./x.py --config="${SRC}"/config.toml install
-	unset LIBSSH2_SYS_USE_PKG_CONFIG
 
-	#cleanup
+	# Cleanup
 	rm -r $PKG/usr/share/doc
 	rm -r $PKG/usr/share/zsh
 	rm -r $PKG/etc
 	rm $PKG/usr/lib/rustlib/{components,manifest-rustc,rust-installer-version,uninstall.sh}
 
-	# Remove analysis data for libs that weren't installed
-	local file lib
-	while read -rd '' file; do
-		lib="${file%.json}.rlib"
-		lib="${lib/\/analysis\///lib/}"
-		if [[ ! -e $lib ]]; then
-			echo "missing '$lib'"
-			rm -v "$file"
-		fi
-	done < <(find "$PKG/usr/lib/rustlib"  -path '*/analysis/*.json' -print0)
+	rm -r $PKG/usr/lib/rustlib/aarch64-unknown-linux-gnu/analysis
+	rm -r $PKG/usr/lib/rustlib/aarch64-unknown-linux-gnu/lib
+
+	# Not necessary
+	find $PKG -name "LICENSE*" -o \
+		-name "README*" -o \
+		-name "CONTRIBUTING*" | xargs rm
+
 }
