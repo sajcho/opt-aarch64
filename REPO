@@ -51,6 +51,7 @@ d:perl-net-ssleay
 d:rlwrap
 d:perl-http-daemon
 d:nfs-utils
+d:git-lfs
 d:perl-sub-name
 d:json-c
 d:cyrus-sasl
@@ -194,11 +195,11 @@ f:24aa8c89371f67e6b31105844780dbc3:zip/20-zip-3.0-exec-stack.patch
 f:b6c15164a9df3bbe94369ae845bbf1c7:jansson/.md5sum
 f:a5dfc5e529ec96a6eefa2d28c45d9073:jansson/Pkgfile
 f:90d476e25b8118a17e5bca696783d8d9:jansson/.footprint
-f:8cca2138e93ac54febc90e9b5b99586c:rust/.md5sum
+f:16c5d9b7cdd45d6aec85af58857d0dc1:rust/.md5sum
 f:59041d2148f9ac01f0052bbd48253787:rust/libexec.patch
-f:2521066d404842a32eeb1f96f62b4300:rust/Pkgfile
+f:2577e0dd1125267e33731f1eeb8fd57d:rust/Pkgfile
 f:a68528b0fd1e5420b6f851ae579e97a4:rust/.nostrip
-f:7da9b168aff7209487f4b948079c01c7:rust/.footprint
+f:90820c5d2c505fbf641c31a88519bf37:rust/.footprint
 f:acba50279cf11900824a44dffa343db7:perl-test-base/.md5sum
 f:a40dca80e726344b2ccaf86eed77894b:perl-test-base/Pkgfile
 f:29ed54358845f238068e5d3179d3c263:perl-test-base/.footprint
@@ -262,6 +263,10 @@ f:970a684d9a6fc41b23737fd7bdade3e7:nfs-utils/nfs-server.run
 f:3f3972e3357a6414034d4a5825397f8a:nfs-utils/start-statd
 f:586466b00be54a974f3dab28ff71b41e:nfs-utils/nfs-server.finish
 f:e85d57cc8d4e823cf7745ce40c2b74cd:nfs-utils/.footprint
+f:7704474ded23fcbfe8b77ffe2d3fb13b:git-lfs/.md5sum
+f:87a43d348014e9eff4c344fe3dfa864c:git-lfs/post-install
+f:cf51bff67ab00451c9af4def07324d2f:git-lfs/Pkgfile
+f:f0a41aabae871f5ecfd021a18922bec7:git-lfs/.footprint
 f:f1109577484003261ba8d80a0051815d:perl-sub-name/.md5sum
 f:9d67e1d3c4ef9a045dd6d0c071127ded:perl-sub-name/Pkgfile
 f:0c19e699fdb522686fbc9344453cdb5a:perl-sub-name/.footprint
