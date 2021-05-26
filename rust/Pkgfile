@@ -70,5 +70,4 @@ EOF
 	find $PKG -name "LICENSE*" -o \
 		-name "README*" -o \
 		-name "CONTRIBUTING*" | xargs rm
-
 }
