@@ -13,7 +13,7 @@ build() {
 	autoreconf -fiv
 
 	./configure \
-		--prefix=/usr 
+		--prefix=/usr
 
 	make
 
