@@ -22,5 +22,5 @@ build() {
 	make DESTDIR=$PKG install
 
 	find $PKG -name 'perllocal.pod' -or \
-	-name '.packlist' | xargs rm
+		-name '.packlist' | xargs rm
 }
