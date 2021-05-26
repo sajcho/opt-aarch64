@@ -197,7 +197,7 @@ f:a5dfc5e529ec96a6eefa2d28c45d9073:jansson/Pkgfile
 f:90d476e25b8118a17e5bca696783d8d9:jansson/.footprint
 f:16c5d9b7cdd45d6aec85af58857d0dc1:rust/.md5sum
 f:59041d2148f9ac01f0052bbd48253787:rust/libexec.patch
-f:2577e0dd1125267e33731f1eeb8fd57d:rust/Pkgfile
+f:19fb75543dae35dc4a086659525bf3e8:rust/Pkgfile
 f:a68528b0fd1e5420b6f851ae579e97a4:rust/.nostrip
 f:90820c5d2c505fbf641c31a88519bf37:rust/.footprint
 f:acba50279cf11900824a44dffa343db7:perl-test-base/.md5sum
@@ -319,7 +319,7 @@ f:083e2d5b4ccd053cdf2be36932b5eb2b:perl-encode-locale/.md5sum
 f:6c256e2b52c2303ffc69925dedb23558:perl-encode-locale/Pkgfile
 f:b8a97af95f23b30a40c6e139fa7edceb:perl-encode-locale/.footprint
 f:ecbf6536477370b1f26871cf7c1ad2d6:perl-file-listing/.md5sum
-f:edce56c6e836076bd0aa14968393a9d1:perl-file-listing/Pkgfile
+f:7737423de5ec74722d50b8323fe98b08:perl-file-listing/Pkgfile
 f:6dfb6f0607091266dbee2d3f11ef795a:perl-file-listing/.footprint
 f:34386c08da533998fb0ebd52e59f1dba:earlyoom/.md5sum
 f:a8b4eb92056e5cc16300a757e1a668d0:earlyoom/earlyoom.1
@@ -353,7 +353,7 @@ f:b71b956e8f15d42a93ed9c9ce2aebe75:translate-shell/.md5sum
 f:1656e1cbfc2e161d1c7f36fcf89b63c7:translate-shell/Pkgfile
 f:0aef8fafecd3aabc559f30d40e4d3031:translate-shell/.footprint
 f:cd3d9636d3d77cfee5509e35984a08e6:rpcsvc-proto/.md5sum
-f:5f906a51766f71de5fd1c2ec442633aa:rpcsvc-proto/Pkgfile
+f:905ca6ae21714b5a6f0f594657b45820:rpcsvc-proto/Pkgfile
 f:872247806ba3d91caec018db7cdd4134:rpcsvc-proto/.footprint
 f:d2c578946458df946e22c7847669687a:krb5/.md5sum
 f:ce463f6ba757ce72461330e45f65dfd3:krb5/Pkgfile
