@@ -68,7 +68,6 @@ d:perl-test-requires
 d:dtc
 d:perl-encode-locale
 d:perl-file-listing
-d:earlyoom
 d:swig
 d:perl-yaml
 d:prt-utils
@@ -321,13 +320,6 @@ f:b8a97af95f23b30a40c6e139fa7edceb:perl-encode-locale/.footprint
 f:ecbf6536477370b1f26871cf7c1ad2d6:perl-file-listing/.md5sum
 f:7737423de5ec74722d50b8323fe98b08:perl-file-listing/Pkgfile
 f:6dfb6f0607091266dbee2d3f11ef795a:perl-file-listing/.footprint
-f:34386c08da533998fb0ebd52e59f1dba:earlyoom/.md5sum
-f:a8b4eb92056e5cc16300a757e1a668d0:earlyoom/earlyoom.1
-f:2e2ec52263f5285475993ee406ad714d:earlyoom/Pkgfile
-f:6ea597beb4ab89217e2c7b9fb79969a9:earlyoom/log-earlyoom.run
-f:5fe401d311c37b253d927fdf318622c5:earlyoom/earlyoom.conf
-f:97d8d6cec0ad1ded9de07230fb4b36b7:earlyoom/earlyoom.run
-f:56f567d93b4b7fb588865d28b2e25da3:earlyoom/.footprint
 f:f775b9f6f9bc2f438ac919188bad4069:swig/.md5sum
 f:9b0c361afac915db67fbdbc4247a460e:swig/Pkgfile
 f:04d5da180e5b204334f8d9f924f97fe6:swig/.footprint
