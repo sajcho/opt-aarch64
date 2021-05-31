@@ -3,6 +3,7 @@ d:perl-test-fatal
 d:perl-test-yaml
 d:perl-xml-parser
 d:perl-http-negotiate
+d:tcl
 d:perl-module-build-tiny
 d:perl-libwww
 d:libassuan
@@ -26,6 +27,7 @@ d:perl-b-cow
 d:yaml
 d:perl-io-socket-ssl
 d:perl-lwp-mediatypes
+d:dejagnu
 d:perl-www-robotrules
 d:brotli
 d:perl-devel-checkbin
@@ -35,6 +37,7 @@ d:perl-http-date
 d:zip
 d:jansson
 d:rust
+d:expect
 d:perl-test-base
 d:nftables
 d:perl-test-requiresinternet
@@ -50,6 +53,7 @@ d:npth
 d:perl-net-ssleay
 d:rlwrap
 d:perl-http-daemon
+d:mc
 d:nfs-utils
 d:git-lfs
 d:perl-sub-name
@@ -72,6 +76,7 @@ d:swig
 d:perl-yaml
 d:prt-utils
 d:perl-uri
+d:libssh2
 d:libnftnl
 d:perl-clone
 d:fribidi
@@ -93,6 +98,9 @@ f:68bf405e2b9a0b7456f79ed57aa19614:perl-xml-parser/.footprint
 f:6dc4282b2ed5f2ef27f62e6bddb55f25:perl-http-negotiate/.md5sum
 f:e57ff4fecaef957a7b54ed761497feb8:perl-http-negotiate/Pkgfile
 f:adbed8ef6134f26876f4f3b19a4b31b3:perl-http-negotiate/.footprint
+f:2a1799eee56ca50cf8031115ce62ec07:tcl/.md5sum
+f:3468027f6250b1ece74a36defba134db:tcl/Pkgfile
+f:13a13789164744e195286d5fa39f20dd:tcl/.footprint
 f:4425d7086064bb32bd8438e2b662cee5:perl-module-build-tiny/.md5sum
 f:c9224780ca3b5d21aed379143c5eaba5:perl-module-build-tiny/Pkgfile
 f:6841b7b5f32472b7ce57efb3699d08c0:perl-module-build-tiny/.footprint
@@ -164,6 +172,9 @@ f:26b03319d5bc2648482b2b1b7ad5cc93:perl-io-socket-ssl/.footprint
 f:d3812071dddf623530497f4ecfaa4e63:perl-lwp-mediatypes/.md5sum
 f:37b071de8f06dcf4748f1a863e4fbaff:perl-lwp-mediatypes/Pkgfile
 f:54aa6ac57f6adb81acc7ea2c3f9e6faf:perl-lwp-mediatypes/.footprint
+f:04c6f6c7d2ed33a24ce63145a7e011b6:dejagnu/.md5sum
+f:cb72b4569519682fdf8e4ad0a629db2e:dejagnu/Pkgfile
+f:9b776704dcc3eb800c4009f8e89f0850:dejagnu/.footprint
 f:6e2d803985a297b3851d01026d6d7173:perl-www-robotrules/.md5sum
 f:243b7b075fd91e276a783d87b75d0584:perl-www-robotrules/Pkgfile
 f:621640954697cc19ed67d107a3ed4f39:perl-www-robotrules/.footprint
@@ -199,6 +210,9 @@ f:59041d2148f9ac01f0052bbd48253787:rust/libexec.patch
 f:19fb75543dae35dc4a086659525bf3e8:rust/Pkgfile
 f:a68528b0fd1e5420b6f851ae579e97a4:rust/.nostrip
 f:90820c5d2c505fbf641c31a88519bf37:rust/.footprint
+f:2b4aa26e64d4c7202a2b40b8f387d9e7:expect/.md5sum
+f:6f6a292c58a2e15ce321d7f4c9ae6b9b:expect/Pkgfile
+f:09206503e97d5a6ab44037bd968b815d:expect/.footprint
 f:acba50279cf11900824a44dffa343db7:perl-test-base/.md5sum
 f:a40dca80e726344b2ccaf86eed77894b:perl-test-base/Pkgfile
 f:29ed54358845f238068e5d3179d3c263:perl-test-base/.footprint
@@ -249,6 +263,9 @@ f:a4c04dfd8b67a4672469f50a908b5167:rlwrap/.footprint
 f:c8bedf84c37badfb32e841f3375974f0:perl-http-daemon/.md5sum
 f:fa332a3d20465675d0114471d5a2a83b:perl-http-daemon/Pkgfile
 f:c2ca66035c03e3f3f6e6fa2f48ebc41f:perl-http-daemon/.footprint
+f:98bea63a5d8a449f155e8d433627c544:mc/.md5sum
+f:244479f073434ab54cb277b7d58a5d22:mc/Pkgfile
+f:1453e399fbd632361167215faacdd0d7:mc/.footprint
 f:c3224f7f17df79020b82b47ceee7e5dd:nfs-utils/.md5sum
 f:d1eeb3a18474949840dd4185ea976b63:nfs-utils/rpcidmapd.run
 f:c9d2b0ac4e70a05add08d86d43dc2bf3:nfs-utils/Pkgfile
@@ -332,6 +349,10 @@ f:e52165bc4afc1cb7a2b5f858359807cd:prt-utils/.footprint
 f:4ada67655f528d0ab9a957e92cb9c16e:perl-uri/.md5sum
 f:78631637fab1fe94843a5dd2d186afd0:perl-uri/Pkgfile
 f:ca7fc943ae803000fdbc8b74c10a4d27:perl-uri/.footprint
+f:02fb8494093bcf3aca5abbea376ec390:libssh2/.md5sum
+f:78f3176ed9ad2d08b9a8e2600554676e:libssh2/Pkgfile
+f:acf157100fbe56fca4f199bbb4c9f574:libssh2/CVE-2019-17498.patch
+f:b2c5c5a1c81a2fb976d81532ffbee326:libssh2/.footprint
 f:55e3d526edd94738dbb263e548edbd3f:libnftnl/.md5sum
 f:6b0c833feeb8de4aecc38403f7737825:libnftnl/Pkgfile
 f:19394a9096237889e92d9e7dec90a436:libnftnl/.footprint
