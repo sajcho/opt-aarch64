@@ -75,6 +75,7 @@ d:perl-file-listing
 d:swig
 d:perl-yaml
 d:prt-utils
+d:glib
 d:perl-uri
 d:libssh2
 d:libnftnl
@@ -346,6 +347,12 @@ f:f02d085a74e8ca56475b93ba2d3a47ae:perl-yaml/.footprint
 f:b235dfb6ff2f646e6257f77c802737de:prt-utils/.md5sum
 f:5ff00c159e6103f4bde802353bc19b8a:prt-utils/Pkgfile
 f:e52165bc4afc1cb7a2b5f858359807cd:prt-utils/.footprint
+f:00bbe7ee72b7aa9df14cc20ff13834af:glib/.md5sum
+f:e5f74be27525658dae59401455944186:glib/post-install
+f:fc5627ef37927f0d24fe9ff4df351c0f:glib/Pkgfile
+f:08b95225e98724a67fb2c765acea8ef9:glib/deprecated-no-warn.patch
+f:ebd1ee90e4f81e6c6cc03c29ab8b6bea:glib/gschemas.compiled
+f:fe4671484e7d4770d2c000e32dec7121:glib/.footprint
 f:4ada67655f528d0ab9a957e92cb9c16e:perl-uri/.md5sum
 f:78631637fab1fe94843a5dd2d186afd0:perl-uri/Pkgfile
 f:ca7fc943ae803000fdbc8b74c10a4d27:perl-uri/.footprint
