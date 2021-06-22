@@ -5,7 +5,7 @@
 
 name=rust
 version=1.52.1
-release=0
+release=1
 
 source=(https://static.rust-lang.org/dist/${name}c-${version}-src.tar.gz \
 	libexec.patch)
@@ -20,7 +20,6 @@ cat <<- EOF > $SRC/config.toml
 	changelog-seen = 2
 
 	[llvm]
-	targets = "AArch64"
 	link-shared = true
 
 	[install]
@@ -63,11 +62,13 @@ EOF
 	rm -r $PKG/etc
 	rm $PKG/usr/lib/rustlib/{components,manifest-rustc,rust-installer-version,uninstall.sh}
 
-	rm -r $PKG/usr/lib/rustlib/aarch64-unknown-linux-gnu/analysis
-	rm -r $PKG/usr/lib/rustlib/aarch64-unknown-linux-gnu/lib
+	rm $PKG/usr/lib/{libstd-*,libtest-*}
+	ln -srft $PKG/usr/lib $PKG/usr/lib/rustlib/aarch64-unknown-linux-gnu/lib/*.so
 
 	# Not necessary
 	find $PKG -name "LICENSE*" -o \
 		-name "README*" -o \
-		-name "CONTRIBUTING*" | xargs rm
+		-name "CONTRIBUTING*" -o \
+		-name "*.log" -o \
+		-name "manifest-*" | xargs rm
 }
