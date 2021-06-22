@@ -208,9 +208,9 @@ f:a5dfc5e529ec96a6eefa2d28c45d9073:jansson/Pkgfile
 f:90d476e25b8118a17e5bca696783d8d9:jansson/.footprint
 f:16c5d9b7cdd45d6aec85af58857d0dc1:rust/.md5sum
 f:59041d2148f9ac01f0052bbd48253787:rust/libexec.patch
-f:19fb75543dae35dc4a086659525bf3e8:rust/Pkgfile
+f:b838da4c28784fb2d02b45929ad4fcb7:rust/Pkgfile
 f:a68528b0fd1e5420b6f851ae579e97a4:rust/.nostrip
-f:90820c5d2c505fbf641c31a88519bf37:rust/.footprint
+f:dc9f66df414956ad875fca2167b3d529:rust/.footprint
 f:2b4aa26e64d4c7202a2b40b8f387d9e7:expect/.md5sum
 f:6f6a292c58a2e15ce321d7f4c9ae6b9b:expect/Pkgfile
 f:09206503e97d5a6ab44037bd968b815d:expect/.footprint
