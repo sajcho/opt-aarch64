@@ -1,0 +1,34 @@
+# Description:	JavaScript runtime built on V8 engine - LTS version
+# URL:		http://nodejs.org/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	brotli c-ares icu libuv openssl samurai zlib
+
+name=nodejs
+version=16.3.0
+release=0
+source=(https://nodejs.org/dist/v${version}/node-v${version}.tar.xz)
+
+build() {
+	cd node-v${version}
+
+	# Add defines recommended in libuv readme.
+	export CFLAGS="$CFLAGS -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64"
+	export CXXFLAGS="$CXXFLAGS -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64"
+
+	./configure \
+		--prefix=/usr \
+		--shared-brotli \
+		--shared-zlib \
+		--shared-libuv \
+		--shared-openssl \
+		--shared-cares \
+		--with-intl=system-icu \
+		--without-npm \
+		--ninja
+
+	make
+
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/usr/share/doc
+}
