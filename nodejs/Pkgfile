@@ -4,7 +4,7 @@
 # Depends on:	brotli c-ares icu libuv openssl samurai zlib
 
 name=nodejs
-version=16.3.0
+version=16.4.0
 release=0
 source=(https://nodejs.org/dist/v${version}/node-v${version}.tar.xz)
 
