@@ -1,12 +1,12 @@
 # Description:	Perl extension for using OpenSSL
 # URL:		https://metacpan.org/release/Net-SSLeay
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	openssl perl zlib
+# Depends on:	openssl zlib
 
 name=perl-net-ssleay
 _realname=Net-SSLeay
 version=1.88
-release=0
+release=1
 source=(https://cpan.metacpan.org/authors/id/C/CH/CHRISN/${_realname}-${version}.tar.gz)
 
 build() {
