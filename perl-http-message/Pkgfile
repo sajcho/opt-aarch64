@@ -1,12 +1,12 @@
 # Description:	HTTP style messages
 # URL:		https://metacpan.org/pod/HTTP::Message
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	perl-encode-locale perl-http-date perl-io-html perl-lwp-mediatypes perl-try-tiny perl-uri
+# Depends on:	perl-encode-locale perl-http-date perl-io-html perl-lwp-mediatypes perl-uri
 
 name=perl-http-message
 _realname=HTTP-Message
 version=6.27
-release=0
+release=1
 source=(https://cpan.metacpan.org/authors/id/O/OA/OALDERS/${_realname}-${version}.tar.gz)
 
 build() {
