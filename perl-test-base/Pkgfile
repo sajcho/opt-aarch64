@@ -1,12 +1,12 @@
 # Description:	A Data Driven Testing Framework
 # URL:		https://metacpan.org/release/Test-Base/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	perl-algorithm-diff perl-spiffy perl-text-diff
+# Depends on:	perl-spiffy perl-text-diff
 
 name=perl-test-base
 _realname=Test-Base
 version=0.89
-release=0
+release=1
 source=(https://cpan.metacpan.org/authors/id/I/IN/INGY/${_realname}-${version}.tar.gz)
 
 build() {
