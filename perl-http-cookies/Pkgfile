@@ -1,12 +1,12 @@
 # Description:	HTTP cookie jars
 # URL:		https://metacpan.org/pod/HTTP::Cookies
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	perl-http-date perl-http-message
+# Depends on:	perl-http-message
 
 name=perl-http-cookies
 _realname=HTTP-Cookies
 version=6.10
-release=0
+release=1
 source=(https://cpan.metacpan.org/authors/id/O/OA/OALDERS/${_realname}-${version}.tar.gz)
 
 build() {
