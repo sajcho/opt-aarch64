@@ -1,11 +1,11 @@
 # Description:	Netfilter tables userspace tools
 # URL:		https://netfilter.org/projects/nftables
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	bison flex gmp jansson libmnl libnftnl ncurses readline
+# Depends on:	bison flex gmp jansson libnftnl readline
 
 name=nftables
 version=0.9.8
-release=0
+release=1
 source=(https://netfilter.org/projects/${name}/files/${name}-${version}.tar.bz2 \
 	nftables.conf \
 	nftables.finish \
