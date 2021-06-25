@@ -1,11 +1,11 @@
 # Description:	The Tcl scripting language.
 # URL:		https://www.tcl.tk/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	sqlite3 zlib
+# Depends on:	sqlite3
 
 name=tcl
 version=8.6.11
-release=0
+release=1
 source=(https://downloads.sourceforge.net/project/${name}/Tcl/${version}/${name}${version}-src.tar.gz)
 
 build() {
