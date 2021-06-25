@@ -1,11 +1,11 @@
 # Description:	Simple Authentication and Security Layer
 # URL:		https://www.cyrusimap.org/sasl/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	db linux-pam openssl sqlite3
+# Depends on:	linux-pam openssl sqlite3
 
 name=cyrus-sasl
 version=2.1.27
-release=0
+release=1
 source=(https://github.com/cyrusimap/${name}/releases/download/${name}-${version}/${name}-${version}.tar.gz \
 	cyrus-sasl-2.1.27-CVE-2019-19906.patch \
 	cyrus-sasl-2.1.27-doc_fixes-1.patch \
