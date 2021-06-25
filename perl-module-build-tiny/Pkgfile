@@ -1,12 +1,12 @@
 # Description:	A tiny replacement for Module::Build
 # URL:		https://metacpan.org/release/Module-Build-Tiny/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	perl-extutils-config perl-extutils-helpers perl-extutils-installpaths
+# Depends on:	perl-extutils-helpers perl-extutils-installpaths
 
 name=perl-module-build-tiny
 _realname=Module-Build-Tiny
 version=0.039
-release=0
+release=1
 source=(https://cpan.metacpan.org/authors/id/L/LE/LEONT/${_realname}-${version}.tar.gz)
 
 build() {
