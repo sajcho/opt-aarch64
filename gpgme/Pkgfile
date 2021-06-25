@@ -1,11 +1,11 @@
 # Description:	A C, CXX, and lisp API for GnuPG.
 # URL:		https://www.gnupg.org/related_software/gpgme/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	gnupg libgpg-error libassuan python3 python3-setuptools swig
+# Depends on:	gnupg python3-setuptools swig
 
 name=gpgme
 version=1.15.1
-release=0
+release=1
 source=(https://www.gnupg.org/ftp/gcrypt/${name}/${name}-${version}.tar.bz2)
 
 build() {
