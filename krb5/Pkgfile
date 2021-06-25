@@ -1,11 +1,11 @@
 # Description:	Network Authentication Protocol
 # URL:		https://web.mit.edu/kerberos
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	e2fsprogs keyutils openssl
+# Depends on:	e2fsprogs keyutils
 
 name=krb5
 version=1.19.1
-release=0
+release=1
 source=(https://kerberos.org/dist/${name}/${version::4}/${name}-${version}.tar.gz \
 	krb5.conf \
 	kadmind.run \
