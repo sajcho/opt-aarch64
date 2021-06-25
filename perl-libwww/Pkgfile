@@ -1,12 +1,12 @@
 # Description:	Perl module - World Wide Web library
 # URL:		https://metacpan.org/author/MSCHILLI
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	perl-file-listing perl-html-parser perl-http-cookies perl-http-daemon perl-http-negotiate perl-net-http perl-test-requiresinternet perl-try-tiny perl-www-robotrules
+# Depends on:	perl-file-listing perl-html-parser perl-http-cookies perl-http-daemon perl-http-negotiate perl-net-http perl-test-requiresinternet perl-www-robotrules
 
 name=perl-libwww
 _realname=libwww-perl
 version=6.52
-release=0
+release=1
 source=(https://cpan.metacpan.org/authors/id/O/OA/OALDERS/${_realname}-${version}.tar.gz)
 
 build() {
