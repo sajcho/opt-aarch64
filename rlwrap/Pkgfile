@@ -5,8 +5,8 @@
 
 name=rlwrap
 version=0.45
-release=0
-source=(https://github.com/hanslub42/${name}/archive/v${version}.tar.gz)
+release=1
+source=(https://github.com/hanslub42/${name}/archive/v${version}/${name}-${version}.tar.gz)
 
 build() {
 	cd ${name}-${version}
