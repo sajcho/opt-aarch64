@@ -51,6 +51,7 @@ d:libpcap
 d:perl-http-cookies
 d:nmap
 d:pinentry
+d:asciidoctor
 d:npth
 d:perl-net-ssleay
 d:rlwrap
@@ -216,11 +217,12 @@ f:24aa8c89371f67e6b31105844780dbc3:zip/20-zip-3.0-exec-stack.patch
 f:b6c15164a9df3bbe94369ae845bbf1c7:jansson/.md5sum
 f:a5dfc5e529ec96a6eefa2d28c45d9073:jansson/Pkgfile
 f:90d476e25b8118a17e5bca696783d8d9:jansson/.footprint
-f:16c5d9b7cdd45d6aec85af58857d0dc1:rust/.md5sum
+f:673f2eb8ba4766fbae304d1614e9610c:rust/.md5sum
 f:59041d2148f9ac01f0052bbd48253787:rust/libexec.patch
-f:b838da4c28784fb2d02b45929ad4fcb7:rust/Pkgfile
+f:1cee792dbcf5401425c4863431e13034:rust/Pkgfile
+f:58ea594977ff7f562e492ee2145b90f0:rust/1.53.0-miri-vergen.patch
 f:a68528b0fd1e5420b6f851ae579e97a4:rust/.nostrip
-f:dc9f66df414956ad875fca2167b3d529:rust/.footprint
+f:6b59473954d911560b6f83560e4ce982:rust/.footprint
 f:2b4aa26e64d4c7202a2b40b8f387d9e7:expect/.md5sum
 f:6f6a292c58a2e15ce321d7f4c9ae6b9b:expect/Pkgfile
 f:09206503e97d5a6ab44037bd968b815d:expect/.footprint
@@ -270,6 +272,9 @@ f:57befa6df49161d3b16ee4925f361537:pinentry/.md5sum
 f:baaa29a14c0809dc59af0ff43b9aedef:pinentry/post-install
 f:c9021e40a562e937533e27a6a0241ab6:pinentry/Pkgfile
 f:567b986e0e96da796032ffbf87858c4b:pinentry/.footprint
+f:987923b8744cad766ec5007cc34f8b64:asciidoctor/.md5sum
+f:9887076974d4497f592833eb9f20977a:asciidoctor/Pkgfile
+f:1ddc7a9207a0968f76e044a04a5a4cc0:asciidoctor/.footprint
 f:2dc9d626228874dbc79f33869eda7ed6:npth/.md5sum
 f:d8f21e38114610c1371076714bae7105:npth/Pkgfile
 f:a1be58dc7c7c6c9b10dbedb471c05b33:npth/.footprint
