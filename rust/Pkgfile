@@ -4,11 +4,12 @@
 # Depends on:	llvm-toolchain
 
 name=rust
-version=1.52.1
-release=1
+version=1.53.0
+release=0
 
 source=(https://static.rust-lang.org/dist/${name}c-${version}-src.tar.gz \
-	libexec.patch)
+	libexec.patch \
+	1.53.0-miri-vergen.patch)
 
 build() {
 	cd "${name}c-${version}-src"
@@ -16,10 +17,15 @@ build() {
 	# Patch cargo so credential helpers are in /usr/lib instead of /usr/libexec
 	patch -p1 -i $SRC/libexec.patch
 
+	# https://github.com/rust-lang/rust/issues/84182
+	patch -p1 -i $SRC/1.53.0-miri-vergen.patch
+
 cat <<- EOF > $SRC/config.toml
 	changelog-seen = 2
+	profile = "user"
 
 	[llvm]
+	ninja = true
 	link-shared = true
 
 	[install]
@@ -28,8 +34,6 @@ cat <<- EOF > $SRC/config.toml
 	[rust]
 	channel = "stable"
 	rpath = false
-	codegen-units-std = 1
-	debuginfo-level-std = 0
 
 	[build]
 	target = ["aarch64-unknown-linux-gnu"]
@@ -50,7 +54,7 @@ EOF
 	mkdir "$PKGMK_SOURCE_DIR/rust" || true
 	export CARGO_HOME="$PKGMK_SOURCE_DIR/rust"
 
-	export RUST_BACKTRACE=1
+	export RUST_BACKTRACE=full
 
 	/usr/bin/python3 ./x.py build --config="${SRC}"/config.toml ${JOBS:+-j ${JOBS}}
 

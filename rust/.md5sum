@@ -1,2 +1,3 @@
+58ea594977ff7f562e492ee2145b90f0  1.53.0-miri-vergen.patch
 59041d2148f9ac01f0052bbd48253787  libexec.patch
-dd19260cfdd080093f4c3a1bf88021ff  rustc-1.52.1-src.tar.gz
+860509df4967310b5ab24735d3447a88  rustc-1.53.0-src.tar.gz
