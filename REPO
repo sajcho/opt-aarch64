@@ -174,9 +174,9 @@ f:f1a7a2044f61b0875e01a2d22f2473a4:perl-b-cow/.footprint
 f:a6b369f1b1965a56167fc909c0696185:yaml/.md5sum
 f:16789530941a4158f952d44416c346d3:yaml/Pkgfile
 f:ca9c5a6090ba3b199758360c9114d854:yaml/.footprint
-f:0ff2fed418c9dda84496ccbfe968a2e7:nspr/.md5sum
+f:5c2c33f2a21747f1ace3d98f8a24fb15:nspr/.md5sum
 f:2083f33e11dfe15feb7bf9bca0f6c44b:nspr/nspr.pc.in
-f:7e7fe262e8d8dd5f195ed8cd4bebcd70:nspr/Pkgfile
+f:6dce78d2e733272f2600711d4b78bbb8:nspr/Pkgfile
 f:6564cbcadceb398176d3cef4b884f3f6:nspr/.footprint
 f:ab45881e2a63c0154291586279b6137e:perl-io-socket-ssl/.md5sum
 f:eec41981b31259e949da24a0d1efd250:perl-io-socket-ssl/Pkgfile
