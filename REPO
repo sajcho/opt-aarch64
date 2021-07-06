@@ -106,6 +106,7 @@ d:libssh2
 d:libnftnl
 d:perl-clone
 d:python3-markupsafe
+d:python3-mako
 d:python3-attrs
 d:fribidi
 d:translate-shell
@@ -478,6 +479,9 @@ f:1936c667cbb5caafa3799724b2550818:perl-clone/.footprint
 f:5445dfb2b8bc1531d7dd502e23e70b40:python3-markupsafe/.md5sum
 f:b1f3c866f19205097dbcdee78d55a8bb:python3-markupsafe/Pkgfile
 f:78656157448d3a1a3e41e772b62a20d5:python3-markupsafe/.footprint
+f:8eeb73bc84cba43d94e191ff1f81d719:python3-mako/.md5sum
+f:a02cda73c19f569e0410830af8cd5e38:python3-mako/Pkgfile
+f:6051852c93e924fdd2ba872e2ea52b78:python3-mako/.footprint
 f:611b1605d5d41fcc9e7343ce33b54874:python3-attrs/.md5sum
 f:892e22cfc216914ccb5e19aaaf539adb:python3-attrs/Pkgfile
 f:c45a3f6327825d9f086f19c2a484d6a1:python3-attrs/.footprint
