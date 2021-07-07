@@ -1,30 +1,26 @@
 # Description:	A C, CXX, and lisp API for GnuPG.
 # URL:		https://www.gnupg.org/related_software/gpgme/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	gnupg python3-setuptools swig
+# Depends on:	gnupg
 
 name=gpgme
-version=1.15.1
-release=1
+version=1.16.0
+release=0
 source=(https://www.gnupg.org/ftp/gcrypt/${name}/${name}-${version}.tar.bz2)
 
 build() {
 	cd ${name}-${version}
 
 	./configure \
-		--build=aarch64-unknown-linux-gnu \
-		--host=aarch64-unknown-linux-gnu \
 		--prefix=/usr \
-		--enable-languages='cl cpp python'
+		--enable-languages='c cl cpp'
 
 	make
-
-	make check
 
 	make DESTDIR=$PKG install
 
 	install -d $PKG/etc/gpgme
-	echo 'cl cpp python' > $PKG/etc/gpgme/base
+	echo 'c cl cpp' > $PKG/etc/gpgme/base
 
 	rm -r $PKG/usr/share/info
 }
