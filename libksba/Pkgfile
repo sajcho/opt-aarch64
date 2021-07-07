@@ -4,7 +4,7 @@
 # Depends on:	libgpg-error
 
 name=libksba
-version=1.4.0
+version=1.6.0
 release=0
 source=(https://www.gnupg.org/ftp/gcrypt/${name}/${name}-${version}.tar.bz2)
 
