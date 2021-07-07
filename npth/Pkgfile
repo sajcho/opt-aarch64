@@ -4,8 +4,8 @@
 
 name=npth
 version=1.6
-release=0
-source=(ftp://ftp.gnupg.org/gcrypt/npth/npth-${version}.tar.bz2)
+release=1
+source=(https://gnupg.org/ftp/gcrypt/${name}/${name}-${version}.tar.bz2)
 
 build() {
 	cd ${name}-${version}
