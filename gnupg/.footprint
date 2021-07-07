@@ -1,12 +1,11 @@
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
--rwxr-xr-x	root/root	usr/bin/dirmngr
--rwxr-xr-x	root/root	usr/bin/dirmngr-client
 -rwxr-xr-x	root/root	usr/bin/gpg
 -rwxr-xr-x	root/root	usr/bin/gpg-agent
+-rwxr-xr-x	root/root	usr/bin/gpg-card
 -rwxr-xr-x	root/root	usr/bin/gpg-connect-agent
+-rwxr-xr-x	root/root	usr/bin/gpg-wks-client
 -rwxr-xr-x	root/root	usr/bin/gpg-wks-server
--rwxr-xr-x	root/root	usr/bin/gpg-zip
 lrwxrwxrwx	root/root	usr/bin/gpg2 -> gpg
 -rwxr-xr-x	root/root	usr/bin/gpgconf
 -rwxr-xr-x	root/root	usr/bin/gpgparsemail
@@ -20,9 +19,11 @@ lrwxrwxrwx	root/root	usr/bin/gpgv2 -> gpgv
 -rwxr-xr-x	root/root	usr/bin/watchgnupg
 drwxr-xr-x	root/root	usr/lib/
 -rwxr-xr-x	root/root	usr/lib/gpg-check-pattern
+-rwxr-xr-x	root/root	usr/lib/gpg-pair-tool
 -rwxr-xr-x	root/root	usr/lib/gpg-preset-passphrase
 -rwxr-xr-x	root/root	usr/lib/gpg-protect-tool
 -rwxr-xr-x	root/root	usr/lib/gpg-wks-client
+-rwxr-xr-x	root/root	usr/lib/keyboxd
 -rwxr-xr-x	root/root	usr/lib/scdaemon
 drwxr-xr-x	root/root	usr/sbin/
 -rwxr-xr-x	root/root	usr/sbin/addgnupghome
@@ -30,11 +31,12 @@ drwxr-xr-x	root/root	usr/sbin/
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/gnupg/
 -rw-r--r--	root/root	usr/share/gnupg/distsigkey.gpg
--rw-r--r--	root/root	usr/share/gnupg/sks-keyservers.netCA.pem
 drwxr-xr-x	root/root	usr/share/man/
 drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/dirmngr-client.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/gpg-agent.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/gpg-card.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/gpg-check-pattern.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/gpg-connect-agent.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/gpg-preset-passphrase.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/gpg-wks-client.1.gz
@@ -46,7 +48,6 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/gpgtar.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/gpgv.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/scdaemon.1.gz
--rw-r--r--	root/root	usr/share/man/man1/symcryptrun.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/watchgnupg.1.gz
 drwxr-xr-x	root/root	usr/share/man/man7/
 -rw-r--r--	root/root	usr/share/man/man7/gnupg.7.gz

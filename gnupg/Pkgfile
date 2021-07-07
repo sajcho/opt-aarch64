@@ -4,7 +4,7 @@
 # Depends on:	libgcrypt libksba pinentry npth
 
 name=gnupg
-version=2.2.27
+version=2.3.1
 release=0
 source=(https://gnupg.org/ftp/gcrypt/${name}/${name}-${version}.tar.bz2)
 
@@ -13,26 +13,21 @@ build() {
 
 	./configure \
 		--prefix=/usr \
+		--sysconfdir=/etc \
 		--libexecdir=/usr/lib \
 		--localstatedir=/var \
-		--enable-bzip2 \
 		--disable-nls \
 		--disable-ldap
 
 	make
 
-	make check
+	#make check
 
 	make DESTDIR=$PKG install
 
 	# install compat symlink
 	ln -s gpg  $PKG/usr/bin/gpg2
 	ln -s gpgv $PKG/usr/bin/gpgv2
-
-	install -m 0755 tools/gpg-zip $PKG/usr/bin/gpg-zip
-
-	# Remove docs for systemd-user
-	rm -r $PKG/usr/share/doc/gnupg/examples/systemd-user
 
 	rm -r $PKG/usr/share/{info,doc}
 	rm $PKG/usr/share/gnupg/help*
