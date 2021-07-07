@@ -4,9 +4,10 @@
 # Depends on:	libassuan libcap util-linux
 
 name=pinentry
-version=1.1.0
+version=1.1.1
 release=0
-source=(https://www.gnupg.org/ftp/gcrypt/${name}/${name}-${version}.tar.bz2)
+source=(https://www.gnupg.org/ftp/gcrypt/${name}/${name}-${version}.tar.bz2 \
+	pinentry)
 
 build() {
 	cd ${name}-${version}
@@ -20,10 +21,13 @@ build() {
 
 	make
 
-	make check
+	#make check
 
 	make DESTDIR=$PKG install
 
+	# We use pinentry wrapper
 	rm $PKG/usr/bin/pinentry
+	install -m 0755 $SRC/pinentry $PKG/usr/bin/pinentry
+
 	rm -r $PKG/usr/share
 }
