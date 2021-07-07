@@ -325,8 +325,8 @@ f:f317927d7615a289fa3718715e8915be:perl-extutils-helpers/.md5sum
 f:18d64b47b47dcba5e6ebb590341c61c1:perl-extutils-helpers/Pkgfile
 f:d3953a2e97ede9a75dbd5d35e6f4a4f4:perl-extutils-helpers/.footprint
 f:99a59556470ba75a4300de9ed518e087:gpgme/.md5sum
-f:938a58a309d5ef5a57f6f3b1c214179a:gpgme/Pkgfile
-f:30585204bbb4ec95d810a01e794a77c5:gpgme/.footprint
+f:9876cdd87c0359a420b2695c5b06306d:gpgme/Pkgfile
+f:d2403d15334c06438e892e6aab31ff88:gpgme/.footprint
 f:6bba73612234edb735aca86003f72063:libksba/.md5sum
 f:94bb2c33cc9ad48ad421cb42e49ce6c6:libksba/Pkgfile
 f:2d08caa9c40e7e02a3510d8338313815:libksba/.footprint
