@@ -107,6 +107,7 @@ d:dtc
 d:perl-encode-locale
 d:freetype
 d:icu
+d:intltool
 d:perl-file-listing
 d:swig
 d:perl-yaml
@@ -501,6 +502,10 @@ f:1c2d5b70435ee42f833ec5e06464d6d9:icu/.md5sum
 f:0baf21c4e9310953d86a5623e2e2532a:icu/README
 f:80d6a043920ceb5d30186ca238ed60c8:icu/Pkgfile
 f:9249a9e2308c221eb9a2ab19b9ca0c2b:icu/.footprint
+f:c4404113c624d3e40e3616ea9fcca3bb:intltool/.md5sum
+f:2e1d468076d468be8bc4471040ec6f86:intltool/Pkgfile
+f:38bec379ca1158fa00afa94c99b9ebe5:intltool/intltool-perl-regexp.patch
+f:0fb5cd7dbe852bbac973124b5afdda9d:intltool/.footprint
 f:ecbf6536477370b1f26871cf7c1ad2d6:perl-file-listing/.md5sum
 f:7737423de5ec74722d50b8323fe98b08:perl-file-listing/Pkgfile
 f:6dfb6f0607091266dbee2d3f11ef795a:perl-file-listing/.footprint
