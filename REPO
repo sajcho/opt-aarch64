@@ -199,7 +199,7 @@ f:8b8f23b5d54075b5c61fd44f9015238c:perl-libwww/.md5sum
 f:9d970df6e6851ecda3694e4d8bd0f07c:perl-libwww/Pkgfile
 f:72dd224343f1681e673611fe97a05a68:perl-libwww/.footprint
 f:f0478fb3dd41cbe296d7cc7e83520a33:pango/.md5sum
-f:22ec0c838f364ff38863f096d7b0daab:pango/Pkgfile
+f:5da6a644778e6945a44fc7b49ff34e92:pango/Pkgfile
 f:f8c9a9fe1c20a6b47879ebb3eb97c5ae:pango/.footprint
 f:62da75fce42704176e68f4cab2a5ced9:gobject-introspection/.md5sum
 f:eaa1ba5a100ff082726b519460f93446:gobject-introspection/Pkgfile
@@ -426,7 +426,7 @@ f:59c5287423433774c12ad4c9e483b873:perl-http-cookies/.md5sum
 f:64d884c77106f87a507e8c584594be73:perl-http-cookies/Pkgfile
 f:300a5df5e461953b9123c8dcc1888d7b:perl-http-cookies/.footprint
 f:ddf0a62e24aa595ec647b28d39e38ba6:graphite2/.md5sum
-f:16d1817cbc2b6da5b20227ae4326f153:graphite2/Pkgfile
+f:d7ddcb0abc81120642d6d5ba461f01b7:graphite2/Pkgfile
 f:045922123ed50de408443170fc7595a4:graphite2/.footprint
 f:f93b0b4a094141a8e19188b230234096:nmap/.md5sum
 f:f72baa409e07bf8a95c00e4df8bb2cf6:nmap/Pkgfile
