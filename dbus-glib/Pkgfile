@@ -1,0 +1,26 @@
+# Description:	GLib bindings for DBUS
+# URL:		http://www.freedesktop.org/wiki/Software/DBusBindings
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	dbus-elogind glib
+
+name=dbus-glib
+version=0.112
+release=0
+source=(https://dbus.freedesktop.org/releases/${name}/${name}-${version}.tar.gz)
+
+build() {
+	cd ${name}-${version}
+
+	./configure \
+		--prefix=/usr \
+		--enable-static=no \
+		--enable-bash-completion=no
+
+	make
+
+	#make check
+
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/usr/share/gtk-doc
+}
