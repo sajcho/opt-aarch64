@@ -127,7 +127,6 @@ d:intltool
 d:perl-file-listing
 d:swig
 d:perl-yaml
-d:prt-utils
 d:glib
 d:perl-uri
 d:libssh2
@@ -596,9 +595,6 @@ f:04d5da180e5b204334f8d9f924f97fe6:swig/.footprint
 f:057947a1c344c1f88da90f71e0924e0f:perl-yaml/.md5sum
 f:11a39b7f9c96607f2a056394b0aaddcd:perl-yaml/Pkgfile
 f:f02d085a74e8ca56475b93ba2d3a47ae:perl-yaml/.footprint
-f:b235dfb6ff2f646e6257f77c802737de:prt-utils/.md5sum
-f:5ff00c159e6103f4bde802353bc19b8a:prt-utils/Pkgfile
-f:e52165bc4afc1cb7a2b5f858359807cd:prt-utils/.footprint
 f:8c15c18a65ee4280ac9eec914b79fa1e:glib/.md5sum
 f:e5f74be27525658dae59401455944186:glib/post-install
 f:2d3b7136e2692ef2facaacb3140492f1:glib/Pkgfile
