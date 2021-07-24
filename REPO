@@ -21,6 +21,7 @@ d:dbus-glib
 d:fetchmail
 d:python3-cffi
 d:scdoc
+d:libgudev
 d:perl-spiffy
 d:perl-test-deep
 d:python3-atomicwrites
@@ -224,6 +225,9 @@ f:a0916b89a6c5a5da57ce55239efe946b:python3-cffi/.footprint
 f:f7610965a43e2300e304ea0aa406c901:scdoc/.md5sum
 f:fae7b230805709223da48a2d85b65c53:scdoc/Pkgfile
 f:9dcab9cb5682576bf18c0f28a04b956b:scdoc/.footprint
+f:0c72f12f1f2ccdf1231237764e93bda4:libgudev/.md5sum
+f:e92d6404ae56cd270ea76c6dd112d3ce:libgudev/Pkgfile
+f:21651f2bd128ed6fec0c6fb936404d4d:libgudev/.footprint
 f:7051c6e447842bb96deb6fe9a095cc3c:perl-spiffy/.md5sum
 f:977dcf46f9ef21398774d08ea23b7ab7:perl-spiffy/Pkgfile
 f:a9a4db21e99bab870a156b72d32244ac:perl-spiffy/.footprint
@@ -597,10 +601,10 @@ f:11a39b7f9c96607f2a056394b0aaddcd:perl-yaml/Pkgfile
 f:f02d085a74e8ca56475b93ba2d3a47ae:perl-yaml/.footprint
 f:8c15c18a65ee4280ac9eec914b79fa1e:glib/.md5sum
 f:e5f74be27525658dae59401455944186:glib/post-install
-f:2d3b7136e2692ef2facaacb3140492f1:glib/Pkgfile
+f:6235766c178792ef1b879c6af41fa9ea:glib/Pkgfile
 f:08b95225e98724a67fb2c765acea8ef9:glib/deprecated-no-warn.patch
 f:ebd1ee90e4f81e6c6cc03c29ab8b6bea:glib/gschemas.compiled
-f:7a3d824942a3d0779e841bae00604610:glib/.footprint
+f:6de975379a2f49b7cad4ee69355d6bb4:glib/.footprint
 f:4ada67655f528d0ab9a957e92cb9c16e:perl-uri/.md5sum
 f:78631637fab1fe94843a5dd2d186afd0:perl-uri/Pkgfile
 f:ca7fc943ae803000fdbc8b74c10a4d27:perl-uri/.footprint
