@@ -1,7 +1,7 @@
 # Description:	GLib bindings for DBUS
 # URL:		http://www.freedesktop.org/wiki/Software/DBusBindings
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	dbus-elogind glib
+# Depends on:	dbus glib
 
 name=dbus-glib
 version=0.112
@@ -13,12 +13,11 @@ build() {
 
 	./configure \
 		--prefix=/usr \
-		--enable-static=no \
-		--enable-bash-completion=no
+		--disable-tests \
+		--disable-static \
+		--disable-bash-completion
 
 	make
-
-	#make check
 
 	make DESTDIR=$PKG install
 
