@@ -16,10 +16,11 @@ build() {
 
 	./configure \
 		--prefix=/usr \
-		--with-dbus-daemondir=/usr/sbin \
-		--localstatedir=/var \
 		--sysconfdir=/etc \
 		--libexecdir=/usr/lib/dbus \
+		--localstatedir=/var \
+		--disable-xml-docs \
+		--with-dbus-daemondir=/usr/sbin \
 		--with-dbus-user=messagebus \
 		--with-console-auth-dir=/run/console \
 		--with-system-pid-file=/run/${name}/${name}.pid \
