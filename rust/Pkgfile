@@ -4,21 +4,17 @@
 # Depends on:	llvm-toolchain
 
 name=rust
-version=1.53.0
+version=1.54.0
 release=0
 
 source=(https://static.rust-lang.org/dist/${name}c-${version}-src.tar.gz \
-	libexec.patch \
-	1.53.0-miri-vergen.patch)
+	libexec.patch)
 
 build() {
 	cd "${name}c-${version}-src"
 
 	# Patch cargo so credential helpers are in /usr/lib instead of /usr/libexec
 	patch -p1 -i $SRC/libexec.patch
-
-	# https://github.com/rust-lang/rust/issues/84182
-	patch -p1 -i $SRC/1.53.0-miri-vergen.patch
 
 cat <<- EOF > $SRC/config.toml
 	changelog-seen = 2
