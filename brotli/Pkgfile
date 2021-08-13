@@ -5,7 +5,7 @@
 
 name=brotli
 version=1.0.9
-release=0
+release=1
 source=(https://github.com/google/${name}/archive/v${version}/${name}-v${version}.tar.gz \
 	838.patch build-tool-against-shared-lib.patch)
 
@@ -25,7 +25,8 @@ build() {
 		-DCMAKE_INSTALL_PREFIX=/usr \
 		-DCMAKE_INSTALL_LIBDIR=/usr/lib \
 		-DBUILD_SHARED_LIBS=True \
-		-DCMAKE_C_FLAGS="$CFLAGS"
+		-DCMAKE_C_FLAGS="$CFLAGS" \
+		-Wno-dev
 
 	make
 
