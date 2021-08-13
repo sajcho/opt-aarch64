@@ -1,27 +1,22 @@
 # Description:	JavaScript runtime built on V8 engine - LTS version
 # URL:		http://nodejs.org/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	brotli c-ares icu
+# Depends on:	brotli c-ares icu libnghttp2 libuv samurai
 
 name=nodejs
-version=16.4.0
-release=1
-source=(https://nodejs.org/dist/v${version}/node-v${version}.tar.xz)
+version=16.6.2
+release=0
+source=(https://nodejs.org/dist/v${version}/node-v${version}.tar.xz \
+	system-c-ares.patch)
 
 build() {
 	cd node-v${version}
 
-	# Add defines recommended in libuv readme.
-	export CFLAGS="$CFLAGS -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64"
-	export CXXFLAGS="$CXXFLAGS -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64"
+	patch -Rp1 -i $SRC/system-c-ares.patch
 
 	./configure \
 		--prefix=/usr \
-		--shared-brotli \
-		--shared-zlib \
-		--shared-libuv \
-		--shared-openssl \
-		--shared-cares \
+		--shared-{cares,libuv,nghttp2,openssl,zlib} \
 		--with-intl=system-icu \
 		--without-npm \
 		--ninja

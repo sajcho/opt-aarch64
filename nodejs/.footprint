@@ -9,6 +9,10 @@ drwxr-xr-x	root/root	usr/include/node/cppgc/
 -rw-r--r--	root/root	usr/include/node/cppgc/common.h
 -rw-r--r--	root/root	usr/include/node/js_native_api.h
 -rw-r--r--	root/root	usr/include/node/js_native_api_types.h
+drwxr-xr-x	root/root	usr/include/node/libplatform/
+-rw-r--r--	root/root	usr/include/node/libplatform/libplatform-export.h
+-rw-r--r--	root/root	usr/include/node/libplatform/libplatform.h
+-rw-r--r--	root/root	usr/include/node/libplatform/v8-tracing.h
 -rw-r--r--	root/root	usr/include/node/node.h
 -rw-r--r--	root/root	usr/include/node/node_api.h
 -rw-r--r--	root/root	usr/include/node/node_api_types.h
