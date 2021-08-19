@@ -170,8 +170,8 @@ f:44f90200e583beb579bb3109a22df62a:libpng/dont-run-pngtest.patch
 f:3820297122960161657a9e7db4bfcd11:libpng/libpng-apng.patch
 f:3ad32e7b1996d1273d49ecbcdc2d3515:libpng/.footprint
 f:41b257c4e6673696e304f7b729d05208:perl-xml-parser/.md5sum
-f:3d2e705aac50d49cb93bb2e50ba68deb:perl-xml-parser/Pkgfile
-f:68bf405e2b9a0b7456f79ed57aa19614:perl-xml-parser/.footprint
+f:dd1a6577e60b83c5d0b777323b0796be:perl-xml-parser/Pkgfile
+f:7b03d692c9ae02b169e42c87b5a6be47:perl-xml-parser/.footprint
 f:46764d12b75d022d0116a5c965c38881:librsvg/.md5sum
 f:c024158fd609ff37ba4789c23ad12c06:librsvg/README
 f:61896a8322c5f22b630ebc8c9c5e622a:librsvg/post-install
