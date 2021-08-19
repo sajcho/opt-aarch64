@@ -4,9 +4,9 @@
 # Depends on:	glib
 
 name=mc
-version=4.8.26
+version=4.8.27
 release=0
-source=(http://ftp.osuosl.org/pub/midnightcommander/${name}-${version}.tar.xz)
+source=(http://ftp.midnight-commander.org/${name}-${version}.tar.xz)
 
 build() {
 	cd ${name}-${version}

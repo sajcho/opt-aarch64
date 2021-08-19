@@ -179,6 +179,7 @@ drwxr-xr-x	root/root	usr/share/mc/syntax/
 -rw-r--r--	root/root	usr/share/mc/syntax/jal.syntax
 -rw-r--r--	root/root	usr/share/mc/syntax/java.syntax
 -rw-r--r--	root/root	usr/share/mc/syntax/js.syntax
+-rw-r--r--	root/root	usr/share/mc/syntax/json.syntax
 -rw-r--r--	root/root	usr/share/mc/syntax/kotlin.syntax
 -rw-r--r--	root/root	usr/share/mc/syntax/latex.syntax
 -rw-r--r--	root/root	usr/share/mc/syntax/lisp.syntax
