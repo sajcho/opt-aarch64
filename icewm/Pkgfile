@@ -1,27 +1,25 @@
 # Description:	Window manager designed for speed, usability and consistency
 # URL:		https://github.com/ice-wm/icewm
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	gdk-pixbuf-xlib librsvg libxcomposite libxdamage libxinerama libxpm libxrandr
+# Depends on:	asciidoctor gdk-pixbuf-xlib librsvg libxcomposite libxdamage libxinerama libxpm libxrandr
 
 name=icewm
-version=2.6.0
+version=2.7.0
 release=0
-source=(https://github.com/ice-wm/${name}/releases/download/${version}/${name}-${version}.tar.gz)
+source=(https://github.com/ice-wm/${name}/archive/${version}/${name}-${version}.tar.gz)
 
 build() {
 	cd ${name}-${version}
 
-	autoreconf -fiv
+	./autogen.sh
 
 	./configure \
 		--prefix=/usr \
-		--sysconfdir=/etc \
 		--enable-gdk-pixbuf \
 		--enable-logevents \
 		--disable-imlib2 \
 		--disable-nls \
-		--with-xterm=urxvt \
-		--with-icesound=""
+		--with-xterm=urxvt
 
 	make
 
