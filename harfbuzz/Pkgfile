@@ -4,7 +4,7 @@
 # Depends on:	cairo gobject-introspection graphite2 icu
 
 name=harfbuzz
-version=2.8.2
+version=2.9.0
 release=0
 source=(https://github.com/harfbuzz/harfbuzz/archive/${version}/${name}-${version}.tar.gz)
 
