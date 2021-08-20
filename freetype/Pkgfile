@@ -4,7 +4,7 @@
 # Depends on:	brotli libpng
 
 name=freetype
-version=2.10.4
+version=2.11.0
 release=0
 source=(https://download.savannah.gnu.org/releases/${name}/${name}-${version}.tar.xz \
 	0001-Enable-table-validation-modules.patch \
