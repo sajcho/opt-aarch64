@@ -4,7 +4,7 @@
 # Depends on:	nasm
 
 name=x264
-version=20210211
+version=20210814
 release=0
 source=(http://anduin.linuxfromscratch.org/BLFS/${name}/${name}-${version}.tar.xz)
 
@@ -20,6 +20,7 @@ build() {
 		--extra-cflags=-fno-aggressive-loop-optimizations
 
 	make
+
 	make DESTDIR=$PKG \
 		bindir=/usr/bin \
 		libdir=/usr/lib \
