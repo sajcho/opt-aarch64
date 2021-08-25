@@ -291,9 +291,9 @@ f:b9dafed02f107c91f52e3762d4dcf853:libcanberra/.md5sum
 f:63b8aa3272610d39c3114ffee292f1bc:libcanberra/libcanberra-0.30-wayland-1.patch
 f:ed68eb97203c488bbab63d2a989a553c:libcanberra/Pkgfile
 f:b298bfcb859e36c70e8231dbf465499a:libcanberra/.footprint
-f:dda73bb8c0fbc72d99ad58b01d632721:firefox/.md5sum
+f:1c7f84b1f70b83755cd1c364ed70668e:firefox/.md5sum
 f:86a2e327cc26efe00b79311087f65896:firefox/firefox-91.0.1esr-glibc234-1.patch
-f:ab2b57cc02d51f3721959cc8a02280f8:firefox/Pkgfile
+f:841d63c0123410adfd74ff5d1112e3f8:firefox/Pkgfile
 f:5a35bd2578dc20e1d9b9152a96c5ef1c:firefox/firefox-91.0.1esr-disable_rust_test-1.patch
 f:cf6971669f70b440cb6ff8df8b2722ae:firefox/firefox.desktop
 f:261a8098047ca321cdd846cc9e4e7544:firefox/.footprint
