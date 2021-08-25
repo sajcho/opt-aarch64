@@ -4,7 +4,7 @@
 # Depends on:	alsa-lib autoconf-2.13 cbindgen dbus-glib ffmpeg gtk3 libidl libnotify libxkbcommon llvm-toolchain nodejs nss unzip libxt yasm zip
 
 name=firefox
-version=91.0.1
+version=91.0.2
 release=0
 source=(https://archive.mozilla.org/pub/${name}/releases/${version}/source/${name}-${version}.source.tar.xz \
 	firefox-91.0.1esr-glibc234-1.patch \
