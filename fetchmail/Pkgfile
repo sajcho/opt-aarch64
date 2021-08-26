@@ -4,7 +4,7 @@
 # Depends on:	openssl python3
 
 name=fetchmail
-version=6.4.19
+version=6.4.21
 release=0
 source=(https://downloads.sourceforge.net/${name}/${name}-${version}.tar.xz)
 
@@ -28,7 +28,7 @@ build() {
 
 	make
 
-	#make check
+	make check
 
 	make DESTDIR=$PKG install
 }
