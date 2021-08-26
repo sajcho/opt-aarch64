@@ -247,8 +247,8 @@ f:d3512ed058cc2237156fb5ac8c01978d:desktop-file-utils/.footprint
 f:f45a6d3bd8d64682bcd5441bc451721c:dbus-glib/.md5sum
 f:24c7213d46b4240a1f12be1af0149146:dbus-glib/Pkgfile
 f:34697fb9dc5b82d0c38f362b9775e522:dbus-glib/.footprint
-f:21876ea0f66248113e8773839f069c67:fetchmail/.md5sum
-f:594955ef665e50bebbeb3a32da24a357:fetchmail/Pkgfile
+f:d21eac14576c9b3c5f9b475bd118c80d:fetchmail/.md5sum
+f:29aef5d76840912d8557c7f8eb842775:fetchmail/Pkgfile
 f:16436b472aeb3a2b917bc36c865a959c:fetchmail/.footprint
 f:5d1781888c0713758146c2e341e9aaf7:firefox-esr/.md5sum
 f:86a2e327cc26efe00b79311087f65896:firefox-esr/firefox-91.0.1esr-glibc234-1.patch
@@ -312,9 +312,9 @@ f:657f858b1b4f94b6df6b2f4471ace1d5:at-spi2-atk/.footprint
 f:a2ee877fe1bcff56af27112b91aac460:speex/.md5sum
 f:6bf95614f7963641b09ce3aecd45c188:speex/Pkgfile
 f:aca96f97813ee7219968cbb1bfc4f402:speex/.footprint
-f:6c94bf6d77d8bec1cb4c7b08019e6cf8:libgcrypt/.md5sum
-f:a5404c145e5e7c5349ed3bacae281cd3:libgcrypt/Pkgfile
-f:fd8c0891f3fbf06a5881f8a3880dd89a:libgcrypt/.footprint
+f:1aca221bf029826b181c3b41a4afa379:libgcrypt/.md5sum
+f:e6b0b185c61ec6d5b2554cba4d8f0e15:libgcrypt/Pkgfile
+f:14a07559a58fc9d58fe846fbfc705e46:libgcrypt/.footprint
 f:83fd8d95183acb619627c09cf426ca97:python3-asn1crypto/.md5sum
 f:70abeff903d500a4451e6a1405f1421a:python3-asn1crypto/Pkgfile
 f:afcab4793b9e06bad22c904197d99e70:python3-asn1crypto/.footprint
