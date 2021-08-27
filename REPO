@@ -32,6 +32,7 @@ d:python3-atomicwrites
 d:alsa-lib
 d:p11-kit
 d:libcanberra
+d:libde265
 d:firefox
 d:gstreamer
 d:python3-coverage
@@ -47,6 +48,7 @@ d:libnghttp2
 d:mpg123
 d:libevent
 d:python3-elftools
+d:imagemagick
 d:libsoup
 d:libjpeg-turbo
 d:python3-urllib3
@@ -54,6 +56,7 @@ d:libidn
 d:x265
 d:python3-parsing
 d:dbus-elogind
+d:chrpath
 d:yaml
 d:nspr
 d:srt
@@ -155,6 +158,7 @@ d:libid3tag
 d:libogg
 d:python3-mako
 d:python3-attrs
+d:libheif
 d:fribidi
 d:libssh
 d:translate-shell
@@ -291,6 +295,9 @@ f:b9dafed02f107c91f52e3762d4dcf853:libcanberra/.md5sum
 f:63b8aa3272610d39c3114ffee292f1bc:libcanberra/libcanberra-0.30-wayland-1.patch
 f:ed68eb97203c488bbab63d2a989a553c:libcanberra/Pkgfile
 f:b298bfcb859e36c70e8231dbf465499a:libcanberra/.footprint
+f:4670134174c0dd94624bfa4cab5434c4:libde265/.md5sum
+f:766d6d61c1d11e39201326da24888f5a:libde265/Pkgfile
+f:f4c332b383b3b51f245d8d23302c1110:libde265/.footprint
 f:1c7f84b1f70b83755cd1c364ed70668e:firefox/.md5sum
 f:86a2e327cc26efe00b79311087f65896:firefox/firefox-91.0.1esr-glibc234-1.patch
 f:841d63c0123410adfd74ff5d1112e3f8:firefox/Pkgfile
@@ -340,6 +347,9 @@ f:c68f77561b0a3a2d3eb6068451b6e54e:libevent/.footprint
 f:e949f513b5aee971fd8947130ac92e80:python3-elftools/.md5sum
 f:f908181e17d5224c5b13d644f29783c1:python3-elftools/Pkgfile
 f:dca82caf2a068372125f76fde39fc7cd:python3-elftools/.footprint
+f:4a2590b805d2d959a93306b7b4077bff:imagemagick/.md5sum
+f:a592827b1f86f81c1179efb064073367:imagemagick/Pkgfile
+f:fc221deda4bf1fb852d37ab824f1c0e8:imagemagick/.footprint
 f:5d3a686ddbdfafdcf683b4cdf178699f:libsoup/.md5sum
 f:f96eca56a083003fa191a0b1b03e7841:libsoup/Pkgfile
 f:2f67ced99c1ffb53d47522e7f4453308:libsoup/.footprint
@@ -352,9 +362,9 @@ f:1f2670396ffd9018c44d0b133e52e89d:python3-urllib3/.footprint
 f:df1124471bfa22704f3f99a5ccf48eb3:libidn/.md5sum
 f:7ed0fe16f392e9920ee82421f341dd53:libidn/Pkgfile
 f:4996528ffbc40a2991d042d2660ea6eb:libidn/.footprint
-f:26b2c280725ebcf3ea730678f4895fb2:x265/.md5sum
-f:17ce631657e1a755a2d8d9cda75bdc10:x265/Pkgfile
-f:05a9e097dd6574801c1a6a71733b9b90:x265/.footprint
+f:c2e8a388c2b6e640cfa9e86eefe564eb:x265/.md5sum
+f:97dfc9f50c3aeda7ce1ff27309adcd02:x265/Pkgfile
+f:4a05384743aa18ae52d1af9944499d8f:x265/.footprint
 f:340713ad06070603dfa78220ccca091c:python3-parsing/.md5sum
 f:7bda21d166a622c196953c90982e0586:python3-parsing/Pkgfile
 f:e0f25e7b81811fb4e701ba07983b639c:python3-parsing/.footprint
@@ -366,6 +376,9 @@ f:42b7040d96c6c2bef234f48343e92cab:dbus-elogind/Pkgfile
 f:57237d3f2610dbf998eaa938992dceb6:dbus-elogind/30-dbus.launch
 f:bf567c5e6650b609d4dd8e48efb18864:dbus-elogind/dbus-enable-elogind.patch
 f:1d0de8dee1601f1f4e9360212e11cbe8:dbus-elogind/.footprint
+f:5f3d1b5f639bd48c0aa44079561a8235:chrpath/.md5sum
+f:2c9f6b0bc295def032f51997b680c024:chrpath/Pkgfile
+f:691ffda8a1a2960cd92da75086753be1:chrpath/.footprint
 f:a6b369f1b1965a56167fc909c0696185:yaml/.md5sum
 f:16789530941a4158f952d44416c346d3:yaml/Pkgfile
 f:ca9c5a6090ba3b199758360c9114d854:yaml/.footprint
@@ -469,7 +482,7 @@ f:e535b13020f57c6982b6f7cacba2f271:recode/.md5sum
 f:dc173476656220d9c988797d535d24bc:recode/Pkgfile
 f:e0e8de851f91bbf125b0f260ec1381c2:recode/.footprint
 f:99a59556470ba75a4300de9ed518e087:gpgme/.md5sum
-f:9876cdd87c0359a420b2695c5b06306d:gpgme/Pkgfile
+f:3f526216143b0cf63bcf9e90760da75a:gpgme/Pkgfile
 f:d2403d15334c06438e892e6aab31ff88:gpgme/.footprint
 f:6bba73612234edb735aca86003f72063:libksba/.md5sum
 f:94bb2c33cc9ad48ad421cb42e49ce6c6:libksba/Pkgfile
@@ -572,8 +585,8 @@ f:fa3f17b27ab47e2172c112d34c1fb06d:python3-six/.footprint
 f:66d9c4676f8fb0e4392a7142274d02c1:cogl/.md5sum
 f:15cafe1e30009245c3346c5d9e23f9d6:cogl/Pkgfile
 f:0faa4629adf0764134d3bee3feb6a057:cogl/.footprint
-f:93fe7a516a57e1e09d92bf2eb74b97d5:mutt/.md5sum
-f:a060939ef995510d60ca841d0e464c38:mutt/Pkgfile
+f:9df6f87dc17aa48266b4f60b7ad9374c:mutt/.md5sum
+f:2c2b0c69da0c71e0c0514edc9392ceb8:mutt/Pkgfile
 f:9e7063d58556934276516abaec2e12d3:mutt/.footprint
 f:03a4149bd02fe9af2f341eea549b81c9:aom/.md5sum
 f:84f5d539e58ecb1c503e8eae393c1ef5:aom/Pkgfile
@@ -639,8 +652,8 @@ f:4d54a4af093c227cc374d897347111d7:libsdl/0001-CVE-2019-7575.patch
 f:b6adfc71e6c6c780e2822bb05214cf7c:libsdl/0001-CVE-2019-7572.patch
 f:d6a1bfa054507f281338626e5f12d74b:libsdl/SDL-1.2.15-const_XData32.patch
 f:e901c5b6b83bc582e0d816201faa8b5d:libsdl/.footprint
-f:f55098773deac57f2ae2893785060dd7:gnupg/.md5sum
-f:738fae5d256e440f15b82cc14c7d77a7:gnupg/Pkgfile
+f:847e37276f1c5c0c89c039bbba7e2707:gnupg/.md5sum
+f:6048877817f1c3f19801faf8c7b63b77:gnupg/Pkgfile
 f:e24195315aa701b6c63ba1b91119dd0d:gnupg/.footprint
 f:8761ad51ce2e31bfe2f8f59ba0295327:fontconfig/.md5sum
 f:5de10d632120b09be9a1b467f20c983e:fontconfig/README
@@ -749,6 +762,9 @@ f:6051852c93e924fdd2ba872e2ea52b78:python3-mako/.footprint
 f:611b1605d5d41fcc9e7343ce33b54874:python3-attrs/.md5sum
 f:892e22cfc216914ccb5e19aaaf539adb:python3-attrs/Pkgfile
 f:c45a3f6327825d9f086f19c2a484d6a1:python3-attrs/.footprint
+f:1fa131e5937e321a360c9d0b0f993da7:libheif/.md5sum
+f:c639bfdbb1c04c94aa8970cd3688104e:libheif/Pkgfile
+f:51b8db9c3280b41274970c059df0bafa:libheif/.footprint
 f:28fd79d4d388ea31dd8f9b67c05f92cd:fribidi/.md5sum
 f:84939ff9078a0df230ec859021fe57a0:fribidi/Pkgfile
 f:9f36b3f7ea570ed9ce81608cf9f8a2c3:fribidi/.footprint
