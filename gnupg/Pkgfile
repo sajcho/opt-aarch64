@@ -4,7 +4,7 @@
 # Depends on:	libgcrypt libksba pinentry npth
 
 name=gnupg
-version=2.3.1
+version=2.3.2
 release=0
 source=(https://gnupg.org/ftp/gcrypt/${name}/${name}-${version}.tar.bz2)
 
@@ -17,7 +17,8 @@ build() {
 		--libexecdir=/usr/lib \
 		--localstatedir=/var \
 		--disable-nls \
-		--disable-ldap
+		--disable-ldap \
+		--disable-gnutls
 
 	make
 
