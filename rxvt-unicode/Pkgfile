@@ -1,7 +1,7 @@
 # Description:	rxvt fork with unicode and xft support
 # URL:		http://software.schmorp.de/#rxvt-unicode
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	fontconfig gdk-pixbuf libx11 libxft libxrender libxt
+# Depends on:	gdk-pixbuf libxft libxt
 
 name=rxvt-unicode
 version=9.26
