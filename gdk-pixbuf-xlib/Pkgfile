@@ -1,7 +1,7 @@
 # Description:	Deprecated Xlib integration for GdkPixbuf
 # URL:		https://gitlab.gnome.org/Archive/gdk-pixbuf-xlib
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	gdk-pixbuf libx11
+# Depends on:	gdk-pixbuf
 
 name=gdk-pixbuf-xlib
 version=2.40.2
