@@ -1,7 +1,7 @@
 # Description:	Window manager designed for speed, usability and consistency
 # URL:		https://github.com/ice-wm/icewm
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	asciidoctor cmake gdk-pixbuf-xlib librsvg libsndfile libxcomposite libxdamage libxinerama libxpm libxrandr
+# Depends on:	asciidoctor gdk-pixbuf-xlib librsvg libsndfile libxcomposite libxinerama libxpm
 
 name=icewm
 version=2.7.0
