@@ -1,7 +1,7 @@
 # Description:	The Mozilla Firefox browser with Alsa support
 # URL:		https://www.mozilla.com/firefox/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	alsa-lib autoconf-2.13 cbindgen dbus-glib ffmpeg gtk3 libidl libnotify libxkbcommon llvm-toolchain nodejs nss unzip libxt yasm zip
+# Depends on:	autoconf-2.13 cbindgen dbus-glib ffmpeg libidl libnotify nodejs nss libxt zip
 
 name=firefox-esr
 _realname=firefox
