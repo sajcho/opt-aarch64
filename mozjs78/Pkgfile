@@ -1,7 +1,7 @@
 # Description:	Standalone Mozilla JavaScript engine
 # URL:		https://developer.mozilla.org/en-US/docs/Mozilla/Projects/SpiderMonkey
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	autoconf-2.13 icu readline zlib nspr python3 rust
+# Depends on:	autoconf-2.13 icu nspr rust
 
 name=mozjs78
 version=78.12.0
