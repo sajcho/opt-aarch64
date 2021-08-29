@@ -218,7 +218,7 @@ f:13a13789164744e195286d5fa39f20dd:tcl/.footprint
 f:31aba2bedd6ee2de16d9d49e866af507:sdl2/.md5sum
 f:04c9d39066b0e2729f978159679db378:sdl2/khronos.patch
 f:6c2ed10f034d980743a3989cc64cb09c:sdl2/directfb-cflags.patch
-f:78aeb0dbbe981ebf8c68f13a3d229aad:sdl2/Pkgfile
+f:f4811bfb7a0dc02d9605903eeb3e0c66:sdl2/Pkgfile
 f:77d751fcca0af36e400fe31714ed11da:sdl2/wayland-fix-keyboard.patch
 f:f0318383f7346641cdb45b5839d98282:sdl2/.footprint
 f:afdf771e15fe7a151e2e103ff0b55ccf:dav1d/.md5sum
@@ -237,7 +237,7 @@ f:01fbf5b14bd7690102cd12bd72b14bc6:docbook-xml/post-install
 f:0d79f1710c371dd62ea196a01a83145f:docbook-xml/Pkgfile
 f:c9e8f7d992dc180d146b5011045a193b:docbook-xml/.footprint
 f:139598105b72fc1d0d8785b5d72ac003:mozjs78/.md5sum
-f:46c8294ffcff4602418eb2ca19e404cb:mozjs78/Pkgfile
+f:d24ba40862eab93b5b0c26c011b83429:mozjs78/Pkgfile
 f:9b5d984b4186e4f6e33dcd33b214cd7a:mozjs78/.footprint
 f:b270b31ef9bd314ada4a2193a0e00e81:python3-chardet/.md5sum
 f:b7e4c0a7d9d3067bd2dbe23b83a6cbc0:python3-chardet/Pkgfile
@@ -250,7 +250,7 @@ f:382ac07caf288c2bc6927e3ac623b5ca:materia-gtk-theme/Pkgfile
 f:130722664a47bd922099706a88572b06:materia-gtk-theme/.footprint
 f:36590d629f57cc4d0b99bbc22a41e06b:elogind/.md5sum
 f:fd7037fcaaafe4959a53cccd12a193d6:elogind/elogind.wrapper
-f:ff674d84818bed78f9ef32ac5cb959ad:elogind/Pkgfile
+f:b2a7539f9a2191d27670628c9722aa07:elogind/Pkgfile
 f:046932ddd1b42a381679729bda909139:elogind/elogind.run
 f:9f6ccc673cbdb66ad1ad4a4e18b99b61:elogind/elogind-246.10-revert-polkit-automagic.patch
 f:7efc29e0c8bd4a4b1f0cefadbac78b51:elogind/.footprint
@@ -267,7 +267,7 @@ f:ec45f3b63cdb841d23fadf45c9be7bf3:ffmpeg/0001-libavutil-clean-up-unused-FF_SYMV
 f:9c3c08a34e8dc6ea62c22c243ae5d556:ffmpeg/.md5sum
 f:b3ad48b100125ee27e931f5a67c61b6e:ffmpeg/CVE-2021-33815.patch
 f:81a6963bc9c88b3b1a5427b1c8e67af3:ffmpeg/0001-ffbuild-libversion.sh-add-shebang.patch
-f:7a686f99424daa3daf404459cf554e97:ffmpeg/Pkgfile
+f:ae3770d7d31a8e8ae94e9bcc92196c62:ffmpeg/Pkgfile
 f:f17e7a0e9f43e0f6ed0f8f1ca37e81a3:ffmpeg/.footprint
 f:4981d37e956fb9ea1843336c067f3a7d:procmail/.md5sum
 f:f484539d087058389fa446b7390bfcac:procmail/Pkgfile
@@ -290,7 +290,7 @@ f:29aef5d76840912d8557c7f8eb842775:fetchmail/Pkgfile
 f:16436b472aeb3a2b917bc36c865a959c:fetchmail/.footprint
 f:5d1781888c0713758146c2e341e9aaf7:firefox-esr/.md5sum
 f:86a2e327cc26efe00b79311087f65896:firefox-esr/firefox-91.0.1esr-glibc234-1.patch
-f:4193fa193e52a4d389b60772fed4da67:firefox-esr/Pkgfile
+f:605a5aafb9310aa34f66b506baf263ca:firefox-esr/Pkgfile
 f:5a35bd2578dc20e1d9b9152a96c5ef1c:firefox-esr/firefox-91.0.1esr-disable_rust_test-1.patch
 f:cf6971669f70b440cb6ff8df8b2722ae:firefox-esr/firefox.desktop
 f:261a8098047ca321cdd846cc9e4e7544:firefox-esr/.footprint
@@ -336,11 +336,11 @@ f:63b8aa3272610d39c3114ffee292f1bc:libcanberra/libcanberra-0.30-wayland-1.patch
 f:ed68eb97203c488bbab63d2a989a553c:libcanberra/Pkgfile
 f:b298bfcb859e36c70e8231dbf465499a:libcanberra/.footprint
 f:4670134174c0dd94624bfa4cab5434c4:libde265/.md5sum
-f:766d6d61c1d11e39201326da24888f5a:libde265/Pkgfile
+f:5817dd4bd4b7e7dfc01ba74bc796a49a:libde265/Pkgfile
 f:f4c332b383b3b51f245d8d23302c1110:libde265/.footprint
 f:1c7f84b1f70b83755cd1c364ed70668e:firefox/.md5sum
 f:86a2e327cc26efe00b79311087f65896:firefox/firefox-91.0.1esr-glibc234-1.patch
-f:841d63c0123410adfd74ff5d1112e3f8:firefox/Pkgfile
+f:23a98d295dd43a06cf9958c432611cf9:firefox/Pkgfile
 f:5a35bd2578dc20e1d9b9152a96c5ef1c:firefox/firefox-91.0.1esr-disable_rust_test-1.patch
 f:cf6971669f70b440cb6ff8df8b2722ae:firefox/firefox.desktop
 f:261a8098047ca321cdd846cc9e4e7544:firefox/.footprint
@@ -351,7 +351,7 @@ f:4109c82e028282792239590363f2faa0:python3-coverage/.md5sum
 f:f97e85bcf402bd25a6f1a4e42144244f:python3-coverage/Pkgfile
 f:c3696b0fcb73dd276e5e722ec5f55b59:python3-coverage/.footprint
 f:dc531c164cea643f27b632b407ca9853:libass/.md5sum
-f:08fc044215bf9b7227840677c55665dd:libass/Pkgfile
+f:46d2c297412c744e11b25a3027dab83d:libass/Pkgfile
 f:a1e37df5d18feb3839ccb1c1cdfcedb3:libass/.footprint
 f:ec870b19bc2b3fecb55d98eaaba67b30:at-spi2-atk/.md5sum
 f:a91bd2a0a0aa32d629878ee1e7045ff3:at-spi2-atk/Pkgfile
@@ -366,7 +366,7 @@ f:83fd8d95183acb619627c09cf426ca97:python3-asn1crypto/.md5sum
 f:70abeff903d500a4451e6a1405f1421a:python3-asn1crypto/Pkgfile
 f:afcab4793b9e06bad22c904197d99e70:python3-asn1crypto/.footprint
 f:e167e0d95cd5fe82c779a7f11de34192:lxappearance-gtk3/.md5sum
-f:e06eddd902da3c85f595a15f45848808:lxappearance-gtk3/Pkgfile
+f:b47bf6a13f39db91e36b5b9b7cab2fc1:lxappearance-gtk3/Pkgfile
 f:3b9512d3f15ad3f787d236ab00f999e9:lxappearance-gtk3/.footprint
 f:e7f2f2ab1b413a64014fe9ecd45ef208:at-spi2-core/.md5sum
 f:6de8c07f31c2c9f4e4b6f1732463aba3:at-spi2-core/Pkgfile
@@ -388,7 +388,7 @@ f:e949f513b5aee971fd8947130ac92e80:python3-elftools/.md5sum
 f:f908181e17d5224c5b13d644f29783c1:python3-elftools/Pkgfile
 f:dca82caf2a068372125f76fde39fc7cd:python3-elftools/.footprint
 f:4a2590b805d2d959a93306b7b4077bff:imagemagick/.md5sum
-f:a592827b1f86f81c1179efb064073367:imagemagick/Pkgfile
+f:8676eed304e1b8c630bfecdeae0413b0:imagemagick/Pkgfile
 f:fc221deda4bf1fb852d37ab824f1c0e8:imagemagick/.footprint
 f:5d3a686ddbdfafdcf683b4cdf178699f:libsoup/.md5sum
 f:f96eca56a083003fa191a0b1b03e7841:libsoup/Pkgfile
@@ -442,7 +442,7 @@ f:6500ed21d60ce26535d0c556fbd703ea:glib-networking/Pkgfile
 f:e350425c8e9295d0ba24e9db09eddcec:glib-networking/.footprint
 f:30c7fc8ccb15d3025f9e5a9279fe4499:srt/.md5sum
 f:f329ba6c67413624bc980ab137fe1bbc:srt/fix-cmake.patch
-f:8a35a693a7659754bb68026f727b827a:srt/Pkgfile
+f:0765e9b1a647ce5da9b54ff10655d710:srt/Pkgfile
 f:2e25829f8aab5d3b0fd7c27511a0383b:srt/.footprint
 f:04c6f6c7d2ed33a24ce63145a7e011b6:dejagnu/.md5sum
 f:cb72b4569519682fdf8e4ad0a629db2e:dejagnu/Pkgfile
@@ -497,7 +497,7 @@ f:2b4aa26e64d4c7202a2b40b8f387d9e7:expect/.md5sum
 f:6f6a292c58a2e15ce321d7f4c9ae6b9b:expect/Pkgfile
 f:09206503e97d5a6ab44037bd968b815d:expect/.footprint
 f:f0660098f152dfe01d9baeed8b46170e:gdk-pixbuf-xlib/.md5sum
-f:97874362390e289be89db0637ac51187:gdk-pixbuf-xlib/Pkgfile
+f:d4a171814ddfe399499d7ec97452afd4:gdk-pixbuf-xlib/Pkgfile
 f:3b3d709649dd6c53d52b83f575ee8723:gdk-pixbuf-xlib/.footprint
 f:957501e70489874886223a14140ada0d:cbindgen/.md5sum
 f:79038d2a9c0cc64e641883e6dccda385:cbindgen/Pkgfile
@@ -527,7 +527,7 @@ f:ab85e3b23d48251452786283214037d0:gnome-themes-extra/.md5sum
 f:914768e1f94c71a84b454aae6dd30ee8:gnome-themes-extra/Pkgfile
 f:a4f6b6756e89b8bdc3df944b2f855529:gnome-themes-extra/.footprint
 f:c80cd56b29b00a026e9896d9e6a400c0:speexdsp/.md5sum
-f:4b7abd30a400f7732fe893a6857638c2:speexdsp/Pkgfile
+f:0d56c3ebb854fd039fc562bc2d22cb81:speexdsp/Pkgfile
 f:375cb7339d71025db4e581e35dc178f0:speexdsp/.footprint
 f:85206659f2a1253da21a8a6dc2979ffa:libidl/.md5sum
 f:d0c793fc5ce919fb0739405f48546df6:libidl/Pkgfile
@@ -544,7 +544,7 @@ f:dec3f50f0f2eb0635fd29a3d92356c1c:python3-alabaster/.md5sum
 f:5fbbdbb723a37e4b1ed24d9ac69aea24:python3-alabaster/Pkgfile
 f:bdbe641946bfa0a40280736196e60201:python3-alabaster/.footprint
 f:e535b13020f57c6982b6f7cacba2f271:recode/.md5sum
-f:dc173476656220d9c988797d535d24bc:recode/Pkgfile
+f:a96d5e179777dd40c6564e9e07565105:recode/Pkgfile
 f:e0e8de851f91bbf125b0f260ec1381c2:recode/.footprint
 f:99a59556470ba75a4300de9ed518e087:gpgme/.md5sum
 f:3f526216143b0cf63bcf9e90760da75a:gpgme/Pkgfile
@@ -559,7 +559,7 @@ f:63b5c323c817110f56e9a28b4f264dea:libnotify/.md5sum
 f:3a4db8aca89580a266ea5a67bf73b056:libnotify/Pkgfile
 f:3a09e87aa9f3e487cf98edb75cde3d12:libnotify/.footprint
 f:11751a3f235a4e16ef925e2f4396ae7b:ffmpegthumbnailer/.md5sum
-f:2b62d4105bb8070c5bf03aebc81d048e:ffmpegthumbnailer/Pkgfile
+f:424f6fe87f321a7c6740859cd5cda270:ffmpegthumbnailer/Pkgfile
 f:2e44b4d393c09b5c468aa77dcb5ee347:ffmpegthumbnailer/.footprint
 f:ddf0a62e24aa595ec647b28d39e38ba6:graphite2/.md5sum
 f:d7ddcb0abc81120642d6d5ba461f01b7:graphite2/Pkgfile
@@ -679,7 +679,7 @@ f:a519474e8ed29dbf9ca4ac0bc1b388bd:autoconf-archive/.md5sum
 f:becd697a6820ec42d283e005048bc71e:autoconf-archive/Pkgfile
 f:063abac255c9d21c689237e0267138f7:autoconf-archive/.footprint
 f:db95879f5493a7f05e780b1b8061333f:nodejs/.md5sum
-f:15a67b0508c2f535aa2bd2799fe57442:nodejs/Pkgfile
+f:0498108bec9920d0f947793be2d73c47:nodejs/Pkgfile
 f:1f8d81b7d7f75b75af3e33ebd97808bf:nodejs/system-c-ares.patch
 f:ef3c881e107b49faa33833d57582efa9:nodejs/.footprint
 f:020584ca1391729e0b5e585dffef7e18:gtk3/.md5sum
@@ -733,10 +733,10 @@ f:e24195315aa701b6c63ba1b91119dd0d:gnupg/.footprint
 f:8761ad51ce2e31bfe2f8f59ba0295327:fontconfig/.md5sum
 f:5de10d632120b09be9a1b467f20c983e:fontconfig/README
 f:e3144b54cf4de7faa73c59a6df217f41:fontconfig/post-install
-f:da5f2b028e889a0a44c6bacb485fbc96:fontconfig/Pkgfile
+f:717d8383c660968e73138a1b2128676e:fontconfig/Pkgfile
 f:65d1c84ffb276a53fae725e0097171a6:fontconfig/.footprint
 f:0b26a38813c4aa1bf7a2b9b4e1524b1b:icewm/.md5sum
-f:4aa4d702375f25c89738378afae880fd:icewm/Pkgfile
+f:803edf9ec179412a93deff3d78f6c263:icewm/Pkgfile
 f:6337c678693af52cacfcac1748833c42:icewm/.footprint
 f:5823720d5ed1f33ecfed4c95b9b0d2af:lame/.md5sum
 f:bcd4225abc71116619848881d5754e6c:lame/Pkgfile
@@ -782,7 +782,7 @@ f:9b0c361afac915db67fbdbc4247a460e:swig/Pkgfile
 f:04d5da180e5b204334f8d9f924f97fe6:swig/.footprint
 f:7408fe72088660292bfb2151ef98be3a:rxvt-unicode/.md5sum
 f:585157318cb78733804eed507b77c37c:rxvt-unicode/rxvt-unicode-kerning.patch
-f:c8bfbae3661f606e9302040bb532a2d8:rxvt-unicode/Pkgfile
+f:8533b4ad4d29d0fe25442cdc855f5967:rxvt-unicode/Pkgfile
 f:105d79e77f2aedc2520791177c74feda:rxvt-unicode/gentables.patch
 f:70aa9e23fad4fa3610bb5736dda5ec89:rxvt-unicode/.footprint
 f:ef42a8f6e7de0b8aa50600c9569eb529:libmypaint/.md5sum
@@ -862,7 +862,7 @@ f:28fd79d4d388ea31dd8f9b67c05f92cd:fribidi/.md5sum
 f:84939ff9078a0df230ec859021fe57a0:fribidi/Pkgfile
 f:9f36b3f7ea570ed9ce81608cf9f8a2c3:fribidi/.footprint
 f:c0cf923e3026f254ee683cf3a48fc85b:libssh/.md5sum
-f:90fe3b61be5af2bfe0ff5f900d6f800b:libssh/Pkgfile
+f:5f9e42efa5d74d089716b9b6001d3242:libssh/Pkgfile
 f:294a35d3bb55cd1654c0ce4e50ba8709:libssh/.footprint
 f:8e3e907b7220b5d44994501b6d4f09fd:translate-shell/.md5sum
 f:868306a4f039e4f8de938257325f2b4d:translate-shell/Pkgfile
