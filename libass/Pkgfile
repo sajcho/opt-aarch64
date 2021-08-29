@@ -1,7 +1,7 @@
 # Description:	Portable library for SSA/ASS subtitle rendering
 # URL:		https://github.com/libass/libass
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	enca fontconfig fribidi freetype harfbuzz
+# Depends on:	enca fribidi harfbuzz
 
 name=libass
 version=0.15.1
