@@ -116,6 +116,7 @@ d:harfbuzz
 d:mc
 d:nfs-utils
 d:git-lfs
+d:htop
 d:json-c
 d:cyrus-sasl
 d:babl
@@ -614,6 +615,10 @@ f:7704474ded23fcbfe8b77ffe2d3fb13b:git-lfs/.md5sum
 f:87a43d348014e9eff4c344fe3dfa864c:git-lfs/post-install
 f:cf51bff67ab00451c9af4def07324d2f:git-lfs/Pkgfile
 f:f0a41aabae871f5ecfd021a18922bec7:git-lfs/.footprint
+f:5d8a4894330f8910c0b3af0f0a3ae424:htop/.md5sum
+f:cac63982416fe7853fa27ce797c7e23d:htop/Pkgfile
+f:24fede50ad08f892f4846dc964e047bf:htop/gcc10.patch
+f:afa973343827361c7a0e67c8a5458494:htop/.footprint
 f:08ae4fbfa53943d2088627504078511a:json-c/.md5sum
 f:c86b128ca307382ef4b01b2ad9383660:json-c/Pkgfile
 f:97e7dcbf46df7b93964f5a893d951c91:json-c/.footprint
@@ -731,8 +736,8 @@ f:e3144b54cf4de7faa73c59a6df217f41:fontconfig/post-install
 f:da5f2b028e889a0a44c6bacb485fbc96:fontconfig/Pkgfile
 f:65d1c84ffb276a53fae725e0097171a6:fontconfig/.footprint
 f:0b26a38813c4aa1bf7a2b9b4e1524b1b:icewm/.md5sum
-f:61458832d6c9bb09e61e46289026c2dc:icewm/Pkgfile
-f:64b369acdd5f7a3d2902bea00ffeadd3:icewm/.footprint
+f:4aa4d702375f25c89738378afae880fd:icewm/Pkgfile
+f:6337c678693af52cacfcac1748833c42:icewm/.footprint
 f:5823720d5ed1f33ecfed4c95b9b0d2af:lame/.md5sum
 f:bcd4225abc71116619848881d5754e6c:lame/Pkgfile
 f:1cc2701f7267dad2c907ca304d22cc6c:lame/.footprint
