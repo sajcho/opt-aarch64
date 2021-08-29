@@ -1,3 +1,14 @@
+drwxr-xr-x	root/root	etc/
+drwxr-xr-x	root/root	etc/gimp/
+drwxr-xr-x	root/root	etc/gimp/2.0/
+-rw-r--r--	root/root	etc/gimp/2.0/controllerrc
+-rw-r--r--	root/root	etc/gimp/2.0/gimprc
+-rw-r--r--	root/root	etc/gimp/2.0/gtkrc
+-rw-r--r--	root/root	etc/gimp/2.0/menurc
+-rw-r--r--	root/root	etc/gimp/2.0/sessionrc
+-rw-r--r--	root/root	etc/gimp/2.0/templaterc
+-rw-r--r--	root/root	etc/gimp/2.0/toolrc
+-rw-r--r--	root/root	etc/gimp/2.0/unitrc
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 lrwxrwxrwx	root/root	usr/bin/gimp -> gimp-2.10
@@ -7,17 +18,6 @@ lrwxrwxrwx	root/root	usr/bin/gimp-console -> gimp-console-2.10
 -rwxr-xr-x	root/root	usr/bin/gimp-debug-tool-2.0
 -rwxr-xr-x	root/root	usr/bin/gimp-test-clipboard-2.0
 -rwxr-xr-x	root/root	usr/bin/gimptool-2.0
-drwxr-xr-x	root/root	usr/etc/
-drwxr-xr-x	root/root	usr/etc/gimp/
-drwxr-xr-x	root/root	usr/etc/gimp/2.0/
--rw-r--r--	root/root	usr/etc/gimp/2.0/controllerrc
--rw-r--r--	root/root	usr/etc/gimp/2.0/gimprc
--rw-r--r--	root/root	usr/etc/gimp/2.0/gtkrc
--rw-r--r--	root/root	usr/etc/gimp/2.0/menurc
--rw-r--r--	root/root	usr/etc/gimp/2.0/sessionrc
--rw-r--r--	root/root	usr/etc/gimp/2.0/templaterc
--rw-r--r--	root/root	usr/etc/gimp/2.0/toolrc
--rw-r--r--	root/root	usr/etc/gimp/2.0/unitrc
 drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/gimp-2.0/
 drwxr-xr-x	root/root	usr/include/gimp-2.0/libgimp/
