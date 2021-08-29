@@ -1,7 +1,7 @@
 # Description:	Standalone fork of systemd's elogind
 # URL:		https://github.com/elogind/elogind
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	intltool libseccomp shadow
+# Depends on:	intltool shadow
 
 name=elogind
 version=246.10
