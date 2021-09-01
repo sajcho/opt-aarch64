@@ -407,8 +407,8 @@ f:df1124471bfa22704f3f99a5ccf48eb3:libidn/.md5sum
 f:7ed0fe16f392e9920ee82421f341dd53:libidn/Pkgfile
 f:4996528ffbc40a2991d042d2660ea6eb:libidn/.footprint
 f:c2e8a388c2b6e640cfa9e86eefe564eb:x265/.md5sum
-f:97dfc9f50c3aeda7ce1ff27309adcd02:x265/Pkgfile
-f:4a05384743aa18ae52d1af9944499d8f:x265/.footprint
+f:f4b11d53a15882ffa129fa39b233079f:x265/Pkgfile
+f:79908d1221997a2a86b5e4265f288051:x265/.footprint
 f:51fb9bc08511243323c3cf827e9ec2d0:gimp/.md5sum
 f:2f331bbcf043d64b0750c635cd251f8a:gimp/Pkgfile
 f:4feb7d476e3464b33174eb7b39286d4a:gimp/0001-no-check-update.patch
