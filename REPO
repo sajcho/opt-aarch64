@@ -219,7 +219,7 @@ f:13a13789164744e195286d5fa39f20dd:tcl/.footprint
 f:31aba2bedd6ee2de16d9d49e866af507:sdl2/.md5sum
 f:04c9d39066b0e2729f978159679db378:sdl2/khronos.patch
 f:6c2ed10f034d980743a3989cc64cb09c:sdl2/directfb-cflags.patch
-f:f4811bfb7a0dc02d9605903eeb3e0c66:sdl2/Pkgfile
+f:3a6d75f21bfaffa34b13a7db7851d141:sdl2/Pkgfile
 f:77d751fcca0af36e400fe31714ed11da:sdl2/wayland-fix-keyboard.patch
 f:f0318383f7346641cdb45b5839d98282:sdl2/.footprint
 f:afdf771e15fe7a151e2e103ff0b55ccf:dav1d/.md5sum
