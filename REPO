@@ -139,6 +139,7 @@ d:nodejs
 d:gtk3
 d:poppler-data
 d:rpcbind
+d:python3-libxml2
 d:gnutls
 d:libgpg-error
 d:dbus
@@ -694,6 +695,9 @@ f:50b5c2b06eb317a13ed5d6f5e56e0fff:rpcbind/.md5sum
 f:33da4b28720d4d98faae9441d3105881:rpcbind/Pkgfile
 f:876298227919763865a7afbc01edc67a:rpcbind/rpcbind.run
 f:f6fe0aa771ab750ac9f690ddf09bc0b0:rpcbind/.footprint
+f:db3e4aeae8f42eb555a907d9130900d4:python3-libxml2/.md5sum
+f:37a750bc029be816757bc555cd055425:python3-libxml2/Pkgfile
+f:b298c7471447434f9ac8095c215a3728:python3-libxml2/.footprint
 f:2256d3e7d76f6c5ef8d12ca96731df68:gnutls/.md5sum
 f:2be4724138792276d52c3ced99c0cd28:gnutls/Pkgfile
 f:baf78bc6529694bf0e39c4f0cec195d5:gnutls/.footprint
@@ -802,7 +806,7 @@ f:78f3176ed9ad2d08b9a8e2600554676e:libssh2/Pkgfile
 f:acf157100fbe56fca4f199bbb4c9f574:libssh2/CVE-2019-17498.patch
 f:b2c5c5a1c81a2fb976d81532ffbee326:libssh2/.footprint
 f:5276adda4947bab6797c8af13a81ab13:itstool/.md5sum
-f:de39721c60871715b9270c007d0dea2b:itstool/Pkgfile
+f:69d5318196121a1bf60dc12299bedd98:itstool/Pkgfile
 f:3fcccef151712aa244e8f2462e604fe6:itstool/.footprint
 f:03dcfc7c8f36f841034accbccf8d67fc:gtk2/.md5sum
 f:16ab50f69ecdf6234208e7ea876c0c2a:gtk2/post-install
