@@ -389,8 +389,8 @@ f:e949f513b5aee971fd8947130ac92e80:python3-elftools/.md5sum
 f:f908181e17d5224c5b13d644f29783c1:python3-elftools/Pkgfile
 f:dca82caf2a068372125f76fde39fc7cd:python3-elftools/.footprint
 f:4a2590b805d2d959a93306b7b4077bff:imagemagick/.md5sum
-f:8676eed304e1b8c630bfecdeae0413b0:imagemagick/Pkgfile
-f:fc221deda4bf1fb852d37ab824f1c0e8:imagemagick/.footprint
+f:877a803ed6d7070adebaf22a1fb903d0:imagemagick/Pkgfile
+f:c8d74ea20dc258e897fcbf514fa7cb71:imagemagick/.footprint
 f:5d3a686ddbdfafdcf683b4cdf178699f:libsoup/.md5sum
 f:f96eca56a083003fa191a0b1b03e7841:libsoup/Pkgfile
 f:2f67ced99c1ffb53d47522e7f4453308:libsoup/.footprint
@@ -836,8 +836,9 @@ f:7ecc18035e17c184ed86290bd6af86b6:gtk-murrine-engine/.md5sum
 f:18c6d4b911994d50996707a1f596cf24:gtk-murrine-engine/Pkgfile
 f:b260a94ab9857f2a7ccf1e20b55278bd:gtk-murrine-engine/.footprint
 f:2d60bbfa4d753118bba098cbce92259e:graphviz/.md5sum
-f:de16506368d81a1d42862e1ca114374c:graphviz/Pkgfile
-f:b6e219c2086fb883df041cf156b5ad21:graphviz/.footprint
+f:7d9395e37a1c8eafe66207895fb409a2:graphviz/post-install
+f:36fa0fe3a63977763e8ba41fbd2dc9f7:graphviz/Pkgfile
+f:49ff443ad4a446cf8eafc7f6746c95a2:graphviz/.footprint
 f:5445dfb2b8bc1531d7dd502e23e70b40:python3-markupsafe/.md5sum
 f:b1f3c866f19205097dbcdee78d55a8bb:python3-markupsafe/Pkgfile
 f:78656157448d3a1a3e41e772b62a20d5:python3-markupsafe/.footprint
