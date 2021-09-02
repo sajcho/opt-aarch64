@@ -407,6 +407,7 @@ f:df1124471bfa22704f3f99a5ccf48eb3:libidn/.md5sum
 f:7ed0fe16f392e9920ee82421f341dd53:libidn/Pkgfile
 f:4996528ffbc40a2991d042d2660ea6eb:libidn/.footprint
 f:c2e8a388c2b6e640cfa9e86eefe564eb:x265/.md5sum
+f:26b5d3299dd225625fc24edc23a76e34:x265/README
 f:f4b11d53a15882ffa129fa39b233079f:x265/Pkgfile
 f:79908d1221997a2a86b5e4265f288051:x265/.footprint
 f:51fb9bc08511243323c3cf827e9ec2d0:gimp/.md5sum
@@ -877,6 +878,7 @@ f:46b641b08b209c773259888b6ad8fefc:shared-mime-info/post-install
 f:cd7370280e352fe50cd452f0875afec6:shared-mime-info/Pkgfile
 f:cd7db2f4304e0cea67da4fc44a9ee48e:shared-mime-info/.footprint
 f:b61b12db72de3c8fda6bff2359ffbb2e:x264/.md5sum
+f:5ce06c547d17deeeb7a644393a0ec685:x264/README
 f:5d508920b1d99f11ac49448d5b95d2db:x264/Pkgfile
 f:1145c0c75497d8a438ba40742101251d:x264/.footprint
 f:cd3d9636d3d77cfee5509e35984a08e6:rpcsvc-proto/.md5sum
