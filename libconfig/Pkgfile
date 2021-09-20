@@ -1,0 +1,25 @@
+# Description:	A simple library for manipulating structured configuration files
+# URL:		http://www.hyperrealm.com/libconfig/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+
+name=libconfig
+version=1.7.3
+release=0
+source=(https://github.com/hyperrealm/${name}/archive/v${version}.tar.gz)
+
+build() {
+	cd ${name}-${version}
+
+	autoreconf -fiv
+
+	./configure \
+		--prefix=/usr
+
+	make
+
+	make check
+
+	make -j1 DESTDIR=$PKG install
+
+	rm -r $PKG/usr/share
+}
