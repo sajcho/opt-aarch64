@@ -1,0 +1,27 @@
+# Description:	event dispatch library
+# URL:		http://software.schmorp.de/pkg/libev.html
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+
+name=libev
+version=4.33
+release=0
+source=(http://dist.schmorp.de/${name}/Attic/${name}-${version}.tar.gz \
+	libev-4.11-Add-pkgconfig-support.patch)
+
+build() {
+	cd ${name}-${version}
+
+	patch -p1 -i $SRC/libev-4.11-Add-pkgconfig-support.patch
+
+	libtoolize --force && aclocal -I m4 && autoheader&&  autoconf \
+		&& automake --add-missing
+
+	./configure \
+		--prefix=/usr
+
+	make
+
+	make DESTDIR=$PKG install
+
+	rm $PKG/usr/include/event.h
+}
