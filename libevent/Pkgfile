@@ -6,7 +6,7 @@
 name=libevent
 version=2.1.12
 _realversion=$version-stable
-release=0
+release=1
 source=(https://github.com/${name}/${name}/releases/download/release-${_realversion}/$name-${_realversion}.tar.gz)
 
 build() {
@@ -19,7 +19,7 @@ build() {
 
 	# Does not work with fakeroot
 	# must be root
-	make -j1 check
+	#make -j1 check
 
 	make -j1 DESTDIR=$PKG install
 }
