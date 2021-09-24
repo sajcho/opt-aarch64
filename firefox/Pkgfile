@@ -4,17 +4,15 @@
 # Depends on:	autoconf-2.13 cbindgen dbus-glib ffmpeg libidl libnotify nodejs nss libxt zip
 
 name=firefox
-version=91.0.2
+version=92.0.1
 release=0
 source=(https://archive.mozilla.org/pub/${name}/releases/${version}/source/${name}-${version}.source.tar.xz \
-	firefox-91.0.1esr-glibc234-1.patch \
 	firefox-91.0.1esr-disable_rust_test-1.patch \
 	firefox.desktop)
 
 build() {
 	cd ${name}-${version}
 
-	patch -Np1 -i $SRC/firefox-91.0.1esr-glibc234-1.patch
 	patch -Np1 -i $SRC/firefox-91.0.1esr-disable_rust_test-1.patch
 
 cat <<- EOF > .mozconfig
@@ -70,7 +68,7 @@ EOF
 	export CARGO_HOME="$PKGMK_SOURCE_DIR/rust"
 
 	./mach build
-	#./mach build toolkit/library/rust
+
 	DESTDIR=$PKG ./mach install
 
 	install -d $PKG/usr/share/pixmaps
