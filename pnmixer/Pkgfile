@@ -1,0 +1,26 @@
+# Description:	PNMixer is a simple mixer application designed to run in system tray
+# URL:		https://github.com/nicklan/pnmixer
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	alsa-lib cmake gettext gtk3 libnotify
+
+name=pnmixer
+version=0.7.2
+release=0
+source=(https://github.com/nicklan/${name}/releases/download/v${version}/${name}-v${version}.tar.gz)
+
+build() {
+	cd ${name}-v${version}
+
+	mkdir build
+	cd build
+
+	cmake .. \
+		-DCMAKE_BUILD_TYPE=None \
+		-DCMAKE_INSTALL_PREFIX=/usr
+
+	make
+
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/usr/share/locale
+}
