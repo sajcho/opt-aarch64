@@ -1,0 +1,23 @@
+# Description:	Asynchronous Name Service Library
+# URL:		http://0pointer.de/lennart/projects/libasyncns/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+
+name=libasyncns
+version=0.8
+release=0
+source=(https://dev.alpinelinux.org/archive/${name}-${version}.tar.gz)
+
+build() {
+	cd ${name}-${version}
+
+	./configure \
+		--build=aarch64-unknown-linux-gnu \
+		--prefix=/usr \
+		--disable-static
+
+	make
+
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/usr/share/doc
+}
