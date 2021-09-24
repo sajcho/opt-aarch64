@@ -4,7 +4,7 @@
 # Depends on:	bison flex gobject-introspection libcap libxml2
 
 name=gstreamer
-version=1.18.4
+version=1.18.5
 release=0
 source=(https://gstreamer.freedesktop.org/src/${name}/${name}-${version}.tar.xz)
 
@@ -14,6 +14,7 @@ build() {
 	build-meson \
 		-Dgtk_doc=disabled \
 		-Dnls=disabled \
+		-Dgst_debug=false \
 		-Dptp-helper-permissions=capabilities \
 		-Dbash-completion=disabled \
 		-Dpackage-name="GStreamer (SAUX Aarch64)" \
