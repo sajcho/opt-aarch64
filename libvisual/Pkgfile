@@ -1,0 +1,26 @@
+# Description:	Abstraction library that comes between applications and audio visualisation plugins
+# URL:		https://sourceforge.net/projects/libvisual/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+
+name=libvisual
+version=0.4.0
+release=0
+source=(https://downloads.sourceforge.net/sourceforge/${name}/${name}-${version}.tar.gz \
+	libvisual-0.4.0-inlinedefineconflict.patch)
+
+build() {
+	cd ${name}-${version}
+
+	patch -p1 -i $SRC/libvisual-0.4.0-inlinedefineconflict.patch
+
+	./configure \
+		--build=aarch64-unknown-linux-gnu \
+		--prefix=/usr \
+		--enable-static
+
+	make
+
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/usr/share/locale
+}
