@@ -239,9 +239,11 @@ drwxr-xr-x	root/root	usr/lib/gstreamer-1.0/include/gst/gl/
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstaudiorate.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstaudioresample.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstaudiotestsrc.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstcdparanoia.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstcompositor.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstencoding.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstgio.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstlibvisual.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstogg.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstopengl.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstopus.so
@@ -261,6 +263,7 @@ drwxr-xr-x	root/root	usr/lib/gstreamer-1.0/include/gst/gl/
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstvolume.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstvorbis.so
 -rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstximagesink.so
+-rwxr-xr-x	root/root	usr/lib/gstreamer-1.0/libgstxvimagesink.so
 lrwxrwxrwx	root/root	usr/lib/libgstallocators-1.0.so -> libgstallocators-1.0.so.0
 lrwxrwxrwx	root/root	usr/lib/libgstallocators-1.0.so.0 -> libgstallocators-1.0.so.0.1805.0
 -rwxr-xr-x	root/root	usr/lib/libgstallocators-1.0.so.0.1805.0
