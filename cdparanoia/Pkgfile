@@ -1,0 +1,28 @@
+# Description:	An audio CD extraction application
+# URL:		http://www.xiph.org/paranoia
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+
+name=cdparanoia
+version=10.2
+release=0
+source=(http://downloads.xiph.org/releases/${name}/${name}-III-${version}.src.tgz \
+	cdparanoia-3.pc)
+
+build() {
+	cd ${name}-III-${version}
+
+	./configure \
+		--build=aarch64-unknown-linux-gnu \
+		--prefix=/usr \
+		--includedir=/usr/include/cdda
+
+	make -j1
+
+	make prefix=$PKG/usr \
+		INCLUDEDIR=$PKG/usr/include/cdda \
+		MANDIR=$PKG/usr/share/man \
+		install
+
+	install -D $SRC/cdparanoia-3.pc \
+		$PKG/usr/lib/pkgconfig/cdparanoia-3.pc
+}
