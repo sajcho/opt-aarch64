@@ -1,0 +1,23 @@
+# Description:	Simple foundation for reading DVD video disks
+# URL:		http://dvdnav.mplayerhq.hu/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	libdvdcss
+
+name=libdvdread
+version=6.1.2
+release=0
+source=(https://download.videolan.org/pub/videolan/${name}/${version}/${name}-${version}.tar.bz2)
+
+build() {
+	cd ${name}-${version}
+
+	./configure \
+		--prefix=/usr \
+		--with-libdvdcss
+
+	make
+
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/usr/share
+}
