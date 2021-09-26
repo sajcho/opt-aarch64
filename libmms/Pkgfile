@@ -1,0 +1,20 @@
+# Description:	MMS stream protocol library
+# URL:		https://sourceforge.net/projects/libmms/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	glib
+
+name=libmms
+version=0.6.4
+release=0
+source=(https://downloads.sourceforge.net/${name}/${name}-${version}.tar.gz)
+
+build() {
+	cd ${name}-${version}
+
+	./configure \
+		--prefix=/usr
+
+	make
+
+	make DESTDIR=$PKG install
+}
