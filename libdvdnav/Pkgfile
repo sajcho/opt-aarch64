@@ -1,0 +1,23 @@
+# Description:	A library for sophisticated DVD navigation features
+# URL:		http://dvdnav.mplayerhq.hu/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	libdvdread
+
+name=libdvdnav
+version=6.1.1
+release=0
+source=(https://download.videolan.org/pub/videolan/${name}/${version}/${name}-${version}.tar.bz2)
+
+build() {
+	cd ${name}-${version}
+
+	./configure \
+		--prefix=/usr \
+		--enable-shared
+
+	make
+
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/usr/share
+}
