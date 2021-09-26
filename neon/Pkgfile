@@ -1,0 +1,28 @@
+# Description:	HTTP and WebDAV client library with a C interface
+# URL:		https://notroj.github.io/neon/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	expat openssl xmlto
+
+name=neon
+version=0.32.1
+release=0
+source=(https://notroj.github.io/${name}/${name}-${version}.tar.gz)
+
+build() {
+	cd ${name}-${version}
+
+	./configure \
+		--prefix=/usr \
+		--enable-shared \
+		--disable-nls \
+		--disable-debug \
+		--with-ssl \
+		--with-expat \
+		--without-gssapi
+
+	make
+
+	make -j1 DESTDIR=$PKG install
+
+	rm -r $PKG/usr/share/doc
+}
