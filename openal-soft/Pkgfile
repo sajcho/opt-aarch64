@@ -1,0 +1,22 @@
+# Description:	Software implementation of OpenAL API
+# URL:		https://kcat.strangesoft.net/openal.html
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	alsa-lib samurai
+
+name=openal-soft
+version=1.21.1
+release=0
+source=(https://github.com/kcat/${name}/archive/${version}/${name}-${version}.tar.gz)
+
+build() {
+	cd ${name}-${version}/build
+
+	cmake .. -G Ninja \
+		-DCMAKE_BUILD_TYPE=None \
+		-DCMAKE_INSTALL_PREFIX=/usr \
+		-DCMAKE_INSTALL_LIBDIR=lib
+
+	ninja
+
+	DESTDIR=$PKG ninja install
+}
