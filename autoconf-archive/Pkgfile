@@ -5,7 +5,7 @@
 
 name=autoconf-archive
 version=2021.02.19
-release=0
+release=1
 source=(https://ftpmirror.gnu.org/${name}/${name}-${version}.tar.xz)
 
 build() {
@@ -19,4 +19,6 @@ build() {
 	make DESTDIR=$PKG install
 
 	rm -r $PKG/usr/share/{doc,info}
+	rm $PKG/usr/share/aclocal/ax_check_enable_debug.m4
+	rm $PKG/usr/share/aclocal/ax_code_coverage.m4
 }

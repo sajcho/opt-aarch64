@@ -136,7 +136,6 @@ drwxr-xr-x	root/root	usr/share/aclocal/
 -rw-r--r--	root/root	usr/share/aclocal/ax_check_docbook_xslt.m4
 -rw-r--r--	root/root	usr/share/aclocal/ax_check_docbook_xslt_min.m4
 -rw-r--r--	root/root	usr/share/aclocal/ax_check_dos_filesys.m4
--rw-r--r--	root/root	usr/share/aclocal/ax_check_enable_debug.m4
 -rw-r--r--	root/root	usr/share/aclocal/ax_check_func_in.m4
 -rw-r--r--	root/root	usr/share/aclocal/ax_check_gd.m4
 -rw-r--r--	root/root	usr/share/aclocal/ax_check_gir_symbols_gjs.m4
@@ -179,7 +178,6 @@ drwxr-xr-x	root/root	usr/share/aclocal/
 -rw-r--r--	root/root	usr/share/aclocal/ax_check_vscript.m4
 -rw-r--r--	root/root	usr/share/aclocal/ax_check_x86_features.m4
 -rw-r--r--	root/root	usr/share/aclocal/ax_check_zlib.m4
--rw-r--r--	root/root	usr/share/aclocal/ax_code_coverage.m4
 -rw-r--r--	root/root	usr/share/aclocal/ax_compare_version.m4
 -rw-r--r--	root/root	usr/share/aclocal/ax_compile_check_sizeof.m4
 -rw-r--r--	root/root	usr/share/aclocal/ax_compiler_flags.m4
