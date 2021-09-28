@@ -1,4 +1,5 @@
 9f6ccc673cbdb66ad1ad4a4e18b99b61  elogind-246.10-revert-polkit-automagic.patch
+999587a7ff6612cc03a4a4b2ff61d182  elogind-user
 32ab2201281f14738d9c045f3669c14d  elogind-v246.10.tar.gz
-046932ddd1b42a381679729bda909139  elogind.run
+32ddaa21b02110f9e886a0c417b8b5b9  elogind.run
 fd7037fcaaafe4959a53cccd12a193d6  elogind.wrapper

@@ -5,15 +5,23 @@
 
 name=elogind
 version=246.10
-release=0
+release=1
 source=(https://github.com/${name}/${name}/archive/v${version}/${name}-v${version}.tar.gz \
 	elogind-246.10-revert-polkit-automagic.patch \
-	elogind.run  elogind.wrapper)
+	elogind.run \
+	elogind-user \
+	elogind.wrapper)
 
 build() {
 	cd ${name}-${version}
 
 	patch -p1 -i $SRC/elogind-246.10-revert-polkit-automagic.patch
+
+	# define bus socket path from dbus-elogind
+	sed -i 's|path=/run/dbus|path=/run/dbus-elogind|g' \
+		src/libelogind/sd-bus/bus-internal.h
+	sed -i 's|path=/run/dbus|path=/run/dbus-elogind|g' \
+		src/libelogind/sd-bus/test-bus-vtable.c
 
 	build-meson \
 		-Dcgroup-controller=elogind \
@@ -21,13 +29,14 @@ build() {
 		-Drootlibexecdir=/usr/lib/elogind \
 		-Dreboot-path=/sbin/reboot \
 		-Ddefault-hierarchy=hybrid \
+		-Ddbuspolicydir=/etc/dbus-1/system.d \
 		-Ddefault-kill-user-processes=false \
 		-Dman=auto \
 		. build
 
 	meson compile ${JOBS:+-j ${JOBS}} -C build
 
-	#meson test --no-rebuild -v -C build
+	#meson test --no-rebuild -C build
 
 	DESTDIR=$PKG meson install --no-rebuild -C build
 
@@ -46,8 +55,8 @@ build() {
 	ln -s /run/runit/supervise.elogind $PKG/etc/sv/elogind/supervise
 
 	install -m 0755 $SRC/elogind.wrapper $PKG/usr/lib/elogind
+	#install -D -m 0644 $SRC/elogind-user $PKG/etc/pam.d/elogind-user
 
-	rm -r $PKG/usr/share/{polkit-1,dbus-1/system.d}
 	rm -r $PKG/usr/share/{bash-completion,doc,locale,zsh}
 	rm -r $PKG/usr/share/man/man3
 }
