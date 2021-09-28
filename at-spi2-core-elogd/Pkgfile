@@ -1,0 +1,28 @@
+# Description:	Protocol definitions and daemon for D-Bus at-spi - use dbus-elogind
+# URL:		http://developer.gnome.org/libatspi/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	dbus-elogind gobject-introspection libxtst samurai
+
+name=at-spi2-core-elogd
+_realname=at-spi2-core
+version=2.40.3
+release=0
+source=(https://download.gnome.org/sources/${_realname}/${version%.*}/${_realname}-${version}.tar.xz)
+
+build() {
+	cd ${_realname}-${version}
+
+	build-meson \
+		--libexecdir=/usr/lib/at-spi2 \
+		-Dx11=yes \
+		-Ddocs=false \
+		-Dintrospection=yes \
+		-Ddbus_daemon=/usr/bin/dbus-daemon \
+		. build
+
+	meson compile ${JOBS:+-j ${JOBS}} -C build
+
+	DESTDIR=$PKG meson install --no-rebuild -C build
+
+	rm -r $PKG/usr/{share/locale,lib/systemd}
+}
