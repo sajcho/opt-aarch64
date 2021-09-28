@@ -8,10 +8,10 @@ drwxr-xr-x	root/root	etc/dbus-1/
 -rw-r--r--	root/root	etc/dbus-1/system.conf
 lrwxrwxrwx	root/root	etc/machine-id -> /var/lib/dbus/machine-id
 drwxr-xr-x	root/root	etc/sv/
-drwxr-xr-x	root/root	etc/sv/dbus/
--rwxr-xr-x	root/root	etc/sv/dbus/check
--rwxr-xr-x	root/root	etc/sv/dbus/run
-lrwxrwxrwx	root/root	etc/sv/dbus/supervise -> /run/runit/supervise.dbus
+drwxr-xr-x	root/root	etc/sv/dbus-elogind/
+-rwxr-xr-x	root/root	etc/sv/dbus-elogind/check
+-rwxr-xr-x	root/root	etc/sv/dbus-elogind/run
+lrwxrwxrwx	root/root	etc/sv/dbus-elogind/supervise -> /run/runit/supervise.dbus-elogind
 drwxr-xr-x	root/root	usr/
 drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/dbus-cleanup-sockets

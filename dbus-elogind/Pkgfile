@@ -4,17 +4,18 @@
 # Depends on:	autoconf-archive elogind xmlto
 
 name=dbus-elogind
+_realname=dbus
 version=1.12.20
-release=0
-source=(https://dbus.freedesktop.org/releases/dbus/${name}-${version}.tar.gz \
+release=1
+source=(https://dbus.freedesktop.org/releases/dbus/${_realname}-${version}.tar.gz \
 	dbus-daemon-optional.patch \
 	dbus-enable-elogind.patch \
 	30-dbus.launch \
-	dbus.check \
-	dbus.run)
+	dbus-elogind.check \
+	dbus-elogind.run)
 
 build() {
-	cd ${name}-${version}
+	cd ${_realname}-${version}
 
 	patch -p1 -i $SRC/dbus-daemon-optional.patch
 	patch -p1 -i $SRC/dbus-enable-elogind.patch
@@ -41,13 +42,15 @@ build() {
 
 	make
 
+	#make check
+
 	make DESTDIR=$PKG install
 
 	# dbus runit service
-	install -d $PKG/etc/sv/dbus
-	install -m 0755 $SRC/dbus.check $PKG/etc/sv/dbus/check
-	install -m 0755 $SRC/dbus.run $PKG/etc/sv/dbus/run
-	ln -s /run/runit/supervise.dbus $PKG/etc/sv/dbus/supervise
+	install -d $PKG/etc/sv/dbus-elogind
+	install -m 0755 $SRC/dbus-elogind.check $PKG/etc/sv/dbus-elogind/check
+	install -m 0755 $SRC/dbus-elogind.run $PKG/etc/sv/dbus-elogind/run
+	ln -s /run/runit/supervise.dbus-elogind $PKG/etc/sv/dbus-elogind/supervise
 
 	install -D -m 0755 $SRC/30-dbus.launch \
 		$PKG/etc/X11/xinit/xinitrc.d/30-dbus.launch.sh
