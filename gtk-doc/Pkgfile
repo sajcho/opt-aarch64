@@ -1,0 +1,22 @@
+# Description:	Documentation tool for public library API
+# URL:		https://www.gtk.org/gtk-doc/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	docbook-xsl-nons gettext glib python3-pygments python3-six rarian
+
+name=gtk-doc
+version=1.33.2
+release=0
+source=(https://download.gnome.org/sources/${name}/${version%.*}/${name}-${version}.tar.xz)
+
+build() {
+	cd ${name}-${version}
+
+	autoreconf -fiv
+
+	./configure \
+		--prefix=/usr
+
+	make
+
+	make DESTDIR=$PKG install
+}
