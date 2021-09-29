@@ -7,6 +7,7 @@ d:librsvg
 d:startup-notification
 d:pavucontrol
 d:tcl
+d:accountsservice
 d:sdl2
 d:dav1d
 d:cairo
@@ -18,6 +19,7 @@ d:asciidoc
 d:python3-toml
 d:materia-gtk-theme
 d:elogind
+d:gtk-doc
 d:dconf
 d:at-spi2-core-elogd
 d:python3-tz
@@ -74,6 +76,7 @@ d:numlockx
 d:python3-elftools
 d:imagemagick
 d:libsoup
+d:python3-dbus
 d:alsa-utils
 d:libjpeg-turbo
 d:gnome-common
@@ -107,6 +110,7 @@ d:zip
 d:libsass
 d:dconf-editor
 d:jansson
+d:squashfs-tools
 d:rust
 d:libshout
 d:expect
@@ -129,6 +133,8 @@ d:libsigc++2
 d:recode
 d:libmpcdec
 d:gpgme
+d:python3-pygments
+d:rarian
 d:libksba
 d:libdvdnav
 d:libsigc++
@@ -163,6 +169,7 @@ d:fakeroot
 d:babl
 d:libpsl
 d:libtheora
+d:polkit-elogd
 d:autoconf-2.13
 d:yasm
 d:libxslt
@@ -219,6 +226,7 @@ d:giflib
 d:icu
 d:intltool
 d:lcms2
+d:python3-dbusmock
 d:swig
 d:rxvt-unicode
 d:libmypaint
@@ -294,6 +302,9 @@ f:ddc2714f0616c329e041d7ee0875fa59:pavucontrol/.footprint
 f:2a1799eee56ca50cf8031115ce62ec07:tcl/.md5sum
 f:f73a776ce81e9c4330896c382c3d387b:tcl/Pkgfile
 f:13a13789164744e195286d5fa39f20dd:tcl/.footprint
+f:92929cbad29e438eac3e45d1a9e151d9:accountsservice/.md5sum
+f:d64b9674506db12ba90a04c243f21230:accountsservice/Pkgfile
+f:a40b047e7a5d0f488661c03c09ebea73:accountsservice/.footprint
 f:31aba2bedd6ee2de16d9d49e866af507:sdl2/.md5sum
 f:04c9d39066b0e2729f978159679db378:sdl2/khronos.patch
 f:6c2ed10f034d980743a3989cc64cb09c:sdl2/directfb-cflags.patch
@@ -337,6 +348,9 @@ f:32ddaa21b02110f9e886a0c417b8b5b9:elogind/elogind.run
 f:9f6ccc673cbdb66ad1ad4a4e18b99b61:elogind/elogind-246.10-revert-polkit-automagic.patch
 f:999587a7ff6612cc03a4a4b2ff61d182:elogind/elogind-user
 f:f68e18e8f758be8087427add627ec317:elogind/.footprint
+f:25dd1e0101be6bbda6da6ad5b359c2c4:gtk-doc/.md5sum
+f:6b475c2cd96d5605cff46ee4c313dcf3:gtk-doc/Pkgfile
+f:a6a57439817bdcee2e3ce36af3a19317:gtk-doc/.footprint
 f:7323f1af91009c85891bdf569438d64b:dconf/.md5sum
 f:70e2d4b35dc1cdb80069da708d29ce0a:dconf/systemd-userunit.patch
 f:534f5efee7e02df7771dd177cb389f2b:dconf/Pkgfile
@@ -531,6 +545,9 @@ f:c8d74ea20dc258e897fcbf514fa7cb71:imagemagick/.footprint
 f:5d3a686ddbdfafdcf683b4cdf178699f:libsoup/.md5sum
 f:067eee4885ea3d54fb9f4f71b1672b2e:libsoup/Pkgfile
 f:6b13d0751152d100610fe339a5d205e2:libsoup/.footprint
+f:e5d435b0f0eef755153069c655964e0a:python3-dbus/.md5sum
+f:3c898ee58dad840cd264e4c3e6721964:python3-dbus/Pkgfile
+f:06e8a45f2af043ec56d4132de637ee41:python3-dbus/.footprint
 f:eba67c8e3501c8adbbe841429d047c5a:alsa-utils/.md5sum
 f:153c5ce2ed9e237b3c04e0a035224634:alsa-utils/Pkgfile
 f:5e41af5d750e3f4b85bfe8f01b738669:alsa-utils/alsa.run
@@ -653,6 +670,10 @@ f:f787c401fc04c2f3f3270a5d9c70e718:dconf-editor/.footprint
 f:b6c15164a9df3bbe94369ae845bbf1c7:jansson/.md5sum
 f:a5dfc5e529ec96a6eefa2d28c45d9073:jansson/Pkgfile
 f:90d476e25b8118a17e5bca696783d8d9:jansson/.footprint
+f:a934f19613a30dc984c871f0ff71e48b:squashfs-tools/squashfs-tools-4.4-fno-common.patch
+f:7faaa7b5597d9fe493d496ad4386ea31:squashfs-tools/.md5sum
+f:23b5c36de2d7f204ebe769c66ee1c6f5:squashfs-tools/Pkgfile
+f:b9d3d211de2fa03d524df195ee4afe29:squashfs-tools/.footprint
 f:008b08ce429f627fa71c897ff16eb330:rust/.md5sum
 f:59041d2148f9ac01f0052bbd48253787:rust/libexec.patch
 f:6931ac96ce74c8653c679a947ed92b48:rust/Pkgfile
@@ -734,6 +755,13 @@ f:d5b07c53bfbd9b636ce3917a92b1256b:libmpcdec/.footprint
 f:99a59556470ba75a4300de9ed518e087:gpgme/.md5sum
 f:3f526216143b0cf63bcf9e90760da75a:gpgme/Pkgfile
 f:d2403d15334c06438e892e6aab31ff88:gpgme/.footprint
+f:87b0446cc556fce14985e7b7442cb6c0:python3-pygments/.md5sum
+f:2b0d70be354416539465554055c4294c:python3-pygments/Pkgfile
+f:ecdeacd4d53181858552f30da04934da:python3-pygments/.footprint
+f:5a1221b2f2c7b832c56cd6f69f7dc0b7:rarian/.md5sum
+f:91b019056ee33bb4539b9471e4ac68e9:rarian/Pkgfile
+f:d6ff6439fefde9de325c6f9f745b2813:rarian/user-segfault.patch
+f:ccc5e028077b3803a13fcf4091280ce0:rarian/.footprint
 f:6bba73612234edb735aca86003f72063:libksba/.md5sum
 f:94bb2c33cc9ad48ad421cb42e49ce6c6:libksba/Pkgfile
 f:2d08caa9c40e7e02a3510d8338313815:libksba/.footprint
@@ -860,6 +888,13 @@ f:d84de4f1556f6d8a999f368e9370f126:libpsl/.footprint
 f:044af184a4cd855f1ec59b14df9e5929:libtheora/.md5sum
 f:c5af8d6198cd63ba9c9718499afde2a8:libtheora/Pkgfile
 f:4591619096a713a263fd7e57df3bbb49:libtheora/.footprint
+f:282fd0ef6f99b37be9456ef5b2ac851f:polkit-elogd/.md5sum
+f:2ba600dbc53496365fae45a08b82a02d:polkit-elogd/polkit-1
+f:7a9e035f2106043297ec889594e041b7:polkit-elogd/Pkgfile
+f:359a52360df3ef7eb1fc4107e375137d:polkit-elogd/polkitd.run
+f:3f3e6bc52053563ccc8eae4b57598eb1:polkit-elogd/fix-elogind.patch
+f:659d0686cd2b48e8b1bcb83e6cf4a6fa:polkit-elogd/.footprint
+f:86f920f79826816dcf6a7939bfcb8b44:polkit-elogd/pre-install
 f:5203e79efad2570c7c0de895828de8ee:autoconf-2.13/.md5sum
 f:6cca3c015178df225209b04228553826:autoconf-2.13/Pkgfile
 f:113e244a8e5a59590ffa6c5020357aa6:autoconf-2.13/.footprint
@@ -1070,6 +1105,9 @@ f:0fb5cd7dbe852bbac973124b5afdda9d:intltool/.footprint
 f:a933827f65a8d2a333ed87fcf62532d1:lcms2/.md5sum
 f:9fba7ba3c1fec05fe0315fccb666d3bf:lcms2/Pkgfile
 f:8740bb3088048a6264ba6167a710bc83:lcms2/.footprint
+f:7aece3a3f49d1efd0d6f50770a18f637:python3-dbusmock/.md5sum
+f:aab8146cf9ab06f53896cd5f04d9038c:python3-dbusmock/Pkgfile
+f:b522f87382bdeee85a0ebfd79aa195a7:python3-dbusmock/.footprint
 f:f775b9f6f9bc2f438ac919188bad4069:swig/.md5sum
 f:9b0c361afac915db67fbdbc4247a460e:swig/Pkgfile
 f:04d5da180e5b204334f8d9f924f97fe6:swig/.footprint
