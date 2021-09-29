@@ -1,0 +1,29 @@
+# Description:	Library for working with arbitrary big sizes in bytes
+# URL:		https://github.com/rhinstaller/libbytesize
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	gettext gmp mpfr libpcre2 python3
+
+name=libbytesize
+version=2.6
+release=0
+source=(https://github.com/storaged-project/${name}/releases/download/${version}/${name}-${version}.tar.gz)
+
+build() {
+	cd ${name}-${version}
+
+	./configure \
+		--prefix=/usr \
+		--without-gtk-doc
+
+	make
+
+	# Disable test that depends on unpackaged pocketlint
+	#sed -i 's|canary_tests.sh$||g' tests/Makefile
+	# change to system locale
+	#sed -i 's|fr_FR.UTF8|C.UTF8|' tests/libbytesize_unittest.sh
+	#make check
+
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/usr/share/locale
+}
