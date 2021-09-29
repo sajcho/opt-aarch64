@@ -1,7 +1,7 @@
 # Description:	X Compositor (a fork of compton) - use dbus-elogind
 # URL:		https://github.com/yshui/picom
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	asciidoc dbus-elogind libconfig libev libxcomposite libxdg-basedir libxinerama mesa pcre pixman uthash xcb-util-image xcb-util-renderutil
+# Depends on:	asciidoc dbus-elogind libconfig libev libxcomposite libxinerama mesa libpcre pixman uthash xcb-util-image xcb-util-renderutil
 
 name=picom-elogd
 _realname=picom
