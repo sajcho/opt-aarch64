@@ -1,0 +1,4 @@
+1ba264947d05bd8e0f9dc9a9ed80cf3e  libaio-0.3.112.tar.gz
+14cdeca7539139246a8d8da0d75549ab  libaio-cppflags.patch
+7bf5539fb566ef3b14a670ac2ec530b2  libaio-errno.patch
+c5ede8f136e2c7f069a2c0e21e6f83a7  libaio-optional-werror.patch
