@@ -1,0 +1,29 @@
+# Description:	Tools for squashfs, a highly compressed read-only filesystem for Linux
+# URL:		https://github.com/plougher/squashfs-tools
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	attr lz4 lzo xz zlib zstd
+
+name=squashfs-tools
+version=4.4
+release=1
+source=(https://github.com/plougher/${name}/archive/${version}/${name}-${version}.tar.gz \
+	squashfs-tools-4.4-fno-common.patch)
+
+build() {
+	cd ${name}-${version}
+
+	patch -p1 -i $SRC/${name}-${version}-fno-common.patch
+
+	cd ${name}
+
+	make \
+		GZIP_SUPPORT=1 \
+		XZ_SUPPORT=1 \
+		LZO_SUPPORT=1 \
+		LZMA_XZ_SUPPORT=1 \
+		LZ4_SUPPORT=1 \
+		ZSTD_SUPPORT=1 \
+		XATTR_SUPPORT=1
+
+	make install INSTALL_DIR=$PKG/sbin
+}
