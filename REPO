@@ -1272,7 +1272,7 @@ f:edf10ca6eb17c476394a812110122aa6:glibmm24/Pkgfile
 f:47759eaf0d40d770fb30965dda252188:glibmm24/.footprint
 f:245ad01672c24c39b185c70745da4bf9:udisks2/.md5sum
 f:fd70ee4163c5bfd9bd474c28a2548c46:udisks2/O_CLOEXEC.patch
-f:4bf319372a2f914044790a6e76f73f47:udisks2/Pkgfile
+f:281a8bcbc62e026e2d5a7b3447801105:udisks2/Pkgfile
 f:78956111f43607921cb53ac477987b4b:udisks2/.footprint
 f:1e32dfb9d6a10a722eb868b716c1c4b0:libblockdev/.md5sum
 f:7117151dc6cfc8ffd8c10316eb206f2b:libblockdev/Pkgfile
