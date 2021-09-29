@@ -1,0 +1,35 @@
+# Description:	Logical Volume Manager 2 utilities
+# URL:		http://sourceware.org/lvm2/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	libdevmapper libaio
+
+name=lvm2
+version=2.03.13
+release=0
+source=(https://mirrors.kernel.org/sourceware/lvm2/LVM2.${version}.tgz)
+
+build() {
+	cd LVM2.${version}
+
+	CONFIG_SHELL=/bin/bash \
+	./configure \
+		--prefix=/usr \
+		--exec-prefix= \
+		--datarootdir=/usr \
+		--mandir=/usr/share/man \
+		--enable-pkgconfig \
+		--enable-udev_sync \
+		--enable-udev_rules \
+		--disable-readline \
+		--disable-selinux \
+		--with-udev-prefix= \
+		--with-{user,group}=root
+
+	make
+
+	make DESTDIR=$PKG install_lvm2
+
+	install -d -m 0700 $PKG/etc/lvm/{archive,backup,cache}
+	install -d -m 1777 $PKG/var/lock
+	install -d -m 0700 $PKG/var/lock/lvm
+}
