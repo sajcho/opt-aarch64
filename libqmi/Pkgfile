@@ -1,0 +1,27 @@
+# Description:	QMI modem protocol helper library
+# URL:		https://www.freedesktop.org/wiki/Software/libqmi
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	glib libgudev libmbim
+
+name=libqmi
+version=1.30.2
+release=0
+source=(https://www.freedesktop.org/software/${name}/${name}-${version}.tar.xz)
+
+build() {
+	cd ${name}-${version}
+
+	./configure \
+		--prefix=/usr \
+		--libexecdir=/usr/lib/qmi \
+		--enable-mbim-qmux \
+		--enable-more-warnings=yes \
+		--disable-qrtr \
+		--disable-static
+
+	make
+
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/usr/share/{bash-completion,gtk-doc}
+}
