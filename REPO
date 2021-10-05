@@ -5,6 +5,7 @@ d:perl-xml-parser
 d:openjpeg2
 d:librsvg
 d:startup-notification
+d:python3-lit
 d:pavucontrol
 d:tcl
 d:accountsservice
@@ -147,6 +148,7 @@ d:libksba
 d:libdvdnav
 d:libsigc++
 d:libdaemon
+d:at-spi2-atk-elogd
 d:libpcap
 d:gst-plugins-good
 d:libnotify
@@ -311,6 +313,9 @@ f:30f9717967123f8088e8481670515a6f:librsvg/.footprint
 f:076b7eac0d84b76f478dcc7c301ff068:startup-notification/.md5sum
 f:7209ccf17db6930eec92b10e12fe507a:startup-notification/Pkgfile
 f:db757b2e5a75e3cb9a5e2bdde32e6d3b:startup-notification/.footprint
+f:09030b03ded9a83e93a6544f5f1cf148:python3-lit/.md5sum
+f:719590cfa394f619838651a1731f56b2:python3-lit/Pkgfile
+f:e585ec3310a2dec77970ed9ccf3d3d04:python3-lit/.footprint
 f:9ca9ab192c10c80e5cc9b61395fcd92e:pavucontrol/.md5sum
 f:8a5cc7a22c426ee8cd28967ac8569d2c:pavucontrol/Pkgfile
 f:ddc2714f0616c329e041d7ee0875fa59:pavucontrol/.footprint
@@ -820,6 +825,9 @@ f:25e2e29a17cb36eb98bd246b532a3cbf:libsigc++/.footprint
 f:0d3f90705096d2119a3563516fdb379c:libdaemon/.md5sum
 f:dbf7692087acbe4bf4dc55f90d6ae48c:libdaemon/Pkgfile
 f:4f395863e79829697114feb0871546b8:libdaemon/.footprint
+f:ec870b19bc2b3fecb55d98eaaba67b30:at-spi2-atk-elogd/.md5sum
+f:c9b6026e69398c9c7f6c650b89b17255:at-spi2-atk-elogd/Pkgfile
+f:657f858b1b4f94b6df6b2f4471ace1d5:at-spi2-atk-elogd/.footprint
 f:2ba77c747983382585a8792ba9f8d595:libpcap/.md5sum
 f:31d4f29a089f20ad34abc4cce443c56e:libpcap/Pkgfile
 f:d247a7fa81224b6a5a6a851d448b1173:libpcap/.footprint
