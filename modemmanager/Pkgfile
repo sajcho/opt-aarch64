@@ -1,0 +1,33 @@
+# Description:	ModemManager - Mobile broadband modem management service
+# URL:		https://www.freedesktop.org/wiki/Software/ModemManager/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	gobject-introspection libgudev libmbim libqmi polkit
+
+name=modemmanager
+_realname=ModemManager
+version=1.18.2
+release=0
+source=(https://www.freedesktop.org/software/${_realname}/${_realname}-${version}.tar.xz \
+	${name}.rules)
+
+build() {
+	cd ${_realname}-${version}
+
+	./configure \
+		--prefix=/usr \
+		--sysconfdir=/etc \
+		--enable-vala=no \
+		--disable-gtk-doc \
+		--disable-static \
+		--with-polkit=permissive
+
+	make
+
+	make DESTDIR=$PKG install
+
+	mkdir -p $PKG/usr/share/polkit-1/rules.d
+	install -D -m 0644 -D $SRC/${name}.rules \
+		$PKG/usr/share/polkit-1/rules.d/01-org.freedesktop.ModemManager.rules
+
+	rm -r $PKG/usr/share/{bash-completion,locale}
+}
