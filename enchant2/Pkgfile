@@ -1,0 +1,25 @@
+# Description:	A wrapper library for generic spell checking (v2)
+# URL:		https://abiword.github.io/enchant/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	aspell glib hunspell
+
+name=enchant2
+_realname=enchant
+version=2.3.1
+release=0
+source=(https://github.com/AbiWord/${_realname}/releases/download/v$version/${_realname}-$version.tar.gz)
+
+build() {
+	cd ${_realname}-$version
+
+	./configure \
+		--prefix=/usr \
+		--disable-static \
+		--with-hunspell
+
+	sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
+
+	make
+
+	make DESTDIR=$PKG pkgdatadir=/usr/share/enchant-2 install
+}
