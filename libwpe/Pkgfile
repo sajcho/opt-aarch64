@@ -1,0 +1,19 @@
+# Description:	General-purpose library specifically developed for the WPE-flavored port of WebKit
+# URL:		https://wpewebkit.org/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	libxkbcommon mesa
+
+name=libwpe
+version=1.12.0
+release=0
+source=(https://github.com/WebPlatformForEmbedded/${name}/releases/download/${version}/${name}-${version}.tar.xz)
+
+build() {
+	cd ${name}-${version}
+
+	build-meson . build
+
+	meson compile ${JOBS:+-j ${JOBS}} -C build
+
+	DESTDIR=$PKG meson install --no-rebuild -C build
+}
