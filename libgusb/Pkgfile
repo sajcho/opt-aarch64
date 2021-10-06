@@ -1,0 +1,23 @@
+# Description:	GLib wrapper around libusb
+# URL:		https://github.com/hughsie/libgusb
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	eudev glib gobject-introspection libusb meson
+
+name=libgusb
+version=0.3.7
+release=0
+source=(https://github.com/hughsie/${name}/archive/${version}/${name}-${version}.tar.gz)
+
+build() {
+	cd ${name}-${version}
+
+	build-meson \
+		-Dusb_ids=/usr/share/usb.ids \
+		-Ddocs=false \
+		-Dvapi=false \
+		. build
+
+	meson compile ${JOBS:+-j ${JOBS}} -C build
+
+	DESTDIR=$PKG meson install --no-rebuild -C build
+}
