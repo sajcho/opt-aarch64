@@ -1,0 +1,27 @@
+# Description:	HTTP web service mocking library
+# URL:		https://gitlab.com/uhttpmock/uhttpmock
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	glib gobject-introspection libsoup
+
+name=uhttpmock
+version=0.5.3
+release=0
+source=(https://tecnocode.co.uk/downloads/${name}/${name}-${version}.tar.xz \
+	only-listen-on-ipv4.patch)
+
+build() {
+	cd ${name}-${version}
+
+	patch -p1 -i $SRC/only-listen-on-ipv4.patch
+
+	./configure \
+		--prefix=/usr \
+		--enable-introspection \
+		--disable-vala
+
+	make
+
+	make DESTDIR=$PKG install
+
+	rm -r $PKG/usr/share/gtk-doc
+}
