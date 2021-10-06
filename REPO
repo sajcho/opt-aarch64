@@ -1,4 +1,5 @@
 d:libexif
+d:libnfs
 d:libpng
 d:gtkmm3
 d:perl-xml-parser
@@ -12,6 +13,7 @@ d:accountsservice
 d:sdl2
 d:dav1d
 d:cairo
+d:uhttpmock
 d:mypaint-brushes
 d:docbook-xml
 d:mozjs78
@@ -25,6 +27,7 @@ d:dconf
 d:at-spi2-core-elogd
 d:python3-tz
 d:libdv
+d:gvfs
 d:pango
 d:gobject-introspection
 d:ffmpeg
@@ -47,7 +50,9 @@ d:python3-cython
 d:libgudev
 d:enchant2
 d:pulseaudio
+d:colord
 d:make-ca
+d:libgdata
 d:opus
 d:python3-atomicwrites
 d:alsa-lib
@@ -111,6 +116,7 @@ d:brotli
 d:clutter
 d:keyutils
 d:pcre2
+d:libcdio-paranoia
 d:xapp
 d:gdk-pixbuf
 d:python3-extras
@@ -121,6 +127,7 @@ d:picom-elogd
 d:fdk-aac
 d:libaio
 d:zip
+d:exempi
 d:libsass
 d:dconf-editor
 d:jansson
@@ -134,6 +141,7 @@ d:cbindgen
 d:adwaita-icon-theme
 d:libwpe
 d:tiff
+d:libcdio
 d:python3-asn1
 d:nftables
 d:gsettings-desktop-schemas
@@ -145,6 +153,7 @@ d:modemmanager
 d:libidl
 d:nss
 d:lvm2
+d:libgusb
 d:sbc
 d:python3-alabaster
 d:libsigc++2
@@ -173,6 +182,7 @@ d:pinentry
 d:asciidoctor
 d:python3-appdirs
 d:atk
+d:rest
 d:xvfb-run
 d:npth
 d:xmlto
@@ -194,6 +204,7 @@ d:libtheora
 d:polkit-elogd
 d:autoconf-2.13
 d:yasm
+d:webkitgtk
 d:woff2
 d:libxslt
 d:gcr
@@ -205,6 +216,7 @@ d:mutt
 d:glibmm
 d:libsecret
 d:hunspell
+d:libcddb
 d:aom
 d:jsoncpp
 d:python3-distlib
@@ -218,6 +230,7 @@ d:libsrtp
 d:gtk3
 d:cairomm
 d:libdbusmenu-gtk3
+d:libmtp
 d:poppler-data
 d:pulseaudio-elogd
 d:rpcbind
@@ -226,11 +239,13 @@ d:pangomm
 d:libmms
 d:gnutls
 d:vala
+d:boost
 d:libgpg-error
 d:dbus
 d:libvorbis
 d:orc
 d:libsdl
+d:gnome-online-accounts
 d:gnupg
 d:fontconfig
 d:icewm
@@ -241,6 +256,7 @@ d:libdvdread
 d:lsof
 d:openal-soft
 d:exiv2
+d:libgphoto2
 d:libev
 d:python3-cparser
 d:mm-common
@@ -306,6 +322,10 @@ d:flac
 f:e9f90e50166da12cce1d428fbf8b86fb:libexif/.md5sum
 f:80f2e0dbc244f7f7b5069794e82d9de6:libexif/Pkgfile
 f:ef17112af577de16fd0afd057b4f95dc:libexif/.footprint
+f:66d36703a431e989fc9dd4fe43895f41:libnfs/.md5sum
+f:81fcd92a12e1eab2c09419e267ad21f7:libnfs/fix-includes.patch
+f:4ca4138b9a18f5f196520d64dd4ad0a5:libnfs/Pkgfile
+f:2f1606d65e1323aa11c754a4b84c791a:libnfs/.footprint
 f:314df9378d1121b802af1be7c5433cef:libpng/.md5sum
 f:e9267828929dc6aa2b63c71882132d5d:libpng/Pkgfile
 f:112d7a0a90030aa97925f6eb3e4f9c52:libpng/libpng-fix-arm-neon.patch
@@ -355,6 +375,10 @@ f:0072cc263c00e26c9da94b75c4873246:cairo/Pkgfile
 f:41347811137bcd4d103781a1171ad678:cairo/xlib-xcb.diff
 f:92fc1658733cd98e89c065edbd25fd97:cairo/fix-library-versioning.diff
 f:dca13db43db9b56582cec7fa193074b9:cairo/.footprint
+f:3625eac77623bdf42ca7c2694304ddef:uhttpmock/.md5sum
+f:3b2212221bc31b3d0de29effdcde5c3c:uhttpmock/only-listen-on-ipv4.patch
+f:f578d8c93166ef509a775c8fc8a279e0:uhttpmock/Pkgfile
+f:f54c241d34c0e8e06f93fef860eaf7b8:uhttpmock/.footprint
 f:4d6455df38761c243260700027854e1b:mypaint-brushes/.md5sum
 f:308b7c9baaaaf886e187c571ccf0259e:mypaint-brushes/Pkgfile
 f:26a456a306766d05e342b8560e8784f2:mypaint-brushes/.footprint
@@ -405,6 +429,10 @@ f:ad1ecba2b3a158045c0ae0e13811630e:libdv/Pkgfile
 f:e1cf9483fe9efdab5e2326fccbdb7ed5:libdv/libdv-0.104-no-exec-stack.patch
 f:4fb792fd927a7abbc0e2ab9a8e96df53:libdv/libdv-1.0.0-pic.patch
 f:13e464381d64622d431872bab70d3684:libdv/.footprint
+f:4edeebf1832d9956ea92268a39d4aa3d:gvfs/.md5sum
+f:e5f74be27525658dae59401455944186:gvfs/post-install
+f:2d9ad00e3d5472b73c5c0ac4f4200ce6:gvfs/Pkgfile
+f:8248c15f644daf09fec315d0365b8da5:gvfs/.footprint
 f:ce93efdc7e782049060caaba9c9e58a9:pango/.md5sum
 f:23c1c202cfecd0dfa6e64114f69513c6:pango/Pkgfile
 f:68ca167b4491c34b188c5fcc4cb0ab2c:pango/.footprint
@@ -485,9 +513,18 @@ f:7518c287d546132ff0b6f80c732a889d:pulseaudio/Pkgfile
 f:c884a5dd8ca9cb3477e6c0acc446b009:pulseaudio/pulseaudio.run
 f:04d0c490f1bab63ea945efc337264a61:pulseaudio/.footprint
 f:9ccc7331c2a8c77a4bda07ef08452f58:pulseaudio/pre-install
+f:7fb814b4259937e4ce2000721c07f800:colord/.md5sum
+f:29ead9ad0d5ad188bf99a43b70dd835c:colord/Pkgfile
+f:07423c66f536462ac328c634a3e10fe9:colord/.footprint
+f:941d4fbba4dc872d07422a9958da4882:colord/pre-install
 f:f148f9f2e94ff415bd8da835c2bd3e47:make-ca/.md5sum
 f:95cba409428f41eaec43da402865a6d2:make-ca/Pkgfile
 f:202881dbd84aaf2ad21a66328599daf9:make-ca/.footprint
+f:06c7bd482b4b488db35c990268fa51fc:libgdata/.md5sum
+f:db21206a8221654593eab37445449af8:libgdata/only-ipv4-tests.patch
+f:115064dcbce2c5174b20b306115d1e04:libgdata/Pkgfile
+f:6f41229f485286dc2163ef7499a80e3d:libgdata/disable-perf-test.patch
+f:0553ae8b459daee2c73b5e1e99450bba:libgdata/.footprint
 f:a7127e6b16652f66b98ef3d035489b20:opus/.md5sum
 f:78aee87336e86a7dadaebb84fdd4906f:opus/Pkgfile
 f:46029ac42c40f7116bf39e32f0e79770:opus/.footprint
@@ -702,6 +739,9 @@ f:f0687244cedb09384920e01b8bf04754:keyutils/.footprint
 f:ddaa0c88d6e8e409abf988f3a9769061:pcre2/.md5sum
 f:9459a45c844720868d96ff76e729787c:pcre2/Pkgfile
 f:360ef483144032fef86222317cdc1b45:pcre2/.footprint
+f:05b1dbe69623a10bcbb7c51d3830e84d:libcdio-paranoia/.md5sum
+f:9dd605155cdc38f9dfa9c21f31e343e4:libcdio-paranoia/Pkgfile
+f:140fff354b7d0dd395be607b9e88ee2d:libcdio-paranoia/.footprint
 f:9875b6fef02d6507bfd7e523bd33d254:xapp/.md5sum
 f:e0f5963c84813ede0dafa511411b4bf1:xapp/Pkgfile
 f:d88fb9357058f78b7d16ecfa3fb46423:xapp/.footprint
@@ -741,6 +781,9 @@ f:c56454742a8273c2264f87f2e69aee79:zip/10-zip-3.0-build.patch
 f:1395f053d2bcee85b96c94dfd7813b8d:zip/30-zip-3.0-pic.patch
 f:5162e32d5379d4a34274987c389a85b4:zip/.footprint
 f:24aa8c89371f67e6b31105844780dbc3:zip/20-zip-3.0-exec-stack.patch
+f:fb930bc86488d6489209e46aa81f7e28:exempi/.md5sum
+f:766f80de2ce4a5ef3c914dcb8c9f48c1:exempi/Pkgfile
+f:932c4260f0e5ae16bb2fba18bb9dd771:exempi/.footprint
 f:ed4b62c4a2fb0b35a0ab7b1f767701f0:libsass/.md5sum
 f:54a3d77a01dbeda7f7502c7fd8520130:libsass/Pkgfile
 f:8a65b73a9c1cb5952b2ef72f6e93b8b1:libsass/fix-pkgconfig-version.patch
@@ -787,6 +830,10 @@ f:85dbd8f297345b11d081a88697180a9b:libwpe/.footprint
 f:3aff06ac35225c088c91a51c0b72bde5:tiff/.md5sum
 f:3c6baa873c71d364ecdd897a76d8d7ec:tiff/Pkgfile
 f:4cade10cb843c8e828b1eadfa69ae9a2:tiff/.footprint
+f:bbca7c54f5c4eadb9c85775a38c8e36d:libcdio/.md5sum
+f:77bdcb0bf9954bf50a547eaf0a57f11e:libcdio/Pkgfile
+f:d45a467dbde7bf244c9777109a6afe52:libcdio/disable-broken-test.patch
+f:61c939d69061b6fe72b6129432c6924f:libcdio/.footprint
 f:bf8990490d4a912c231e7e4cb6db534b:python3-asn1/.md5sum
 f:196ed002a9ca875ae7152e8fa732226f:python3-asn1/Pkgfile
 f:464d89389e93fb68baca1f5a4c16829e:python3-asn1/.footprint
@@ -832,6 +879,9 @@ f:a72ef568d5c6f1de69d703c43d00363a:nss/.footprint
 f:8653f81e3956897031b621bf2ee3da36:lvm2/.md5sum
 f:b0e4e35dd2ad8c2e750b96b9739e0f4b:lvm2/Pkgfile
 f:11288832cfae950d5e978516d0823075:lvm2/.footprint
+f:f5132e093ede77bf099f90b13383f2a7:libgusb/.md5sum
+f:12894d702fafc6cf7c78e931c5c19212:libgusb/Pkgfile
+f:3f273113ab8c7867f3170141dd31cf55:libgusb/.footprint
 f:5d105f13e65a2afbc6be4d0ce6bd9788:sbc/.md5sum
 f:6d8709119d738787e0c2ae829a961156:sbc/Pkgfile
 f:54ef20152c131c7cf5703e5c1f5e6e6f:sbc/fix-armv6-assembly.patch
@@ -921,6 +971,9 @@ f:be35c9cd17e9be3d4a9c644c7e26888b:python3-appdirs/.footprint
 f:bdbc164418df89b1f26674436128d82e:atk/.md5sum
 f:2b6d3e628f62a09cdfa4bdb0f99adc9b:atk/Pkgfile
 f:85be4ae598ffd4c9acdd4889856b84b0:atk/.footprint
+f:8b88c4e0597e952de08231c07be97d6b:rest/.md5sum
+f:e8b9c517ddd13195be3e38241332095d:rest/Pkgfile
+f:522ada8d103154c20a5cd264ee75f334:rest/.footprint
 f:098426976000b93ab50bf40122bf5d31:xvfb-run/.md5sum
 f:ea3bc8dfe63286058fb6ace3d7a0381a:xvfb-run/Pkgfile
 f:a0151afeb5dcd67b82ec038cdc7494a2:xvfb-run/.footprint
@@ -1011,6 +1064,9 @@ f:b6869a2c558d58fc7102edf7edfeb6ac:yasm/.md5sum
 f:bdc73ea00a1954de5cf0bbcf0811fde0:yasm/Pkgfile
 f:204f8f7989f616e06e28ce0313b1a7f3:yasm/fix-memory-using-gas-processor.patch
 f:161ceacea96c510d80f4509f8d7d5f65:yasm/.footprint
+f:e63bd8c247bbb2195b70871c849c5f59:webkitgtk/.md5sum
+f:9f725f5651d9b4593b6f44ddf8aa67cb:webkitgtk/Pkgfile
+f:c6fa52581ffbefff0357db276f3f69c7:webkitgtk/.footprint
 f:2f1c83050b42a44003662f1f5f00936e:woff2/.md5sum
 f:a864a233b7b161729385a43b709481aa:woff2/Pkgfile
 f:45259462b99625f3a8d2434b901bc5b3:woff2/install-executables.patch
@@ -1048,6 +1104,9 @@ f:14471d9e43e238a6689812e4f35e3701:hunspell/.md5sum
 f:1fa4bcbed97b2a7342a17992a7d4c88c:hunspell/Pkgfile
 f:a480fbe7e8288b384ff47477f8d90ab9:hunspell/CVE-2019-16707.patch
 f:720fd064f9830ac0282deb1f7ff7c1a7:hunspell/.footprint
+f:68adf97f293c85826887b404abf62868:libcddb/.md5sum
+f:a1f5169f5cf098d37e1f7bf71349f882:libcddb/Pkgfile
+f:f944f031134b84af79aa4bbe8936902b:libcddb/.footprint
 f:03a4149bd02fe9af2f341eea549b81c9:aom/.md5sum
 f:84f5d539e58ecb1c503e8eae393c1ef5:aom/Pkgfile
 f:0f8aa73e07b45b05155a1fcc5ab6a84f:aom/.footprint
@@ -1096,6 +1155,9 @@ f:58cb2524ccfc600eaca7bdc68d4c35cd:cairomm/.footprint
 f:87359d402092712aaef738af0248777e:libdbusmenu-gtk3/.md5sum
 f:486ef0e457bacac273a09247869e5053:libdbusmenu-gtk3/Pkgfile
 f:66eda3ec199c45185cb0932c2e619a9d:libdbusmenu-gtk3/.footprint
+f:78e56ad1ad166358fe17ab9b4fe5f0e1:libmtp/.md5sum
+f:ce524a57df4a16142b9b62f7c81c7537:libmtp/Pkgfile
+f:e4022aa0a783af978cff08b1bf15ee10:libmtp/.footprint
 f:10b78a3ebfc0c40a6e7e242ed71d794e:poppler-data/.md5sum
 f:1110d9e4c8e11ed7c9a5bbc41b8d0aa7:poppler-data/Pkgfile
 f:b612d2d718af9a513c4a9d0650abcaf0:poppler-data/.footprint
@@ -1125,6 +1187,9 @@ f:baf78bc6529694bf0e39c4f0cec195d5:gnutls/.footprint
 f:0e7f08e4bc79de27d8b9414ed3aef2a8:vala/.md5sum
 f:24812dfd2312c71996b783545408c9cc:vala/Pkgfile
 f:e9e2ef3c1b5e121ed02cafa1d37daca3:vala/.footprint
+f:1cae5720009ab26ae094e67354e30557:boost/.md5sum
+f:ec9c0c0b9279d0303baec82ea66208b5:boost/Pkgfile
+f:155186fdd6fadc4675c246b6aeb7ecb8:boost/.footprint
 f:d3254d6aa7de07c3f105c393f92e7bd3:libgpg-error/.md5sum
 f:06d978096b959d33d3eb27d3f2f8553c:libgpg-error/Pkgfile
 f:97e30eedf43d943259389d6e4e9dcba6:libgpg-error/.footprint
@@ -1158,6 +1223,9 @@ f:4d54a4af093c227cc374d897347111d7:libsdl/0001-CVE-2019-7575.patch
 f:b6adfc71e6c6c780e2822bb05214cf7c:libsdl/0001-CVE-2019-7572.patch
 f:d6a1bfa054507f281338626e5f12d74b:libsdl/SDL-1.2.15-const_XData32.patch
 f:e901c5b6b83bc582e0d816201faa8b5d:libsdl/.footprint
+f:14b8c5e3c29b2b8e80a54ed03d0aea41:gnome-online-accounts/.md5sum
+f:bf72183853aa580a3560ac95efbbb27e:gnome-online-accounts/Pkgfile
+f:45be102bd896e7532d868fc02cdcfc1c:gnome-online-accounts/.footprint
 f:847e37276f1c5c0c89c039bbba7e2707:gnupg/.md5sum
 f:6048877817f1c3f19801faf8c7b63b77:gnupg/Pkgfile
 f:e24195315aa701b6c63ba1b91119dd0d:gnupg/.footprint
@@ -1190,6 +1258,10 @@ f:b246a1392be5b4c7efb37d5868d876e9:openal-soft/.footprint
 f:0f773d65ca1d71899cc8b0e557520366:exiv2/.md5sum
 f:de2048e26e58351a16a4b6fceccde242:exiv2/Pkgfile
 f:ed821bf54586c2326f2b932907867f73:exiv2/.footprint
+f:434960fca90de8822187b7e339619710:libgphoto2/.md5sum
+f:7bbd92156fcf8bf9bddbaabfdfd3383d:libgphoto2/Pkgfile
+f:9320139de4947661878d6630af50f1b1:libgphoto2/.footprint
+f:144fe56cc82830e8bb98798f0f6b845f:libgphoto2/pre-install
 f:d56907baaeb5fb2f66ba5076479e9d72:libev/.md5sum
 f:acec6b40b5ebea613fb0829f84e8a48b:libev/libev-4.11-Add-pkgconfig-support.patch
 f:94763f398a7a6eb942f151ca13e70629:libev/Pkgfile
