@@ -1,0 +1,33 @@
+# Description:	System daemon for managing color devices
+# URL:		http://www.freedesktop.org/software/colord
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	dconf dbus-elogind eudev gobject-introspection intltool lcms2 libgudev libgusb meson polkit sqlite3
+
+name=colord
+version=1.4.5
+release=0
+source=(https://www.freedesktop.org/software/${name}/releases/${name}-${version}.tar.xz)
+
+build() {
+	cd ${name}-${version}
+
+	build-meson \
+		-Dlibcolordcompat=true \
+		-Dsystemd=false \
+		-Dargyllcms_sensor=false \
+		-Dman=false \
+		-Ddocs=false \
+		-Dbash_completion=false \
+		-Ddaemon_user=colord \
+		-Dsane=false \
+		-Dvapi=false \
+		. build
+
+	meson compile ${JOBS:+-j ${JOBS}} -C build
+
+	DESTDIR=$PKG meson install --no-rebuild -C build
+
+	chown -R colord:colord $PKG/var/lib/colord
+
+	rm -r $PKG/usr/share/locale
+}
