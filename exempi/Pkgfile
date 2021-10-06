@@ -1,0 +1,23 @@
+# Description:	A library to parse XMP metadata
+# URL:		https://wiki.freedesktop.org/libopenraw/Exempi/
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	boost expat zlib
+
+name=exempi
+version=2.5.2
+release=0
+source=(https://libopenraw.freedesktop.org/download/${name}-${version}.tar.bz2)
+
+build() {
+	cd ${name}-${version}
+
+	NOCONFIGURE=1 ./autogen.sh
+
+	./configure \
+		--build=aarch64-unknown-linux-gnu \
+		--prefix=/usr
+
+	make
+
+	make DESTDIR=$PKG install
+}
