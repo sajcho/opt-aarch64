@@ -1,0 +1,7 @@
+#!/bin/sh
+#
+# To setup camera, regular users must be member of 'camera' group
+
+getent group camera || /usr/sbin/groupadd -r camera
+
+exit 0

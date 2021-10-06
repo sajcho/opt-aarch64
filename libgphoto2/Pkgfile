@@ -1,0 +1,33 @@
+# Description:	The core library of gphoto2, designed to allow access to digital camera by external programs
+# URL:		http://www.gphoto.org
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	libexif libusb libjpeg-turbo
+
+name=libgphoto2
+version=2.5.27
+release=0
+source=(https://downloads.sourceforge.net/gphoto/${name}-${version}.tar.bz2)
+
+build() {
+	cd ${name}-${version}
+
+	udevscriptdir=/lib/udev ./configure \
+		--prefix=/usr \
+		--with-drivers=all \
+		--disable-static \
+		--disable-rpath \
+		--disable-nls
+
+	make
+
+	#make check
+
+	make DESTDIR=$PKG install
+
+	install -m 0755 -d $PKG/lib/udev/rules.d
+	LD_LIBRARY_PATH=$PKG/usr/lib${LD_LIBRARY_PATH:+:}$LD_LIBRARY_PATH \
+		CAMLIBS=$PKG/usr/lib/libgphoto2/${version} \
+		$PKG/usr/lib/libgphoto2/print-camera-list udev-rules version 136 group camera mode 0660 > $PKG/lib/udev/rules.d/54-gphoto.rules
+
+	rm -r $PKG/usr/share/{doc,lib*}
+}
