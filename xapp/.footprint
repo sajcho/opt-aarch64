@@ -1,4 +1,8 @@
 drwxr-xr-x	root/root	etc/
+drwxr-xr-x	root/root	etc/X11/
+drwxr-xr-x	root/root	etc/X11/xinit/
+drwxr-xr-x	root/root	etc/X11/xinit/xinitrc.d/
+-rwxr-xr-x	root/root	etc/X11/xinit/xinitrc.d/80xapp-gtk3-module.sh
 drwxr-xr-x	root/root	etc/xdg/
 drwxr-xr-x	root/root	etc/xdg/autostart/
 -rw-r--r--	root/root	etc/xdg/autostart/xapp-sn-watcher.desktop
@@ -10,6 +14,7 @@ drwxr-xr-x	root/root	usr/bin/
 drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/xapp/
 drwxr-xr-x	root/root	usr/include/xapp/libxapp/
+-rw-r--r--	root/root	usr/include/xapp/libxapp/xapp-favorites.h
 -rw-r--r--	root/root	usr/include/xapp/libxapp/xapp-gtk-window.h
 -rw-r--r--	root/root	usr/include/xapp/libxapp/xapp-icon-chooser-button.h
 -rw-r--r--	root/root	usr/include/xapp/libxapp/xapp-icon-chooser-dialog.h
@@ -20,13 +25,17 @@ drwxr-xr-x	root/root	usr/include/xapp/libxapp/
 -rw-r--r--	root/root	usr/include/xapp/libxapp/xapp-status-icon-monitor.h
 -rw-r--r--	root/root	usr/include/xapp/libxapp/xapp-status-icon.h
 -rw-r--r--	root/root	usr/include/xapp/libxapp/xapp-statusicon-interface.h
+-rw-r--r--	root/root	usr/include/xapp/libxapp/xapp-style-manager.h
 -rw-r--r--	root/root	usr/include/xapp/libxapp/xapp-util.h
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/girepository-1.0/
 -rw-r--r--	root/root	usr/lib/girepository-1.0/XApp-1.0.typelib
+drwxr-xr-x	root/root	usr/lib/gtk-3.0/
+drwxr-xr-x	root/root	usr/lib/gtk-3.0/modules/
+-rwxr-xr-x	root/root	usr/lib/gtk-3.0/modules/libxapp-gtk3-module.so
 lrwxrwxrwx	root/root	usr/lib/libxapp.so -> libxapp.so.1
-lrwxrwxrwx	root/root	usr/lib/libxapp.so.1 -> libxapp.so.1.8.10
--rwxr-xr-x	root/root	usr/lib/libxapp.so.1.8.10
+lrwxrwxrwx	root/root	usr/lib/libxapp.so.1 -> libxapp.so.2.2.3
+-rwxr-xr-x	root/root	usr/lib/libxapp.so.2.2.3
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/xapp.pc
 drwxr-xr-x	root/root	usr/lib/python3.9/
@@ -69,6 +78,7 @@ drwxr-xr-x	root/root	usr/share/icons/hicolor/scalable/actions/
 -rw-r--r--	root/root	usr/share/icons/hicolor/scalable/actions/xapp-annotations-squiggly-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/hicolor/scalable/actions/xapp-annotations-text-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/hicolor/scalable/actions/xapp-diaporama-symbolic.svg
+-rw-r--r--	root/root	usr/share/icons/hicolor/scalable/actions/xapp-favorite-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/hicolor/scalable/actions/xapp-format-text-highlight-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/hicolor/scalable/actions/xapp-go-history-next-symbolic-rtl.svg
 -rw-r--r--	root/root	usr/share/icons/hicolor/scalable/actions/xapp-go-history-next-symbolic.svg
@@ -78,14 +88,24 @@ drwxr-xr-x	root/root	usr/share/icons/hicolor/scalable/actions/
 -rw-r--r--	root/root	usr/share/icons/hicolor/scalable/actions/xapp-search-entire-word-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/hicolor/scalable/actions/xapp-search-wrap-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/hicolor/scalable/actions/xapp-text-case-symbolic.svg
+-rw-r--r--	root/root	usr/share/icons/hicolor/scalable/actions/xapp-unfavorite-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/hicolor/scalable/actions/xapp-unpin-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/hicolor/scalable/actions/xapp-use-regex-symbolic.svg
+drwxr-xr-x	root/root	usr/share/icons/hicolor/scalable/apps/
+-rw-r--r--	root/root	usr/share/icons/hicolor/scalable/apps/xapp-favorites-app-symbolic.svg
+-rw-r--r--	root/root	usr/share/icons/hicolor/scalable/apps/xapp-favorites-app.svg
+-rw-r--r--	root/root	usr/share/icons/hicolor/scalable/apps/xapp-mate-status-applet.svg
 drwxr-xr-x	root/root	usr/share/icons/hicolor/scalable/categories/
 -rw-r--r--	root/root	usr/share/icons/hicolor/scalable/categories/xapp-prefs-behavior-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/hicolor/scalable/categories/xapp-prefs-display-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/hicolor/scalable/categories/xapp-prefs-plugins-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/hicolor/scalable/categories/xapp-prefs-preview-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/hicolor/scalable/categories/xapp-prefs-toolbar-symbolic.svg
+drwxr-xr-x	root/root	usr/share/icons/hicolor/scalable/emblems/
+-rw-r--r--	root/root	usr/share/icons/hicolor/scalable/emblems/emblem-xapp-favorite.svg
+drwxr-xr-x	root/root	usr/share/icons/hicolor/scalable/places/
+-rw-r--r--	root/root	usr/share/icons/hicolor/scalable/places/xapp-user-favorites-symbolic.svg
+-rw-r--r--	root/root	usr/share/icons/hicolor/scalable/places/xapp-user-favorites.svg
 drwxr-xr-x	root/root	usr/share/mate-panel/
 drwxr-xr-x	root/root	usr/share/mate-panel/applets/
 -rw-r--r--	root/root	usr/share/mate-panel/applets/org.x.MateXAppStatusApplet.mate-panel-applet
