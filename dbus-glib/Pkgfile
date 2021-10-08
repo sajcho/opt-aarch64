@@ -5,19 +5,23 @@
 
 name=dbus-glib
 version=0.112
-release=1
+release=2
 source=(https://dbus.freedesktop.org/releases/${name}/${name}-${version}.tar.gz)
 
 build() {
 	cd ${name}-${version}
 
+	CFLAGS+=" -Wno-deprecated-declarations"
+
 	./configure \
 		--prefix=/usr \
-		--disable-tests \
+		--enable-tests \
 		--disable-static \
 		--disable-bash-completion
 
 	make
+
+	#make -j1 check
 
 	make DESTDIR=$PKG install
 
