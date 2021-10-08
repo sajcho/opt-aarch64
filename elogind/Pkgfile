@@ -5,7 +5,7 @@
 
 name=elogind
 version=246.10
-release=1
+release=2
 source=(https://github.com/${name}/${name}/archive/v${version}/${name}-v${version}.tar.gz \
 	elogind-246.10-revert-polkit-automagic.patch \
 	elogind.run \
@@ -16,12 +16,6 @@ build() {
 	cd ${name}-${version}
 
 	patch -p1 -i $SRC/elogind-246.10-revert-polkit-automagic.patch
-
-	# define bus socket path from dbus-elogind
-	sed -i 's|path=/run/dbus|path=/run/dbus-elogind|g' \
-		src/libelogind/sd-bus/bus-internal.h
-	sed -i 's|path=/run/dbus|path=/run/dbus-elogind|g' \
-		src/libelogind/sd-bus/test-bus-vtable.c
 
 	build-meson \
 		-Dcgroup-controller=elogind \
