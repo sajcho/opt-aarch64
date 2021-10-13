@@ -1,6 +1,1 @@
-19b79d8dfab3b5f7a229a3a3f1178cdb  0001-Revert-Use-fixed-width-members-in-fake_msg.patch
-9dab5bd7f9691911ec4cd0db169f37e2  0001-libfakeroot.c-define-_STAT_VER-if-not-already-define.patch
-7d1186cb61c08e871544846b0e9ac905  0002-libfakeroot.c-add-wrappers-for-new-glibc-2.33-symbol.patch
-27ada723adecbb535f1d69347037a9f0  0003-libfakeroot.c-fix-compile-error-with-DEBUG-enabled.patch
-0e4385dc689c4ccc2f3c30f286ccec2c  0004-configure.ac-fix-__xmknod-at-pointer-argument.patch
-f6104ef6960c962377ef062bf222a1d2  fakeroot_1.25.3.orig.tar.gz
+cb1c68f2597f0a064232a841050eb6f2  fakeroot_1.26.orig.tar.gz

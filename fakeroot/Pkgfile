@@ -3,38 +3,21 @@
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 
 name=fakeroot
-version=1.25.3
-release=3
-source=(https://deb.debian.org/debian/pool/main/f/${name}/${name}_${version}.orig.tar.gz \
-	0001-libfakeroot.c-define-_STAT_VER-if-not-already-define.patch \
-	0001-Revert-Use-fixed-width-members-in-fake_msg.patch \
-	0002-libfakeroot.c-add-wrappers-for-new-glibc-2.33-symbol.patch \
-	0003-libfakeroot.c-fix-compile-error-with-DEBUG-enabled.patch \
-	0004-configure.ac-fix-__xmknod-at-pointer-argument.patch)
+version=1.26
+release=0
+source=(https://deb.debian.org/debian/pool/main/f/$name/${name}_${version}.orig.tar.gz)
 
 build() {
 	cd ${name}-${version}
 
-	patch -p1 -i $SRC/0001-libfakeroot.c-define-_STAT_VER-if-not-already-define.patch
-	patch -p1 -i $SRC/0001-Revert-Use-fixed-width-members-in-fake_msg.patch
-	patch -p1 -i $SRC/0002-libfakeroot.c-add-wrappers-for-new-glibc-2.33-symbol.patch
-	patch -p1 -i $SRC/0003-libfakeroot.c-fix-compile-error-with-DEBUG-enabled.patch
-	patch -p1 -i $SRC/0004-configure.ac-fix-__xmknod-at-pointer-argument.patch
-
 	sed -i '/^SUBDIRS/d' doc/Makefile.am
 
 	./bootstrap
+
 	./configure \
-		--prefix=/usr \
-		--libdir=/usr/lib/libfakeroot \
-		--disable-static
+		--prefix=/usr
 
 	make
-
-	# Does not work with fakeroot.
-	# As root works right.
-	# Test depends on: sharutils
-	#make check
 
 	make DESTDIR=$PKG install
 }
