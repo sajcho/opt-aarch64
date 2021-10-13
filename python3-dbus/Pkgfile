@@ -6,13 +6,13 @@
 name=python3-dbus
 _realname=dbus-python
 version=1.2.18
-release=0
+release=1
 source=(https://dbus.freedesktop.org/releases/$_realname/$_realname-${version}.tar.gz)
 
 build() {
 	cd $_realname-${version}
 
-	python3 setup.py build
+	/usr/bin/python3 setup.py build
 
 	./configure \
 		--prefix=/usr \
@@ -21,7 +21,7 @@ build() {
 
 	make
 
-	python3 setup.py install \
+	/usr/bin/python3 setup.py install \
 		--skip-build \
 		--prefix=/usr \
 		--root=$PKG
