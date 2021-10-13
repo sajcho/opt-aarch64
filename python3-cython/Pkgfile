@@ -6,7 +6,7 @@
 name=python3-cython
 _pkgname=cython
 version=0.29.24
-release=0
+release=1
 source=(https://github.com/${_pkgname}/${_pkgname}/archive/${version}/${_pkgname}-${version}.tar.gz)
 
 build() {
