@@ -1,17 +1,24 @@
 # Description:	System daemon for managing color devices
 # URL:		http://www.freedesktop.org/software/colord
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	dconf dbus-elogind eudev gobject-introspection intltool lcms2 libgudev libgusb meson polkit sqlite3
+# Depends on:	dconf dbus eudev gobject-introspection intltool lcms2 libgudev libgusb meson polkit sqlite3
 
 name=colord
 version=1.4.5
-release=0
-source=(https://www.freedesktop.org/software/${name}/releases/${name}-${version}.tar.xz)
+release=1
+source=(https://www.freedesktop.org/software/${name}/releases/${name}-${version}.tar.xz \
+	add-introspection-switch.patch \
+	use-host-utils.patch \
+	colord.run)
 
 build() {
 	cd ${name}-${version}
 
+	patch -p1 -i $SRC/add-introspection-switch.patch
+	patch -p1 -i $SRC/use-host-utils.patch
+
 	build-meson \
+		--libexecdir=/usr/lib/${name} \
 		-Dlibcolordcompat=true \
 		-Dsystemd=false \
 		-Dargyllcms_sensor=false \
@@ -28,6 +35,11 @@ build() {
 	DESTDIR=$PKG meson install --no-rebuild -C build
 
 	chown -R colord:colord $PKG/var/lib/colord
+
+	# colord runit service
+	install -d $PKG/etc/sv/colord
+	install -m 0755 $SRC/colord.run $PKG/etc/sv/colord/run
+	ln -s /run/runit/supervise.colord $PKG/etc/sv/colord/supervise
 
 	rm -r $PKG/usr/share/locale
 }

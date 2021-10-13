@@ -1,1 +1,4 @@
+27e10153aed3d43870f1c8a6faf82574  add-introspection-switch.patch
 adc4501b54fb8667ee99f64cff87e12d  colord-1.4.5.tar.xz
+ab0d5d24ae1cf84efedc770c4ac3c289  colord.run
+fb7c7d918da0b75c67015921258129ed  use-host-utils.patch

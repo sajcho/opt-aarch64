@@ -1,3 +1,8 @@
+drwxr-xr-x	root/root	etc/
+drwxr-xr-x	root/root	etc/sv/
+drwxr-xr-x	root/root	etc/sv/colord/
+-rwxr-xr-x	root/root	etc/sv/colord/run
+lrwxrwxrwx	root/root	etc/sv/colord/supervise -> /run/runit/supervise.colord
 drwxr-xr-x	root/root	lib/
 drwxr-xr-x	root/root	lib/udev/
 drwxr-xr-x	root/root	lib/udev/rules.d/
@@ -54,7 +59,6 @@ drwxr-xr-x	root/root	usr/include/colord-1/colorhug/
 -rw-r--r--	root/root	usr/include/colord-1/colorhug/ch-version.h
 -rw-r--r--	root/root	usr/include/colord-1/colorhug/colorhug.h
 drwxr-xr-x	root/root	usr/lib/
--rwxr-xr-x	root/root	usr/lib/colord
 drwxr-xr-x	root/root	usr/lib/colord-plugins/
 -rwxr-xr-x	root/root	usr/lib/colord-plugins/libcolord_sensor_camera.so
 -rwxr-xr-x	root/root	usr/lib/colord-plugins/libcolord_sensor_scanner.so
@@ -64,7 +68,9 @@ drwxr-xr-x	root/root	usr/lib/colord-sensors/
 -rwxr-xr-x	root/root	usr/lib/colord-sensors/libcolord_sensor_dtp94.so
 -rwxr-xr-x	root/root	usr/lib/colord-sensors/libcolord_sensor_dummy.so
 -rwxr-xr-x	root/root	usr/lib/colord-sensors/libcolord_sensor_huey.so
--rwxr-xr-x	root/root	usr/lib/colord-session
+drwxr-xr-x	root/root	usr/lib/colord/
+-rwxr-xr-x	root/root	usr/lib/colord/colord
+-rwxr-xr-x	root/root	usr/lib/colord/colord-session
 drwxr-xr-x	root/root	usr/lib/girepository-1.0/
 -rw-r--r--	root/root	usr/lib/girepository-1.0/Colord-1.0.typelib
 -rw-r--r--	root/root	usr/lib/girepository-1.0/Colorhug-1.0.typelib
