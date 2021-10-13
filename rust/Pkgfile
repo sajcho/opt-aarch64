@@ -4,7 +4,7 @@
 # Depends on:	llvm-toolchain
 
 name=rust
-version=1.54.0
+version=1.55.0
 release=0
 
 source=(https://static.rust-lang.org/dist/${name}c-${version}-src.tar.gz \
