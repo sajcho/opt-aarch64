@@ -206,7 +206,6 @@ d:libxslt
 d:gcr
 d:libwebp
 d:gst-plugins-base
-d:python3-six
 d:cogl
 d:mutt
 d:glibmm
@@ -265,7 +264,6 @@ d:intltool
 d:lcms2
 d:python3-dbusmock
 d:ndctl
-d:swig
 d:rxvt-unicode
 d:libqmi
 d:libmypaint
@@ -1058,9 +1056,6 @@ f:9e344cee112ab164c0aa47e16e95d7c1:libwebp/.footprint
 f:f151faefa3e229d669b4a07cc7eeb35f:gst-plugins-base/.md5sum
 f:712e8f2de483cd28956ecc4939f6b52e:gst-plugins-base/Pkgfile
 f:56c06e6f9c04da1a4f2c201b9a27e5b2:gst-plugins-base/.footprint
-f:b60a703fa9203e30a5d7414787fe66b7:python3-six/.md5sum
-f:1c7d27c0cbafcefd6b2d8a07102458a5:python3-six/Pkgfile
-f:fa3f17b27ab47e2172c112d34c1fb06d:python3-six/.footprint
 f:66d9c4676f8fb0e4392a7142274d02c1:cogl/.md5sum
 f:15cafe1e30009245c3346c5d9e23f9d6:cogl/Pkgfile
 f:0faa4629adf0764134d3bee3feb6a057:cogl/.footprint
@@ -1276,9 +1271,6 @@ f:b522f87382bdeee85a0ebfd79aa195a7:python3-dbusmock/.footprint
 f:91630c86bad607dc76dfb17e2541a9b6:ndctl/.md5sum
 f:1af407b29fd9f1a81fdedef01b8e736e:ndctl/Pkgfile
 f:ae41fadc34cfe3c7e7cddb94f47ae674:ndctl/.footprint
-f:f775b9f6f9bc2f438ac919188bad4069:swig/.md5sum
-f:9b0c361afac915db67fbdbc4247a460e:swig/Pkgfile
-f:04d5da180e5b204334f8d9f924f97fe6:swig/.footprint
 f:7408fe72088660292bfb2151ef98be3a:rxvt-unicode/.md5sum
 f:585157318cb78733804eed507b77c37c:rxvt-unicode/rxvt-unicode-kerning.patch
 f:8533b4ad4d29d0fe25442cdc855f5967:rxvt-unicode/Pkgfile
