@@ -7,7 +7,7 @@ name=python3-dbusmock
 _realname=python-dbusmock
 _pypiprefix="${_realname%${_realname#?}}"
 version=0.24.0
-release=0
+release=1
 source=(https://files.pythonhosted.org/packages/source/$_pypiprefix/${_realname}/${_realname}-${version}.tar.gz)
 
 build() {
