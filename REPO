@@ -144,6 +144,7 @@ d:libcdio
 d:python3-asn1
 d:nftables
 d:gsettings-desktop-schemas
+d:http-parser
 d:aspell
 d:gnome-themes-extra
 d:faac
@@ -214,6 +215,7 @@ d:libsecret
 d:hunspell
 d:libcddb
 d:aom
+d:libgit2
 d:jsoncpp
 d:python3-distlib
 d:libdvdcss
@@ -789,9 +791,9 @@ f:23b5c36de2d7f204ebe769c66ee1c6f5:squashfs-tools/Pkgfile
 f:b9d3d211de2fa03d524df195ee4afe29:squashfs-tools/.footprint
 f:2e48a6704a905530feaac605dc12df62:rust/.md5sum
 f:59041d2148f9ac01f0052bbd48253787:rust/libexec.patch
-f:8c62ccc0f31e20c841c4cfe600dbb601:rust/Pkgfile
+f:5bd8813494fdad21d2ebe7658d89fa34:rust/Pkgfile
 f:a68528b0fd1e5420b6f851ae579e97a4:rust/.nostrip
-f:f8da6557da055bf14af7cc6cad398c99:rust/.footprint
+f:a67a975a47e058b95f76a64ea88be560:rust/.footprint
 f:15195d72eb636e5390ea86ca09079664:libshout/.md5sum
 f:dcc620a453e6f1c01fea2982a8e95fca:libshout/Pkgfile
 f:6664530cdc3cb72e097888a5a5c2b346:libshout/.footprint
@@ -836,6 +838,9 @@ f:7e7b796e6552477e8a025a98148b5712:gsettings-desktop-schemas/.md5sum
 f:e5f74be27525658dae59401455944186:gsettings-desktop-schemas/post-install
 f:61e6d08dfe30222d8461460eea462b3b:gsettings-desktop-schemas/Pkgfile
 f:92b9d8db37031d40e86893d299447c97:gsettings-desktop-schemas/.footprint
+f:cf28d0b1bd1a65d157912d0db0faa48f:http-parser/.md5sum
+f:43980a2ef424926adae95a12078f3b86:http-parser/Pkgfile
+f:f09ae24e1d84463beb3a1285e79da4f1:http-parser/.footprint
 f:8ba343ab646405618f06049db2be4451:aspell/.md5sum
 f:3c6587c2e088c47bf7f18277e2a5d421:aspell/Pkgfile
 f:4fb13c4c4a990b71b5a5d15e9a105efa:aspell/.footprint
@@ -1080,6 +1085,9 @@ f:f944f031134b84af79aa4bbe8936902b:libcddb/.footprint
 f:03a4149bd02fe9af2f341eea549b81c9:aom/.md5sum
 f:84f5d539e58ecb1c503e8eae393c1ef5:aom/Pkgfile
 f:0f8aa73e07b45b05155a1fcc5ab6a84f:aom/.footprint
+f:cc6659717d34446e32f25d94249dce19:libgit2/.md5sum
+f:3700c2c6ab02a9de78568cc14cba8667:libgit2/Pkgfile
+f:91de87bf7435e9b3f4190db815c43390:libgit2/.footprint
 f:9ab763fd51371480913ac43fa49d85fe:jsoncpp/.md5sum
 f:6943e9d42b5feea5382e91df7681bbcc:jsoncpp/Pkgfile
 f:91de4f5d02f6c70ed246e185de0701a6:jsoncpp/.footprint
@@ -1305,9 +1313,8 @@ f:a4fc35e5e643a99b67aab5163ccbc4fe:avahi/pre-install
 f:fe9744d7c1c001394e73d5c0ee3a66b1:iso-codes/.md5sum
 f:b958ce4c59572786eb8fd0b06e6ec9e5:iso-codes/Pkgfile
 f:bab1e8510a673dc09cc3200f80d1877e:iso-codes/.footprint
-f:02fb8494093bcf3aca5abbea376ec390:libssh2/.md5sum
-f:78f3176ed9ad2d08b9a8e2600554676e:libssh2/Pkgfile
-f:acf157100fbe56fca4f199bbb4c9f574:libssh2/CVE-2019-17498.patch
+f:be479cf00068d4bda83d35c863bfd342:libssh2/.md5sum
+f:92e964cbd5be5813975f1045895f6f96:libssh2/Pkgfile
 f:b2c5c5a1c81a2fb976d81532ffbee326:libssh2/.footprint
 f:5276adda4947bab6797c8af13a81ab13:itstool/.md5sum
 f:69d5318196121a1bf60dc12299bedd98:itstool/Pkgfile
