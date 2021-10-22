@@ -789,11 +789,11 @@ f:a934f19613a30dc984c871f0ff71e48b:squashfs-tools/squashfs-tools-4.4-fno-common.
 f:7faaa7b5597d9fe493d496ad4386ea31:squashfs-tools/.md5sum
 f:23b5c36de2d7f204ebe769c66ee1c6f5:squashfs-tools/Pkgfile
 f:b9d3d211de2fa03d524df195ee4afe29:squashfs-tools/.footprint
-f:2e48a6704a905530feaac605dc12df62:rust/.md5sum
+f:f57e46df8b08130819f4634b4d41c3c6:rust/.md5sum
 f:59041d2148f9ac01f0052bbd48253787:rust/libexec.patch
-f:5bd8813494fdad21d2ebe7658d89fa34:rust/Pkgfile
+f:9f6933b28422ed476fd9ad12e1e00b23:rust/Pkgfile
 f:a68528b0fd1e5420b6f851ae579e97a4:rust/.nostrip
-f:a67a975a47e058b95f76a64ea88be560:rust/.footprint
+f:e2c7b9e74e5bb386c00b08801b1d78b9:rust/.footprint
 f:15195d72eb636e5390ea86ca09079664:libshout/.md5sum
 f:dcc620a453e6f1c01fea2982a8e95fca:libshout/Pkgfile
 f:6664530cdc3cb72e097888a5a5c2b346:libshout/.footprint
