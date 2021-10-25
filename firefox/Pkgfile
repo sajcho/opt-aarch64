@@ -1,19 +1,16 @@
 # Description:	The Mozilla Firefox browser with Alsa support
 # URL:		https://www.mozilla.com/firefox/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	autoconf-2.13 cbindgen dbus-glib ffmpeg libidl libnotify nodejs nss libxt zip
+# Depends on:	autoconf-2.13 cbindgen dbus-glib ffmpeg gtk3 libevent libidl libnotify libxkbcommon nodejs nss libxt zip
 
 name=firefox
-version=92.0.1
-release=0
+version=93.0
+release=1
 source=(https://archive.mozilla.org/pub/${name}/releases/${version}/source/${name}-${version}.source.tar.xz \
-	firefox-91.0.1esr-disable_rust_test-1.patch \
 	firefox.desktop)
 
 build() {
 	cd ${name}-${version}
-
-	patch -Np1 -i $SRC/firefox-91.0.1esr-disable_rust_test-1.patch
 
 cat <<- EOF > .mozconfig
 	export CC=clang
@@ -24,8 +21,9 @@ cat <<- EOF > .mozconfig
 	mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/firefox-shared
 	unset MOZ_TELEMETRY_REPORTING
 	ac_add_options --prefix=/usr
-	ac_add_options --enable-default-toolkit=cairo-gtk3-wayland
 	ac_add_options --enable-application=browser
+	ac_add_options --enable-default-toolkit=cairo-gtk3-wayland
+
 	ac_add_options --with-system-jpeg
 	ac_add_options --with-system-zlib
 	ac_add_options --with-system-png
@@ -34,15 +32,23 @@ cat <<- EOF > .mozconfig
 	ac_add_options --with-system-icu
 	ac_add_options --with-system-webp
 	ac_add_options --with-system-libvpx
+	ac_add_options --with-system-libevent
+
 	ac_add_options --enable-system-ffi
 	ac_add_options --enable-system-pixman
-	ac_add_options --enable-optimize="-g0 -O2"
+	ac_add_options --enable-linker=lld
+	ac_add_options --enable-optimize
+	ac_add_options --enable-official-branding
 	ac_add_options --enable-hardening
 	ac_add_options --enable-ffmpeg
+	ac_add_options --enable-webrtc
 	ac_add_options --enable-av1
 	ac_add_options --enable-alsa
-	ac_add_options --enable-official-branding
-	ac_add_options --disable-pulseaudio
+	ac_add_options --enable-pulseaudio
+
+	ac_add_options --allow-addon-sideload
+
+	ac_add_options --disable-rust-simd
 	ac_add_options --disable-jack
 	ac_add_options --disable-gold
 	ac_add_options --disable-debug-symbols
@@ -51,14 +57,13 @@ cat <<- EOF > .mozconfig
 	ac_add_options --disable-updater
 	ac_add_options --disable-crashreporter
 	ac_add_options --disable-necko-wifi
-	# AArch64 add
-	ac_add_options --enable-rust-simd
-	ac_add_options --enable-webrtc
+	ac_add_options --disable-bootstrap
 EOF
 
-	export MOZ_DEBUG_FLAGS=" "
 	export CFLAGS+=" -g0"
 	export CXXFLAGS+=" -g0"
+	export MOZ_NOSPAM=1
+	export MOZ_DEBUG_FLAGS=" "
 	export RUSTFLAGS="-Cdebuginfo=0"
 	export MOZ_MAKE_FLAGS="-j ${JOBS-1}"
 	export MOZBUILD_STATE_PATH="$PKGMK_SOURCE_DIR/mozbuild"
