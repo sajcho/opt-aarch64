@@ -1,23 +1,24 @@
 # Description:	The Rust language with Cargo included.
 # URL:		http://www.rust-lang.org/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	llvm-toolchain libgit2 libssh2
+# Depends on:	curl llvm-toolchain
 
 name=rust
+_realname=rustc
 version=1.56.0
-release=0
+release=1
 
-source=(https://static.rust-lang.org/dist/${name}c-${version}-src.tar.gz \
+source=(https://static.rust-lang.org/dist/${_realname}-${version}-src.tar.gz \
 	libexec.patch)
 
 build() {
-	cd ${name}c-${version}-src
+	cd ${_realname}-${version}-src
 
 	# Patch cargo so credential helpers are in /usr/lib instead of /usr/libexec
 	patch -p1 -i $SRC/libexec.patch
 
 	# Remove bundled dependencies.
-	rm -r src/llvm-project/
+	rm -r src/llvm-project/{clang,clang-tools-extra,libunwind,lld,lldb,llvm}
 	install -d src/llvm-project/libunwind
 
 cat <<- EOF > $SRC/config.toml
@@ -25,8 +26,11 @@ cat <<- EOF > $SRC/config.toml
 	profile = "user"
 
 	[llvm]
+	targets = "AArch64"
 	ninja = true
 	link-shared = true
+	optimize = true
+	thin-lto = true
 	polly = true
 
 	[install]
@@ -37,9 +41,10 @@ cat <<- EOF > $SRC/config.toml
 	codegen-units-std = 1
 	debuginfo-level-std = 2
 	optimize = true
+	use-lld = true
 	rpath = false
 	codegen-tests = false
-	parallel-compiler = false
+	parallel-compiler = true
 	description = "SAUX Aarch64"
 
 	[build]
@@ -47,8 +52,8 @@ cat <<- EOF > $SRC/config.toml
 	extended = true
 	vendor = true
 	docs = false
-	profiler = false
-	sanitizers = false
+	profiler = true
+	sanitizers = true
 	python = "/usr/bin/python3"
 	cargo = "/usr/bin/cargo"
 	rustc = "/usr/bin/rustc"
@@ -64,10 +69,11 @@ EOF
 
 	mkdir "$PKGMK_SOURCE_DIR/rust" || true
 	export CARGO_HOME="$PKGMK_SOURCE_DIR/rust"
-
 	export RUST_BACKTRACE="full"
-	export RUSTFLAGS="-Clink-arg=-Wl,-z,relro,-z,now"
-	export RUST_COMPILER_RT_ROOT="/usr/lib/clang/13.0.0/"
+
+	# prevention - if libgit2, libssh2 is installed
+	export LIBGIT2_NO_PKG_CONFIG=1
+	export LIBSSH2_NO_PKG_CONFIG=1
 
 	/usr/bin/python3 ./x.py build --config="${SRC}"/config.toml ${JOBS:+-j ${JOBS}}
 
