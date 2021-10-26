@@ -1,11 +1,11 @@
 # Description:	Window manager designed for speed, usability and consistency
 # URL:		https://github.com/ice-wm/icewm
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	asciidoctor gdk-pixbuf-xlib librsvg libsndfile libxcomposite libxinerama libxpm
+# Depends on:	asciidoc gdk-pixbuf-xlib librsvg libsndfile libxcomposite libxinerama libxpm rxvt-unicode
 
 name=icewm
-version=2.7.0
-release=1
+version=2.8.0
+release=0
 source=(https://github.com/ice-wm/${name}/archive/${version}/${name}-${version}.tar.gz)
 
 build() {
@@ -15,7 +15,7 @@ build() {
 	cd build
 
 	cmake .. \
-		-DCMAKE_BUILD_TYPE=Release \
+		-DCMAKE_BUILD_TYPE=None \
 		-DCMAKE_INSTALL_PREFIX=/usr \
 		-DCFGDIR=/etc \
 		-DCONFIG_GDK_PIXBUF_XLIB=ON \
@@ -27,7 +27,7 @@ build() {
 		-DENABLE_ALSA=ON \
 		-DENABLE_NLS=OFF \
 		-DENABLE_LTO=OFF \
-		-DXTERMCMD=urxvt
+		-DXTERMCMD="/usr/bin/urxvt"
 
 	make
 
