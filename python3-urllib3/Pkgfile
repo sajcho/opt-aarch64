@@ -5,8 +5,8 @@
 
 name=python3-urllib3
 _realname=urllib3
-version=1.26.6
-release=1
+version=1.26.7
+release=0
 source=(https://github.com/${_realname}/${_realname}/archive/${version}/${_realname}-${version}.tar.gz)
 
 build() {
