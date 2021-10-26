@@ -8,6 +8,8 @@ drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/attr/
 drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/attr/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/attr/__pycache__/__init__.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/attr/__pycache__/__init__.cpython-310.pyc
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/attr/__pycache__/_cmp.cpython-310.opt-1.pyc
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/attr/__pycache__/_cmp.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/attr/__pycache__/_compat.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/attr/__pycache__/_compat.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/attr/__pycache__/_config.cpython-310.opt-1.pyc
@@ -30,6 +32,8 @@ drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/attr/__pycache__/
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/attr/__pycache__/setters.cpython-310.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/attr/__pycache__/validators.cpython-310.opt-1.pyc
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/attr/__pycache__/validators.cpython-310.pyc
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/attr/_cmp.py
+-rw-rw-r--	root/root	usr/lib/python3.10/site-packages/attr/_cmp.pyi
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/attr/_compat.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/attr/_config.py
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/attr/_funcs.py
@@ -48,10 +52,10 @@ drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/attr/__pycache__/
 -rw-rw-r--	root/root	usr/lib/python3.10/site-packages/attr/setters.pyi
 -rw-r--r--	root/root	usr/lib/python3.10/site-packages/attr/validators.py
 -rw-rw-r--	root/root	usr/lib/python3.10/site-packages/attr/validators.pyi
-drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/attrs-20.3.0-py3.10.egg-info/
--rw-r--r--	root/root	usr/lib/python3.10/site-packages/attrs-20.3.0-py3.10.egg-info/PKG-INFO
--rw-r--r--	root/root	usr/lib/python3.10/site-packages/attrs-20.3.0-py3.10.egg-info/SOURCES.txt
--rw-r--r--	root/root	usr/lib/python3.10/site-packages/attrs-20.3.0-py3.10.egg-info/dependency_links.txt
--rw-r--r--	root/root	usr/lib/python3.10/site-packages/attrs-20.3.0-py3.10.egg-info/not-zip-safe
--rw-r--r--	root/root	usr/lib/python3.10/site-packages/attrs-20.3.0-py3.10.egg-info/requires.txt
--rw-r--r--	root/root	usr/lib/python3.10/site-packages/attrs-20.3.0-py3.10.egg-info/top_level.txt
+drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/attrs-21.2.0-py3.10.egg-info/
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/attrs-21.2.0-py3.10.egg-info/PKG-INFO
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/attrs-21.2.0-py3.10.egg-info/SOURCES.txt
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/attrs-21.2.0-py3.10.egg-info/dependency_links.txt
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/attrs-21.2.0-py3.10.egg-info/not-zip-safe
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/attrs-21.2.0-py3.10.egg-info/requires.txt
+-rw-r--r--	root/root	usr/lib/python3.10/site-packages/attrs-21.2.0-py3.10.egg-info/top_level.txt
