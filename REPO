@@ -156,7 +156,6 @@ d:libgusb
 d:sbc
 d:python3-alabaster
 d:libsigc++2
-d:libpcre2
 d:fuse3
 d:recode
 d:libmpcdec
@@ -882,9 +881,6 @@ f:09bfd344a74e2470318ffbe2524c97f4:python3-alabaster/.footprint
 f:cd26ed34a030f8c135ffaa9ba7639eeb:libsigc++2/.md5sum
 f:32486844e5ab46f639d40bcfe4df1904:libsigc++2/Pkgfile
 f:03e29f29294455ec5556b61e01e80072:libsigc++2/.footprint
-f:ddaa0c88d6e8e409abf988f3a9769061:libpcre2/.md5sum
-f:42f5b3de973834979f317b17cd243b81:libpcre2/Pkgfile
-f:360ef483144032fef86222317cdc1b45:libpcre2/.footprint
 f:f9931abb0bf553cd58fa0fdd0092f088:fuse3/.md5sum
 f:cac9313ef15d14ad8ffa66b891f9ac71:fuse3/Pkgfile
 f:4ba0f5072c4f78cd84c0474bf1a157ec:fuse3/fix-realpath.patch
