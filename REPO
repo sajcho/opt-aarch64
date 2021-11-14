@@ -114,7 +114,6 @@ d:dejagnu
 d:brotli
 d:clutter
 d:keyutils
-d:pcre2
 d:libcdio-paranoia
 d:xapp
 d:gdk-pixbuf
@@ -206,6 +205,7 @@ d:libxslt
 d:gcr
 d:libwebp
 d:gst-plugins-base
+d:python3-six
 d:cogl
 d:mutt
 d:glibmm
@@ -265,6 +265,7 @@ d:intltool
 d:lcms2
 d:python3-dbusmock
 d:ndctl
+d:swig
 d:rxvt-unicode
 d:libqmi
 d:libmypaint
@@ -725,9 +726,6 @@ f:694a199ec4486de3ca02d86382965392:clutter/.footprint
 f:5699086488cc68b1a45182836de0e46c:keyutils/.md5sum
 f:021c871f8a8e05988191dc7f8c572767:keyutils/Pkgfile
 f:f0687244cedb09384920e01b8bf04754:keyutils/.footprint
-f:ddaa0c88d6e8e409abf988f3a9769061:pcre2/.md5sum
-f:9459a45c844720868d96ff76e729787c:pcre2/Pkgfile
-f:360ef483144032fef86222317cdc1b45:pcre2/.footprint
 f:05b1dbe69623a10bcbb7c51d3830e84d:libcdio-paranoia/.md5sum
 f:9dd605155cdc38f9dfa9c21f31e343e4:libcdio-paranoia/Pkgfile
 f:140fff354b7d0dd395be607b9e88ee2d:libcdio-paranoia/.footprint
@@ -1056,6 +1054,9 @@ f:9e344cee112ab164c0aa47e16e95d7c1:libwebp/.footprint
 f:f151faefa3e229d669b4a07cc7eeb35f:gst-plugins-base/.md5sum
 f:712e8f2de483cd28956ecc4939f6b52e:gst-plugins-base/Pkgfile
 f:56c06e6f9c04da1a4f2c201b9a27e5b2:gst-plugins-base/.footprint
+f:2ae076d6e27bbfef90af3629e6e2f2b9:python3-six/.md5sum
+f:98c6144827d585eff85fc53ae836ea2a:python3-six/Pkgfile
+f:2e30ae2cb0d06a58ed664eef8656f78a:python3-six/.footprint
 f:66d9c4676f8fb0e4392a7142274d02c1:cogl/.md5sum
 f:15cafe1e30009245c3346c5d9e23f9d6:cogl/Pkgfile
 f:0faa4629adf0764134d3bee3feb6a057:cogl/.footprint
@@ -1274,6 +1275,9 @@ f:78e5ff03aed835143458eab17378b7a1:python3-dbusmock/.footprint
 f:91630c86bad607dc76dfb17e2541a9b6:ndctl/.md5sum
 f:1af407b29fd9f1a81fdedef01b8e736e:ndctl/Pkgfile
 f:ae41fadc34cfe3c7e7cddb94f47ae674:ndctl/.footprint
+f:f775b9f6f9bc2f438ac919188bad4069:swig/.md5sum
+f:9b0c361afac915db67fbdbc4247a460e:swig/Pkgfile
+f:04d5da180e5b204334f8d9f924f97fe6:swig/.footprint
 f:7408fe72088660292bfb2151ef98be3a:rxvt-unicode/.md5sum
 f:585157318cb78733804eed507b77c37c:rxvt-unicode/rxvt-unicode-kerning.patch
 f:8533b4ad4d29d0fe25442cdc855f5967:rxvt-unicode/Pkgfile
