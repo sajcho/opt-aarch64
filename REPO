@@ -72,6 +72,7 @@ d:at-spi2-atk
 d:speex
 d:libgcrypt
 d:pangomm14
+d:tree
 d:wavpack
 d:graphene
 d:python3-asn1crypto
@@ -203,6 +204,7 @@ d:webkitgtk
 d:woff2
 d:libxslt
 d:gcr
+d:unzip
 d:libwebp
 d:gst-plugins-base
 d:python3-six
@@ -586,6 +588,9 @@ f:14a07559a58fc9d58fe846fbfc705e46:libgcrypt/.footprint
 f:6dcf56e413048b4a419ce61c113cab6a:pangomm14/.md5sum
 f:494c2f138bf5ade3763aa92ea6c6e7b3:pangomm14/Pkgfile
 f:eadbd1bac354a4ab0290465f07f73bbd:pangomm14/.footprint
+f:ca5defc008d5381900e2a8d38a138443:tree/.md5sum
+f:831579e36ffc2a16a48bec5fd6734d05:tree/Pkgfile
+f:558527f92dc2db471135adfa723ec3d1:tree/.footprint
 f:c5ef2aa32db79ca7c0004a512faac20b:wavpack/.md5sum
 f:a50bdfd65169ec742a8ccd4189bee7e5:wavpack/Pkgfile
 f:142142f49d3fd61ef33962bd50e8fa77:wavpack/.footprint
@@ -1048,6 +1053,18 @@ f:c92e332d84d22d72400944508eca701a:gcr/.md5sum
 f:e5f74be27525658dae59401455944186:gcr/post-install
 f:8009ff058db6e4b97263ef933dcd2e6b:gcr/Pkgfile
 f:5ce3f49e9232ac0e60e9abfb69a3c088:gcr/.footprint
+f:40ae64ba09670480195539bcdf92c0ef:unzip/unzip-6.0-overflow.patch
+f:aa04ad98cb479234f7060c9eae6717be:unzip/.md5sum
+f:704269930d2904b31f36c163e21b668c:unzip/unzip-6.0-cve-2018-1000035-heap-based-overflow.patch
+f:cf3e3a98ff85d784c5d3843758645874:unzip/unzip-6.0-cve-2014-8139.patch
+f:19341ef8810558e0cb4e3fe25b3eff70:unzip/unzip-6.0-attribs-overflow.patch
+f:2a05a5d2f21511c5e393b62e4044e913:unzip/unzip-6.0-cve-2014-8141.patch
+f:04bc89e05ccceb4c8600f646156fe242:unzip/unzip-6.0-alt-iconv-utf8-print.patch
+f:c21d530096f4ea408228d0bb3c65720a:unzip/Pkgfile
+f:f65429e4494c4d5a80ec72e4321335da:unzip/0001-Fix-CVE-2016-9844-rhbz-1404283.patch
+f:4f6a01093e9a05fe0d2916170d961e29:unzip/unzip-6.0-cve-2014-8140.patch
+f:694e3c8ad965798a72569ff42101cc83:unzip/unzip-6.0-heap-overflow-infloop.patch
+f:044d529aebd815fc8d1bd8d8935aed41:unzip/.footprint
 f:f91ea7b4417facc1d3d42b1f0d364292:libwebp/.md5sum
 f:78b28eabb6596b8572787f6345e65e0d:libwebp/Pkgfile
 f:9e344cee112ab164c0aa47e16e95d7c1:libwebp/.footprint
