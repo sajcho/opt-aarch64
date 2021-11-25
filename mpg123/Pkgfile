@@ -4,8 +4,8 @@
 # Depends on:	alsa-lib
 
 name=mpg123
-version=1.28.2
-release=0
+version=1.29.2
+release=1
 source=(https://www.mpg123.de/download/${name}-${version}.tar.bz2)
 
 build() {
@@ -20,11 +20,12 @@ build() {
 		--with-cpu="aarch64"
 
 	sed -i 's/ -shared / -Wl,--as-needed\0/g' libtool
-	make
 
-	#make check
+	make V=1
 
 	make DESTDIR=$PKG install
 
 	install -m 0755 scripts/conplay $PKG/usr/bin/conplay
+
+	find $PKG -type f -name '*.la' -delete
 }
