@@ -1,18 +1,19 @@
 # Description:	The Rust language with Cargo included.
 # URL:		http://www.rust-lang.org/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	curl llvm-toolchain
+# Depends on:	llvm-toolchain
 
 name=rust
 _realname=rustc
-version=1.56.0
-release=1
+version=nightly-20211122
+_realversion=nightly
+release=0
 
-source=(https://static.rust-lang.org/dist/${_realname}-${version}-src.tar.gz \
+source=(https://static.rust-lang.org/dist/${_realname}-${_realversion}-src.tar.gz \
 	libexec.patch)
 
 build() {
-	cd ${_realname}-${version}-src
+	cd ${_realname}-${_realversion}-src
 
 	# Patch cargo so credential helpers are in /usr/lib instead of /usr/libexec
 	patch -p1 -i $SRC/libexec.patch
@@ -31,7 +32,7 @@ cat <<- EOF > $SRC/config.toml
 	link-shared = true
 	optimize = true
 	thin-lto = true
-	polly = true
+	#polly = false
 
 	[install]
 	prefix = "/usr"
@@ -39,7 +40,7 @@ cat <<- EOF > $SRC/config.toml
 	[rust]
 	channel = "stable"
 	codegen-units-std = 1
-	debuginfo-level-std = 2
+	debuginfo-level-std = 1
 	optimize = true
 	use-lld = true
 	rpath = false
@@ -48,19 +49,20 @@ cat <<- EOF > $SRC/config.toml
 	description = "SAUX Aarch64"
 
 	[build]
-	target = ["aarch64-unknown-linux-gnu"]
+	target = ["$CHOST"]
+	verbose = 0
 	extended = true
 	vendor = true
 	docs = false
-	profiler = true
-	sanitizers = true
+	profiler = false
+	sanitizers = false
 	python = "/usr/bin/python3"
 	cargo = "/usr/bin/cargo"
 	rustc = "/usr/bin/rustc"
 	rustfmt = "/usr/bin/rustfmt"
-	tools = ["cargo", "rls", "clippy", "rustfmt", "analysis", "src", "rust-demangler"]
+	tools = ["analysis", "cargo", "clippy", "rls", "rustfmt", "src"]
 
-	[target.aarch64-unknown-linux-gnu]
+	[target.$CHOST]
 	llvm-config = "/usr/bin/llvm-config"
 	llvm-filecheck = "/usr/bin/FileCheck"
 EOF
@@ -69,9 +71,10 @@ EOF
 
 	mkdir "$PKGMK_SOURCE_DIR/rust" || true
 	export CARGO_HOME="$PKGMK_SOURCE_DIR/rust"
-	export RUST_BACKTRACE="full"
+	export RUST_BACKTRACE="1"
+	export RUSTFLAGS="-Clinker-plugin-lto -Clinker=clang -Clink-arg=-fuse-ld=lld -Cembed-bitcode=yes"
 
-	# prevention - if libgit2, libssh2 is installed
+	# prevent - if libgit2, libssh2 is installed
 	export LIBGIT2_NO_PKG_CONFIG=1
 	export LIBSSH2_NO_PKG_CONFIG=1
 
@@ -86,5 +89,5 @@ EOF
 	rm $PKG/usr/lib/rustlib/{components,manifest-rustc,rust-installer-version,uninstall.sh}
 
 	rm $PKG/usr/lib/{libstd-*,libtest-*}
-	ln -srft $PKG/usr/lib $PKG/usr/lib/rustlib/aarch64-unknown-linux-gnu/lib/*.so
+	ln -srft $PKG/usr/lib $PKG/usr/lib/rustlib/$CHOST/lib/*.so
 }
