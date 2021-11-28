@@ -1,0 +1,11 @@
+
+Note:
+
+    Use Harfbuzz library to improve auto-hinting
+    if available, many glyphs not directly addressable
+    by a fonts character map will be hinted also.
+
+Freetype recommended:
+
+    First, install without harfbuzz, after it is installed harfbuzz,
+    reinstall freetype with harfbuzz.
