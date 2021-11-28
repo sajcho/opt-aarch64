@@ -1,0 +1,6 @@
+
+Note:
+
+    To add additional functions to it (this is a circular dependency, you must
+    first build graphite2 without harfbuzz), then reinstall graphite2 with
+    harfbuzz.
