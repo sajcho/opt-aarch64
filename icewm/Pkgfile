@@ -4,8 +4,8 @@
 # Depends on:	asciidoc gdk-pixbuf-xlib librsvg libsndfile libxcomposite libxinerama libxpm rxvt-unicode
 
 name=icewm
-version=2.8.0
-release=0
+version=2.9.0
+release=1
 source=(https://github.com/ice-wm/${name}/archive/${version}/${name}-${version}.tar.gz)
 
 build() {
@@ -14,7 +14,7 @@ build() {
 	mkdir build
 	cd build
 
-	cmake .. \
+	cmake .. -G Ninja \
 		-DCMAKE_BUILD_TYPE=None \
 		-DCMAKE_INSTALL_PREFIX=/usr \
 		-DCFGDIR=/etc \
@@ -29,9 +29,9 @@ build() {
 		-DENABLE_LTO=OFF \
 		-DXTERMCMD="/usr/bin/urxvt"
 
-	make
+	ninja -v
 
-	make DESTDIR=$PKG install
+	DESTDIR=$PKG ninja install
 
 	rm -r $PKG/usr/share/{doc,locale}
 }
