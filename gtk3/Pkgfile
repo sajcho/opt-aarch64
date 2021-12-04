@@ -5,7 +5,7 @@
 
 name=gtk3
 version=3.24.30
-release=0
+release=1
 source=(https://download.gnome.org/sources/gtk+/${version%.*}/gtk+-${version}.tar.xz \
 	gtk+-3.24.30-fix-gcc11-array-bounds.patch)
 
@@ -25,13 +25,9 @@ build() {
 		-Dwayland_backend=true \
 		. build
 
-	meson compile ${JOBS:+-j ${JOBS}} -C build
+	meson compile ${JOBS:+-j ${JOBS}} -v -C build
 
 	DESTDIR=$PKG meson install --no-rebuild -C build
 
 	rm -r $PKG/usr/share/{gtk-3.0,locale}
-
-	# use gtk-update-icon-cache from gtk+2.0 for now
-	rm $PKG/usr/bin/gtk-update-icon-cache
-	rm $PKG/usr/share/man/man1/gtk-update-icon-cache.1
 }

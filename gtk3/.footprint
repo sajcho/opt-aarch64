@@ -9,6 +9,7 @@ drwxr-xr-x	root/root	usr/bin/
 -rwxr-xr-x	root/root	usr/bin/gtk-launch
 -rwxr-xr-x	root/root	usr/bin/gtk-query-immodules-3.0
 -rwxr-xr-x	root/root	usr/bin/gtk-query-settings
+-rwxr-xr-x	root/root	usr/bin/gtk-update-icon-cache
 -rwxr-xr-x	root/root	usr/bin/gtk3-demo
 -rwxr-xr-x	root/root	usr/bin/gtk3-demo-application
 -rwxr-xr-x	root/root	usr/bin/gtk3-icon-browser
@@ -548,6 +549,7 @@ drwxr-xr-x	root/root	usr/share/man/man1/
 -rw-r--r--	root/root	usr/share/man/man1/gtk-launch.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/gtk-query-immodules-3.0.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/gtk-query-settings.1.gz
+-rw-r--r--	root/root	usr/share/man/man1/gtk-update-icon-cache.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/gtk3-demo-application.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/gtk3-demo.1.gz
 -rw-r--r--	root/root	usr/share/man/man1/gtk3-icon-browser.1.gz
