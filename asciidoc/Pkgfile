@@ -4,8 +4,8 @@
 # Depends on:	docbook-xsl-nons python3
 
 name=asciidoc
-version=9.0.2
-release=0
+version=9.1.1
+release=1
 source=(https://github.com/${name}/${name}-py3/archive/${version}/${name}-py3-${version}.tar.gz)
 
 build() {
@@ -17,7 +17,7 @@ build() {
 		--prefix=/usr \
 		--sysconfdir=/etc
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 
