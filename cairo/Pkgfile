@@ -5,7 +5,7 @@
 
 name=cairo
 version=1.17.4
-release=1
+release=2
 source=(https://cairographics.org/snapshots/${name}-${version}.tar.xz \
 	fix-library-versioning.diff \
 	fix-mask-usage-in-image-compositor.patch \
@@ -20,7 +20,9 @@ build() {
 	patch -p1 -i $SRC/fix-pdf-fonts.patch
 	patch -p1 -i $SRC/xlib-xcb.diff
 
-	build-meson \
+	prt-get isinst wayland-protocols mesa && PKGMK_CAIRO+=' -Dgl-backend=glesv3 -Dglesv3=enabled'
+
+	build-meson $PKGMK_CAIRO \
 		-Dtee=enabled \
 		-Dspectre=disabled \
 		-Dtests=disabled \
