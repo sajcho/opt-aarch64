@@ -32,6 +32,7 @@ drwxr-xr-x	root/root	usr/share/icons/Adwaita/16x16/actions/
 -rw-r--r--	root/root	usr/share/icons/Adwaita/16x16/actions/document-save-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/16x16/actions/document-send-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/16x16/actions/edit-clear-all-symbolic.symbolic.png
+-rw-r--r--	root/root	usr/share/icons/Adwaita/16x16/actions/edit-clear-rtl-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/16x16/actions/edit-clear-symbolic-rtl.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/16x16/actions/edit-clear-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/16x16/actions/edit-copy-symbolic.symbolic.png
@@ -115,7 +116,9 @@ drwxr-xr-x	root/root	usr/share/icons/Adwaita/16x16/actions/
 -rw-r--r--	root/root	usr/share/icons/Adwaita/16x16/actions/open-menu-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/16x16/actions/process-stop-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/16x16/actions/send-to-symbolic.symbolic.png
--rw-r--r--	root/root	usr/share/icons/Adwaita/16x16/actions/sidebar-hide-symbolic.symbolic.png
+-rw-r--r--	root/root	usr/share/icons/Adwaita/16x16/actions/sidebar-show-right-rtl-symbolic.symbolic.png
+-rw-r--r--	root/root	usr/share/icons/Adwaita/16x16/actions/sidebar-show-right-symbolic.symbolic.png
+-rw-r--r--	root/root	usr/share/icons/Adwaita/16x16/actions/sidebar-show-rtl-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/16x16/actions/sidebar-show-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/16x16/actions/star-new-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/16x16/actions/system-log-out-symbolic.symbolic.png
@@ -927,7 +930,6 @@ drwxr-xr-x	root/root	usr/share/icons/Adwaita/16x16/ui/
 -rw-r--r--	root/root	usr/share/icons/Adwaita/16x16/ui/selection-end-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/16x16/ui/selection-start-symbolic-rtl.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/16x16/ui/selection-start-symbolic.symbolic.png
--rw-r--r--	root/root	usr/share/icons/Adwaita/16x16/ui/tab-new-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/16x16/ui/window-close-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/16x16/ui/window-maximize-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/16x16/ui/window-minimize-symbolic.symbolic.png
@@ -1331,6 +1333,7 @@ drwxr-xr-x	root/root	usr/share/icons/Adwaita/24x24/actions/
 -rw-r--r--	root/root	usr/share/icons/Adwaita/24x24/actions/document-save-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/24x24/actions/document-send-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/24x24/actions/edit-clear-all-symbolic.symbolic.png
+-rw-r--r--	root/root	usr/share/icons/Adwaita/24x24/actions/edit-clear-rtl-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/24x24/actions/edit-clear-symbolic-rtl.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/24x24/actions/edit-clear-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/24x24/actions/edit-copy-symbolic.symbolic.png
@@ -1414,7 +1417,9 @@ drwxr-xr-x	root/root	usr/share/icons/Adwaita/24x24/actions/
 -rw-r--r--	root/root	usr/share/icons/Adwaita/24x24/actions/open-menu-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/24x24/actions/process-stop-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/24x24/actions/send-to-symbolic.symbolic.png
--rw-r--r--	root/root	usr/share/icons/Adwaita/24x24/actions/sidebar-hide-symbolic.symbolic.png
+-rw-r--r--	root/root	usr/share/icons/Adwaita/24x24/actions/sidebar-show-right-rtl-symbolic.symbolic.png
+-rw-r--r--	root/root	usr/share/icons/Adwaita/24x24/actions/sidebar-show-right-symbolic.symbolic.png
+-rw-r--r--	root/root	usr/share/icons/Adwaita/24x24/actions/sidebar-show-rtl-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/24x24/actions/sidebar-show-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/24x24/actions/star-new-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/24x24/actions/system-log-out-symbolic.symbolic.png
@@ -2211,7 +2216,6 @@ drwxr-xr-x	root/root	usr/share/icons/Adwaita/24x24/ui/
 -rw-r--r--	root/root	usr/share/icons/Adwaita/24x24/ui/selection-end-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/24x24/ui/selection-start-symbolic-rtl.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/24x24/ui/selection-start-symbolic.symbolic.png
--rw-r--r--	root/root	usr/share/icons/Adwaita/24x24/ui/tab-new-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/24x24/ui/window-close-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/24x24/ui/window-maximize-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/24x24/ui/window-minimize-symbolic.symbolic.png
@@ -2365,12 +2369,8 @@ drwxr-xr-x	root/root	usr/share/icons/Adwaita/256x256/legacy/
 -rw-r--r--	root/root	usr/share/icons/Adwaita/256x256/legacy/view-refresh.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/256x256/legacy/web-browser.png
 drwxr-xr-x	root/root	usr/share/icons/Adwaita/256x256/mimetypes/
--rw-r--r--	root/root	usr/share/icons/Adwaita/256x256/mimetypes/application-x-addon.png
--rw-r--r--	root/root	usr/share/icons/Adwaita/256x256/mimetypes/application-x-firmware.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/256x256/mimetypes/x-package-repository.png
 drwxr-xr-x	root/root	usr/share/icons/Adwaita/256x256/places/
--rw-r--r--	root/root	usr/share/icons/Adwaita/256x256/places/network-server.png
--rw-r--r--	root/root	usr/share/icons/Adwaita/256x256/places/network-workgroup.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/256x256/places/user-trash.png
 drwxr-xr-x	root/root	usr/share/icons/Adwaita/256x256/status/
 -rw-r--r--	root/root	usr/share/icons/Adwaita/256x256/status/user-trash-full.png
@@ -2401,6 +2401,7 @@ drwxr-xr-x	root/root	usr/share/icons/Adwaita/32x32/actions/
 -rw-r--r--	root/root	usr/share/icons/Adwaita/32x32/actions/document-save-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/32x32/actions/document-send-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/32x32/actions/edit-clear-all-symbolic.symbolic.png
+-rw-r--r--	root/root	usr/share/icons/Adwaita/32x32/actions/edit-clear-rtl-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/32x32/actions/edit-clear-symbolic-rtl.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/32x32/actions/edit-clear-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/32x32/actions/edit-copy-symbolic.symbolic.png
@@ -2484,7 +2485,9 @@ drwxr-xr-x	root/root	usr/share/icons/Adwaita/32x32/actions/
 -rw-r--r--	root/root	usr/share/icons/Adwaita/32x32/actions/open-menu-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/32x32/actions/process-stop-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/32x32/actions/send-to-symbolic.symbolic.png
--rw-r--r--	root/root	usr/share/icons/Adwaita/32x32/actions/sidebar-hide-symbolic.symbolic.png
+-rw-r--r--	root/root	usr/share/icons/Adwaita/32x32/actions/sidebar-show-right-rtl-symbolic.symbolic.png
+-rw-r--r--	root/root	usr/share/icons/Adwaita/32x32/actions/sidebar-show-right-symbolic.symbolic.png
+-rw-r--r--	root/root	usr/share/icons/Adwaita/32x32/actions/sidebar-show-rtl-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/32x32/actions/sidebar-show-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/32x32/actions/star-new-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/32x32/actions/system-log-out-symbolic.symbolic.png
@@ -3292,7 +3295,6 @@ drwxr-xr-x	root/root	usr/share/icons/Adwaita/32x32/ui/
 -rw-r--r--	root/root	usr/share/icons/Adwaita/32x32/ui/selection-end-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/32x32/ui/selection-start-symbolic-rtl.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/32x32/ui/selection-start-symbolic.symbolic.png
--rw-r--r--	root/root	usr/share/icons/Adwaita/32x32/ui/tab-new-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/32x32/ui/window-close-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/32x32/ui/window-maximize-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/32x32/ui/window-minimize-symbolic.symbolic.png
@@ -3325,6 +3327,7 @@ drwxr-xr-x	root/root	usr/share/icons/Adwaita/48x48/actions/
 -rw-r--r--	root/root	usr/share/icons/Adwaita/48x48/actions/document-save-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/48x48/actions/document-send-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/48x48/actions/edit-clear-all-symbolic.symbolic.png
+-rw-r--r--	root/root	usr/share/icons/Adwaita/48x48/actions/edit-clear-rtl-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/48x48/actions/edit-clear-symbolic-rtl.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/48x48/actions/edit-clear-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/48x48/actions/edit-copy-symbolic.symbolic.png
@@ -3408,7 +3411,9 @@ drwxr-xr-x	root/root	usr/share/icons/Adwaita/48x48/actions/
 -rw-r--r--	root/root	usr/share/icons/Adwaita/48x48/actions/open-menu-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/48x48/actions/process-stop-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/48x48/actions/send-to-symbolic.symbolic.png
--rw-r--r--	root/root	usr/share/icons/Adwaita/48x48/actions/sidebar-hide-symbolic.symbolic.png
+-rw-r--r--	root/root	usr/share/icons/Adwaita/48x48/actions/sidebar-show-right-rtl-symbolic.symbolic.png
+-rw-r--r--	root/root	usr/share/icons/Adwaita/48x48/actions/sidebar-show-right-symbolic.symbolic.png
+-rw-r--r--	root/root	usr/share/icons/Adwaita/48x48/actions/sidebar-show-rtl-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/48x48/actions/sidebar-show-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/48x48/actions/star-new-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/48x48/actions/system-log-out-symbolic.symbolic.png
@@ -4217,7 +4222,6 @@ drwxr-xr-x	root/root	usr/share/icons/Adwaita/48x48/ui/
 -rw-r--r--	root/root	usr/share/icons/Adwaita/48x48/ui/selection-end-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/48x48/ui/selection-start-symbolic-rtl.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/48x48/ui/selection-start-symbolic.symbolic.png
--rw-r--r--	root/root	usr/share/icons/Adwaita/48x48/ui/tab-new-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/48x48/ui/window-close-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/48x48/ui/window-maximize-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/48x48/ui/window-minimize-symbolic.symbolic.png
@@ -4306,6 +4310,7 @@ drwxr-xr-x	root/root	usr/share/icons/Adwaita/512x512/places/
 -rw-r--r--	root/root	usr/share/icons/Adwaita/512x512/places/folder-templates.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/512x512/places/folder-videos.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/512x512/places/folder.png
+-rw-r--r--	root/root	usr/share/icons/Adwaita/512x512/places/network-server.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/512x512/places/network-workgroup.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/512x512/places/user-bookmarks.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/512x512/places/user-desktop.png
@@ -4341,6 +4346,7 @@ drwxr-xr-x	root/root	usr/share/icons/Adwaita/64x64/actions/
 -rw-r--r--	root/root	usr/share/icons/Adwaita/64x64/actions/document-save-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/64x64/actions/document-send-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/64x64/actions/edit-clear-all-symbolic.symbolic.png
+-rw-r--r--	root/root	usr/share/icons/Adwaita/64x64/actions/edit-clear-rtl-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/64x64/actions/edit-clear-symbolic-rtl.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/64x64/actions/edit-clear-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/64x64/actions/edit-copy-symbolic.symbolic.png
@@ -4424,7 +4430,9 @@ drwxr-xr-x	root/root	usr/share/icons/Adwaita/64x64/actions/
 -rw-r--r--	root/root	usr/share/icons/Adwaita/64x64/actions/open-menu-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/64x64/actions/process-stop-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/64x64/actions/send-to-symbolic.symbolic.png
--rw-r--r--	root/root	usr/share/icons/Adwaita/64x64/actions/sidebar-hide-symbolic.symbolic.png
+-rw-r--r--	root/root	usr/share/icons/Adwaita/64x64/actions/sidebar-show-right-rtl-symbolic.symbolic.png
+-rw-r--r--	root/root	usr/share/icons/Adwaita/64x64/actions/sidebar-show-right-symbolic.symbolic.png
+-rw-r--r--	root/root	usr/share/icons/Adwaita/64x64/actions/sidebar-show-rtl-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/64x64/actions/sidebar-show-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/64x64/actions/star-new-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/64x64/actions/system-log-out-symbolic.symbolic.png
@@ -4872,7 +4880,6 @@ drwxr-xr-x	root/root	usr/share/icons/Adwaita/64x64/ui/
 -rw-r--r--	root/root	usr/share/icons/Adwaita/64x64/ui/selection-end-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/64x64/ui/selection-start-symbolic-rtl.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/64x64/ui/selection-start-symbolic.symbolic.png
--rw-r--r--	root/root	usr/share/icons/Adwaita/64x64/ui/tab-new-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/64x64/ui/window-close-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/64x64/ui/window-maximize-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/64x64/ui/window-minimize-symbolic.symbolic.png
@@ -4916,6 +4923,7 @@ drwxr-xr-x	root/root	usr/share/icons/Adwaita/96x96/actions/
 -rw-r--r--	root/root	usr/share/icons/Adwaita/96x96/actions/document-save-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/96x96/actions/document-send-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/96x96/actions/edit-clear-all-symbolic.symbolic.png
+-rw-r--r--	root/root	usr/share/icons/Adwaita/96x96/actions/edit-clear-rtl-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/96x96/actions/edit-clear-symbolic-rtl.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/96x96/actions/edit-clear-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/96x96/actions/edit-copy-symbolic.symbolic.png
@@ -4999,7 +5007,9 @@ drwxr-xr-x	root/root	usr/share/icons/Adwaita/96x96/actions/
 -rw-r--r--	root/root	usr/share/icons/Adwaita/96x96/actions/open-menu-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/96x96/actions/process-stop-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/96x96/actions/send-to-symbolic.symbolic.png
--rw-r--r--	root/root	usr/share/icons/Adwaita/96x96/actions/sidebar-hide-symbolic.symbolic.png
+-rw-r--r--	root/root	usr/share/icons/Adwaita/96x96/actions/sidebar-show-right-rtl-symbolic.symbolic.png
+-rw-r--r--	root/root	usr/share/icons/Adwaita/96x96/actions/sidebar-show-right-symbolic.symbolic.png
+-rw-r--r--	root/root	usr/share/icons/Adwaita/96x96/actions/sidebar-show-rtl-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/96x96/actions/sidebar-show-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/96x96/actions/star-new-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/96x96/actions/system-log-out-symbolic.symbolic.png
@@ -5447,7 +5457,6 @@ drwxr-xr-x	root/root	usr/share/icons/Adwaita/96x96/ui/
 -rw-r--r--	root/root	usr/share/icons/Adwaita/96x96/ui/selection-end-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/96x96/ui/selection-start-symbolic-rtl.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/96x96/ui/selection-start-symbolic.symbolic.png
--rw-r--r--	root/root	usr/share/icons/Adwaita/96x96/ui/tab-new-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/96x96/ui/window-close-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/96x96/ui/window-maximize-symbolic.symbolic.png
 -rw-r--r--	root/root	usr/share/icons/Adwaita/96x96/ui/window-minimize-symbolic.symbolic.png
@@ -5609,6 +5618,7 @@ drwxr-xr-x	root/root	usr/share/icons/Adwaita/scalable/actions/
 -rw-r--r--	root/root	usr/share/icons/Adwaita/scalable/actions/document-save-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/Adwaita/scalable/actions/document-send-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/Adwaita/scalable/actions/edit-clear-all-symbolic.svg
+-rw-r--r--	root/root	usr/share/icons/Adwaita/scalable/actions/edit-clear-rtl-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/Adwaita/scalable/actions/edit-clear-symbolic-rtl.svg
 -rw-r--r--	root/root	usr/share/icons/Adwaita/scalable/actions/edit-clear-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/Adwaita/scalable/actions/edit-copy-symbolic.svg
@@ -5692,7 +5702,9 @@ drwxr-xr-x	root/root	usr/share/icons/Adwaita/scalable/actions/
 -rw-r--r--	root/root	usr/share/icons/Adwaita/scalable/actions/open-menu-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/Adwaita/scalable/actions/process-stop-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/Adwaita/scalable/actions/send-to-symbolic.svg
--rw-r--r--	root/root	usr/share/icons/Adwaita/scalable/actions/sidebar-hide-symbolic.svg
+-rw-r--r--	root/root	usr/share/icons/Adwaita/scalable/actions/sidebar-show-right-rtl-symbolic.svg
+-rw-r--r--	root/root	usr/share/icons/Adwaita/scalable/actions/sidebar-show-right-symbolic.svg
+-rw-r--r--	root/root	usr/share/icons/Adwaita/scalable/actions/sidebar-show-rtl-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/Adwaita/scalable/actions/sidebar-show-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/Adwaita/scalable/actions/star-new-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/Adwaita/scalable/actions/system-log-out-symbolic.svg
@@ -6140,7 +6152,6 @@ drwxr-xr-x	root/root	usr/share/icons/Adwaita/scalable/ui/
 -rw-r--r--	root/root	usr/share/icons/Adwaita/scalable/ui/selection-end-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/Adwaita/scalable/ui/selection-start-symbolic-rtl.svg
 -rw-r--r--	root/root	usr/share/icons/Adwaita/scalable/ui/selection-start-symbolic.svg
--rw-r--r--	root/root	usr/share/icons/Adwaita/scalable/ui/tab-new-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/Adwaita/scalable/ui/window-close-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/Adwaita/scalable/ui/window-maximize-symbolic.svg
 -rw-r--r--	root/root	usr/share/icons/Adwaita/scalable/ui/window-minimize-symbolic.svg
