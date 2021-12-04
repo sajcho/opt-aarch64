@@ -2,10 +2,4 @@
 3f70df03f2df955860b4048f44491e4f  0002-Enable-subpixel-rendering.patch
 9ce570a126768cff6d118a2ae317b5c8  0003-Enable-infinality-subpixel-hinting.patch
 e38b058d481c6a79fd6284adb24f3e57  0004-Enable-long-PCF-family-names.patch
-17050bb97a92534b30cd1c73fa321a92  0006-Return_FT_Err_Ok_while_trying_to_render_bitmap.patch
-e42a2d86cb5574f972f3524a2b312173  0007-Restore_quiet_no-op_rendering_of_bitmap_glyphs.patch
-2f37779f87b103498b09d4011964f4dd  0008-sfnt-Add-API-for-retrieving-a-COLR-v1-ClipBox-table.patch
-f91875587e0e05b0fa9c926f48142d5b  0009-src-sfnt-ttcolr.c-tt_face_get_color_glyph_clipbox-Mi.patch
-3e6bffa555e2fd634c7d890bb881bf92  0010-sfnt-Add-missing-blend-mode-plus-to-COLR-v1.patch
-f931582653774e310ed3a7e49b7167a3  freetype-2.11.0.tar.xz
-fef731289a0f86933ff2d0b3615c3de0  freetype2.sh
+24e79233d607ded439ef36ff1f3ab68f  freetype-2.11.1.tar.xz
