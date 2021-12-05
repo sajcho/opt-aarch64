@@ -4,7 +4,7 @@
 
 name=fakeroot
 version=1.26
-release=0
+release=1
 source=(https://deb.debian.org/debian/pool/main/f/$name/${name}_${version}.orig.tar.gz)
 
 build() {
@@ -15,9 +15,12 @@ build() {
 	./bootstrap
 
 	./configure \
-		--prefix=/usr
+		--prefix=/usr \
+		--disable-static
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
+
+	find $PKG -type f -name '*.la' -delete
 }
