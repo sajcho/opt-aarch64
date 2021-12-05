@@ -4,18 +4,21 @@
 
 name=libdvdcss
 version=1.4.3
-release=0
+release=1
 source=(https://download.videolan.org/pub/${name}/${version}/${name}-${version}.tar.bz2)
 
 build() {
 	cd ${name}-${version}
 
 	./configure \
-		--prefix=/usr
+		--prefix=/usr \
+		--disable-static
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 
 	rm -r $PKG/usr/share/doc
+
+	find $PKG -type f -name '*.la' -delete
 }
