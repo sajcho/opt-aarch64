@@ -5,7 +5,7 @@
 
 name=avahi
 version=0.8
-release=1
+release=2
 source=(https://github.com/lathiat/${name}/releases/download/v$version/${name}-${version}.tar.gz \
 	avahi-0.8-ipv6_race_condition_fix-1.patch \
 	avahi-daemon.run)
@@ -43,10 +43,11 @@ build() {
 		--disable-python \
 		--disable-python-dbus \
 		--disable-nls \
+		--disable-static \
 		--with-systemdsystemunitdir=no \
 		--with-distro=none
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 
@@ -62,4 +63,6 @@ build() {
 	ln -s /run/runit/supervise.avahi-daemon $PKG/etc/sv/avahi-daemon/supervise
 
 	rm -r $PKG/run
+
+	find $PKG -type f -name '*.la' -delete
 }
