@@ -4,7 +4,7 @@
 
 name=libconfig
 version=1.7.3
-release=0
+release=1
 source=(https://github.com/hyperrealm/${name}/archive/v${version}.tar.gz)
 
 build() {
@@ -13,13 +13,14 @@ build() {
 	autoreconf -fiv
 
 	./configure \
-		--prefix=/usr
+		--prefix=/usr \
+		--disable-static
 
-	make
-
-	make check
+	make V=1
 
 	make -j1 DESTDIR=$PKG install
 
 	rm -r $PKG/usr/share
+
+	find $PKG -type f -name '*.la' -delete
 }
