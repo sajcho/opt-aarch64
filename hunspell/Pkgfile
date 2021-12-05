@@ -4,7 +4,7 @@
 
 name=hunspell
 version=1.7.0
-release=0
+release=1
 source=(https://github.com/${name}/${name}/archive/v${version}/${name}-v${version}.tar.gz \
 	CVE-2019-16707.patch)
 
@@ -22,11 +22,13 @@ build() {
 		--with-ui \
 		--with-readline
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 
 	ln -s libhunspell-1.7.so.0.0.1 $PKG/usr/lib/libhunspell.so
 
 	rm -r $PKG/usr/share/man/hu
+
+	find $PKG -type f -name '*.la' -delete
 }
