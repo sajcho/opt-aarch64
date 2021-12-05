@@ -14,11 +14,9 @@ drwxr-xr-x	root/root	usr/include/
 drwxr-xr-x	root/root	usr/include/pspell/
 -rw-r--r--	root/root	usr/include/pspell/pspell.h
 drwxr-xr-x	root/root	usr/lib/
--rwxr-xr-x	root/root	usr/lib/libaspell.la
 lrwxrwxrwx	root/root	usr/lib/libaspell.so -> libaspell.so.15.3.1
 lrwxrwxrwx	root/root	usr/lib/libaspell.so.15 -> libaspell.so.15.3.1
 -rwxr-xr-x	root/root	usr/lib/libaspell.so.15.3.1
--rwxr-xr-x	root/root	usr/lib/libpspell.la
 lrwxrwxrwx	root/root	usr/lib/libpspell.so -> libpspell.so.15.3.1
 lrwxrwxrwx	root/root	usr/lib/libpspell.so.15 -> libpspell.so.15.3.1
 -rwxr-xr-x	root/root	usr/lib/libpspell.so.15.3.1
