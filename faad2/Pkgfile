@@ -4,7 +4,7 @@
 
 name=faad2
 version=2.10.0
-release=0
+release=1
 source=(https://github.com/knik0/$name/archive/${version//./_}/${name}_${version//./_}.tar.gz)
 
 build() {
@@ -13,9 +13,12 @@ build() {
 	./bootstrap
 
 	./configure \
-		--prefix=/usr
+		--prefix=/usr \
+		--disable-static
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
+
+	find $PKG -type f -name '*.la' -delete
 }
