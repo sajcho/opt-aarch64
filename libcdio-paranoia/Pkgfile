@@ -1,16 +1,16 @@
 # Description:	CD paranoia on top of libcdio
 # URL:		https://www.gnu.org/software/libcdio/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	autoconf automake libcdio libtool
+# Depends on:	libcdio
 
 name=libcdio-paranoia
 version=2.0.1
-_pkgver="10.2+${version/_p/+}"
-release=0
-source=(https://ftpmirror.gnu.org/gnu/libcdio/${name}-$_pkgver.tar.bz2)
+_realversion="10.2+${version/_p/+}"
+release=1
+source=(https://ftpmirror.gnu.org/gnu/libcdio/${name}-${_realversion}.tar.bz2)
 
 build() {
-	cd ${name}-$_pkgver
+	cd ${name}-${_realversion}
 
 	sed -i 's/AM_CONFIG_HEADER/AC_CONFIG_HEADER/;s/$1+$2/$2/' configure.ac
 	autoreconf -fiv
@@ -19,9 +19,9 @@ build() {
 		--prefix=/usr \
 		--disable-static
 
-	make
-
-	#make check
+	make V=1
 
 	make DESTDIR=$PKG install
+
+	find $PKG -type f -name '*.la' -delete
 }
