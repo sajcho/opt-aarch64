@@ -5,8 +5,8 @@
 
 name=enchant2
 _realname=enchant
-version=2.3.1
-release=0
+version=2.3.2
+release=1
 source=(https://github.com/AbiWord/${_realname}/releases/download/v$version/${_realname}-$version.tar.gz)
 
 build() {
@@ -15,11 +15,14 @@ build() {
 	./configure \
 		--prefix=/usr \
 		--disable-static \
+		--with-aspell \
 		--with-hunspell
 
 	sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG pkgdatadir=/usr/share/enchant-2 install
+
+	find $PKG -type f -name '*.la' -delete
 }
