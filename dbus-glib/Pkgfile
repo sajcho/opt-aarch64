@@ -5,7 +5,7 @@
 
 name=dbus-glib
 version=0.112
-release=2
+release=3
 source=(https://dbus.freedesktop.org/releases/${name}/${name}-${version}.tar.gz)
 
 build() {
@@ -15,15 +15,15 @@ build() {
 
 	./configure \
 		--prefix=/usr \
-		--enable-tests \
+		--disable-tests \
 		--disable-static \
 		--disable-bash-completion
 
-	make
-
-	#make -j1 check
+	make V=1
 
 	make DESTDIR=$PKG install
 
 	rm -r $PKG/usr/share/gtk-doc
+
+	find $PKG -type f -name '*.la' -delete
 }
