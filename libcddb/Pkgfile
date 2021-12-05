@@ -4,17 +4,20 @@
 
 name=libcddb
 version=1.3.2
-release=0
+release=1
 source=(https://downloads.sourceforge.net/${name}/${name}-${version}.tar.bz2)
 
 build() {
 	cd ${name}-${version}
 
 	./configure \
-		--build=aarch64-unknown-linux-gnu \
-		--prefix=/usr
+		--build=$CHOST \
+		--prefix=/usr \
+		--disable-static
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
+
+	find $PKG -type f -name '*.la' -delete
 }
