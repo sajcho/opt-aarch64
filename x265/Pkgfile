@@ -18,7 +18,9 @@ build() {
 		-DENABLE_SHARED=TRUE \
 		-Wno-dev
 
-	ninja
+	ninja -v
 
 	DESTDIR=$PKG ninja install
+
+	find $PKG -type f -name '*.a' -delete
 }
