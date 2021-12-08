@@ -9,8 +9,6 @@ drwxr-xr-x	root/root	usr/include/exempi-2.0/exempi/
 -rw-r--r--	root/root	usr/include/exempi-2.0/exempi/xmpconsts.h
 -rw-r--r--	root/root	usr/include/exempi-2.0/exempi/xmperrors.h
 drwxr-xr-x	root/root	usr/lib/
--rw-r--r--	root/root	usr/lib/libexempi.a
--rwxr-xr-x	root/root	usr/lib/libexempi.la
 lrwxrwxrwx	root/root	usr/lib/libexempi.so -> libexempi.so.8.0.2
 lrwxrwxrwx	root/root	usr/lib/libexempi.so.8 -> libexempi.so.8.0.2
 -rwxr-xr-x	root/root	usr/lib/libexempi.so.8.0.2

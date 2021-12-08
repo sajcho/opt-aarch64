@@ -5,19 +5,20 @@
 
 name=exempi
 version=2.5.2
-release=0
+release=1
 source=(https://libopenraw.freedesktop.org/download/${name}-${version}.tar.bz2)
 
 build() {
 	cd ${name}-${version}
 
-	NOCONFIGURE=1 ./autogen.sh
-
 	./configure \
-		--build=aarch64-unknown-linux-gnu \
-		--prefix=/usr
+		--build=$CHOST \
+		--prefix=/usr \
+		--disable-static
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
+
+	find $PKG -type f -name '*.la' -delete
 }
