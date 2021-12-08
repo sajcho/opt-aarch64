@@ -6,11 +6,16 @@
 name=boost
 version=1.77.0
 _pkgversion=1_77_0
-release=0
-source=(https://boostorg.jfrog.io/artifactory/main/release/${version}/source/${name}_${_pkgversion//./_}.tar.bz2)
+release=1
+source=(https://boostorg.jfrog.io/artifactory/main/release/${version}/source/${name}_${_pkgversion//./_}.tar.bz2 \
+	b2-cxxflags-release.patch)
 
 build() {
 	cd ${name}_${_pkgversion//./_}
+
+	# build b2 with default CXXFLAGS 'SAUX Aarch64' variable
+	# - not required
+	#patch -p1 -i $SRC/b2-cxxflags-release.patch
 
 	./bootstrap.sh \
 		--prefix=$PKG/usr \
@@ -18,33 +23,33 @@ build() {
 		--with-icu \
 		--with-python=python3
 
-	./b2 stage \
+	./b2 -q stage \
 		architecture=arm \
 		variant=release \
 		debug-symbols=off \
 		threading=multi \
 		runtime-link=shared \
-		link=shared,static \
+		link=shared \
 		toolset=gcc \
-		python=3.9 \
+		python=3.10 \
 		cflags="$CFLAGS" \
-		cxxflags="$CXXFLAGS -Wno-deprecated-declarations -Wno-sign-compare" \
+		cxxflags="$CXXFLAGS" \
 		--without-graph_parallel \
 		--without-mpi \
 		--layout=system \
 		${JOBS:+-j ${JOBS}}
 
-	./b2 install \
+	./b2 -q install \
 		architecture=arm \
 		variant=release \
 		debug-symbols=off \
 		threading=multi \
 		runtime-link=shared \
-		link=shared,static \
+		link=shared \
 		toolset=gcc \
-		python=3.9 \
+		python=3.10 \
 		cflags="$CFLAGS" \
-		cxxflags="$CXXFLAGS -Wno-deprecated-declarations -Wno-sign-compare" \
+		cxxflags="$CXXFLAGS" \
 		--without-graph_parallel \
 		--without-mpi \
 		--layout=system \

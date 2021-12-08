@@ -1,0 +1,11 @@
+--- boost_1_77_0/tools/build/src/engine/build.sh.orig	2021-08-05 11:43:08.000000000 +0200
++++ boost_1_77_0/tools/build/src/engine/build.sh	2021-12-07 13:20:59.834559277 +0100
+@@ -323,7 +323,7 @@
+ 
+     gcc|gcc-*)
+         CXX_VERSION_OPT=${CXX_VERSION_OPT:---version}
+-        B2_CXXFLAGS_RELEASE="-O2 -s"
++        B2_CXXFLAGS_RELEASE="-O2 -march=armv8-a+crypto+crc -flto=auto -ffat-lto-objects -mharden-sls=all -mbranch-protection=standard -fstack-clash-protection -fstack-protector-strong -fasynchronous-unwind-tables -Wno-psabi"
+         B2_CXXFLAGS_DEBUG="-O0 -g"
+     ;;
+ 
