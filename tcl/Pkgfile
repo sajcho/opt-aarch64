@@ -5,21 +5,20 @@
 
 name=tcl
 version=8.6.11
-release=1
+release=2
 source=(https://downloads.sourceforge.net/project/${name}/Tcl/${version}/${name}${version}-src.tar.gz)
 
 build() {
 	cd ${name}${version}/unix
 
+	autoconf
+
 	./configure \
 		--prefix=/usr \
 		--mandir=/usr/share/man \
-		--enable-threads \
-		--enable-64bit
+		--enable-threads
 
-	make
-
-	make test
+	make V=1
 
 	make INSTALL_ROOT=$PKG install install-private-headers
 
