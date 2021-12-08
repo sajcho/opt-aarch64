@@ -4,7 +4,7 @@
 
 name=libev
 version=4.33
-release=0
+release=1
 source=(http://dist.schmorp.de/${name}/Attic/${name}-${version}.tar.gz \
 	libev-4.11-Add-pkgconfig-support.patch)
 
@@ -13,15 +13,19 @@ build() {
 
 	patch -p1 -i $SRC/libev-4.11-Add-pkgconfig-support.patch
 
-	libtoolize --force && aclocal -I m4 && autoheader&&  autoconf \
+	libtoolize --force && aclocal -I m4 && autoheader &&  autoconf \
 		&& automake --add-missing
 
 	./configure \
-		--prefix=/usr
+		--prefix=/usr \
+		--disable-static
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 
+	# fix conflict with libevent
 	rm $PKG/usr/include/event.h
+
+	find $PKG -type f -name '*.la' -delete
 }
