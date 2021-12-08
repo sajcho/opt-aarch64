@@ -5,7 +5,7 @@
 
 name=libid3tag
 version=0.15.1b
-release=0
+release=1
 source=(https://downloads.sourceforge.net/project/mad/${name}/${version}/${name}-${version}.tar.gz \
 	10_utf16.diff \
 	11_unknown_encoding.diff \
@@ -27,9 +27,10 @@ build() {
 	autoreconf -fiv
 
 	./configure \
-		--prefix=/usr
+		--prefix=/usr \
+		--disable-static
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 
@@ -47,4 +48,6 @@ Version: ${version}
 Libs: -lid3tag
 Cflags:
 EOF
+
+	find $PKG -type f -name '*.la' -delete
 }
