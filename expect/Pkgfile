@@ -5,25 +5,21 @@
 
 name=expect
 version=5.45.4
-release=0
+release=1
 source=(https://downloads.sourceforge.net/${name}/${name}${version}.tar.gz)
 
 build() {
 	cd ${name}${version}
 
-	cp /usr/share/automake-1.16/{config.guess,config.sub} \
-		$SRC/${name}${version}/tclconfig/
-
 	./configure \
+		--build=$CHOST \
 		--prefix=/usr \
 		--mandir=/usr/share/man \
 		--enable-shared \
 		--with-tcl=/usr/lib \
 		--with-tclinclude=/usr/include
 
-	make
-
-	make test
+	make V=1
 
 	make DESTDIR=$PKG install
 
