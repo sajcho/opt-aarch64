@@ -6,7 +6,7 @@
 name=argon2
 _realname=phc-winner-argon2
 version=20190702
-release=0
+release=1
 source=(https://github.com/P-H-C/${_realname}/archive/${version}/${_realname}-${version}.tar.gz)
 
 build() {
@@ -14,4 +14,6 @@ build() {
 
 	make OPTTARGET=none ARGON2_VERSION=${version}
 	make OPTTARGET=none LIBRARY_REL=lib DESTDIR=$PKG install
+
+	find $PKG -type f -name '*.a' -delete
 }
