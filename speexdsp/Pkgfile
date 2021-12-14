@@ -1,11 +1,10 @@
 # Description:	A voice compression format (DSP)
 # URL:		https://www.speex.org/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	automake libtool
 
 name=speexdsp
 version=1.2.0
-release=0
+release=1
 source=(https://downloads.xiph.org/releases/speex/${name}-${version}.tar.gz)
 
 build() {
@@ -17,9 +16,11 @@ build() {
 		--prefix=/usr \
 		--disable-static
 
-	make
+	make V=1
 
 	make -j1 DESTDIR=$PKG install
 
 	rm -r $PKG/usr/share/doc
+
+	find $PKG -type f -name '*.la' -delete
 }
