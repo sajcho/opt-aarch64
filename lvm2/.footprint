@@ -18,7 +18,7 @@ drwxr-xr-x	root/root	lib/
 drwxr-xr-x	root/root	lib/udev/
 drwxr-xr-x	root/root	lib/udev/rules.d/
 -r--r--r--	root/root	lib/udev/rules.d/11-dm-lvm.rules
--r--r--r--	root/root	lib/udev/rules.d/69-dm-lvm-metad.rules
+-r--r--r--	root/root	lib/udev/rules.d/69-dm-lvm.rules
 drwxr-xr-x	root/root	sbin/
 -r-xr-xr-x	root/root	sbin/fsadm
 lrwxrwxrwx	root/root	sbin/lvchange -> lvm
@@ -27,6 +27,7 @@ lrwxrwxrwx	root/root	sbin/lvcreate -> lvm
 lrwxrwxrwx	root/root	sbin/lvdisplay -> lvm
 lrwxrwxrwx	root/root	sbin/lvextend -> lvm
 -r-xr-xr-x	root/root	sbin/lvm
+-r-xr-xr-x	root/root	sbin/lvm_import_vdo
 lrwxrwxrwx	root/root	sbin/lvmconfig -> lvm
 lrwxrwxrwx	root/root	sbin/lvmdevices -> lvm
 lrwxrwxrwx	root/root	sbin/lvmdiskscan -> lvm
@@ -48,7 +49,6 @@ lrwxrwxrwx	root/root	sbin/pvremove -> lvm
 lrwxrwxrwx	root/root	sbin/pvresize -> lvm
 lrwxrwxrwx	root/root	sbin/pvs -> lvm
 lrwxrwxrwx	root/root	sbin/pvscan -> lvm
--r-xr-xr-x	root/root	sbin/vdoimport
 lrwxrwxrwx	root/root	sbin/vgcfgbackup -> lvm
 lrwxrwxrwx	root/root	sbin/vgcfgrestore -> lvm
 lrwxrwxrwx	root/root	sbin/vgchange -> lvm
@@ -93,6 +93,7 @@ drwxr-xr-x	root/root	usr/share/man/man8/
 -r--r--r--	root/root	usr/share/man/man8/lvm-fullreport.8.gz
 -r--r--r--	root/root	usr/share/man/man8/lvm-lvpoll.8.gz
 -r--r--r--	root/root	usr/share/man/man8/lvm.8.gz
+-r--r--r--	root/root	usr/share/man/man8/lvm_import_vdo.8.gz
 -r--r--r--	root/root	usr/share/man/man8/lvmconfig.8.gz
 -r--r--r--	root/root	usr/share/man/man8/lvmdbusd.8.gz
 -r--r--r--	root/root	usr/share/man/man8/lvmdevices.8.gz
@@ -118,7 +119,6 @@ drwxr-xr-x	root/root	usr/share/man/man8/
 -r--r--r--	root/root	usr/share/man/man8/pvresize.8.gz
 -r--r--r--	root/root	usr/share/man/man8/pvs.8.gz
 -r--r--r--	root/root	usr/share/man/man8/pvscan.8.gz
--r--r--r--	root/root	usr/share/man/man8/vdoimport.8.gz
 -r--r--r--	root/root	usr/share/man/man8/vgcfgbackup.8.gz
 -r--r--r--	root/root	usr/share/man/man8/vgcfgrestore.8.gz
 -r--r--r--	root/root	usr/share/man/man8/vgchange.8.gz
