@@ -1,11 +1,11 @@
 # Description:	A multiple-connection concurrent downloader
 # URL:		https://github.com/axel-download-accelerator/axel
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	openssl
+# Depends on:	openssl3
 
 name=axel
 version=2.17.10
-release=0
+release=1
 source=(https://github.com/axel-download-accelerator/${name}/releases/download/v${version}/${name}-${version}.tar.xz)
 
 build() {
@@ -16,7 +16,7 @@ build() {
 		--sysconfdir=/etc \
 		--disable-nls
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 
