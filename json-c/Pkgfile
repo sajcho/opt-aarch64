@@ -1,11 +1,11 @@
 # Description:	A JSON implementation in C
 # URL:		https://github.com/json-c/json-c/wiki
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	cmake
+# Depends on:	cmake samurai
 
 name=json-c
 version=0.15
-release=0
+release=1
 source=(https://s3.amazonaws.com/json-c_releases/releases/${name}-${version}.tar.gz)
 
 build() {
@@ -14,14 +14,15 @@ build() {
 	mkdir build
 	cd build
 
-	cmake .. \
+	cmake .. -G Ninja \
 		-DCMAKE_BUILD_TYPE=None \
 		-DCMAKE_INSTALL_PREFIX=/usr \
 		-DCMAKE_INSTALL_LIBDIR=lib \
-		-DBUILD_SHARED_LIBS=True \
-		-DBUILD_STATIC_LIBS=False
+		-DBUILD_SHARED_LIBS=ON \
+		-DBUILD_STATIC_LIBS=OFF \
+		-DENABLE_RDRAND=OFF
 
-	make
+	ninja -v
 
-	make DESTDIR=$PKG install
+	DESTDIR=$PKG ninja install
 }
