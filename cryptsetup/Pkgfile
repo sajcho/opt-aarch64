@@ -4,8 +4,8 @@
 # Depends on:	argon2 json-c lvm2 openssl popt util-linux
 
 name=cryptsetup
-version=2.4.1 # Note: remove automake/autoconf when upgrading to 2.5.0
-release=0
+version=2.4.2 # Note: remove automake/autoconf when upgrading to 2.5.0
+release=1
 source=(https://www.kernel.org/pub/linux/utils/${name}/v${version%.*}/${name}-${version}.tar.gz \
 	flush-stdout.patch)
 
@@ -23,9 +23,11 @@ build() {
 		--disable-ssh-token \
 		--with-crypto_backend=openssl
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 
 	rm -r $PKG/usr/share/locale
+
+	find $PKG -type f -name '*.la' -delete
 }
