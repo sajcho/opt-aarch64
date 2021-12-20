@@ -23,7 +23,6 @@ drwxr-xr-x	root/root	usr/include/libsecret-1/libsecret/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/girepository-1.0/
 -rw-r--r--	root/root	usr/lib/girepository-1.0/Secret-1.typelib
--rw-r--r--	root/root	usr/lib/libsecret-1.a
 lrwxrwxrwx	root/root	usr/lib/libsecret-1.so -> libsecret-1.so.0
 lrwxrwxrwx	root/root	usr/lib/libsecret-1.so.0 -> libsecret-1.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libsecret-1.so.0.0.0
