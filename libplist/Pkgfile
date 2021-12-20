@@ -1,22 +1,28 @@
 # Description:	A library to handle Apple Property List format whereas it's binary or XML
 # URL:		https://libimobiledevice.org/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	python3-cython glib swig
+# Depends on:	glib python3-cython swig
 
 name=libplist
 version=2.2.0
-release=1
+release=2
 source=(https://github.com/libimobiledevice/${name}/archive/${version}/${name}-${version}.tar.gz)
 
 build() {
 	cd ${name}-${version}
 
-	NOCONFIGURE=1 ./autogen.sh
+	export CC="gcc"
+	export CXX="g++"
+
+	autoreconf -fiv
 
 	./configure \
-		--prefix=/usr
+		--prefix=/usr \
+		--disable-static
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
+
+	find $PKG -type f -name '*.la' -delete
 }

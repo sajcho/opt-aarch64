@@ -20,13 +20,9 @@ drwxr-xr-x	root/root	usr/include/plist/cython/
 -rw-r--r--	root/root	usr/include/plist/plist++.h
 -rw-r--r--	root/root	usr/include/plist/plist.h
 drwxr-xr-x	root/root	usr/lib/
--rw-r--r--	root/root	usr/lib/libplist++-2.0.a
--rwxr-xr-x	root/root	usr/lib/libplist++-2.0.la
 lrwxrwxrwx	root/root	usr/lib/libplist++-2.0.so -> libplist++-2.0.so.3.3.0
 lrwxrwxrwx	root/root	usr/lib/libplist++-2.0.so.3 -> libplist++-2.0.so.3.3.0
 -rwxr-xr-x	root/root	usr/lib/libplist++-2.0.so.3.3.0
--rw-r--r--	root/root	usr/lib/libplist-2.0.a
--rwxr-xr-x	root/root	usr/lib/libplist-2.0.la
 lrwxrwxrwx	root/root	usr/lib/libplist-2.0.so -> libplist-2.0.so.3.3.0
 lrwxrwxrwx	root/root	usr/lib/libplist-2.0.so.3 -> libplist-2.0.so.3.3.0
 -rwxr-xr-x	root/root	usr/lib/libplist-2.0.so.3.3.0
@@ -35,8 +31,6 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/libplist-2.0.pc
 drwxr-xr-x	root/root	usr/lib/python3.10/
 drwxr-xr-x	root/root	usr/lib/python3.10/site-packages/
--rw-r--r--	root/root	usr/lib/python3.10/site-packages/plist.a
--rwxr-xr-x	root/root	usr/lib/python3.10/site-packages/plist.la
 -rwxr-xr-x	root/root	usr/lib/python3.10/site-packages/plist.so
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/man/
