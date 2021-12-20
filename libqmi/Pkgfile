@@ -5,7 +5,7 @@
 
 name=libqmi
 version=1.30.2
-release=0
+release=1
 source=(https://www.freedesktop.org/software/${name}/${name}-${version}.tar.xz)
 
 build() {
@@ -19,9 +19,11 @@ build() {
 		--disable-qrtr \
 		--disable-static
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 
 	rm -r $PKG/usr/share/{bash-completion,gtk-doc}
+
+	find $PKG -type f -name '*.la' -delete
 }
