@@ -4,8 +4,8 @@
 # Depends on:	glib gobject-introspection python3-gobject libgudev
 
 name=libmbim
-version=1.26.0
-release=0
+version=1.26.2
+release=1
 source=(https://www.freedesktop.org/software/${name}/${name}-${version}.tar.xz)
 
 build() {
@@ -17,9 +17,11 @@ build() {
 		--enable-introspection=yes \
 		--disable-static
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 
 	rm -r $PKG/usr/share/{bash-completion,gtk-doc}
+
+	find $PKG -type f -name '*.la' -delete
 }
