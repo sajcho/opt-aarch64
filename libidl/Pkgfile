@@ -6,19 +6,22 @@
 name=libidl
 _realname=libIDL
 version=0.8.14
-release=0
+release=1
 source=(https://download.gnome.org/sources/${_realname}/${version%.*}/${_realname}-${version}.tar.bz2)
 
 build() {
 	cd ${_realname}-${version}
 
 	./configure \
-		--build=aarch64-unknown-linux-gnu \
-		--prefix=/usr
+		--build=$CHOST \
+		--prefix=/usr \
+		--disable-static
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 
 	rm -r $PKG/usr/share
+
+	find $PKG -type f -name '*.la' -delete
 }
