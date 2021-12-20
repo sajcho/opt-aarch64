@@ -5,8 +5,8 @@
 
 name=libsigc++2
 _realname=libsigc++
-version=2.10.6
-release=0
+version=2.10.7
+release=1
 source=(https://download.gnome.org/sources/${_realname}/${version%.*}/${_realname}-${version}.tar.xz)
 
 build() {
@@ -16,9 +16,12 @@ build() {
 
 	./configure \
 		--prefix=/usr \
-		--disable-documentation
+		--disable-documentation \
+		--disable-static
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
+
+	find $PKG -type f -name '*.la' -delete
 }

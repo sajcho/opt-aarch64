@@ -39,7 +39,6 @@ drwxr-xr-x	root/root	usr/include/sigc++-2.0/sigc++/functors/
 -rw-r--r--	root/root	usr/include/sigc++-2.0/sigc++/type_traits.h
 -rw-r--r--	root/root	usr/include/sigc++-2.0/sigc++/visit_each.h
 drwxr-xr-x	root/root	usr/lib/
--rwxr-xr-x	root/root	usr/lib/libsigc-2.0.la
 lrwxrwxrwx	root/root	usr/lib/libsigc-2.0.so -> libsigc-2.0.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/libsigc-2.0.so.0 -> libsigc-2.0.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libsigc-2.0.so.0.0.0
