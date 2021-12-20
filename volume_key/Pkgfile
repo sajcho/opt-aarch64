@@ -5,7 +5,7 @@
 
 name=volume_key
 version=0.3.12
-release=0
+release=1
 source=(https://releases.pagure.org/${name}/${name}-${version}.tar.xz)
 
 build() {
@@ -14,12 +14,13 @@ build() {
 	./configure \
 		--prefix=/usr \
 		--disable-nls \
-		--without-python \
-		--with-python3
+		--disable-static \
+		--with-python3 \
+		--without-python
 
-	make
-
-	#make check
+	make V=1
 
 	make DESTDIR=$PKG install
+
+	find $PKG -type f -name '*.la' -delete
 }
