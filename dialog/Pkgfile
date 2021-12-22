@@ -4,8 +4,8 @@
 # Depends on:	ncurses
 
 name=dialog
-version=1.3-20210621
-release=0
+version=1.3-20211214
+release=1
 source=(https://invisible-mirror.net/archives/${name}/${name}-${version}.tgz)
 
 build() {
@@ -15,7 +15,9 @@ build() {
 		--prefix=/usr \
 		--with-ncursesw
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
+
+	find $PKG -type f -name '*.a' -delete
 }
