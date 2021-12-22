@@ -5,7 +5,7 @@
 
 name=polkit
 version=0.120
-release=0
+release=1
 source=(http://www.freedesktop.org/software/${name}/releases/${name}-${version}.tar.gz \
 	polkit-1 \
 	polkitd.run)
@@ -24,7 +24,7 @@ build() {
 		-Dsystemdsystemunitdir=/usr/share/dbus-1/services \
 		. build
 
-	meson compile ${JOBS:+-j ${JOBS}} -C build
+	meson compile ${JOBS:+-j ${JOBS}} -v -C build
 
 	DESTDIR=$PKG meson install --no-rebuild -C build
 
