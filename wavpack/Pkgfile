@@ -4,16 +4,19 @@
 
 name=wavpack
 version=5.4.0
-release=0
+release=1
 source=(http://www.wavpack.com/${name}-${version}.tar.xz)
 
 build() {
 	cd ${name}-${version}
 
 	./configure \
-		--prefix=/usr
+		--prefix=/usr \
+		--disable-static
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
+
+	find $PKG -type f -name '*.la' -delete
 }
