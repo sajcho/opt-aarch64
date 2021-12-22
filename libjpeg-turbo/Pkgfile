@@ -1,11 +1,11 @@
 # Description:	Accelerated baseline JPEG compression and decompression library.
 # URL:		https://www.libjpeg-turbo.org/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	cmake nasm
+# Depends on:	cmake nasm samurai
 
 name=libjpeg-turbo
-version=2.1.1
-release=0
+version=2.1.2
+release=1
 source=(http://downloads.sourceforge.net/${name}/${name}-${version}.tar.gz)
 
 build() {
@@ -14,20 +14,21 @@ build() {
 	mkdir build
 	cd build
 
-	cmake .. \
+	cmake .. -G Ninja \
 		-DCMAKE_BUILD_TYPE=None \
 		-DCMAKE_INSTALL_PREFIX=/usr \
 		-DCMAKE_INSTALL_LIBDIR=/usr/lib \
 		-DBUILD_SHARED_LIBS=True \
 		-DCMAKE_C_FLAGS="$CFLAGS" \
 		-DWITH_JPEG8=ON \
-		-DWITH_SIMD=ON
+		-DWITH_SIMD=ON \
+		-Wno-dev
 
-	make
+	ninja -v
 
-	#make test
-
-	make -j1 DESTDIR=$PKG install
+	DESTDIR=$PKG ninja install
 
 	rm -r $PKG/usr/share/doc
+
+	find $PKG -type f -name '*.a' -delete
 }
