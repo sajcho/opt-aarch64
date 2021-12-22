@@ -4,7 +4,7 @@
 
 name=cdparanoia
 version=10.2
-release=0
+release=1
 source=(http://downloads.xiph.org/releases/${name}/${name}-III-${version}.src.tgz \
 	cdparanoia-3.pc)
 
@@ -12,7 +12,7 @@ build() {
 	cd ${name}-III-${version}
 
 	./configure \
-		--build=aarch64-unknown-linux-gnu \
+		--build=$CHOST \
 		--prefix=/usr \
 		--includedir=/usr/include/cdda
 
@@ -23,6 +23,8 @@ build() {
 		MANDIR=$PKG/usr/share/man \
 		install
 
-	install -D $SRC/cdparanoia-3.pc \
+	install -D -m 0644 $SRC/cdparanoia-3.pc \
 		$PKG/usr/lib/pkgconfig/cdparanoia-3.pc
+
+	find $PKG -type f -name '*.a' -delete
 }
