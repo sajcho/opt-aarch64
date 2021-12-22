@@ -3,7 +3,7 @@
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
 
 name=libidn
-version=1.36
+version=1.38
 release=1
 source=(https://ftpmirror.gnu.org/gnu/${name}/${name}-${version}.tar.gz)
 
@@ -12,13 +12,14 @@ build() {
 
 	./configure \
 		--prefix=/usr \
-		--disable-nls
+		--disable-nls \
+		--disable-static
 
-	make
-
-	make check
+	make V=1
 
 	make DESTDIR=$PKG install
 
 	rm -r $PKG/usr/share/info
+
+	find $PKG -type f -name '*.la' -delete
 }
