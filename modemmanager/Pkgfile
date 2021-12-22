@@ -5,8 +5,8 @@
 
 name=modemmanager
 _realname=ModemManager
-version=1.18.2
-release=0
+version=1.18.4
+release=1
 source=(https://www.freedesktop.org/software/${_realname}/${_realname}-${version}.tar.xz \
 	${name}.rules)
 
@@ -21,7 +21,7 @@ build() {
 		--disable-static \
 		--with-polkit=permissive
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 
@@ -30,4 +30,6 @@ build() {
 		$PKG/usr/share/polkit-1/rules.d/01-org.freedesktop.ModemManager.rules
 
 	rm -r $PKG/usr/share/{bash-completion,locale}
+
+	find $PKG -type f -name '*.la' -delete
 }
