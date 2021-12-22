@@ -2,6 +2,6 @@
 #
 # To setup camera, regular users must be member of 'camera' group
 
-getent group camera || /usr/sbin/groupadd -r camera
+getent group camera || /usr/sbin/groupadd -r camera > /dev/null
 
 exit 0
