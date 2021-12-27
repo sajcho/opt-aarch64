@@ -1,47 +1,34 @@
 # Description:	High quality, one-dimensional sample-rate conversion library
 # URL:		https://sourceforge.net/projects/soxr
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	cmake
+# Depends on:	cmake samurai
 
 name=soxr
 version=0.1.3
-release=0
+release=1
 source=(https://downloads.sourceforge.net/project/${name}/${name}-${version}-Source.tar.xz)
 
 build() {
 	cd ${name}-${version}-Source
 
-	mkdir static shared
+	mkdir build
+	cd build
 
-	cd static
-	cmake .. \
+	cmake .. -G Ninja \
 		-DCMAKE_BUILD_TYPE=None \
-		-DCMAKE_INSTALL_PREFIX:PATH=/usr \
-		-DBUILD_SHARED_LIBS=False \
-		-DBUILD_TESTS=ON \
+		-DCMAKE_INSTALL_PREFIX=/usr \
+		-DBUILD_SHARED_LIBS=ON \
+		-DBUILD_EXAMPLES=OFF \
+		-DBUILD_TESTS=OFF \
+		-DWITH_AVFFT=ON \
+		-DWITH_LSR_BINDINGS=ON \
+		-DWITH_OPENMP=ON \
+		-DWITH_PFFFT=ON \
 		-Wno-dev
 
-	make
+	ninja -v
 
-	cd ../shared
-	cmake .. \
-		-DCMAKE_BUILD_TYPE=None \
-		-DCMAKE_INSTALL_PREFIX:PATH=/usr \
-		-DBUILD_SHARED_LIBS=True \
-		-DBUILD_TESTS=ON \
-		-Wno-dev
-
-	make
-
-	#cd ../static
-	#make test
-	#cd ../shared
-	#make test
-
-	cd ../static
-	make DESTDIR=$PKG install
-	cd ../shared
-	make DESTDIR=$PKG install
+	DESTDIR=$PKG ninja install
 
 	rm -r $PKG/usr/share/doc
 }
