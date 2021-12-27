@@ -5,7 +5,7 @@
 
 name=libsdl
 version=1.2.15
-release=0
+release=1
 source=(https://www.libsdl.org/release/SDL-$version.tar.gz \
 	SDL-1.2.10-GrabNotViewable.patch \
 	SDL-1.2.15-const_XData32.patch \
@@ -43,7 +43,7 @@ build() {
 	patch -p1 -i $SRC/0002-CVE-2019-7637.patch
 
 	./configure \
-		--build=aarch64-unknown-linux-gnu \
+		--build=$CHOST \
 		--prefix=/usr \
 		--enable-alsa \
 		--disable-rpath \
@@ -52,9 +52,12 @@ build() {
 		--disable-video-svga \
 		--disable-video-ggi \
 		--disable-video-aalib \
-		--with-x \
+		--disable-static \
+		--with-x
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
+
+	find $PKG -type f -name '*.la' -delete
 }
