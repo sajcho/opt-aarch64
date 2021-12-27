@@ -9,8 +9,6 @@ drwxr-xr-x	root/root	usr/include/libuhttpmock-0.0/uhttpmock/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/girepository-1.0/
 -rw-r--r--	root/root	usr/lib/girepository-1.0/Uhm-0.0.typelib
--rw-r--r--	root/root	usr/lib/libuhttpmock-0.0.a
--rwxr-xr-x	root/root	usr/lib/libuhttpmock-0.0.la
 lrwxrwxrwx	root/root	usr/lib/libuhttpmock-0.0.so -> libuhttpmock-0.0.so.0.2.3
 lrwxrwxrwx	root/root	usr/lib/libuhttpmock-0.0.so.0 -> libuhttpmock-0.0.so.0.2.3
 -rwxr-xr-x	root/root	usr/lib/libuhttpmock-0.0.so.0.2.3
