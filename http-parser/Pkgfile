@@ -4,15 +4,13 @@
 
 name=http-parser
 version=2.9.4
-release=0
+release=1
 source=(https://github.com/nodejs/${name}/archive/v${version}/${name}-${version}.tar.gz)
 
 build() {
 	cd ${name}-${version}
 
-	make library
-
-	#make test
+	make V=1 library
 
 	make DESTDIR=$PKG PREFIX=/usr install
 }
