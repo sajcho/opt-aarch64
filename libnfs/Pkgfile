@@ -4,7 +4,7 @@
 
 name=libnfs
 version=4.0.0
-release=0
+release=1
 source=(https://github.com/sahlberg/${name}/archive/${name}-${version}.tar.gz \
 	fix-includes.patch)
 
@@ -16,9 +16,12 @@ build() {
 	./bootstrap
 
 	./configure \
-		--prefix=/usr
+		--prefix=/usr \
+		--disable-static
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
+
+	find $PKG -type f -name '*.la' -delete
 }
