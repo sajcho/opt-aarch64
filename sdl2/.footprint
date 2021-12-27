@@ -12,6 +12,7 @@ drwxr-xr-x	root/root	usr/include/SDL2/
 -rw-r--r--	root/root	usr/include/SDL2/SDL_clipboard.h
 -rw-r--r--	root/root	usr/include/SDL2/SDL_config.h
 -rw-r--r--	root/root	usr/include/SDL2/SDL_config_android.h
+-rw-r--r--	root/root	usr/include/SDL2/SDL_config_emscripten.h
 -rw-r--r--	root/root	usr/include/SDL2/SDL_config_iphoneos.h
 -rw-r--r--	root/root	usr/include/SDL2/SDL_config_macosx.h
 -rw-r--r--	root/root	usr/include/SDL2/SDL_config_minimal.h
@@ -31,6 +32,7 @@ drwxr-xr-x	root/root	usr/include/SDL2/
 -rw-r--r--	root/root	usr/include/SDL2/SDL_gamecontroller.h
 -rw-r--r--	root/root	usr/include/SDL2/SDL_gesture.h
 -rw-r--r--	root/root	usr/include/SDL2/SDL_haptic.h
+-rw-r--r--	root/root	usr/include/SDL2/SDL_hidapi.h
 -rw-r--r--	root/root	usr/include/SDL2/SDL_hints.h
 -rw-r--r--	root/root	usr/include/SDL2/SDL_joystick.h
 -rw-r--r--	root/root	usr/include/SDL2/SDL_keyboard.h
@@ -98,11 +100,9 @@ drwxr-xr-x	root/root	usr/lib/cmake/SDL2/
 -rw-r--r--	root/root	usr/lib/cmake/SDL2/SDL2Targets-none.cmake
 -rw-r--r--	root/root	usr/lib/cmake/SDL2/SDL2Targets.cmake
 lrwxrwxrwx	root/root	usr/lib/libSDL2-2.0.so -> libSDL2-2.0.so.0
-lrwxrwxrwx	root/root	usr/lib/libSDL2-2.0.so.0 -> libSDL2-2.0.so.0.14.0
--rwxr-xr-x	root/root	usr/lib/libSDL2-2.0.so.0.14.0
--rw-r--r--	root/root	usr/lib/libSDL2.a
+lrwxrwxrwx	root/root	usr/lib/libSDL2-2.0.so.0 -> libSDL2-2.0.so.0.18.0
+-rwxr-xr-x	root/root	usr/lib/libSDL2-2.0.so.0.18.0
 lrwxrwxrwx	root/root	usr/lib/libSDL2.so -> libSDL2-2.0.so
--rw-r--r--	root/root	usr/lib/libSDL2main.a
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/sdl2.pc
 drwxr-xr-x	root/root	usr/share/

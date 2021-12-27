@@ -1,48 +1,48 @@
 # Description:	Development library designed to provide low level access to audio, keyboard, mouse, joystick and graphics
 # URL:		https://www.libsdl.org
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	alsa-lib cmake libusb libxcursor libxi libxkbcommon libxrandr
+# Depends on:	alsa-lib libdecor libusb libxkbcommon xwayland
 
 name=sdl2
-version=2.0.14
-release=0
-source=(https://www.libsdl.org/release/SDL2-${version}.tar.gz \
-	directfb-cflags.patch \
-	khronos.patch \
-	wayland-fix-keyboard.patch)
+_realname=SDL2
+version=2.0.18
+release=1
+source=(https://www.libsdl.org/release/${_realname}-${version}.tar.gz \
+	khronos.patch)
 
 build() {
-	cd SDL2-${version}
+	cd ${_realname}-${version}
 
-	patch -p1 -i $SRC/directfb-cflags.patch
 	patch -p1 -i $SRC/khronos.patch
-	patch -p1 -i $SRC/wayland-fix-keyboard.patch
 
 	mkdir build
 	cd build
 
-	cmake .. \
+	cmake .. -G Ninja \
 		-DCMAKE_BUILD_TYPE=None \
 		-DCMAKE_INSTALL_PREFIX=/usr \
 		-DCMAKE_INSTALL_LIBDIR=lib \
-		-DBUILD_SHARED_LIBS=ON \
-		-DSDL_TEST=OFF \
-		-DALSA=ON \
-		-DJACK=OFF \
-		-DCLOCK_GETTIME=ON \
-		-DARTS=OFF \
-		-DESD=OFF \
-		-DNAS=OFF \
-		-DRPATH=OFF \
-		-DVIDEO_X11=ON \
-		-DVIDEO_DIRECTFB=On \
-		-DVIDEO_WAYLAND=ON \
 		-DCMAKE_C_FLAGS="$CFLAGS" \
-		-DSDL_STATIC=ON \
+		-DBUILD_SHARED_LIBS=ON \
 		-DSDL_SHARED=ON \
-		-DPULSEAUDIO_SHARED=OFF
+		-DSDL_CLOCK_GETTIME=ON \
+		-DSDL_TEST=OFF \
+		-DSDL_STATIC=OFF \
+		-DSDL_ALSA=ON \
+		-DSDL_WAYLAND=ON \
+		-DSDL_WAYLAND_LIBDECOR=ON \
+		-DSDL_X11=ON \
+		-DSDL_ARTS=OFF \
+		-DSDL_ESD=OFF \
+		-DSDL_JACK=OFF \
+		-DSDL_PIPEWIRE=OFF \
+		-DSDL_PULSEAUDIO=OFF \
+		-DSDL_NAS=OFF \
+		-DSDL_RPATH=OFF
 
-	make
+	ninja -v
 
-	make DESTDIR=$PKG install
+	DESTDIR=$PKG ninja install
+
+	find $PKG -type f -name '*.a' -delete
 }
