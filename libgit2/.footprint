@@ -94,7 +94,6 @@ drwxr-xr-x	root/root	usr/include/git2/sys/
 -rw-r--r--	root/root	usr/include/git2/version.h
 -rw-r--r--	root/root	usr/include/git2/worktree.h
 drwxr-xr-x	root/root	usr/lib/
--rw-r--r--	root/root	usr/lib/libgit2.a
 lrwxrwxrwx	root/root	usr/lib/libgit2.so -> libgit2.so.1.3
 lrwxrwxrwx	root/root	usr/lib/libgit2.so.1.3 -> libgit2.so.1.3.0
 -rwxr-xr-x	root/root	usr/lib/libgit2.so.1.3.0
