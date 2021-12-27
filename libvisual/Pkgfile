@@ -4,7 +4,7 @@
 
 name=libvisual
 version=0.4.0
-release=0
+release=1
 source=(https://downloads.sourceforge.net/sourceforge/${name}/${name}-${version}.tar.gz \
 	libvisual-0.4.0-inlinedefineconflict.patch)
 
@@ -14,13 +14,15 @@ build() {
 	patch -p1 -i $SRC/libvisual-0.4.0-inlinedefineconflict.patch
 
 	./configure \
-		--build=aarch64-unknown-linux-gnu \
+		--build=$CHOST \
 		--prefix=/usr \
-		--enable-static
+		--disable-static
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 
 	rm -r $PKG/usr/share/locale
+
+	find $PKG -type f -name '*.la' -delete
 }
