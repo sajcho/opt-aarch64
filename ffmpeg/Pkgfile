@@ -1,32 +1,32 @@
 # Description:	Complete and free Internet live audio and video broadcasting solution for Linux/Unix
 # URL:		https://ffmpeg.org/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	aom dav1d fdk-aac flac gnutls lame libass libsdl libssh libtheora libvpx libwebp opus sdl2 soxr srt x264 x265
+# Depends on:	aom dav1d fdk-aac flac lame libass libsdl libssh libtheora libvpx libwebp openssl3 opus sdl2 soxr srt x264 x265
 
 name=ffmpeg
-version=4.4
-release=0
+version=4.4.1
+release=1
 source=(https://ffmpeg.org/releases/${name}-${version}.tar.xz \
 	0001-ffbuild-libversion.sh-add-shebang.patch \
-	0001-libavutil-clean-up-unused-FF_SYMVER-macro.patch \
-	CVE-2021-33815.patch)
+	0001-libavutil-clean-up-unused-FF_SYMVER-macro.patch)
 
 build() {
 	cd ${name}-${version}
 
 	patch -p1 -i $SRC/0001-ffbuild-libversion.sh-add-shebang.patch
 	patch -p1 -i $SRC/0001-libavutil-clean-up-unused-FF_SYMVER-macro.patch
-	patch -p1 -i $SRC/CVE-2021-33815.patch
 
 	./configure \
 		--prefix=/usr \
+		--enable-shared \
 		--enable-version3 \
 		--enable-avfilter \
 		--enable-ffplay \
-		--enable-gnutls \
+		--enable-openssl \
 		--enable-gpl \
 		--enable-swresample \
 		--enable-avresample \
+		--enable-libaom \
 		--enable-libass \
 		--enable-libmp3lame \
 		--enable-libvorbis \
@@ -39,27 +39,27 @@ build() {
 		--enable-libfreetype \
 		--enable-libopus \
 		--enable-libfdk-aac \
-		--enable-postproc \
-		--enable-pic \
-		--enable-pthreads \
-		--enable-shared \
 		--enable-libxcb \
 		--enable-libsrt \
 		--enable-libssh \
-		--enable-vaapi \
-		--enable-vdpau \
 		--enable-libopus \
 		--enable-libsoxr \
+		--enable-vaapi \
+		--enable-vdpau \
+		--enable-postproc \
+		--enable-pic \
+		--enable-pthreads \
 		--enable-nonfree \
-		--enable-libaom \
+		--disable-debug \
+		--disable-static \
 		--disable-libjack \
 		--disable-libpulse \
 		--disable-librtmp \
-		--disable-vulkan \
-		--disable-static
+		--disable-vulkan
 
-	make
+	make V=1
 	${CC:-gcc} -o tools/qt-faststart $CFLAGS tools/qt-faststart.c
+	make doc/ffmpeg.1 doc/ffplay.1
 
 	make DESTDIR=$PKG install install-man
 	install -D -m 0755 tools/qt-faststart $PKG/usr/bin/qt-faststart
