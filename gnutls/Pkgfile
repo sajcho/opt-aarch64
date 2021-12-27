@@ -5,7 +5,7 @@
 
 name=gnutls
 version=3.7.2
-release=0
+release=1
 source=(https://www.gnupg.org/ftp/gcrypt/${name}/v3.7/${name}-${version}.tar.xz)
 
 build() {
@@ -13,18 +13,23 @@ build() {
 
 	./configure \
 		--prefix=/usr \
+		--enable-sha1-support \
+		--enable-ssl3-support \
+		--enable-openssl-compatibility \
+		--disable-guile \
+		--disable-rpath \
+		--disable-static \
 		--with-default-trust-store-pkcs11="pkcs11:" \
 		--with-included-unistring \
-		--disable-guile \
 		--without-tpm
 
 	sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
 
-	make
-
-	#make check
+	make V=1
 
 	make DESTDIR=$PKG install
 
 	rm -r $PKG/usr/share/{doc,info,locale}
+
+	find $PKG -type f -name '*.la' -delete
 }
