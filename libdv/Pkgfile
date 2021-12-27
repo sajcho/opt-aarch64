@@ -1,16 +1,15 @@
 # Description:	Software decoder for DV format video
 # URL:		http://libdv.sourceforge.net/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	libsdl popt
+# Depends on:	popt
 
 name=libdv
 version=1.0.0
-release=0
+release=1
 source=(https://downloads.sourceforge.net/${name}/${name}-${version}.tar.gz \
 	libdv-0.104-no-exec-stack.patch \
 	libdv-1.0.0-dso-linking.patch \
 	libdv-1.0.0-pic.patch \
-	libdv-1.0.0-gtk2.patch \
 	automake.patch)
 
 build() {
@@ -19,21 +18,24 @@ build() {
 	patch -p1 -i $SRC/libdv-0.104-no-exec-stack.patch
 	patch -p1 -i $SRC/libdv-1.0.0-dso-linking.patch
 	patch -p1 -i $SRC/libdv-1.0.0-pic.patch
-	patch -p1 -i $SRC/libdv-1.0.0-gtk2.patch
 	patch -p1 -i $SRC/automake.patch
 
 	rm missing
 	libtoolize --force && aclocal && autoconf && automake --add-missing
 
 	./configure \
-		--build=aarch64-unknown-linux-gnu \
+		--build=$CHOST \
 		--prefix=/usr \
 		--mandir=/usr/share/man \
-		--enable-sdl \
+		--disable-gtk \
+		--disable-sdl \
+		--disable-static \
 		--disable-xv \
 		--with-pic
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
+
+	find $PKG -type f -name '*.la' -delete
 }
