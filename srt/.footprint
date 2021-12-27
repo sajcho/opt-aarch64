@@ -14,8 +14,8 @@ drwxr-xr-x	root/root	usr/include/srt/
 -rw-r--r--	root/root	usr/include/srt/version.h
 drwxr-xr-x	root/root	usr/lib/
 lrwxrwxrwx	root/root	usr/lib/libsrt.so -> libsrt.so.1.4
-lrwxrwxrwx	root/root	usr/lib/libsrt.so.1.4 -> libsrt.so.1.4.3
--rwxr-xr-x	root/root	usr/lib/libsrt.so.1.4.3
+lrwxrwxrwx	root/root	usr/lib/libsrt.so.1.4 -> libsrt.so.1.4.4
+-rwxr-xr-x	root/root	usr/lib/libsrt.so.1.4.4
 drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/haisrt.pc
 -rw-r--r--	root/root	usr/lib/pkgconfig/srt.pc
