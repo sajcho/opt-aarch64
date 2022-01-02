@@ -5,7 +5,7 @@
 
 name=zip
 version=3.0
-release=0
+release=1
 source=(http://downloads.sourceforge.net/sourceforge/infozip/${name}${version//./}.tar.gz \
 	10-zip-3.0-build.patch \
 	20-zip-3.0-exec-stack.patch \
