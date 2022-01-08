@@ -24,8 +24,6 @@ drwxr-xr-x	root/root	usr/include/udisks2/udisks/
 drwxr-xr-x	root/root	usr/lib/
 drwxr-xr-x	root/root	usr/lib/girepository-1.0/
 -rw-r--r--	root/root	usr/lib/girepository-1.0/UDisks-2.0.typelib
--rw-r--r--	root/root	usr/lib/libudisks2.a
--rwxr-xr-x	root/root	usr/lib/libudisks2.la
 lrwxrwxrwx	root/root	usr/lib/libudisks2.so -> libudisks2.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/libudisks2.so.0 -> libudisks2.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libudisks2.so.0.0.0
@@ -34,8 +32,6 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 -rw-r--r--	root/root	usr/lib/pkgconfig/udisks2.pc
 drwxr-xr-x	root/root	usr/lib/udisks2/
 drwxr-xr-x	root/root	usr/lib/udisks2/modules/
--rw-r--r--	root/root	usr/lib/udisks2/modules/libudisks2_lvm2.a
--rwxr-xr-x	root/root	usr/lib/udisks2/modules/libudisks2_lvm2.la
 -rwxr-xr-x	root/root	usr/lib/udisks2/modules/libudisks2_lvm2.so
 -rwxr-xr-x	root/root	usr/lib/udisks2/udisksd
 drwxr-xr-x	root/root	usr/sbin/

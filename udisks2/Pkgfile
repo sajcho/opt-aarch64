@@ -5,9 +5,9 @@
 
 name=udisks2
 _realname=udisks
-version=2.9.3
-release=2
-source=(https://github.com/storaged-project/${_realname}/releases/download/${_realname}-${version}/${_realname}-${version}.tar.bz2 \
+version=2.9.4
+release=1
+source=(https://github.com/storaged-project/udisks/releases/download/udisks-${version}/udisks-${version}.tar.bz2 \
 	O_CLOEXEC.patch)
 
 build() {
@@ -22,12 +22,15 @@ build() {
 		--localstatedir=/var \
 		--enable-lvm2 \
 		--enable-lvmcache \
+		--disable-static \
 		--disable-zram \
 		--with-udevdir=/lib/udev
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 
 	rm -r $PKG/usr/share/{bash-completion,gtk-doc,locale}
+
+	find $PKG -type f -name '*.la' -delete
 }
