@@ -13,7 +13,6 @@ drwxr-xr-x	root/root	usr/include/vala-0.54/
 -rw-r--r--	root/root	usr/include/vala-0.54/vala.h
 -rw-r--r--	root/root	usr/include/vala-0.54/valagee.h
 drwxr-xr-x	root/root	usr/lib/
--rwxr-xr-x	root/root	usr/lib/libvala-0.54.la
 lrwxrwxrwx	root/root	usr/lib/libvala-0.54.so -> libvala-0.54.so.0.0.0
 lrwxrwxrwx	root/root	usr/lib/libvala-0.54.so.0 -> libvala-0.54.so.0.0.0
 -rwxr-xr-x	root/root	usr/lib/libvala-0.54.so.0.0.0
@@ -23,7 +22,6 @@ drwxr-xr-x	root/root	usr/lib/pkgconfig/
 lrwxrwxrwx	root/root	usr/lib/pkgconfig/vapigen.pc -> vapigen-0.54.pc
 drwxr-xr-x	root/root	usr/lib/vala-0.54/
 -rwxr-xr-x	root/root	usr/lib/vala-0.54/gen-introspect-0.54
--rwxr-xr-x	root/root	usr/lib/vala-0.54/libvalaccodegen.la
 -rwxr-xr-x	root/root	usr/lib/vala-0.54/libvalaccodegen.so
 drwxr-xr-x	root/root	usr/share/
 drwxr-xr-x	root/root	usr/share/aclocal/
