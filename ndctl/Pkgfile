@@ -1,11 +1,11 @@
 # Description:	Utility library for managing the libnvdimm (non-volatile memory device) sub-system in the Linux kernel
 # URL:		https://github.com/pmem/ndctl
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	autoconf automake eudev json-c keyutils kmod libtool util-linux
+# Depends on:	autoconf automake eudev iniparser json-c keyutils kmod libtool util-linux
 
 name=ndctl
-version=71.1
-release=0
+version=72.1
+release=1
 source=(https://github.com/pmem/${name}/archive/v${version}/${name}-${version}.tar.gz)
 
 build() {
@@ -17,12 +17,14 @@ build() {
 		--prefix=/usr \
 		--sysconfdir=/etc \
 		--bindir=/usr/sbin \
-		--disable-asciidoctor \
-		--disable-docs \
+		--enable-asciidoctor \
+		--with-udevrulesdir=/lib/udev/udev.d \
 		--without-systemd \
 		--without-bash
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
+
+	find $PKG -type f -name '*.la' -delete
 }
