@@ -1,26 +1,40 @@
 # Description:	Graph visualization software
 # URL:		https://www.graphviz.org/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	libgd pango
+# Depends on:	gtk2 libgd librsvg libwebp pango
 
 name=graphviz
-version=2.48.0
+version=2.50.0
 release=1
 source=(https://gitlab.com/${name}/${name}/-/archive/${version}/${name}-${version}.tar.bz2)
 
 build() {
 	cd ${name}-${version}
 
+	sed -i '/LIBPOSTFIX="64"/s/64//' configure.ac
+
 	./autogen.sh
 
 	./configure \
 		--prefix=/usr \
+		--enable-swig=no \
+		--enable-tcl=no \
+		--enable-ruby=no \
+		--disable-static \
+		--disable-dependency-tracking \
 		--disable-php \
-		PS2PDF=true
+		--disable-lefty
 
-	make
+	# Fix overlinking
+	sed -i -e 's/ -shared / -Wl,-O1,--as-needed\0/g' libtool
 
-	make DESTDIR=$PKG install
+	make V=1
+
+	make DESTDIR=$PKG \
+		pkgconfigdir=/usr/lib/pkgconfig \
+		install
 
 	rm -r $PKG/usr/share/graphviz/doc
+
+	find $PKG -type f -name '*.la' -delete
 }
