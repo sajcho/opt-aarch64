@@ -1,24 +1,21 @@
-# Description:	Misc themes and theme-y tidbits
-# URL:		https://gitlab.gnome.org/GNOME/gnome-themes-extra
+# Description:	GNOME Extra Themes
+# URL:		https://gitlab.gnome.org/GNOME/gnome-themes-extra/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	gnome-common librsvg
+# Depends on:	gtk2 gtk3
 
 name=gnome-themes-extra
 version=3.28
-release=0
-source=(https://gitlab.gnome.org/GNOME/${name}/-/archive/${version}/${name}-${version}.tar.gz)
+release=1
+source=(https://download.gnome.org/sources/${name}/${version}/${name}-${version}.tar.xz)
 
 build() {
 	cd ${name}-${version}
 
-	NOCONFIGURE=1 ./autogen.sh
-
 	./configure \
-		--prefix=/usr
+		--prefix=/usr \
+		--disable-nls
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
-
-	rm -r $PKG/usr/share/locale
 }
