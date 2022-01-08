@@ -4,15 +4,14 @@
 # Depends on:	bison flex gobject-introspection libcap libxml2
 
 name=gstreamer
-version=1.18.5
-release=0
+version=1.19.3
+release=1
 source=(https://gstreamer.freedesktop.org/src/${name}/${name}-${version}.tar.xz)
 
 build() {
 	cd ${name}-${version}
 
 	build-meson \
-		-Dgtk_doc=disabled \
 		-Dnls=disabled \
 		-Dgst_debug=false \
 		-Dptp-helper-permissions=capabilities \
@@ -21,7 +20,7 @@ build() {
 		-Dpackage-origin="https://github.com/sajcho/" \
 		. build
 
-	meson compile ${JOBS:+-j ${JOBS}} -C build
+	meson compile ${JOBS:+-j ${JOBS}} -v -C build
 
 	DESTDIR=$PKG meson install --no-rebuild -C build
 }
