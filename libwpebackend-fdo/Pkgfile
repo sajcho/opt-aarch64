@@ -1,12 +1,12 @@
 # Description:	freedesktop.org backend for WPE WebKit
 # URL:		https://wpewebkit.org/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	glib libwpe libepoxy mesa wayland
+# Depends on:	glib libwpe libepoxy mesa wayland-protocols
 
 name=libwpebackend-fdo
 _realname=wpebackend-fdo
-version=1.10.0
-release=0
+version=1.12.0
+release=1
 source=(https://github.com/Igalia/WPEBackend-fdo/releases/download/${version}/${_realname}-${version}.tar.xz)
 
 build() {
@@ -14,7 +14,7 @@ build() {
 
 	build-meson . build
 
-	meson compile ${JOBS:+-j ${JOBS}} -C build
+	meson compile ${JOBS:+-j ${JOBS}} -v -C build
 
 	DESTDIR=$PKG meson install --no-rebuild -C build
 }
