@@ -5,7 +5,7 @@
 
 name=fuse3
 version=3.10.5
-release=0
+release=1
 source=(https://github.com/libfuse/libfuse/releases/download/fuse-${version}/fuse-${version}.tar.xz \
 	fix-realpath.patch)
 
@@ -16,9 +16,10 @@ build() {
 
 	build-meson \
 		-Dexamples=false \
+		-Dtests=false \
 		. build
 
-	meson compile ${JOBS:+-j ${JOBS}} -C build
+	meson compile ${JOBS:+-j ${JOBS}} -v -C build
 
 	DESTDIR=$PKG meson install --no-rebuild -C build
 
