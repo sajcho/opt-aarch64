@@ -5,7 +5,7 @@
 
 name=libblockdev
 version=2.26
-release=0
+release=1
 source=(https://github.com/storaged-project/${name}/releases/download/${version}-1/${name}-${version}.tar.gz)
 
 build() {
@@ -19,7 +19,9 @@ build() {
 		--without-dmraid \
 		--without-lvm_dbus
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
+
+	find $PKG -type f -name '*.la' -delete
 }
