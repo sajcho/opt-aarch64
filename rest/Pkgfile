@@ -5,7 +5,7 @@
 
 name=rest
 version=0.8.1
-release=0
+release=1
 source=(https://download.gnome.org/sources/${name}/${version%.*}/${name}-${version}.tar.xz)
 
 build() {
@@ -17,9 +17,11 @@ build() {
 		--disable-static \
 		--without-gnome
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 
 	rm -r $PKG/usr/share/gtk-doc
+
+	find $PKG -type f -name '*.la' -delete
 }
