@@ -5,7 +5,7 @@
 
 name=nodejs
 _realname=node
-version=17.1.0
+version=17.3.0
 release=1
 source=(https://nodejs.org/dist/v${version}/${_realname}-v${version}.tar.xz \
 	system-c-ares.patch)
@@ -31,7 +31,7 @@ build() {
 		--with-intl=system-icu \
 		--without-npm
 
-	make
+	make V=1
 
 	make DESTDIR=$PKG install
 
