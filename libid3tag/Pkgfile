@@ -1,53 +1,26 @@
-# Description:	MAD ID3 tagger for MP3 audio files
-# URL:		http://www.underbit.com/products/mad/
+# Description:	ID3 tag manipulation library
+# URL:		https://github.com/tenacityteam/libid3tag
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	gperf zlib
+# Depends on:	cmake gperf zlib
 
 name=libid3tag
-version=0.15.1b
+version=0.16.1
 release=1
-source=(https://downloads.sourceforge.net/project/mad/${name}/${version}/${name}-${version}.tar.gz \
-	10_utf16.diff \
-	11_unknown_encoding.diff \
-	CVE-2008-2109.patch \
-	libid3tag-gperf.patch)
+source=(https://github.com/tenacityteam/${name}/archive/${version}/${name}-${version}.tar.gz)
 
 build() {
 	cd ${name}-${version}
 
-	patch -Np1 -i $SRC/10_utf16.diff
-	patch -Np1 -i $SRC/11_unknown_encoding.diff
-	patch -Np0 -i $SRC/CVE-2008-2109.patch
-	patch -Np1 -i $SRC/libid3tag-gperf.patch
+	mkdir build
+	cd build
 
-	rm compat.c frametype.c # regenerate them from gperf sources
-	# adding missing files for autoreconf
-	touch AUTHORS ChangeLog NEWS
+	cmake .. \
+		-DCMAKE_BUILD_TYPE=None \
+		-DCMAKE_INSTALL_PREFIX=/usr \
+		-DCMAKE_INSTALL_LIBDIR=lib \
+		-Wno-dev
 
-	autoreconf -fiv
-
-	./configure \
-		--prefix=/usr \
-		--disable-static
-
-	make V=1
+	make -O ${JOBS:+-j ${JOBS}} V=1 VERBOSE=1
 
 	make DESTDIR=$PKG install
-
-	install -d $PKG/usr/lib/pkgconfig
-	cat > $PKG/usr/lib/pkgconfig/id3tag.pc <<EOF
-prefix=/usr
-exec_prefix=/usr/bin
-libdir=/usr/lib
-includedir=/usr/include
-
-Name: id3tag
-Description: ID3 tag manipulation library
-Requires:
-Version: ${version}
-Libs: -lid3tag
-Cflags:
-EOF
-
-	find $PKG -type f -name '*.la' -delete
 }
