@@ -1,0 +1,22 @@
+# Description:	Intelligent WHOIS client
+# URL:		https://github.com/rfc1036/whois
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	libidn2
+
+name=whois
+version=5.5.11
+release=1
+source=(https://github.com/rfc1036/${name}/archive/v${version}/${name}-${version}.tar.gz)
+
+build() {
+	cd ${name}-${version}
+
+	make \
+		CONFIG_FILE=/etc/whois.conf \
+		CFLAGS="$CFLAGS" \
+		HAVE_ICONV=1
+
+	make prefix=/usr BASEDIR=$PKG install-whois
+
+	install -D -m 0644 whois.conf -t $PKG/etc
+}
