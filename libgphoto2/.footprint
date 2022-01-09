@@ -28,30 +28,31 @@ drwxr-xr-x	root/root	usr/include/gphoto2/
 -rw-r--r--	root/root	usr/include/gphoto2/gphoto2-widget.h
 -rw-r--r--	root/root	usr/include/gphoto2/gphoto2.h
 drwxr-xr-x	root/root	usr/lib/
-lrwxrwxrwx	root/root	usr/lib/libgphoto2.so -> libgphoto2.so.6.1.0
-lrwxrwxrwx	root/root	usr/lib/libgphoto2.so.6 -> libgphoto2.so.6.1.0
--rwxr-xr-x	root/root	usr/lib/libgphoto2.so.6.1.0
+lrwxrwxrwx	root/root	usr/lib/libgphoto2.so -> libgphoto2.so.6.2.0
+lrwxrwxrwx	root/root	usr/lib/libgphoto2.so.6 -> libgphoto2.so.6.2.0
+-rwxr-xr-x	root/root	usr/lib/libgphoto2.so.6.2.0
 drwxr-xr-x	root/root	usr/lib/libgphoto2/
-drwxr-xr-x	root/root	usr/lib/libgphoto2/2.5.27/
--rwxr-xr-x	root/root	usr/lib/libgphoto2/2.5.27/ax203.so
--rwxr-xr-x	root/root	usr/lib/libgphoto2/2.5.27/canon.so
--rwxr-xr-x	root/root	usr/lib/libgphoto2/2.5.27/digigr8.so
--rwxr-xr-x	root/root	usr/lib/libgphoto2/2.5.27/dimagev.so
--rwxr-xr-x	root/root	usr/lib/libgphoto2/2.5.27/directory.so
--rwxr-xr-x	root/root	usr/lib/libgphoto2/2.5.27/jl2005a.so
--rwxr-xr-x	root/root	usr/lib/libgphoto2/2.5.27/jl2005c.so
--rwxr-xr-x	root/root	usr/lib/libgphoto2/2.5.27/kodak_dc240.so
--rwxr-xr-x	root/root	usr/lib/libgphoto2/2.5.27/lumix.so
--rwxr-xr-x	root/root	usr/lib/libgphoto2/2.5.27/mars.so
--rwxr-xr-x	root/root	usr/lib/libgphoto2/2.5.27/pentax.so
--rwxr-xr-x	root/root	usr/lib/libgphoto2/2.5.27/ptp2.so
--rwxr-xr-x	root/root	usr/lib/libgphoto2/2.5.27/ricoh_g3.so
--rwxr-xr-x	root/root	usr/lib/libgphoto2/2.5.27/sierra.so
--rwxr-xr-x	root/root	usr/lib/libgphoto2/2.5.27/sonix.so
--rwxr-xr-x	root/root	usr/lib/libgphoto2/2.5.27/sq905.so
--rwxr-xr-x	root/root	usr/lib/libgphoto2/2.5.27/st2205.so
--rwxr-xr-x	root/root	usr/lib/libgphoto2/2.5.27/topfield.so
--rwxr-xr-x	root/root	usr/lib/libgphoto2/2.5.27/tp6801.so
+drwxr-xr-x	root/root	usr/lib/libgphoto2/2.5.28/
+-rwxr-xr-x	root/root	usr/lib/libgphoto2/2.5.28/ax203.so
+-rwxr-xr-x	root/root	usr/lib/libgphoto2/2.5.28/canon.so
+-rwxr-xr-x	root/root	usr/lib/libgphoto2/2.5.28/digigr8.so
+-rwxr-xr-x	root/root	usr/lib/libgphoto2/2.5.28/dimagev.so
+-rwxr-xr-x	root/root	usr/lib/libgphoto2/2.5.28/directory.so
+-rwxr-xr-x	root/root	usr/lib/libgphoto2/2.5.28/docupen.so
+-rwxr-xr-x	root/root	usr/lib/libgphoto2/2.5.28/jl2005a.so
+-rwxr-xr-x	root/root	usr/lib/libgphoto2/2.5.28/jl2005c.so
+-rwxr-xr-x	root/root	usr/lib/libgphoto2/2.5.28/kodak_dc240.so
+-rwxr-xr-x	root/root	usr/lib/libgphoto2/2.5.28/lumix.so
+-rwxr-xr-x	root/root	usr/lib/libgphoto2/2.5.28/mars.so
+-rwxr-xr-x	root/root	usr/lib/libgphoto2/2.5.28/pentax.so
+-rwxr-xr-x	root/root	usr/lib/libgphoto2/2.5.28/ptp2.so
+-rwxr-xr-x	root/root	usr/lib/libgphoto2/2.5.28/ricoh_g3.so
+-rwxr-xr-x	root/root	usr/lib/libgphoto2/2.5.28/sierra.so
+-rwxr-xr-x	root/root	usr/lib/libgphoto2/2.5.28/sonix.so
+-rwxr-xr-x	root/root	usr/lib/libgphoto2/2.5.28/sq905.so
+-rwxr-xr-x	root/root	usr/lib/libgphoto2/2.5.28/st2205.so
+-rwxr-xr-x	root/root	usr/lib/libgphoto2/2.5.28/topfield.so
+-rwxr-xr-x	root/root	usr/lib/libgphoto2/2.5.28/tp6801.so
 -rwxr-xr-x	root/root	usr/lib/libgphoto2/print-camera-list
 lrwxrwxrwx	root/root	usr/lib/libgphoto2_port.so -> libgphoto2_port.so.12.0.0
 lrwxrwxrwx	root/root	usr/lib/libgphoto2_port.so.12 -> libgphoto2_port.so.12.0.0

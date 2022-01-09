@@ -4,7 +4,7 @@
 # Depends on:	libexif libusb libjpeg-turbo
 
 name=libgphoto2
-version=2.5.27
+version=2.5.28
 release=1
 source=(https://downloads.sourceforge.net/gphoto/${name}-${version}.tar.bz2)
 
