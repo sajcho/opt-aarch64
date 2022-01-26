@@ -4,8 +4,8 @@
 # Depends on:	llvm-toolchain
 
 name=rust
-version=1.57.0
-release=0
+version=1.58.1
+release=1
 
 source=(https://static.rust-lang.org/dist/rustc-${version}-src.tar.gz \
 	libexec.patch)
@@ -67,17 +67,6 @@ EOF
 	# prevent - if libgit2, libssh2 is installed
 	export LIBGIT2_NO_PKG_CONFIG=1
 	export LIBSSH2_NO_PKG_CONFIG=1
-
-	# fix - error: "field is never read" warning
-	sed -i '/id: String,/d' src/bootstrap/lib.rs
-	sed -i '/id: String,/d' src/bootstrap/metadata.rs
-	sed -i 's|id: package.id,||' src/bootstrap/metadata.rs
-	sed -i '/available: bool,/d' src/tools/bump-stage0/src/main.rs
-
-	# fix - support openssl3
-	sed -i -e '/^curl /s/0.4.39/0.4.41/' \
-		-e '/^curl-sys /s/0.4.49/0.4.50/' \
-		src/tools/cargo/Cargo.toml
 
 	/usr/bin/python3 ./x.py build --config="${SRC}"/config.toml ${JOBS:+-j ${JOBS}}
 
