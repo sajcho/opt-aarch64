@@ -4,17 +4,12 @@
 # Depends on:	aom dav1d fdk-aac flac lame libass libsdl libssh libtheora libvpx libwebp openssl3 opus sdl2 soxr srt x264 x265
 
 name=ffmpeg
-version=4.4.1
+version=5.0
 release=1
-source=(https://ffmpeg.org/releases/${name}-${version}.tar.xz \
-	0001-ffbuild-libversion.sh-add-shebang.patch \
-	0001-libavutil-clean-up-unused-FF_SYMVER-macro.patch)
+source=(https://ffmpeg.org/releases/${name}-${version}.tar.xz)
 
 build() {
 	cd ${name}-${version}
-
-	patch -p1 -i $SRC/0001-ffbuild-libversion.sh-add-shebang.patch
-	patch -p1 -i $SRC/0001-libavutil-clean-up-unused-FF_SYMVER-macro.patch
 
 	./configure \
 		--prefix=/usr \
@@ -25,7 +20,6 @@ build() {
 		--enable-openssl \
 		--enable-gpl \
 		--enable-swresample \
-		--enable-avresample \
 		--enable-libaom \
 		--enable-libass \
 		--enable-libmp3lame \
@@ -36,7 +30,10 @@ build() {
 		--enable-libx265 \
 		--enable-libtheora \
 		--enable-libdav1d \
+		--enable-libfontconfig \
 		--enable-libfreetype \
+		--enable-libfribidi \
+		--enable-libxml2 \
 		--enable-libopus \
 		--enable-libfdk-aac \
 		--enable-libxcb \
@@ -46,7 +43,9 @@ build() {
 		--enable-libsoxr \
 		--enable-vaapi \
 		--enable-vdpau \
+		--enable-opengl \
 		--enable-postproc \
+		--enable-lto \
 		--enable-pic \
 		--enable-pthreads \
 		--enable-nonfree \
@@ -58,6 +57,7 @@ build() {
 		--disable-vulkan
 
 	make V=1
+
 	${CC:-gcc} -o tools/qt-faststart $CFLAGS tools/qt-faststart.c
 	make doc/ffmpeg.1 doc/ffplay.1
 
