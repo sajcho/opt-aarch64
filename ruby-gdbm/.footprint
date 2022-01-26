@@ -1,0 +1,27 @@
+drwxr-xr-x	root/root	usr/
+drwxr-xr-x	root/root	usr/lib/
+drwxr-xr-x	root/root	usr/lib/ruby/
+drwxr-xr-x	root/root	usr/lib/ruby/gems/
+drwxr-xr-x	root/root	usr/lib/ruby/gems/3.1.0/
+drwxr-xr-x	root/root	usr/lib/ruby/gems/3.1.0/extensions/
+drwxr-xr-x	root/root	usr/lib/ruby/gems/3.1.0/extensions/aarch64-linux/
+drwxr-xr-x	root/root	usr/lib/ruby/gems/3.1.0/extensions/aarch64-linux/3.1.0/
+drwxr-xr-x	root/root	usr/lib/ruby/gems/3.1.0/extensions/aarch64-linux/3.1.0/gdbm-2.1.0/
+-rwxr-xr-x	root/root	usr/lib/ruby/gems/3.1.0/extensions/aarch64-linux/3.1.0/gdbm-2.1.0/gdbm.so
+-rw-r--r--	root/root	usr/lib/ruby/gems/3.1.0/extensions/aarch64-linux/3.1.0/gdbm-2.1.0/gem.build_complete (EMPTY)
+-rw-r--r--	root/root	usr/lib/ruby/gems/3.1.0/extensions/aarch64-linux/3.1.0/gdbm-2.1.0/gem_make.out
+-rw-r--r--	root/root	usr/lib/ruby/gems/3.1.0/extensions/aarch64-linux/3.1.0/gdbm-2.1.0/mkmf.log
+drwxr-xr-x	root/root	usr/lib/ruby/gems/3.1.0/gems/
+drwxr-xr-x	root/root	usr/lib/ruby/gems/3.1.0/gems/gdbm-2.1.0/
+drwxr-xr-x	root/root	usr/lib/ruby/gems/3.1.0/gems/gdbm-2.1.0/ext/
+drwxr-xr-x	root/root	usr/lib/ruby/gems/3.1.0/gems/gdbm-2.1.0/ext/gdbm/
+-rw-r--r--	root/root	usr/lib/ruby/gems/3.1.0/gems/gdbm-2.1.0/ext/gdbm/.sitearchdir.time (EMPTY)
+-rw-r--r--	root/root	usr/lib/ruby/gems/3.1.0/gems/gdbm-2.1.0/ext/gdbm/Makefile
+-rw-rw-r--	root/root	usr/lib/ruby/gems/3.1.0/gems/gdbm-2.1.0/ext/gdbm/extconf.rb
+-rw-rw-r--	root/root	usr/lib/ruby/gems/3.1.0/gems/gdbm-2.1.0/ext/gdbm/gdbm.c
+-rw-r--r--	root/root	usr/lib/ruby/gems/3.1.0/gems/gdbm-2.1.0/ext/gdbm/gdbm.o
+-rwxr-xr-x	root/root	usr/lib/ruby/gems/3.1.0/gems/gdbm-2.1.0/ext/gdbm/gdbm.so
+drwxr-xr-x	root/root	usr/lib/ruby/gems/3.1.0/gems/gdbm-2.1.0/lib/
+-rwxr-xr-x	root/root	usr/lib/ruby/gems/3.1.0/gems/gdbm-2.1.0/lib/gdbm.so
+drwxr-xr-x	root/root	usr/lib/ruby/gems/3.1.0/specifications/
+-rw-r--r--	root/root	usr/lib/ruby/gems/3.1.0/specifications/gdbm-2.1.0.gemspec
