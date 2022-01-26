@@ -5,22 +5,18 @@
 
 name=ruby
 version=3.1.0
-release=1
-source=(http://cache.ruby-lang.org/pub/${name}/${version%.*}/${name}-${version}.tar.xz \
-	rubygems-avoid-platform-specific-gems.patch)
+release=2
+source=(http://cache.ruby-lang.org/pub/${name}/${version%.*}/${name}-${version}.tar.xz)
 
 build() {
 	cd ${name}-${version}
-
-	patch -p1 -i $SRC/rubygems-avoid-platform-specific-gems.patch
 
 	./configure \
 		--prefix=/usr \
 		--mandir=/usr/share/man \
 		--enable-shared \
 		--disable-install-doc \
-		--disable-install-static-library \
-		--with-os-version-style=full
+		--disable-install-static-library
 
 	make V=1
 
