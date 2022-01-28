@@ -255,6 +255,7 @@ d:soundtouch
 d:python3-gobject
 d:lame
 d:libdvdread
+d:imlib2
 d:lsof
 d:openal-soft
 d:exiv2
@@ -565,8 +566,8 @@ f:b298bfcb859e36c70e8231dbf465499a:libcanberra/.footprint
 f:4670134174c0dd94624bfa4cab5434c4:libde265/.md5sum
 f:4f35cd29c422471f431dda9ca4114a12:libde265/Pkgfile
 f:e06c06b495ba2b30cc7732f6314f9b3e:libde265/.footprint
-f:705c77213746b5497dc4a010a04c0e02:firefox/.md5sum
-f:5488cdb7931cc683fa22d344d186fb6a:firefox/Pkgfile
+f:909d55d56ba24bf22faf7698f24a1519:firefox/.md5sum
+f:6f6b6a1672b414f74b398c54aeb9421e:firefox/Pkgfile
 f:cf6971669f70b440cb6ff8df8b2722ae:firefox/firefox.desktop
 f:261a8098047ca321cdd846cc9e4e7544:firefox/.footprint
 f:8dc24a98155cc6f69d9d288e76a4ce2f:libmbim/.md5sum
@@ -939,8 +940,9 @@ f:3a09e87aa9f3e487cf98edb75cde3d12:libnotify/.footprint
 f:384f715e9ebaab49edefd9648662c658:python3-cairo/.md5sum
 f:ce61947b117e840e510768de4a2edd3b:python3-cairo/Pkgfile
 f:ce24f64764cb2f30ea9dfc02fc5be9d8:python3-cairo/.footprint
-f:11751a3f235a4e16ef925e2f4396ae7b:ffmpegthumbnailer/.md5sum
-f:4ea8430ec7a0ea51c09140205f3feea8:ffmpegthumbnailer/Pkgfile
+f:7760a973ab763a21d0d10c4ba9139a82:ffmpegthumbnailer/.md5sum
+f:f035ef668be4de3de6cf1985b30d6c3d:ffmpegthumbnailer/ffmpeg5.patch
+f:060b050c563a2497a7b638f44e87fa58:ffmpegthumbnailer/Pkgfile
 f:2e44b4d393c09b5c468aa77dcb5ee347:ffmpegthumbnailer/.footprint
 f:1eecbae3964a8fce07900fab21de24de:unrar/.md5sum
 f:d47852a593248646418ee15e23673e35:unrar/Pkgfile
@@ -1242,8 +1244,8 @@ f:5de10d632120b09be9a1b467f20c983e:fontconfig/README
 f:e3144b54cf4de7faa73c59a6df217f41:fontconfig/post-install
 f:7cd6f9a4d29765e70c3bc1555cd97e60:fontconfig/Pkgfile
 f:43738aea761a7ce6318957219871b66a:fontconfig/.footprint
-f:867af8a3babe081e38e434e3d6515c37:icewm/.md5sum
-f:4bf7e01de349ec528b2d210444e30317:icewm/Pkgfile
+f:1def458079c853a53f72e90bd368dbb3:icewm/.md5sum
+f:9700a205b953466417ed623f412a76de:icewm/Pkgfile
 f:863f7fcc6653a49112553f3670ff585d:icewm/.footprint
 f:69497dd8a434716f6364ff30bc23e8a9:soundtouch/.md5sum
 f:1870a719b9b64d85f35b1a074ee8479f:soundtouch/Pkgfile
@@ -1257,6 +1259,9 @@ f:e238a8605bf788936d57cec2341f24c3:lame/.footprint
 f:039e41456f16245ba980a9190b3d99e5:libdvdread/.md5sum
 f:4fa459dedb0ee9791e6b5631fb517efd:libdvdread/Pkgfile
 f:b9061396b3f6c4f585ba0eccdee449de:libdvdread/.footprint
+f:f3153b05effd84811b44abacb8dd8537:imlib2/.md5sum
+f:33bf48f26ee2a895afda2dc71739f6a3:imlib2/Pkgfile
+f:5ba9795acac660a4af22e874e454cea4:imlib2/.footprint
 f:3ec32137a5872fe9cca5a68205993c14:lsof/.md5sum
 f:867432bf3e2534af34acccad57d78191:lsof/Pkgfile
 f:9afbaade4182d0a74cffd31a61782fc7:lsof/.footprint
