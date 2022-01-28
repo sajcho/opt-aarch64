@@ -1,0 +1,23 @@
+# Description:	A fast image manipulation library
+# URL:		https://sourceforge.net/projects/enlightenment/
+# Maintainer:	Juergen Daubert, jue at crux dot nu
+# Depends on:	freetype libtiff xorg-libsm xorg-libxext
+
+name=imlib2
+version=1.7.5
+release=1
+source=(https://download.sourceforge.net/enlightenment/${name}-${version}.tar.xz)
+
+build() {
+	cd ${name}-${version}
+
+	./configure \
+		--prefix=/usr \
+		--disable-static
+
+	make V=1
+
+	make DESTDIR=$PKG install
+
+	find $PKG -type f -name '*.la' -delete
+}
