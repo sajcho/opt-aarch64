@@ -1,7 +1,7 @@
 # Description:	A fast image manipulation library
 # URL:		https://sourceforge.net/projects/enlightenment/
-# Maintainer:	Juergen Daubert, jue at crux dot nu
-# Depends on:	freetype libtiff xorg-libsm xorg-libxext
+# Maintainer:	sajcho, saux dot aarch64 at gmail dot com
+# Depends on:	freetype libtiff libsm libxext
 
 name=imlib2
 version=1.7.5
