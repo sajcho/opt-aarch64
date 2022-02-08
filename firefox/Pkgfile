@@ -4,13 +4,16 @@
 # Depends on:	alsa-lib autoconf-2.13 brotli cbindgen dbus-glib ffmpeg libevent libidl llvm-toolchain libnotify libvpx libwebp libxkbcommon nodejs nss unzip xorg-libxcomposite xorg-libxcursor xorg-libxinerama xorg-libxt zip
 
 name=firefox
-version=96.0.3
+version=97.0
 release=1
 source=(https://ftp.mozilla.org/pub/${name}/releases/${version}/source/${name}-${version}.source.tar.xz \
+	firefox-97.0-build.rs.patch \
 	firefox.desktop)
 
 build() {
 	cd ${name}-${version}
+
+	patch -p1 -i $SRC/firefox-97.0-build.rs.patch
 
 	export SHELL="/bin/sh"
 	export BUILD_OFFICIAL=1
@@ -41,7 +44,6 @@ cat <<- EOF > .mozconfig
 		ac_add_options --disable-debug-symbols
 		#
 		ac_add_options --disable-crashreporter
-		ac_add_options --disable-gold
 		ac_add_options --disable-install-strip
 		ac_add_options --disable-jemalloc
 		ac_add_options --disable-profiling
