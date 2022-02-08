@@ -566,10 +566,12 @@ f:b298bfcb859e36c70e8231dbf465499a:libcanberra/.footprint
 f:4670134174c0dd94624bfa4cab5434c4:libde265/.md5sum
 f:4f35cd29c422471f431dda9ca4114a12:libde265/Pkgfile
 f:e06c06b495ba2b30cc7732f6314f9b3e:libde265/.footprint
-f:909d55d56ba24bf22faf7698f24a1519:firefox/.md5sum
-f:6f6b6a1672b414f74b398c54aeb9421e:firefox/Pkgfile
+f:2921ce60518aee44e83011e87eba5d20:firefox/.md5sum
+f:914feb9dda4dd3375b0673b804505180:firefox/Pkgfile
+f:30739bbd67864f0be3cb3e4090191f33:firefox/build.log
 f:cf6971669f70b440cb6ff8df8b2722ae:firefox/firefox.desktop
-f:261a8098047ca321cdd846cc9e4e7544:firefox/.footprint
+f:5f63c56d6773049c1a3d5d6652980c2e:firefox/firefox-97.0-build.rs.patch
+f:e47020b8b659d615a73e5ed4cadad35c:firefox/.footprint
 f:8dc24a98155cc6f69d9d288e76a4ce2f:libmbim/.md5sum
 f:fc4a4aaffb2ef5664f88e803514926d8:libmbim/Pkgfile
 f:854bbc519673c37cf2187f6137bc657f:libmbim/.footprint
