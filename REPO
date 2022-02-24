@@ -7,7 +7,6 @@ d:openjpeg2
 d:librsvg
 d:startup-notification
 d:pavucontrol
-d:tcl
 d:accountsservice
 d:sdl2
 d:dav1d
@@ -81,7 +80,6 @@ d:lxappearance-gtk3
 d:at-spi2-core
 d:ruby
 d:uthash
-d:libnghttp2
 d:mpg123
 d:libevent
 d:taglib
@@ -112,7 +110,6 @@ d:libmodplug
 d:srt
 d:libplist
 d:libwpebackend-fdo
-d:dejagnu
 d:brotli
 d:clutter
 d:keyutils
@@ -133,7 +130,6 @@ d:jansson
 d:squashfs-tools
 d:rust
 d:libshout
-d:expect
 d:cdparanoia
 d:gdk-pixbuf-xlib
 d:cbindgen
@@ -193,7 +189,6 @@ d:atkmm16
 d:libvisual
 d:git-lfs
 d:htop
-d:xxhash
 d:json-c
 d:libdecor
 d:cyrus-sasl
@@ -205,7 +200,6 @@ d:autoconf-2.13
 d:yasm
 d:webkitgtk
 d:woff2
-d:mold
 d:libxslt
 d:iftop
 d:gcr
@@ -221,7 +215,6 @@ d:hunspell
 d:libcddb
 d:aom
 d:libgit2
-d:jsoncpp
 d:python3-distlib
 d:libdvdcss
 d:p7zip
@@ -263,7 +256,6 @@ d:ruby-openssl
 d:libgphoto2
 d:libev
 d:python3-cparser
-d:mimalloc2
 d:mm-common
 d:dtc
 d:docbook-xsl-nons
@@ -358,9 +350,6 @@ f:b70b1c89508e33dfd28908af03b32eb5:startup-notification/.footprint
 f:9ca9ab192c10c80e5cc9b61395fcd92e:pavucontrol/.md5sum
 f:8a5cc7a22c426ee8cd28967ac8569d2c:pavucontrol/Pkgfile
 f:ddc2714f0616c329e041d7ee0875fa59:pavucontrol/.footprint
-f:a1692cba991b797b59f2bd6eb02a40e0:tcl/.md5sum
-f:0cf21fde4cb0264c4fba53187d8f1d75:tcl/Pkgfile
-f:9ee50af85eb2bedb35a98fe6f4f0b219:tcl/.footprint
 f:92929cbad29e438eac3e45d1a9e151d9:accountsservice/.md5sum
 f:ff73d16c493eef0286339f624db5a326:accountsservice/Pkgfile
 f:a40b047e7a5d0f488661c03c09ebea73:accountsservice/.footprint
@@ -625,9 +614,6 @@ f:cafaae14f9570371e41d687995c0d1b3:ruby/.footprint
 f:865c8b1fe43ad958114f3c237df71eaf:uthash/.md5sum
 f:2eafad304d7451075ccb1d1fda284ad5:uthash/Pkgfile
 f:d8abf2591188e6e6a8badd0abe472dca:uthash/.footprint
-f:404957e87faed19370b575bbf495a8ac:libnghttp2/.md5sum
-f:253b7c98ead692eff6fc1be9f0842d30:libnghttp2/Pkgfile
-f:a4391fe3f75f2d177b76b39c54107b64:libnghttp2/.footprint
 f:b66b5ac3c7b8fed0132c7a052d1911dc:mpg123/.md5sum
 f:b601aefca254c77f425ecdfc8fd99658:mpg123/Pkgfile
 f:0481bbe2ceed3d91425067c0e3d0f5a9:mpg123/.footprint
@@ -728,9 +714,6 @@ f:1ae0e1796b9787dd7a1de865e82418b1:libplist/.footprint
 f:618af4e401b4b68f8002ede5d67a457f:libwpebackend-fdo/.md5sum
 f:9ad0837121ab41e1e66f92a4d8a4eb54:libwpebackend-fdo/Pkgfile
 f:8659225f0c1d20709eede1956507655a:libwpebackend-fdo/.footprint
-f:49f91d072880f2d3624d6d826fc39bd8:dejagnu/.md5sum
-f:932f542bcd8aae0457a2bc19d5d07177:dejagnu/Pkgfile
-f:6fc4d4162ffe0577fd1260cce1265328:dejagnu/.footprint
 f:f2cbb64ff4c2f320006b4c34029f2caf:brotli/.md5sum
 f:43fb40aedf8fb9760d031a655b91abd7:brotli/Pkgfile
 f:5c5a44b31017d615751dad6324b7678b:brotli/build-tool-against-shared-lib.patch
@@ -807,9 +790,6 @@ f:cf7ae56a12b224f21e0d9597a9c5d8e9:rust/.footprint
 f:e00c03b984ba7d5e55c192f2ae3d910d:libshout/.md5sum
 f:6c8c52bdaaf877273982ee16f5f5ab58:libshout/Pkgfile
 f:4aab48f1bdacaa946d828b64aea26388:libshout/.footprint
-f:2b4aa26e64d4c7202a2b40b8f387d9e7:expect/.md5sum
-f:82e55ec4a1f6ce22fb35abd0447da271:expect/Pkgfile
-f:09206503e97d5a6ab44037bd968b815d:expect/.footprint
 f:3971823431dacc3bf72f1411f654dcfe:cdparanoia/.md5sum
 f:6f6f19552055c3df2d1a8bf0e95fa148:cdparanoia/cdparanoia-3.pc
 f:fda7c1df52289574fa47aa3aee46f75a:cdparanoia/Pkgfile
@@ -1025,9 +1005,6 @@ f:5d8a4894330f8910c0b3af0f0a3ae424:htop/.md5sum
 f:cac63982416fe7853fa27ce797c7e23d:htop/Pkgfile
 f:24fede50ad08f892f4846dc964e047bf:htop/gcc10.patch
 f:afa973343827361c7a0e67c8a5458494:htop/.footprint
-f:368183fed6cb628b16841f70a02f832d:xxhash/.md5sum
-f:4425ba9bcbd89ac7688c478ef9a8b826:xxhash/Pkgfile
-f:0974bc76bd1f4d3047cadbb58bae8aa9:xxhash/.footprint
 f:08ae4fbfa53943d2088627504078511a:json-c/.md5sum
 f:3d25f08ae4e8636c5a38bd65dccdacb5:json-c/Pkgfile
 f:97e7dcbf46df7b93964f5a893d951c91:json-c/.footprint
@@ -1068,9 +1045,6 @@ f:26fc2363a5c132d4aacb51ec48cbed46:woff2/Pkgfile
 f:45259462b99625f3a8d2434b901bc5b3:woff2/install-executables.patch
 f:c0572f63bc9bd027fc09619677bbdde7:woff2/dont-set-rpath.patch
 f:8cdadde46ceb0e908748d93a8130995b:woff2/.footprint
-f:537fa5c93c63c61f487d4bd2306d9444:mold/.md5sum
-f:bcbeb279b4fe4b7683d837044c3be045:mold/Pkgfile
-f:f3e8728a1945bd552ab79e684e070bc7:mold/.footprint
 f:efc112d212f643e0b457b2dbba9082c4:libxslt/.md5sum
 f:c725c16c1d6ceb6076d079168a26469f:libxslt/Pkgfile
 f:5cc4a8544aecc41b69affe73ae204431:libxslt/.footprint
@@ -1127,9 +1101,6 @@ f:f9367667fee3d04605512482df1468c1:aom/.footprint
 f:cc6659717d34446e32f25d94249dce19:libgit2/.md5sum
 f:8543f6a950c508520e6532ef34611246:libgit2/Pkgfile
 f:125ceffb11ac9d9abe6d7328c867467b:libgit2/.footprint
-f:4ad4ab014d2df94054dc862a57eaf7a2:jsoncpp/.md5sum
-f:048dfb29ea7b4d62e03ee97155892491:jsoncpp/Pkgfile
-f:d8678e6bc043011febfbb900f7580485:jsoncpp/.footprint
 f:0fb2111535510803af3ff75aec59dc1d:python3-distlib/.md5sum
 f:986266f001babe53dc52afbfcc49be5d:python3-distlib/Pkgfile
 f:66aecfd09f84411b42e81ce01eff28a5:python3-distlib/.footprint
@@ -1287,9 +1258,6 @@ f:ff87e4d8386354e994721cf8382e43a0:libev/.footprint
 f:a6548395e84acc9b728334a60236221f:python3-cparser/.md5sum
 f:e1a59a6007fe9bb3f1745379d7cdbe9f:python3-cparser/Pkgfile
 f:202d083026aba8fc2332c780b66aa3e1:python3-cparser/.footprint
-f:af6464bd136784c8e0a8d712c62bbd56:mimalloc2/.md5sum
-f:9b2521ad2cf5ce4aaeae9765b32b2109:mimalloc2/Pkgfile
-f:3d8db69a841b73ce8388ea078d421030:mimalloc2/.footprint
 f:bd08f0608ebce824025925c3c1c96eb5:mm-common/.md5sum
 f:326040a8de9529a2050ee81b25e165de:mm-common/Pkgfile
 f:8ea84e79a3b4ed0e3dfe56d281636a8f:mm-common/.footprint
