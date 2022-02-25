@@ -1,7 +1,0 @@
-#!/bin/sh
-
-getent group geoclue || /usr/sbin/groupadd -r geoclue
-
-getent passwd geoclue || /usr/sbin/useradd -g geoclue -r -d /var/lib/geoclue -s /sbin/nologin -c "Geoclue System User" -G geoclue geoclue
-
-/usr/bin/passwd -l geoclue > /dev/null
