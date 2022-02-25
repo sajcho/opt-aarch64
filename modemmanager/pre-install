@@ -1,5 +1,0 @@
-#!/bin/sh
-
-getent group plugdev || groupadd -r plugdev 2>/dev/null
-
-exit 0
