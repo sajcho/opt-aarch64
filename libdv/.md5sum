@@ -1,5 +1,0 @@
-435221ff530f32c013a43c473e34b66e  automake.patch
-e1cf9483fe9efdab5e2326fccbdb7ed5  libdv-0.104-no-exec-stack.patch
-9e3a12489495e01ad0ddf5a3ea2cef7f  libdv-1.0.0-dso-linking.patch
-4fb792fd927a7abbc0e2ab9a8e96df53  libdv-1.0.0-pic.patch
-f895162161cfa4bb4a94c070a7caa6c7  libdv-1.0.0.tar.gz
