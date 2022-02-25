@@ -1,5 +1,0 @@
-bf9d0d324ecbd350d0e9308125fa4ce0  cairo-1.17.4.tar.xz
-92fc1658733cd98e89c065edbd25fd97  fix-library-versioning.diff
-ba4b7edcd2621f8e89b33394a44d086d  fix-mask-usage-in-image-compositor.patch
-e9ad04eac16fc66adc2ad8140d33a537  fix-pdf-fonts.patch
-41347811137bcd4d103781a1171ad678  xlib-xcb.diff
