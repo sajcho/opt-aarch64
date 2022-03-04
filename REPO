@@ -11,6 +11,7 @@ d:imagemagick
 d:x265
 d:rust
 d:python3-cairo
+d:babl
 d:python3-libxml2
 d:python3-gobject
 d:ruby-openssl
@@ -64,6 +65,9 @@ f:cf7ae56a12b224f21e0d9597a9c5d8e9:rust/.footprint
 f:384f715e9ebaab49edefd9648662c658:python3-cairo/.md5sum
 f:ce61947b117e840e510768de4a2edd3b:python3-cairo/Pkgfile
 f:ce24f64764cb2f30ea9dfc02fc5be9d8:python3-cairo/.footprint
+f:c3e6e0db62da67b3883ae2529d82550c:babl/.md5sum
+f:2fba059030be67af2ef54bac9ef9037a:babl/Pkgfile
+f:16c122268a2dbba14ca978c49613e740:babl/.footprint
 f:db3e4aeae8f42eb555a907d9130900d4:python3-libxml2/.md5sum
 f:27c4815d7c1788e8b1170e16378261d8:python3-libxml2/Pkgfile
 f:e70ff26e1c9dfaa92ba4f9870dfc3869:python3-libxml2/.footprint
