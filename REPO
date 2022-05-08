@@ -57,11 +57,11 @@ f:c2e8a388c2b6e640cfa9e86eefe564eb:x265/.md5sum
 f:26b5d3299dd225625fc24edc23a76e34:x265/README
 f:c08d41085b38bbeb14ce59021579e004:x265/Pkgfile
 f:4a05384743aa18ae52d1af9944499d8f:x265/.footprint
-f:fdd216169e96e4a89989b622587e56bd:rust/.md5sum
+f:047d63f35e4c6963f22a7feb3dc2eb02:rust/.md5sum
 f:59041d2148f9ac01f0052bbd48253787:rust/libexec.patch
-f:7c7d9784b6ac8b6a8b4dca86d602630b:rust/Pkgfile
+f:110bc61c9703a714ed4da4f4d896edf9:rust/Pkgfile
 f:a68528b0fd1e5420b6f851ae579e97a4:rust/.nostrip
-f:cf7ae56a12b224f21e0d9597a9c5d8e9:rust/.footprint
+f:42c0ff95c4383d4ba706ff6b660ced08:rust/.footprint
 f:384f715e9ebaab49edefd9648662c658:python3-cairo/.md5sum
 f:ce61947b117e840e510768de4a2edd3b:python3-cairo/Pkgfile
 f:ce24f64764cb2f30ea9dfc02fc5be9d8:python3-cairo/.footprint
