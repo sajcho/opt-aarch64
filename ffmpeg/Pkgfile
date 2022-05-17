@@ -1,26 +1,30 @@
 # Description:	Complete and free Internet live audio and video broadcasting solution for Linux/Unix
 # URL:		https://ffmpeg.org/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	aom dav1d fdk-aac flac lame libass libsdl libssh libtheora libvpx libwebp openssl3 opus sdl2 soxr srt x264 x265
+# Depends on:	aom dav1d fdk-aac flac gnutls lame libass libsdl libssh libtheora libvpx libwebp mold opus pulseaudio sdl2 soxr srt x264 x265
 
 name=ffmpeg
-version=5.0
+version=5.0.1
 release=1
 source=(https://ffmpeg.org/releases/${name}-${version}.tar.xz)
 
 build() {
 	cd ${name}-${version}
 
+	export CFLAGS="-O2 -march=armv8-a -mtune=generic -fuse-ld=mold -flto=auto -Wno-psabi -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS"
+	export CXXFLAGS="-O2 -march=armv8-a -mtune=generic -fuse-ld=mold -flto=auto -Wno-psabi -Wall -Werror=format-security -Wp,-D_FORTIFY_SOURCE=2 -Wp,-D_GLIBCXX_ASSERTIONS"
+	export LDFLAGS="-Wl,-z,relro -Wl,--as-needed  -Wl,-z,now -fuse-ld=mold -flto=auto"
+
+	sed 's|O3|O2|g' -i configure
+
 	./configure \
 		--prefix=/usr \
-		--enable-shared \
 		--enable-version3 \
 		--enable-avfilter \
 		--enable-ffplay \
-		--enable-openssl \
+		--enable-gnutls \
 		--enable-gpl \
 		--enable-swresample \
-		--enable-libaom \
 		--enable-libass \
 		--enable-libmp3lame \
 		--enable-libvorbis \
@@ -30,39 +34,33 @@ build() {
 		--enable-libx265 \
 		--enable-libtheora \
 		--enable-libdav1d \
-		--enable-libfontconfig \
 		--enable-libfreetype \
-		--enable-libfribidi \
-		--enable-libxml2 \
 		--enable-libopus \
 		--enable-libfdk-aac \
-		--enable-libxcb \
-		--enable-libsrt \
-		--enable-libssh \
-		--enable-libopus \
-		--enable-libsoxr \
-		--enable-vaapi \
-		--enable-vdpau \
-		--enable-opengl \
 		--enable-postproc \
 		--enable-lto \
 		--enable-pic \
 		--enable-pthreads \
+		--enable-shared \
+		--enable-libxcb \
+		--enable-libsrt \
+		--enable-libssh \
+		--enable-vaapi \
+		--enable-vdpau \
+		--enable-libopus \
+		--enable-libpulse \
+		--enable-libsoxr \
 		--enable-nonfree \
-		--disable-debug \
-		--disable-static \
+		--enable-libaom \
+		--enable-vulkan \
+		--disable-doc \
 		--disable-libjack \
-		--disable-libpulse \
 		--disable-librtmp \
-		--disable-vulkan
+		--disable-static
 
 	make V=1
-
 	${CC:-gcc} -o tools/qt-faststart $CFLAGS tools/qt-faststart.c
-	make doc/ffmpeg.1 doc/ffplay.1
 
 	make DESTDIR=$PKG install install-man
 	install -D -m 0755 tools/qt-faststart $PKG/usr/bin/qt-faststart
-
-	rm -r $PKG/usr/share/doc
 }
