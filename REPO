@@ -21,9 +21,10 @@ d:x264
 f:41b257c4e6673696e304f7b729d05208:perl-xml-parser/.md5sum
 f:397429299b9fa3da9b42415f6abb2b37:perl-xml-parser/Pkgfile
 f:7b03d692c9ae02b169e42c87b5a6be47:perl-xml-parser/.footprint
-f:429c4ba809b08cb40b5bdcaa0e0ed323:gobject-introspection/.md5sum
-f:21605fb817149cebcd85c3efa1e9eeb0:gobject-introspection/Pkgfile
-f:ec43a2c7f08cda9069ff3c30ea181215:gobject-introspection/.footprint
+f:cec5b2fb77b2e5c9a9e8dc0287ea41bf:gobject-introspection/.md5sum
+f:c6e06ccf146dad439444de5f4dbf17ca:gobject-introspection/gobject-introspection-1.70.0-build_fix-1.patch
+f:9de3da7c4a4522a00408e65eeea51da5:gobject-introspection/Pkgfile
+f:214b74a2693b625fcd4cce1d495e1f65:gobject-introspection/.footprint
 f:b72e6c1dd3df512797dd29609bb2e92a:ffmpeg/.md5sum
 f:66351b1b85c4663c9e3e84b60ef40530:ffmpeg/Pkgfile
 f:79deef85aa5cd9c026b1687b5f2e482b:ffmpeg/.footprint
