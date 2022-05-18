@@ -1,8 +1,10 @@
 d:perl-xml-parser
+d:libdv
 d:gobject-introspection
 d:ffmpeg
 d:firefox-esr
 d:python3-cffi
+d:libavc1394
 d:firefox
 d:python3-coverage
 d:ruby
@@ -13,6 +15,7 @@ d:rust
 d:cdparanoia
 d:sbc
 d:python3-cairo
+d:libiec61883
 d:libvisual
 d:babl
 d:python3-libxml2
@@ -24,6 +27,9 @@ d:x264
 f:41b257c4e6673696e304f7b729d05208:perl-xml-parser/.md5sum
 f:397429299b9fa3da9b42415f6abb2b37:perl-xml-parser/Pkgfile
 f:7b03d692c9ae02b169e42c87b5a6be47:perl-xml-parser/.footprint
+f:0a6b10b4fad2ca38673cd252282436bc:libdv/.md5sum
+f:086df8d8d1e2ebf8399a454bbbab520a:libdv/Pkgfile
+f:4399eb558e830520b02a0a0ef1abca51:libdv/.footprint
 f:cec5b2fb77b2e5c9a9e8dc0287ea41bf:gobject-introspection/.md5sum
 f:c6e06ccf146dad439444de5f4dbf17ca:gobject-introspection/gobject-introspection-1.70.0-build_fix-1.patch
 f:9de3da7c4a4522a00408e65eeea51da5:gobject-introspection/Pkgfile
@@ -40,6 +46,9 @@ f:261a8098047ca321cdd846cc9e4e7544:firefox-esr/.footprint
 f:f99adb574e25931e6b1f6922e31db172:python3-cffi/.md5sum
 f:184dc082999b467e006968fcd5bc1f0d:python3-cffi/Pkgfile
 f:587e4d4c8873f31ec6f04571feb0e3b9:python3-cffi/.footprint
+f:32b27dfb47538aff10cc17b118c53617:libavc1394/.md5sum
+f:012ed2a6e60f3d3140bfc3c439d6184c:libavc1394/Pkgfile
+f:b418f4a5a73c85729fb5f8b61aafe556:libavc1394/.footprint
 f:2921ce60518aee44e83011e87eba5d20:firefox/.md5sum
 f:914feb9dda4dd3375b0673b804505180:firefox/Pkgfile
 f:30739bbd67864f0be3cb3e4090191f33:firefox/build.log
@@ -55,9 +64,9 @@ f:cafaae14f9570371e41d687995c0d1b3:ruby/.footprint
 f:b66b5ac3c7b8fed0132c7a052d1911dc:mpg123/.md5sum
 f:b601aefca254c77f425ecdfc8fd99658:mpg123/Pkgfile
 f:0481bbe2ceed3d91425067c0e3d0f5a9:mpg123/.footprint
-f:e0e14ca1b280f9fe43e1741134f9be5d:imagemagick/.md5sum
-f:2da740c2ea604fa12c829c39523c4450:imagemagick/Pkgfile
-f:6b9d310ef5bc9f3bf455ad134d4e2825:imagemagick/.footprint
+f:d27e98f527c6f3b8f3b8e5a1aac38012:imagemagick/.md5sum
+f:d5b3e5f3c918f677a8d91e50d893c582:imagemagick/Pkgfile
+f:d3a01e92dd8bc86f371863a62497f1ff:imagemagick/.footprint
 f:c2e8a388c2b6e640cfa9e86eefe564eb:x265/.md5sum
 f:26b5d3299dd225625fc24edc23a76e34:x265/README
 f:c08d41085b38bbeb14ce59021579e004:x265/Pkgfile
@@ -78,6 +87,9 @@ f:431ba792fe4afafdbfc453145ec484aa:sbc/.footprint
 f:384f715e9ebaab49edefd9648662c658:python3-cairo/.md5sum
 f:ce61947b117e840e510768de4a2edd3b:python3-cairo/Pkgfile
 f:ce24f64764cb2f30ea9dfc02fc5be9d8:python3-cairo/.footprint
+f:bd12abbf3c286d1903c5218325343eec:libiec61883/.md5sum
+f:aafc323b82de003116b1d53e7e36339d:libiec61883/Pkgfile
+f:930d68bf1bf3d7cad23e05f22999718a:libiec61883/.footprint
 f:8a5e6bd4bf32c524e0d3038491dee8da:libvisual/.md5sum
 f:108bde6a00134b9d3d2482412c4d0e09:libvisual/Pkgfile
 f:70801e1a07db7eb86a0a50ff6a193198:libvisual/.footprint
