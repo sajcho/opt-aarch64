@@ -1,11 +1,11 @@
 # Description:	ImageMagick - create, edit, compose, or convert digital images
 # URL:		http://www.imagemagick.org/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	lcms2 libheif librsvg libwebp libxt chrpath
+# Depends on:	lcms2 libheif librsvg libwebp libxt chrpath openjpeg2
 
 name=imagemagick
 _realname=ImageMagick
-version=7.1.0-19
+version=7.1.0-34
 release=1
 source=(https://www.imagemagick.org/download/releases/${_realname}-${version}.tar.xz)
 
@@ -16,14 +16,10 @@ build() {
 		--prefix=/usr \
 		--sysconfdir=/etc \
 		--enable-shared \
-		--enable-hdri \
-		--disable-static \
 		--with-modules \
-		--with-heic \
-		--with-lcms \
-		--with-perl \
-		--with-rsvg \
-		--with-webp
+		--with-perl=yes \
+		--with-lcms=yes \
+		--with-rsvg
 
 	make V=1
 
@@ -37,6 +33,4 @@ build() {
 	find $PKG -regex '.*\(ChangeLog\|LICENSE\|NEWS\.txt\)$' -delete
 	find $PKG -regex '.*\(\.packlist\|perllocal.pod\|\.bs\)$' -delete
 	find $PKG -type d -empty -delete
-
-	find $PKG -type f -name '*.la' -delete
 }
