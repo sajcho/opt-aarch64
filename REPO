@@ -1,4 +1,5 @@
 d:perl-xml-parser
+d:python3-psutil
 d:libdv
 d:gobject-introspection
 d:ffmpeg
@@ -27,6 +28,9 @@ d:x264
 f:41b257c4e6673696e304f7b729d05208:perl-xml-parser/.md5sum
 f:397429299b9fa3da9b42415f6abb2b37:perl-xml-parser/Pkgfile
 f:7b03d692c9ae02b169e42c87b5a6be47:perl-xml-parser/.footprint
+f:a93b053365165f73acec211aad8b7a2e:python3-psutil/.md5sum
+f:3bd33f3b24e44089fdbb51319188cdeb:python3-psutil/Pkgfile
+f:1bed91cfeaa5bf5c86d92e6a39b5d0df:python3-psutil/.footprint
 f:0a6b10b4fad2ca38673cd252282436bc:libdv/.md5sum
 f:086df8d8d1e2ebf8399a454bbbab520a:libdv/Pkgfile
 f:4399eb558e830520b02a0a0ef1abca51:libdv/.footprint
@@ -49,11 +53,10 @@ f:587e4d4c8873f31ec6f04571feb0e3b9:python3-cffi/.footprint
 f:32b27dfb47538aff10cc17b118c53617:libavc1394/.md5sum
 f:012ed2a6e60f3d3140bfc3c439d6184c:libavc1394/Pkgfile
 f:b418f4a5a73c85729fb5f8b61aafe556:libavc1394/.footprint
-f:2921ce60518aee44e83011e87eba5d20:firefox/.md5sum
-f:914feb9dda4dd3375b0673b804505180:firefox/Pkgfile
-f:30739bbd67864f0be3cb3e4090191f33:firefox/build.log
+f:5ba02fdd1acfcd67e70401153ce4b76e:firefox/.md5sum
+f:f1fa3b7e18d2c5d083d398501509fb1b:firefox/Pkgfile
 f:cf6971669f70b440cb6ff8df8b2722ae:firefox/firefox.desktop
-f:5f63c56d6773049c1a3d5d6652980c2e:firefox/firefox-97.0-build.rs.patch
+f:1d290fbdc5461e2e24a8f8e22f4cb43b:firefox/buildlog
 f:e47020b8b659d615a73e5ed4cadad35c:firefox/.footprint
 f:4109c82e028282792239590363f2faa0:python3-coverage/.md5sum
 f:78b2fe6a28680ea0707e6d13535b9801:python3-coverage/Pkgfile
