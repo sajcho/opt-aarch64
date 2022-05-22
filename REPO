@@ -18,6 +18,7 @@ d:python3-netifaces
 d:sbc
 d:python3-cairo
 d:libiec61883
+d:python3-pillow
 d:libvisual
 d:babl
 d:python3-libxml2
@@ -97,6 +98,9 @@ f:ce24f64764cb2f30ea9dfc02fc5be9d8:python3-cairo/.footprint
 f:bd12abbf3c286d1903c5218325343eec:libiec61883/.md5sum
 f:aafc323b82de003116b1d53e7e36339d:libiec61883/Pkgfile
 f:930d68bf1bf3d7cad23e05f22999718a:libiec61883/.footprint
+f:48a96fa5a1730e9ab37dcbd2bd34236c:python3-pillow/.md5sum
+f:febe1bf34d7abeff62536adf901253ae:python3-pillow/Pkgfile
+f:49b3f9ea39ec84c9013d8dd9ec4e06cd:python3-pillow/.footprint
 f:8a5e6bd4bf32c524e0d3038491dee8da:libvisual/.md5sum
 f:108bde6a00134b9d3d2482412c4d0e09:libvisual/Pkgfile
 f:70801e1a07db7eb86a0a50ff6a193198:libvisual/.footprint
