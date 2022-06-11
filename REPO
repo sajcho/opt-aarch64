@@ -24,12 +24,13 @@ d:babl
 d:python3-libxml2
 d:python3-gobject
 d:ruby-openssl
+d:perl-uri
 d:ruby-gdbm
 d:python3-markupsafe
 d:x264
 f:41b257c4e6673696e304f7b729d05208:perl-xml-parser/.md5sum
 f:397429299b9fa3da9b42415f6abb2b37:perl-xml-parser/Pkgfile
-f:7b03d692c9ae02b169e42c87b5a6be47:perl-xml-parser/.footprint
+f:19b361469abc89ec146ab5ae53d32a2b:perl-xml-parser/.footprint
 f:a93b053365165f73acec211aad8b7a2e:python3-psutil/.md5sum
 f:3bd33f3b24e44089fdbb51319188cdeb:python3-psutil/Pkgfile
 f:1bed91cfeaa5bf5c86d92e6a39b5d0df:python3-psutil/.footprint
@@ -69,9 +70,9 @@ f:cafaae14f9570371e41d687995c0d1b3:ruby/.footprint
 f:b66b5ac3c7b8fed0132c7a052d1911dc:mpg123/.md5sum
 f:b601aefca254c77f425ecdfc8fd99658:mpg123/Pkgfile
 f:0481bbe2ceed3d91425067c0e3d0f5a9:mpg123/.footprint
-f:d27e98f527c6f3b8f3b8e5a1aac38012:imagemagick/.md5sum
-f:d5b3e5f3c918f677a8d91e50d893c582:imagemagick/Pkgfile
-f:d3a01e92dd8bc86f371863a62497f1ff:imagemagick/.footprint
+f:73d11e0691dbe0fdcdfeda263fd6d1fb:imagemagick/.md5sum
+f:100812606c359b0b2b0b478a13414b2c:imagemagick/Pkgfile
+f:a521d9841fa82a161cbc1d4baa05f48e:imagemagick/.footprint
 f:c2e8a388c2b6e640cfa9e86eefe564eb:x265/.md5sum
 f:26b5d3299dd225625fc24edc23a76e34:x265/README
 f:c08d41085b38bbeb14ce59021579e004:x265/Pkgfile
@@ -116,6 +117,9 @@ f:fa19479cedc12acf1a6f5b3c4885ba4e:python3-gobject/.footprint
 f:e3bbf409feee6340e4f35405c1293ef8:ruby-openssl/.md5sum
 f:b49b49fd6b21da2375c6448f7ee7ccdb:ruby-openssl/Pkgfile
 f:652ee107c671f0516e883ada9e40eec8:ruby-openssl/.footprint
+f:1bfb96168a432dbbd81daf0a5d482f72:perl-uri/.md5sum
+f:4458dc14ae4704c4c971fece6ce819c3:perl-uri/Pkgfile
+f:08ba020699ce5edecff582817fa95acb:perl-uri/.footprint
 f:dd209d92a664439b4ae49b980d1da2d9:ruby-gdbm/.md5sum
 f:381842927f0b9f2424df10d73639cc5b:ruby-gdbm/Pkgfile
 f:d60f6ff35f861c705915c850ee1a56e8:ruby-gdbm/.footprint
