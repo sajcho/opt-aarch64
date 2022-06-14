@@ -55,10 +55,10 @@ f:587e4d4c8873f31ec6f04571feb0e3b9:python3-cffi/.footprint
 f:32b27dfb47538aff10cc17b118c53617:libavc1394/.md5sum
 f:012ed2a6e60f3d3140bfc3c439d6184c:libavc1394/Pkgfile
 f:b418f4a5a73c85729fb5f8b61aafe556:libavc1394/.footprint
-f:5ba02fdd1acfcd67e70401153ce4b76e:firefox/.md5sum
-f:f1fa3b7e18d2c5d083d398501509fb1b:firefox/Pkgfile
+f:2c906a4efb52943da3b91779d00c985e:firefox/.md5sum
+f:247306ca95bcb25e15d01a19fb4675ff:firefox/add-support-enable-linker-mold.patch
+f:cf4c8fbcd3fc80ffd196c68c33d52ac0:firefox/Pkgfile
 f:cf6971669f70b440cb6ff8df8b2722ae:firefox/firefox.desktop
-f:1d290fbdc5461e2e24a8f8e22f4cb43b:firefox/buildlog
 f:e47020b8b659d615a73e5ed4cadad35c:firefox/.footprint
 f:4109c82e028282792239590363f2faa0:python3-coverage/.md5sum
 f:78b2fe6a28680ea0707e6d13535b9801:python3-coverage/Pkgfile
