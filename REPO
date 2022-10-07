@@ -1,5 +1,6 @@
 d:perl-xml-parser
 d:python3-psutil
+d:rust-static
 d:libdv
 d:gobject-introspection
 d:ffmpeg
@@ -34,6 +35,11 @@ f:19b361469abc89ec146ab5ae53d32a2b:perl-xml-parser/.footprint
 f:85e6d319ea87ec5cbd024c36fcd68719:python3-psutil/.md5sum
 f:ead5015038273c2d14353ffbf32caef7:python3-psutil/Pkgfile
 f:3ce26613267d017e6f759f7f366271e4:python3-psutil/.footprint
+f:f1e7d94e5ca8328e4f54af820e43e6ca:rust-static/.md5sum
+f:59041d2148f9ac01f0052bbd48253787:rust-static/libexec.patch
+f:f033cabd11aaeeca93a1efd568b59bed:rust-static/Pkgfile
+f:a68528b0fd1e5420b6f851ae579e97a4:rust-static/.nostrip
+f:3cdb6dffedbb993fabc65eed0326521d:rust-static/.footprint
 f:0a6b10b4fad2ca38673cd252282436bc:libdv/.md5sum
 f:086df8d8d1e2ebf8399a454bbbab520a:libdv/Pkgfile
 f:4399eb558e830520b02a0a0ef1abca51:libdv/.footprint
@@ -76,11 +82,12 @@ f:c2e8a388c2b6e640cfa9e86eefe564eb:x265/.md5sum
 f:26b5d3299dd225625fc24edc23a76e34:x265/README
 f:c08d41085b38bbeb14ce59021579e004:x265/Pkgfile
 f:4a05384743aa18ae52d1af9944499d8f:x265/.footprint
-f:d160fa05adb82def77b8d4ca910308c9:rust/.md5sum
+f:ff0e0ff6968c2bcd2a09de21cdaee40b:rust/.md5sum
 f:59041d2148f9ac01f0052bbd48253787:rust/libexec.patch
-f:f043dcdc1c40ea6e2c24f080d04439db:rust/Pkgfile
+f:8570861063b945ec436ad79503051634:rust/README
+f:7b0f941ff458012e0abbf94d891f0890:rust/Pkgfile
 f:a68528b0fd1e5420b6f851ae579e97a4:rust/.nostrip
-f:e800df59bce9869ba2e1c30f58f27945:rust/.footprint
+f:265583a4892c4aab35efabeb6a3fafda:rust/.footprint
 f:209686f8a5b019fcb4c16da105b018e1:cdparanoia/.md5sum
 f:b6f126c49409bc9bd30f8181d5121f53:cdparanoia/Pkgfile
 f:4d6a164f760b59c2f0d82d0997dbdce1:cdparanoia/cdparanoia-III-10.2-gcc_fixes-1.patch
