@@ -4,14 +4,16 @@
 # Depends on:	alsa-lib autoconf-2.13 brotli cbindgen dbus-glib ffmpeg libevent libidl llvm-toolchain libnotify libvpx libwebp libxkbcommon nodejs nss pulseaudio unzip libxcomposite libxcursor libxinerama libxt zip
 
 name=firefox
-version=105.0.3
+version=106.0
 release=1
 source=(https://ftp.mozilla.org/pub/${name}/releases/${version}/source/${name}-${version}.source.tar.xz \
+	https://github.com/mozilla/gecko-dev/commit/60858bce4bb1b426c07ec0e9e7f627f59b8aca45.patch \
 	fix-rust-target.patch firefox.desktop)
 
 build() {
 	cd ${name}-${version}
 
+	patch -p1 -i $SRC/60858bce4bb1b426c07ec0e9e7f627f59b8aca45.patch
 	patch -p1 -i $SRC/fix-rust-target.patch
 
 	export SHELL="/bin/bash"
@@ -44,10 +46,10 @@ build() {
 	export CARGO_HOME="$PKGMK_SOURCE_DIR/rust"
 
 	### api keys
-	#_google_api_key=""
-	#_mozilla_api_key=""
-	#echo -n "$_google_api_key" > google-api-key
-	#echo -n "$_mozilla_api_key" > mozilla-api-key
+	_google_api_key="AIzaSyDxKL42zsPjbke5O8_rPVpVrLrJ8aeE9rQ"
+	_mozilla_api_key="613364a7-9418-4c86-bcee-57e32fd70c23"
+	echo -n "$_google_api_key" > google-api-key
+	echo -n "$_mozilla_api_key" > mozilla-api-key
 
 cat <<- EOF > .mozconfig
 		mk_add_options MOZ_OBJDIR=@TOPSRCDIR@/objdir
@@ -56,9 +58,9 @@ cat <<- EOF > .mozconfig
 		ac_add_options --host=$CHOST
 		ac_add_options --target=$CHOST
 		#
-		#ac_add_options --with-google-location-service-api-keyfile=$SRC/${name}-${version}/google-api-key
-		#ac_add_options --with-google-safebrowsing-api-keyfile=$SRC/${name}-${version}/google-api-key
-		#ac_add_options --with-mozilla-api-keyfile=$SRC/${name}-${version}/mozilla-api-key
+		ac_add_options --with-google-location-service-api-keyfile=$SRC/${name}-${version}/google-api-key
+		ac_add_options --with-google-safebrowsing-api-keyfile=$SRC/${name}-${version}/google-api-key
+		ac_add_options --with-mozilla-api-keyfile=$SRC/${name}-${version}/mozilla-api-key
 		#
 		ac_add_options --prefix=/usr
 		ac_add_options --disable-debug
