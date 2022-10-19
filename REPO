@@ -58,7 +58,7 @@ f:32b27dfb47538aff10cc17b118c53617:libavc1394/.md5sum
 f:012ed2a6e60f3d3140bfc3c439d6184c:libavc1394/Pkgfile
 f:b418f4a5a73c85729fb5f8b61aafe556:libavc1394/.footprint
 f:efdd1ba88b78927c9b7c7ea4b373fb55:firefox/.md5sum
-f:5141f888f1c1293fc5b4b86ff55a2a02:firefox/Pkgfile
+f:7a8441006ed3a2e58517b6b479553202:firefox/Pkgfile
 f:1a3563ca1c93c7a88be6eb1470c4097f:firefox/fix-rust-target.patch
 f:cf6971669f70b440cb6ff8df8b2722ae:firefox/firefox.desktop
 f:a0bd28677d091132dc8a2128653056eb:firefox/buildlog
