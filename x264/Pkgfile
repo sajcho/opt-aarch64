@@ -1,23 +1,27 @@
 # Description:	Free library for encoding H264/AVC video streams.
 # URL:		http://www.videolan.org/developers/x264.html
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	nasm
+# Depends on:	l-smash nasm
 
 name=x264
-version=20210814
+version=0.164.x.20221005
+_commit=b093bbe7d9bc642c8f24067cbdcc73bb43562eab
+# commit 05 Oct, 2022
 release=1
-source=(http://anduin.linuxfromscratch.org/BLFS/${name}/${name}-${version}.tar.xz)
+source=(https://code.videolan.org/videolan/${name}/-/archive/${_commit}/${name}-${_commit}.tar.bz2)
 
 build() {
-	cd ${name}-${version}
+	cd ${name}-${_commit}
+
+	./version.sh | grep X264_POINTVER | sed -r 's/^#define X264_POINTVER "([0-9]+\.[0-9]+)\.([0-9]+) (.*)"$/\1.r\2.\3/'
 
 	./configure \
 		--prefix=/usr \
+		--system-libx264 \
 		--enable-shared \
+		--enable-lto \
 		--enable-pic \
-		--disable-cli \
-		--disable-lsmash \
-		--extra-cflags=-fno-aggressive-loop-optimizations
+		--bit-depth=all
 
 	make V=1
 
