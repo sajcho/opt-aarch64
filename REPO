@@ -59,11 +59,11 @@ f:32b27dfb47538aff10cc17b118c53617:libavc1394/.md5sum
 f:012ed2a6e60f3d3140bfc3c439d6184c:libavc1394/Pkgfile
 f:b418f4a5a73c85729fb5f8b61aafe556:libavc1394/.footprint
 f:9f19884ceaf12ed41ee8d6f3de339f3e:firefox/.md5sum
-f:3312e7243dd19679104d1d6ec92c8d41:firefox/Pkgfile
+f:6cd7f56acb27fd1906962dfdab00e755:firefox/Pkgfile
 f:988b38a76d53e94e3693bbaf2fbaa598:firefox/0001-libwebrtc-screen-cast-sync.patch
 f:1a3563ca1c93c7a88be6eb1470c4097f:firefox/fix-rust-target.patch
 f:cf6971669f70b440cb6ff8df8b2722ae:firefox/firefox.desktop
-f:a1272fc96e9197b99396833a945e3462:firefox/buildlog
+f:cb606c9b90de71598aa66ed85da41d51:firefox/buildlog
 f:e47020b8b659d615a73e5ed4cadad35c:firefox/.footprint
 f:4109c82e028282792239590363f2faa0:python3-coverage/.md5sum
 f:78b2fe6a28680ea0707e6d13535b9801:python3-coverage/Pkgfile
