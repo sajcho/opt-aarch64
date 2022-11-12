@@ -16,6 +16,7 @@ d:x265
 d:rust
 d:cdparanoia
 d:python3-netifaces
+d:gpgme
 d:python3-cairo
 d:libiec61883
 d:python3-pillow
@@ -43,8 +44,8 @@ f:0a6b10b4fad2ca38673cd252282436bc:libdv/.md5sum
 f:086df8d8d1e2ebf8399a454bbbab520a:libdv/Pkgfile
 f:4399eb558e830520b02a0a0ef1abca51:libdv/.footprint
 f:662b5a25bd75ec314db2a4d1496069a7:gobject-introspection/.md5sum
-f:130b3a7d1ec89d52e6328fe04ee1c80a:gobject-introspection/Pkgfile
-f:214b74a2693b625fcd4cce1d495e1f65:gobject-introspection/.footprint
+f:c2ffdf2244a15b6c41a5d5c02eda0222:gobject-introspection/Pkgfile
+f:81b4a6a2afc0fa303a5a13b1a1150b05:gobject-introspection/.footprint
 f:644bd753041e4dd6bbfa612b1c5c093c:ffmpeg/.md5sum
 f:e097d1327c340c1b04ee7193241f5c67:ffmpeg/Pkgfile
 f:7c526a7d3b57e6e3542479c6aadf22e3:ffmpeg/.footprint
@@ -93,6 +94,10 @@ f:a9803cc773c416697e5225dccdd67526:cdparanoia/.footprint
 f:dfb80b6665e6bc871f30eda57f4d7ae6:python3-netifaces/.md5sum
 f:9dba71c0155d547e3a03301066f33353:python3-netifaces/Pkgfile
 f:b778300ac0aa2d6528afe33fb9951f8d:python3-netifaces/.footprint
+f:6280cf49004af6dc74a0cd489e1dcfe5:gpgme/.md5sum
+f:8a2ed9717f8e4aa0af9239ca2fd21884:gpgme/Pkgfile
+f:67f0b4dcab0b98126a683ae4b13d8664:gpgme/gpgme-1.18.0-gpg_error_1_46-1.patch
+f:994cd4f0bfae516f90b27b55e1076eb4:gpgme/.footprint
 f:380c573beda9b9b71fb6411aabbce04f:python3-cairo/.md5sum
 f:494c3935c30af833859f4c127dbf12be:python3-cairo/Pkgfile
 f:1d5914e3711b169810848dc58b2301b0:python3-cairo/.footprint
