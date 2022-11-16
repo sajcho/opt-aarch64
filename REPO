@@ -56,12 +56,12 @@ f:19e16ad5192db4275bf825c7d73c00b0:gegl/.footprint
 f:32b27dfb47538aff10cc17b118c53617:libavc1394/.md5sum
 f:012ed2a6e60f3d3140bfc3c439d6184c:libavc1394/Pkgfile
 f:b418f4a5a73c85729fb5f8b61aafe556:libavc1394/.footprint
-f:9f19884ceaf12ed41ee8d6f3de339f3e:firefox/.md5sum
-f:6cd7f56acb27fd1906962dfdab00e755:firefox/Pkgfile
+f:a3706f28472d8c51ab9fac445aaacae0:firefox/.md5sum
+f:916ffabf3f9c196b3de853f4d6f7c8c8:firefox/Pkgfile
 f:988b38a76d53e94e3693bbaf2fbaa598:firefox/0001-libwebrtc-screen-cast-sync.patch
 f:1a3563ca1c93c7a88be6eb1470c4097f:firefox/fix-rust-target.patch
 f:cf6971669f70b440cb6ff8df8b2722ae:firefox/firefox.desktop
-f:cb606c9b90de71598aa66ed85da41d51:firefox/buildlog
+f:f921f2599e830689cc01f1d7c3dfff0d:firefox/buildlog
 f:e47020b8b659d615a73e5ed4cadad35c:firefox/.footprint
 f:f07f8bcb9b3f6120fb03b14bd4e746ae:python3-coverage/.md5sum
 f:6e5f4e0a6f90f5792691f4686f9a82fb:python3-coverage/Pkgfile
