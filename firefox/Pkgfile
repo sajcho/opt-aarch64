@@ -4,10 +4,9 @@
 # Depends on:	alsa-lib autoconf-2.13 brotli cbindgen dbus-glib ffmpeg libevent libidl llvm-toolchain libnotify libvpx libwebp libxkbcommon nodejs nss pulseaudio unzip libxcomposite libxcursor libxinerama libxt zip
 
 name=firefox
-version=106.0.5
-release=2
+version=107.0
+release=1
 source=(https://ftp.mozilla.org/pub/${name}/releases/${version}/source/${name}-${version}.source.tar.xz \
-	https://github.com/mozilla/gecko-dev/commit/60858bce4bb1b426c07ec0e9e7f627f59b8aca45.patch \
 	0001-libwebrtc-screen-cast-sync.patch \
 	fix-rust-target.patch \
 	firefox.desktop)
@@ -24,7 +23,6 @@ build() {
 		-e '/?s)%/{s/?s)/?s:/;s/?"/?)"/}' \
 		-i xpcom/idl-parser/xpidl/xpidl.py
 
-	patch -p1 -i $SRC/60858bce4bb1b426c07ec0e9e7f627f59b8aca45.patch
 	patch -p1 -i $SRC/0001-libwebrtc-screen-cast-sync.patch
 	patch -p1 -i $SRC/fix-rust-target.patch
 
