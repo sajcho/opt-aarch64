@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/opt-aarch64.pub
+RWSgGy19v7lws5lomSbuCs5zVsEWZvneA1anG7vKtCbqDy/MrDl7Pq5wsxfUZObuiJy9H+Sa5BAM6EDaeJqIC4sZ9LsdVYyD0go=
+SHA256 (Pkgfile) = 28d0df313442a4c5fec6f9316a0134a44ccac97b295fa3b2ab2fc6e4dca9a3cf
+SHA256 (.footprint) = c7099abb6e3894d80e67cebec65a2079f6ab1f766845050a41e035b2d5b3b044
+SHA256 (libdv-1.0.0.tar.gz) = a305734033a9c25541a59e8dd1c254409953269ea7c710c39e540bd8853389ba
