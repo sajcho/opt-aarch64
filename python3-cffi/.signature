@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/opt-aarch64.pub
+RWSgGy19v7lws/epuy8NJnRtWPlxH7RUMaA0jbLdJMJaTtFSn0boeK9+PFvO51OL3AWAO6EpNthWYso05M4kCwfD50G9tpqJjA0=
+SHA256 (Pkgfile) = f6f59e17b0852b6086d633016ccc2ec2cb80e331e0a7dabdb2fec18ef1ab5b25
+SHA256 (.footprint) = 563cb144d8e25b1656645b22c34c5b3c8d988d23e7f344074a1bfd704c79b239
+SHA256 (cffi-1.15.1.tar.gz) = d400bfb9a37b1351253cb402671cea7e89bdecc294e8016a707f6d1d8ac934f9
