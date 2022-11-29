@@ -1,0 +1,5 @@
+untrusted comment: verify with /etc/ports/opt-aarch64.pub
+RWSgGy19v7lws98YnAV3hjKS+d+sPytMW0WIWsyn1a4QY6E2iftJpQgLDNBpthXqGaKhOkFE9cKj0TAaMlDvFn0+QCgccru5xgA=
+SHA256 (Pkgfile) = ec65d4cb0a207619db8be294aaf4785abe6e1f3ff2c416c0bd6c105a1dde3697
+SHA256 (.footprint) = 1fa174baef66dad7b628f9cfbcb1b5f5c6c146379f4d89120cc96cbe2cc04711
+SHA256 (libavc1394-0.5.4.tar.gz) = 7cb1ff09506ae911ca9860bef4af08c2403f3e131f6c913a2cbd6ddca4215b53
