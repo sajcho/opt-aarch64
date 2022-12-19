@@ -54,10 +54,10 @@ f:19e16ad5192db4275bf825c7d73c00b0:gegl/.footprint
 f:012ed2a6e60f3d3140bfc3c439d6184c:libavc1394/Pkgfile
 f:011cdcdaf2631da9eded70594b75595a:libavc1394/.signature
 f:b418f4a5a73c85729fb5f8b61aafe556:libavc1394/.footprint
-f:6cef4f0dd28a684ef5dfd351d6368858:firefox/Pkgfile
+f:68922c2d4b653f7b16c29ab519f1f6dd:firefox/Pkgfile
 f:cf6971669f70b440cb6ff8df8b2722ae:firefox/firefox.desktop
-f:5b95a8a4e243a8484af9e54d50b9dd55:firefox/buildlog
-f:a091e6df07f8c023f396705cd8944d83:firefox/.signature
+f:d543b8e00826f34f9bfe4475763acbfe:firefox/buildlog
+f:d29c515f82aa04fad83fb01e4b35a34c:firefox/.signature
 f:e47020b8b659d615a73e5ed4cadad35c:firefox/.footprint
 f:6e5f4e0a6f90f5792691f4686f9a82fb:python3-coverage/Pkgfile
 f:86ad4257987d4caefe5577fdd55f65ae:python3-coverage/.signature
