@@ -16,9 +16,7 @@ d:python3-pillow
 d:babl
 d:python3-libxml2
 d:python3-gobject
-d:ruby-openssl
 d:perl-uri
-d:ruby-gdbm
 d:python3-markupsafe
 f:397429299b9fa3da9b42415f6abb2b37:perl-xml-parser/Pkgfile
 f:f07c79d48870be1907ab05206e4d7516:perl-xml-parser/.signature
@@ -79,15 +77,9 @@ f:192086d19957ec6631ee00e60707b1b4:python3-libxml2/.footprint
 f:33b5a15d20eea85d3ece75bd9c94cf19:python3-gobject/Pkgfile
 f:87ff938ea2b1f4da8dc63a4c5bf7955a:python3-gobject/.signature
 f:eefeaab105c2958a19bb825e2d97ac2b:python3-gobject/.footprint
-f:b49b49fd6b21da2375c6448f7ee7ccdb:ruby-openssl/Pkgfile
-f:def95316702e9cbb6c7d0e599ab68597:ruby-openssl/.signature
-f:652ee107c671f0516e883ada9e40eec8:ruby-openssl/.footprint
 f:4458dc14ae4704c4c971fece6ce819c3:perl-uri/Pkgfile
 f:6afdbc3d6cc036760a58aa5d52608e88:perl-uri/.signature
 f:08ba020699ce5edecff582817fa95acb:perl-uri/.footprint
-f:381842927f0b9f2424df10d73639cc5b:ruby-gdbm/Pkgfile
-f:705b829574da2dbed5903ce1074ac69d:ruby-gdbm/.signature
-f:d60f6ff35f861c705915c850ee1a56e8:ruby-gdbm/.footprint
 f:36e12c4accc5c062d967c7fe405c63aa:python3-markupsafe/Pkgfile
 f:b94622ba2ec7c9158dc41d9de1986ceb:python3-markupsafe/.signature
 f:84b1bbb6896e86521b79501987ec98bf:python3-markupsafe/.footprint
