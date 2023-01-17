@@ -19,7 +19,6 @@ d:libiec61883
 d:python3-pillow
 d:babl
 d:python3-libxml2
-d:soundtouch
 d:python3-gobject
 d:ruby-openssl
 d:perl-uri
@@ -94,9 +93,6 @@ f:c53749ae8d051287b6a5b9ec4b030432:babl/.footprint
 f:42a39b098f39a9beb9a1202431ea0f15:python3-libxml2/Pkgfile
 f:9b1bef6747e30089e381a494ab439f27:python3-libxml2/.signature
 f:192086d19957ec6631ee00e60707b1b4:python3-libxml2/.footprint
-f:bc4c77207648acede6428cb4908461b7:soundtouch/Pkgfile
-f:95d12059d0d52a8473119e95ee8249de:soundtouch/.signature
-f:e99578b95db0bfd1ced3c031d7db2b8f:soundtouch/.footprint
 f:33b5a15d20eea85d3ece75bd9c94cf19:python3-gobject/Pkgfile
 f:87ff938ea2b1f4da8dc63a4c5bf7955a:python3-gobject/.signature
 f:eefeaab105c2958a19bb825e2d97ac2b:python3-gobject/.footprint
