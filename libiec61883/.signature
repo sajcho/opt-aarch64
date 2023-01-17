@@ -1,5 +1,0 @@
-untrusted comment: verify with /etc/ports/opt-aarch64.pub
-RWSgGy19v7lwswt91sm+MlKEQAcqKZrtMY111ibIfF5YSVyBxamBq2plFzoyo/RVT77BWD/mQJ6YSN0VDzi1MSyFe0H2r01RXAo=
-SHA256 (Pkgfile) = 199e748cdf83986fd71e25847e723f792af64de31685a15cda204d276db6858b
-SHA256 (.footprint) = 627cc73b9299ac5b951b93c705c7a33c7faf0b53867103a1f2c323e6e0f49346
-SHA256 (libiec61883-1.2.0.tar.xz) = d1e02c7e276fac37313a2f8c1c33d7a9e19282ff16f32e72435428ff5121f09e
