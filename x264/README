@@ -1,6 +1,0 @@
-
-Note:
-
-   After changing the x264 version, you must perform
-   a reinstallation if libheif, libgd, imagemagick, and ffmpeg are installed.
-   Otherwise they will refer to the previous version.
