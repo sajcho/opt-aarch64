@@ -11,7 +11,6 @@ d:python3-coverage
 d:ruby
 d:mpg123
 d:imagemagick
-d:x265
 d:cdparanoia
 d:python3-netifaces
 d:gpgme
@@ -20,14 +19,12 @@ d:libiec61883
 d:python3-pillow
 d:babl
 d:python3-libxml2
-d:boost
 d:soundtouch
 d:python3-gobject
 d:ruby-openssl
 d:perl-uri
 d:ruby-gdbm
 d:python3-markupsafe
-d:x264
 f:397429299b9fa3da9b42415f6abb2b37:perl-xml-parser/Pkgfile
 f:f07c79d48870be1907ab05206e4d7516:perl-xml-parser/.signature
 f:19b361469abc89ec146ab5ae53d32a2b:perl-xml-parser/.footprint
@@ -71,10 +68,6 @@ f:3429ae634aa33e417e2a42e37618a9bc:mpg123/.footprint
 f:d69c9c9336e7254dd308cd6ac4a782cf:imagemagick/Pkgfile
 f:19f854aae447803fba6021ce79955a78:imagemagick/.signature
 f:a117d835cbb97ac5fead9126391e9f92:imagemagick/.footprint
-f:26b5d3299dd225625fc24edc23a76e34:x265/README
-f:c08d41085b38bbeb14ce59021579e004:x265/Pkgfile
-f:4ed3b9e858bd403da0b571cf3b8b656a:x265/.signature
-f:4a05384743aa18ae52d1af9944499d8f:x265/.footprint
 f:b6f126c49409bc9bd30f8181d5121f53:cdparanoia/Pkgfile
 f:4d6a164f760b59c2f0d82d0997dbdce1:cdparanoia/cdparanoia-III-10.2-gcc_fixes-1.patch
 f:68197442a8d8e28de9cbf5226873fb5a:cdparanoia/.signature
@@ -101,9 +94,6 @@ f:c53749ae8d051287b6a5b9ec4b030432:babl/.footprint
 f:42a39b098f39a9beb9a1202431ea0f15:python3-libxml2/Pkgfile
 f:9b1bef6747e30089e381a494ab439f27:python3-libxml2/.signature
 f:192086d19957ec6631ee00e60707b1b4:python3-libxml2/.footprint
-f:fb2aedb5f5e22132cca53f5af9d0557e:boost/Pkgfile
-f:eb25b4080f1b6cb926d0290c9e2c8cac:boost/.signature
-f:f7eec1e00021ce40dbc511ef2618b658:boost/.footprint
 f:bc4c77207648acede6428cb4908461b7:soundtouch/Pkgfile
 f:95d12059d0d52a8473119e95ee8249de:soundtouch/.signature
 f:e99578b95db0bfd1ced3c031d7db2b8f:soundtouch/.footprint
@@ -122,7 +112,3 @@ f:d60f6ff35f861c705915c850ee1a56e8:ruby-gdbm/.footprint
 f:36e12c4accc5c062d967c7fe405c63aa:python3-markupsafe/Pkgfile
 f:b94622ba2ec7c9158dc41d9de1986ceb:python3-markupsafe/.signature
 f:84b1bbb6896e86521b79501987ec98bf:python3-markupsafe/.footprint
-f:5ce06c547d17deeeb7a644393a0ec685:x264/README
-f:6f5a0e08d98e9c9f42fef828c69c2440:x264/Pkgfile
-f:656ce7adeff0e99e457e8178a71c11a1:x264/.signature
-f:a5c92015a534d871d440f0a32ad9095c:x264/.footprint
