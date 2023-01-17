@@ -1,5 +1,0 @@
-untrusted comment: verify with /etc/ports/opt-aarch64.pub
-RWSgGy19v7lws91YcuhyAuStnn7QOUkRFF9EmVtIWgUcN3M1akrQKR42r9yrJGwCrbLZWqOJCP7m9pIUGNLC8c4EiLPWNhZLvAE=
-SHA256 (Pkgfile) = bdf2687751df48a7fd103f34ab5f8d3b079de9820caa6e580c50092e276c38bf
-SHA256 (.footprint) = 1a041b65c255ce15e4acb4a56cfc4b173cd60cd1f9f0998cc2ce1ae07476ef53
-SHA256 (ruby-gdbm-2.1.0.tar.gz) = c45f62d0b31d19947b49814ee8f1709b972c6588c3c1de765403718fb17c9dab
