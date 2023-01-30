@@ -4,7 +4,7 @@
 # Depends on:	autoconf-2.13 cbindgen dbus-glib ffmpeg libidl libnotify nodejs nss libxcomposite libxinerama libxt zip
 
 name=firefox
-version=108.0.1
+version=109.0.1
 release=1
 source=(https://ftp.mozilla.org/pub/${name}/releases/${version}/source/${name}-${version}.source.tar.xz \
 	firefox.desktop)
@@ -24,7 +24,7 @@ build() {
 	export SHELL="/bin/bash"
 	export BUILD_OFFICIAL=1
 	export MOZILLA_OFFICIAL=1
-	export MACH_BUILD_PYTHON_NATIVE_PACKAGE_SOURCE="pip"
+	export MACH_BUILD_PYTHON_NATIVE_PACKAGE_SOURCE="none"
 	export MOZBUILD_STATE_PATH="$PKGMK_SOURCE_DIR/mozbuild"
 	export MOZ_NOSPAM=1
 	export MOZ_DEBUG_FLAGS=" "
@@ -47,6 +47,10 @@ build() {
 	sed -i '/RUSTFLAGS += -Cembed-bitcode=yes/d' config/makefiles/rust.mk
 	# - increase codegen-units due to RAM constraints
 	sed -i 's|codegen-units=1|codegen-units=16|' config/makefiles/rust.mk
+
+	# fix - we have gcc-13.0.1 in the system
+	sed '/include <cmath>/a #include <cstdint>' -i gfx/2d/Rect.h
+	sed '/include <ctime>/a #include <cstdint>' -i toolkit/components/telemetry/pingsender/pingsender.cpp
 
 	### api keys
 	#_google_api_key=""
