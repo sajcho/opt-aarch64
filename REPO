@@ -50,9 +50,9 @@ f:bd980a2731ff2eb0c309a3c33e6f8750:ruby/Pkgfile
 f:d7224759494b53ba032a654dad348bad:ruby/rubygems-avoid-platform-specific-gems.patch
 f:e6ed71ed30e0571cc813b5299fc09b6a:ruby/.signature
 f:669ccf9fca0f3e1d6fadf4e46812f9cc:ruby/.footprint
-f:85d717db6c460d280ea5d0c1dbda4e19:mpg123/Pkgfile
-f:74607b8c2fb9c197300f8972e019a82f:mpg123/.signature
-f:3429ae634aa33e417e2a42e37618a9bc:mpg123/.footprint
+f:1c7af74ac7b555c6898a20192974aab9:mpg123/Pkgfile
+f:74f5664d94f270219d213838ada33624:mpg123/.signature
+f:d735d02e2319b44ea348212aae1b333a:mpg123/.footprint
 f:4faabb047e9c9c102f3ece627994b21f:imagemagick/Pkgfile
 f:f3e1d545aa4a1b47a828b694cf9be049:imagemagick/.signature
 f:a117d835cbb97ac5fead9126391e9f92:imagemagick/.footprint
