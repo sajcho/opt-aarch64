@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/opt-aarch64.pub
-RWSgGy19v7lws8T2CbEnuR4QHse57hbl+BcR+T6J9qbgia7QBqNylEBTpVZL1L9VdUI7ax/VfTk3Hv9mWsHeNYfP5ckjA3xi4gM=
-SHA256 (Pkgfile) = a9778fde58baa50a1feedb7e9ddfa36ab7cf2e0a880e17225c0c86361f28f8fe
-SHA256 (.footprint) = 7efc965ea19b4ee8cc8ec1eace8f78b5769b340e7c1766e9a5dcb0709f42634a
-SHA256 (babl-0.1.98.tar.xz) = f3b222f84e462735de63fa9c3651942f2b78fd314c73a22e05ff7c73afd23af1
+RWSgGy19v7lws6REV8MGK3txSivpVSmsVAadBPLfTz5mStCLg9jJ2r7iMKzO8CzyC74qDOaq6o/GLbi8N6HuABtLT/2Iy5LsXQ0=
+SHA256 (Pkgfile) = ecad4cfe79eff6d175ea18168e5a5966e89ba2fdb4e8edc85318f73ee7b9b7cf
+SHA256 (.footprint) = 55aea8208ffe4756dda592e95e0129744c02887567da8fa1534f099f3fc4330a
+SHA256 (babl-0.1.106.tar.xz) = d325135d3304f088c134cc620013acf035de2e5d125a50a2d91054e7377c415f
