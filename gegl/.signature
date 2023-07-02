@@ -1,5 +1,5 @@
 untrusted comment: verify with /etc/ports/opt-aarch64.pub
-RWSgGy19v7lws4yRFqJUjSdbyJuszaDgQn5edecNe1BHB/JqI+ymQdmedhCn9W+55C/xVUzvtKtZdEGugkEb7ny4GXdDP/fIcwY=
-SHA256 (Pkgfile) = b014d6f53c3bd17390039894efbae6fd5655a0c7b3cea1d3103db464972264b5
-SHA256 (.footprint) = f50b7022c8c829dc8931d8a86c975dac9f8c480724c7cb9bcf25063db987068b
-SHA256 (gegl-0.4.40.tar.xz) = cdde80d15a49dab9a614ef98f804c8ce6e4cfe1339a3c240c34f3fb45436b85d
+RWSgGy19v7lws6rnvqptxz0HLVeRKZ8mlgMrObUJMG6179Scf+rGlEQXfTuMMED+SAtLtocOYbd0/9+UX7SjUCsU8/EUViWJVQQ=
+SHA256 (Pkgfile) = 5bd3c7f25e238397c5dd5f323953b357c498b619ab82222cb338a1a0ea686e61
+SHA256 (.footprint) = 0083da307098da0b3a836ccf627e35b7fc2a2fcfb13e7d33d9d6fc8cae5b8dad
+SHA256 (gegl-0.4.46.tar.xz) = d0b3b2481bc8774c5f3d0a487611910166d18eef823a859fb91e781ab7b1e892
