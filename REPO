@@ -34,12 +34,12 @@ f:247031fa853ea94135614c2e2f0b1bdc:python3-cffi/.footprint
 f:a55cafc669514dc48d826506ddd6c9ab:gegl/Pkgfile
 f:bdf83276f3004056f5a861d0a52b7d2b:gegl/.signature
 f:bdcedb94bdc40b85b574ac5ab7e4924d:gegl/.footprint
-f:131d6418a4955760600ccfa33db276c6:firefox/Pkgfile
+f:4dd59fb7bda864150ebf4798ac177ef0:firefox/Pkgfile
 f:a221a7db4433913477ccf2ede50bcec5:firefox/distribution.ini
 f:cf6971669f70b440cb6ff8df8b2722ae:firefox/firefox.desktop
-f:032d1c47492772a91c2b7ca99fb9248e:firefox/buildlog
+f:461767275f913032f7882ac3ac928eba:firefox/buildlog
 f:d8743848c9164555d67d256814b91bd6:firefox/vendor.js
-f:32389cea4ab1591c78bf20d9bbe78215:firefox/.signature
+f:b9e5c336ca115aeb9deeae5897293ebb:firefox/.signature
 f:89794c3d98e728472eba9247c747a1e8:firefox/.footprint
 f:6e5f4e0a6f90f5792691f4686f9a82fb:python3-coverage/Pkgfile
 f:86ad4257987d4caefe5577fdd55f65ae:python3-coverage/.signature
