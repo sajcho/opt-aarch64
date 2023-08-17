@@ -1,24 +1,22 @@
 # Description:	ImageMagick - create, edit, compose, or convert digital images
 # URL:		http://www.imagemagick.org/
 # Maintainer:	sajcho, saux dot aarch64 at gmail dot com
-# Depends on:	lcms2 libheif librsvg libwebp libxt libzip chrpath openjpeg2
+# Depends on:	chrpath libheif librsvg libwebp libxt libzip openjpeg2
 
 name=imagemagick
 _realname=ImageMagick
-version=7.1.1-12
+version=7.1.1-15
 release=1
-source=(https://imagemagick.org/archive/${_realname}-${version}.tar.xz)
+source=(https://imagemagick.org/archive/releases/${_realname}-${version}.tar.xz)
 
 build() {
 	cd ${_realname}-${version}
-
-	CFLAGS+=" -flto=auto -ffat-lto-objects"
-	CXXFLAGS+=" -flto=auto -ffat-lto-objects"
 
 	./configure \
 		--prefix=/usr \
 		--sysconfdir=/etc \
 		--enable-shared \
+		--enable-static \
 		--with-modules \
 		--with-perl=yes \
 		--with-lcms=yes \
