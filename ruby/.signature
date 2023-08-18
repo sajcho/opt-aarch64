@@ -1,6 +1,6 @@
 untrusted comment: verify with /etc/ports/opt-aarch64.pub
-RWSgGy19v7lws/sOXvIHkHmgZf+eBznyjd1Y275a87JngBF9amEqWS2Z6TGkb9ygsQ/VoPoBbs33Kb1hjDWzjhk7nuK1GnvuHwY=
-SHA256 (Pkgfile) = 0915b42fad24a157f9f8cab59a60f7d082fd1f278c1a75f69adccb4ed0989503
-SHA256 (.footprint) = ff2712315330e194adc05d2586e5da07bc017b4621043c6bf1eb799e307f0730
-SHA256 (ruby-3.2.0.tar.xz) = d2f4577306e6dd932259693233141e5c3ec13622c95b75996541b8d5b68b28b4
+RWSgGy19v7lws/Qef8/jsF4xlnA49gpT9zvDWMOsNs0NncRSglVzUdUPdGsVxu7nBVJXktTV/9IkuCYODfY8P7og2aIkRdrKVQ0=
+SHA256 (Pkgfile) = 5dd439bcef9ed1b2f9426362bb7bb81c94713a1fa426c96715e2eb4fe3390de1
+SHA256 (.footprint) = ae9f361b441cbadfc440f096739b1b736788fb72fb7504cdb40226ac41c45c23
+SHA256 (ruby-3.2.2.tar.xz) = 4b352d0f7ec384e332e3e44cdbfdcd5ff2d594af3c8296b5636c710975149e23
 SHA256 (rubygems-avoid-platform-specific-gems.patch) = f5746a3480072defb911059e7dbf38f991a9ce6d7c0764a80b02e8c12fd3bcc5
