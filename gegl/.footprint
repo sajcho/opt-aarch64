@@ -107,6 +107,7 @@ drwxr-xr-x	root/root	usr/lib/gegl-0.4/
 -rwxr-xr-x	root/root	usr/lib/gegl-0.4/npd.so
 -rwxr-xr-x	root/root	usr/lib/gegl-0.4/npy-save.so
 -rwxr-xr-x	root/root	usr/lib/gegl-0.4/path.so
+-rwxr-xr-x	root/root	usr/lib/gegl-0.4/pdf-load.so
 -rwxr-xr-x	root/root	usr/lib/gegl-0.4/pixbuf-load.so
 -rwxr-xr-x	root/root	usr/lib/gegl-0.4/pixbuf-save.so
 -rwxr-xr-x	root/root	usr/lib/gegl-0.4/png-load.so
