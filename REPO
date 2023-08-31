@@ -8,6 +8,7 @@ d:python3-coverage
 d:ruby
 d:mpg123
 d:imagemagick
+d:libnvme
 d:python3-netifaces
 d:gpgme
 d:python3-cairo
@@ -32,9 +33,9 @@ f:81b4a6a2afc0fa303a5a13b1a1150b05:gobject-introspection/.footprint
 f:0dd2d89c2bee345ff1376bf2e24997d9:python3-cffi/Pkgfile
 f:4f658353b381b43f33cc59b1865d4fc7:python3-cffi/.signature
 f:247031fa853ea94135614c2e2f0b1bdc:python3-cffi/.footprint
-f:a55cafc669514dc48d826506ddd6c9ab:gegl/Pkgfile
-f:bdf83276f3004056f5a861d0a52b7d2b:gegl/.signature
-f:bdcedb94bdc40b85b574ac5ab7e4924d:gegl/.footprint
+f:f28e133d7e5f5bba371ff5de7f57c09b:gegl/Pkgfile
+f:9700ad176cc4f4e8b86002f7165d192d:gegl/.signature
+f:13b42a9dc4ae2a7bdd820a1721148af6:gegl/.footprint
 f:6a21719ca25709214b707748cf325a8f:firefox/Pkgfile
 f:a221a7db4433913477ccf2ede50bcec5:firefox/distribution.ini
 f:cf6971669f70b440cb6ff8df8b2722ae:firefox/firefox.desktop
@@ -55,6 +56,10 @@ f:d735d02e2319b44ea348212aae1b333a:mpg123/.footprint
 f:1a91ba20de85e6de573f4afb5448be4c:imagemagick/Pkgfile
 f:2d2a2fa0b06dc51bc15c1bc8c522dc17:imagemagick/.signature
 f:3d0a0b34950cfcd778037b665c31e986:imagemagick/.footprint
+f:2d744183faa761448534afb8463991dc:libnvme/Pkgfile
+f:31d49bf1763892f906b8ba6d29417202:libnvme/doc-test.patch
+f:d6df35d325b025467a70bf30a869547f:libnvme/.signature
+f:2995b896923ca77a04d2ef936d8bc789:libnvme/.footprint
 f:e39ec0c6c264007680b498455fb1365b:python3-netifaces/Pkgfile
 f:6ffc9cf78f0d120ec8db3a93e9c13811:python3-netifaces/.signature
 f:1f58d2d9b4736f746c25858b88c0d69f:python3-netifaces/.footprint
@@ -62,9 +67,9 @@ f:8a2ed9717f8e4aa0af9239ca2fd21884:gpgme/Pkgfile
 f:67f0b4dcab0b98126a683ae4b13d8664:gpgme/gpgme-1.18.0-gpg_error_1_46-1.patch
 f:be40a092b35ec909a4edb57acb561db4:gpgme/.signature
 f:994cd4f0bfae516f90b27b55e1076eb4:gpgme/.footprint
-f:daf6a08646dbd1484cbdfc643f13b064:python3-cairo/Pkgfile
-f:baf32e9f6c017fc8cc543cf4959ef554:python3-cairo/.signature
-f:b5676924298c10dbbbf2844116e37083:python3-cairo/.footprint
+f:ea42896d1112c8fb097f1acac5734dbc:python3-cairo/Pkgfile
+f:4f80304283fb9e986df6d77f27b3de30:python3-cairo/.signature
+f:d51b5dcb958d7a0201261ec31202de67:python3-cairo/.footprint
 f:24c312d27b5a44ee9deb3970fa1c9ec2:python3-pillow/Pkgfile
 f:95828c3fbe5f05e7094bc62beec4b1ba:python3-pillow/.signature
 f:9f83707481223791b68a9b56d751b8f2:python3-pillow/.footprint
