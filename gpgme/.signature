@@ -1,6 +1,5 @@
 untrusted comment: verify with /etc/ports/opt-aarch64.pub
-RWSgGy19v7lws/mmkrDslITi3Ir0mP9QQRhuNBrQgivk9yRQ0imGOt+5Iru/dbBD3HZsYs6NE1cotgtLfgIODapaCozG8eHUtQ4=
-SHA256 (Pkgfile) = b3390218fcaf28a8ea5b395db78ca8eaa381da7b31d83ebad9440d695199fce3
-SHA256 (.footprint) = a16b12b07ca5706df783a600455fdc39300a28c36c6fc44e5c6ee7dd901a6af3
-SHA256 (gpgme-1.18.0.tar.bz2) = 361d4eae47ce925dba0ea569af40e7b52c645c4ae2e65e5621bf1b6cdd8b0e9e
-SHA256 (gpgme-1.18.0-gpg_error_1_46-1.patch) = 96eb9a83afaa7e997055982df6fcbc8f053b4d02af6f84e202a7f2c5d0dc9c4b
+RWSgGy19v7lws9ymJ7DBozWs5pNhxW5sHQNudSRvKE+qMNl/cQIj1G2ovMjxAqvGihS4APnSO+ssu9NQ/Cvb6vnE3/w+ogjB7AU=
+SHA256 (Pkgfile) = e8ceefab81f263c20fe66d412a3e9225eb00eec34bf8dd7cde406a3d831b0e93
+SHA256 (.footprint) = ad03c72f0f5b1e0980feb4dc6fea7328765fcdb51e05e7d9ca67884c5135b1f2
+SHA256 (gpgme-1.22.0.tar.bz2) = 9551e37081ad3bde81018a0d24f245c3f8206990549598fb31a97a68380a7b71
