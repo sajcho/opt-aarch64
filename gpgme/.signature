@@ -1,5 +1,5 @@
-untrusted comment: verify with /etc/ports/opt-aarch64.pub
-RWSgGy19v7lws9ymJ7DBozWs5pNhxW5sHQNudSRvKE+qMNl/cQIj1G2ovMjxAqvGihS4APnSO+ssu9NQ/Cvb6vnE3/w+ogjB7AU=
+untrusted comment: verify with opt-aarch64.pub
+RWTNf7wOqRnfnvKvFBgm6eeLpZ1O8Iw0khG2XdNcfYelGaPKWCE09FIAjBQYfs9XQRmv5uZFTp50oG0Dbv9FgY/ZLzQo7V31vwQ=
 SHA256 (Pkgfile) = e8ceefab81f263c20fe66d412a3e9225eb00eec34bf8dd7cde406a3d831b0e93
 SHA256 (.footprint) = ad03c72f0f5b1e0980feb4dc6fea7328765fcdb51e05e7d9ca67884c5135b1f2
 SHA256 (gpgme-1.22.0.tar.bz2) = 9551e37081ad3bde81018a0d24f245c3f8206990549598fb31a97a68380a7b71

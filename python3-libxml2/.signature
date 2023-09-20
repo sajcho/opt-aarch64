@@ -1,5 +1,5 @@
-untrusted comment: verify with /etc/ports/opt-aarch64.pub
-RWSgGy19v7lws9ikATyBK2brorE1hGhruYt0CDR6FSeU0ht3oT4wUTOIp9ggL9eRhP36QX7Quf0Q3p654rmg5XO+WzRiECi1OAM=
+untrusted comment: verify with opt-aarch64.pub
+RWTNf7wOqRnfntZYMpJ3mOFHI49PYaZfH1Zze1DetOd2fGXsmOMKFYM6tzny964/M7rulqYk728ZQuXHK9kl/ALfLr+WpdP/eAU=
 SHA256 (Pkgfile) = 083d2ed147260d545cb42d20c1fa4bcf059c0f2a7f610e3f74519f49388d7668
 SHA256 (.footprint) = a48705c6130ac2c9374fde03a5823555347b3a930372e69a90b49515f69878f5
 SHA256 (libxml2-2.10.4.tar.xz) = ed0c91c5845008f1936739e4eee2035531c1c94742c6541f44ee66d885948d45

@@ -1,5 +1,5 @@
-untrusted comment: verify with /etc/ports/opt-aarch64.pub
-RWSgGy19v7lws+rJhtVokIhr4HPYTOxevZPo9wU6GmnJ3+P06sWdC2dv2MiYL78i7n/NuOSehIBMMqzJrWYicHyX0tzUVIr54Qg=
+untrusted comment: verify with opt-aarch64.pub
+RWTNf7wOqRnfntmSHxk24+OE1YzzIQiOvx+4VWfHWYw0zkCzPq/27jgFsDaqFcc/aWb6C2L67PTktk8pcxDTopoZKNEcrUYEpQA=
 SHA256 (Pkgfile) = 04e0321c4703001c90a9696212e29ed0a690934553e7736f7cc49aaf0e43dd81
 SHA256 (.footprint) = ea2bb05d16b28a537fe548b875a5eeca91402973694a24eaf4bb66ddae96dd1c
 SHA256 (Pillow-9.3.0.tar.gz) = 188b2a5fd445b2afa05bc0c1318ce49d4335ebbb69417fbb79acaf0a0784709e

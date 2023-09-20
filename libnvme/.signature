@@ -1,5 +1,5 @@
-untrusted comment: verify with /etc/ports/opt-aarch64.pub
-RWSgGy19v7lws7poR0Wl97AnmlKUfUGtQr9y0CDpYt5DUm3vtwUEdvGV4hfvlmOQRc6XDTKvPGEloXFja6X4T7yLYWnJZRhp8gk=
+untrusted comment: verify with opt-aarch64.pub
+RWTNf7wOqRnfngtAEE6h/POjCW+f3ThuQbbod1A7VEjuw9yxQc8X09DJUsFygfsXNgiQN8VxagcsDDhFQ0aQ6YO/cKsEiR96OQ4=
 SHA256 (Pkgfile) = fa483c4c8b7c229e4a51c27d88933edf12279ca9777f026eb2d3789b59931f75
 SHA256 (.footprint) = 3a7f0f242a96bdf1b66c50f0ae87318e7cf524c4143c6fe9bbdcbd36351bd8eb
 SHA256 (libnvme-v1.5.tar.gz) = f73ba1edde059b2d5e7c1048ad4f895e6047bff241c94b34a7aff5894779d086

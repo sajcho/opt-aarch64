@@ -1,5 +1,5 @@
-untrusted comment: verify with /etc/ports/opt-aarch64.pub
-RWSgGy19v7lws8qONhZsatOhunrWaqy7JIMg7No4gxfyE96C+QnPa2OkMh0TfxBmFC/iyno5YW/fvWiliDPtdDgTXGJ0U9725gM=
+untrusted comment: verify with opt-aarch64.pub
+RWTNf7wOqRnfnprsx8VbYU01JGE9c7sWF8tT+s3eu+fjiSYYLTXSx48cd0u0McGuWjaOpnUDYKq7YS+1HN1yRz+TRY0rBQ4BEQo=
 SHA256 (Pkgfile) = 5d6f4c3276ccb20484998aa55ab4cfe50a612ae2b923490f33320f1942d00464
 SHA256 (.footprint) = c350efa9780ce152a1c726ca09dad42374cd74caa890b801cfb611ef19117a95
 SHA256 (coverage-6.5.0.tar.gz) = f642e90754ee3e06b0e7e51bce3379590e76b7f76b708e1a71ff043f87025c84
