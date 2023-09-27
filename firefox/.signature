@@ -1,8 +1,0 @@
-untrusted comment: verify with opt-aarch64.pub
-RWTNf7wOqRnfnj0xCSLzjeuFs34YGRKI43gEby3nMYgTE/ABZmIU53T33S5rKDAobiru/ECZQIomLHv33Ge1ZEElaDH/fxwi5gY=
-SHA256 (Pkgfile) = 9d37935b79da766e173996eb78052f93fff542043f25522db1d7a419af3b8fd1
-SHA256 (.footprint) = 1e3b9d96fc369a33e547c46210b35ece22c64f1092c1b24b1827f737c297b506
-SHA256 (firefox-117.0.1.source.tar.xz) = 7ea4203b5cf9e59f80043597e2c9020291754fcab784a337586b5f5e1370c416
-SHA256 (distribution.ini) = d343992aee9eaa03463cabf3fbe9868162a435b8b64c66f69fc72dc297dfe86f
-SHA256 (firefox.desktop) = 8ba3439f3dfc5cab883641969c93d8d15f8f20d7188d9568346b2edad52d6f91
-SHA256 (vendor.js) = ceadf102b784b0b494caf15d60351f0a803a3d1dc3b6c892705b3fdebec57a48
