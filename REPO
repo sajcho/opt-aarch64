@@ -52,13 +52,13 @@ f:deddaa92adfc83618aca5783378896e5:perl-xml-simple/.footprint
 f:29064121c8517ef29ef1c4f1a3a63c5d:nodejs/Pkgfile
 f:0ebc4a18b631a1c5bbbe9f0cead15850:nodejs/.signature
 f:b66e4d5be4dbe9ccd51e61482f3cc869:nodejs/.footprint
-f:6acc324311646d22c9df4d3dfee3d534:firefox-releases/Pkgfile
+f:59fc92314bb7d678ee8db55dda352391:firefox-releases/Pkgfile
 f:99076f600572cb9dfa0ff55512108714:firefox-releases/distribution.ini
 f:cf6971669f70b440cb6ff8df8b2722ae:firefox-releases/firefox.desktop
 f:395bab8105877269423bc64e6b65244d:firefox-releases/mozilla-1669639.patch
 f:d8743848c9164555d67d256814b91bd6:firefox-releases/vendor.js
-f:5b2a19121739c8a54f8070457744ee63:firefox-releases/.signature
-f:8ef0ff50a50a04e0638e6453d5d5c27f:firefox-releases/.footprint
+f:91bc826c5e1c8c1246cb8f278c281fd9:firefox-releases/.signature
+f:dfe6d9a9f3dd29777978f00ebc2b46f2:firefox-releases/.footprint
 f:c1f489d7c7ed4af6f4423394b1301334:python3-gobject/Pkgfile
 f:71ba94866e04bd429fce349df64582bf:python3-gobject/.signature
 f:32b55529fb8697b622b50955463c37e4:python3-gobject/.footprint
