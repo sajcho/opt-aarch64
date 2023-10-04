@@ -38,10 +38,10 @@ f:d735d02e2319b44ea348212aae1b333a:mpg123/.footprint
 f:b2a95b2409d8cb77eabab2c8bc73a8a5:imagemagick/Pkgfile
 f:c8d6e0882f4f2aaa19a0b044c93f4ad9:imagemagick/.signature
 f:3d0a0b34950cfcd778037b665c31e986:imagemagick/.footprint
-f:89be067eb8d710017f7189b78a37ea1b:libnvme/Pkgfile
+f:cad810d150fe3fde76c1aeaa51b7259d:libnvme/Pkgfile
 f:31d49bf1763892f906b8ba6d29417202:libnvme/doc-test.patch
-f:d6cbd59eaa8af27ef4905bd0a0951a84:libnvme/.signature
-f:4d176eaf0f36b9ac5afd7531e31fa558:libnvme/.footprint
+f:7002113b2d237bd125ee37ae80c66aaf:libnvme/.signature
+f:f6f8baba44f78cce77a9a5a384e90503:libnvme/.footprint
 f:8570861063b945ec436ad79503051634:rust/README
 f:acfe401e3bb660090f61f84ce2869573:rust/0001-dist.rs-change-dir-libexec-to-lib.patch
 f:d7d35c0c8c52bb1a0799f6a755aa3610:rust/Pkgfile
@@ -81,9 +81,9 @@ f:c1f489d7c7ed4af6f4423394b1301334:python3-gobject/Pkgfile
 f:71ba94866e04bd429fce349df64582bf:python3-gobject/.signature
 f:32b55529fb8697b622b50955463c37e4:python3-gobject/.footprint
 f:3a56a4e09450a4bc9e2a6d17478f8679:llvm-toolchain/README
-f:d0fa9f541508215bea2db6e25a72495f:llvm-toolchain/Pkgfile
-f:55b8550452151fbec62fc968e39d5c11:llvm-toolchain/.signature
-f:449bd092ed8c227a24d37665f0d7f956:llvm-toolchain/.footprint
+f:7a8fc18ada379706f1ac7885e0d3d6bf:llvm-toolchain/Pkgfile
+f:76b78afa492761760a6032aa509e3ca8:llvm-toolchain/.signature
+f:139b1a2b21a1cff9c3f6d04d6595f9ba:llvm-toolchain/.footprint
 f:bb0790ff6102a19f72069364c72fe493:perl-uri/Pkgfile
 f:4944349e3d9e312179efe42dbf1ca61f:perl-uri/.signature
 f:92035abda3d42278925b89658790d48c:perl-uri/.footprint
