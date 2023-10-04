@@ -1,6 +1,6 @@
 untrusted comment: verify with opt-aarch64.pub
-RWTNf7wOqRnfntShwpCEJ/rd4bQ0SyClBPsz5DRKwNSPwuW1nLQZplhdk6O6gVx+uWwtXwD+Q0xlwB7W+ree4r31SG9Lmq1c0Q4=
-SHA256 (Pkgfile) = ca5d02b185ac15648ec290155b7780fdf7c670ef364b09e4d3e264bef02c3c91
-SHA256 (.footprint) = d36d1992e7cbf0de821c97ae2610be2dbff00007dd0c6f1be48761ab85173608
-SHA256 (libnvme-v1.5.tar.gz) = f73ba1edde059b2d5e7c1048ad4f895e6047bff241c94b34a7aff5894779d086
+RWTNf7wOqRnfnl6V33d0d7nH1u/PpFgrYuT1HgoVYoZ7uyYXRJPrcL/+W5XbM0LQESFvWCXrygQDmdcfmTAmcdzjzAEnbPdPBAU=
+SHA256 (Pkgfile) = a76405a6308e5b0fc083b59b21979e7ddf3f520dfef974d7c6c55aff1545b8a4
+SHA256 (.footprint) = 0e2cc5cb00598a977030aad1e40078bf516c91b818ba967494d63001861603bb
+SHA256 (libnvme-v1.6.tar.gz) = 0dd8ba8b655abe78c09833edb66632aa6bee82aebf117dd252ded968deaaeec7
 SHA256 (doc-test.patch) = 35c248773562b52de66acfbcf1023fc195b81e6e5fefb3677786d61a1be1f5db
