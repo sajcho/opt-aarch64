@@ -44,11 +44,11 @@ f:7002113b2d237bd125ee37ae80c66aaf:libnvme/.signature
 f:f6f8baba44f78cce77a9a5a384e90503:libnvme/.footprint
 f:8570861063b945ec436ad79503051634:rust/README
 f:acfe401e3bb660090f61f84ce2869573:rust/0001-dist.rs-change-dir-libexec-to-lib.patch
-f:d7d35c0c8c52bb1a0799f6a755aa3610:rust/Pkgfile
+f:5ddfa18618f07b86b783552b8171931a:rust/Pkgfile
 f:a68528b0fd1e5420b6f851ae579e97a4:rust/.nostrip
-f:ff17ecab8c2855e6abbfeb61c0c99ac2:rust/.signature
+f:d7a4cff29195c85fa934ab36bb8b6bd4:rust/.signature
 f:f902f4f75a2ece6ed85c6b8a29682853:rust/0002-tool.rs-change-dir-libexec-to-lib.patch
-f:e226f167fd0327e330fda8471c61e57f:rust/.footprint
+f:55ea2f2e8d51fc6e7345e9bd19edb8ef:rust/.footprint
 f:498c64b27dff2858f168474b5f6a7461:gpgme/Pkgfile
 f:58b11f7ca904e5c4acfa3cd1092571f4:gpgme/.signature
 f:0bf573972cbe1aaaaeb2564200d9d8ff:gpgme/.footprint
