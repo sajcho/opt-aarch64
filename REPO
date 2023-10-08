@@ -2,7 +2,6 @@ d:perl-xml-parser
 d:gobject-introspection
 d:gegl
 d:ruby
-d:mpg123
 d:imagemagick
 d:libnvme
 d:rust
@@ -32,11 +31,8 @@ f:43ae50f47a1dc700976ecb60f53e8291:ruby/Pkgfile
 f:d7224759494b53ba032a654dad348bad:ruby/rubygems-avoid-platform-specific-gems.patch
 f:2785cb8906caf4155a398c4e4891bec9:ruby/.signature
 f:3875d925f0fd31cc24ced20f0ff51943:ruby/.footprint
-f:1c7af74ac7b555c6898a20192974aab9:mpg123/Pkgfile
-f:5f4d94d638682b3891d0a41a01e28fa8:mpg123/.signature
-f:d735d02e2319b44ea348212aae1b333a:mpg123/.footprint
-f:b2a95b2409d8cb77eabab2c8bc73a8a5:imagemagick/Pkgfile
-f:c8d6e0882f4f2aaa19a0b044c93f4ad9:imagemagick/.signature
+f:0b71e9943a851d9d541c8607da76ce48:imagemagick/Pkgfile
+f:ede7f5dbdb33c9d6aa050f69eebd9ad3:imagemagick/.signature
 f:3d0a0b34950cfcd778037b665c31e986:imagemagick/.footprint
 f:cad810d150fe3fde76c1aeaa51b7259d:libnvme/Pkgfile
 f:31d49bf1763892f906b8ba6d29417202:libnvme/doc-test.patch
@@ -52,9 +48,9 @@ f:55ea2f2e8d51fc6e7345e9bd19edb8ef:rust/.footprint
 f:498c64b27dff2858f168474b5f6a7461:gpgme/Pkgfile
 f:58b11f7ca904e5c4acfa3cd1092571f4:gpgme/.signature
 f:0bf573972cbe1aaaaeb2564200d9d8ff:gpgme/.footprint
-f:02e6d838c31c2d6be21720d02cf22316:python3-cairo/Pkgfile
-f:22d552ace0afecc06054066965d4f2be:python3-cairo/.signature
-f:300076825a751300373f426acb4f3f5c:python3-cairo/.footprint
+f:36daaac541c0c147af611adccde7522f:python3-cairo/Pkgfile
+f:f60770822986b66a51b0eea182c9294c:python3-cairo/.signature
+f:747589a78de97bc4d972f1efe9c5615f:python3-cairo/.footprint
 f:efa54add46cbca85e2fd54747c53b3fa:babl/Pkgfile
 f:ae54f8aadbf0445ce7d8d7ca44dcaf80:babl/.signature
 f:cfd1ef8ad6337a2a927f5170f8ac7cc4:babl/.footprint
