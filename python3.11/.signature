@@ -1,5 +1,5 @@
-untrusted comment: verify with core-aarch64.pub
-RWS8Uq1IYmr2O3T2TRTEr+xOTcZBn1ySqb+tKi7PbmHV3hHfhCzzIpgGqNOaPXDH2lxJVycak6IKevQ9tSyYwGb1dBY/kd6Wuw4=
-SHA256 (Pkgfile) = 3c7ce9156566d9f19e8bbcfdf6761268c31eb09823a9c9d37109f4f6cb7c1ece
-SHA256 (.footprint) = 3d1cbeb0f8ff57a3e1deb97358d6c31fb88df3e56971a47b443b911adaa3dd20
-SHA256 (Python-3.11.5.tar.xz) = 85cd12e9cf1d6d5a45f17f7afe1cebe7ee628d3282281c492e86adf636defa3f
+untrusted comment: verify with opt-aarch64.pub
+RWTNf7wOqRnfnq09ahXA8IHX8nriFjOkyxEtudtyEdbFhg5mrAy/ronKR2ntHUWZhI7ksUMA8HMsEV0AUSTSfKHFS50fZwHuZQc=
+SHA256 (Pkgfile) = 43aaae1901aa462c9fa070f298d23ee1d5cd4157e40e61bfa6c07ad08e12bf0d
+SHA256 (.footprint) = 27f70c6912ef6f06e6c30184dabbbbf48da207173044f3816466126b4d760e07
+SHA256 (Python-3.11.6.tar.xz) = 0fab78fa7f133f4f38210c6260d90d7c0d5c7198446419ce057ec7ac2e6f5f38
