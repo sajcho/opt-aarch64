@@ -66,12 +66,12 @@ f:bb49f58203c61bad2203c064e0a2a953:python3.11/.footprint
 f:29064121c8517ef29ef1c4f1a3a63c5d:nodejs/Pkgfile
 f:0ebc4a18b631a1c5bbbe9f0cead15850:nodejs/.signature
 f:b66e4d5be4dbe9ccd51e61482f3cc869:nodejs/.footprint
-f:47b43cfb07aa8f4d90a82be3a91b724d:firefox-releases/Pkgfile
+f:4a6b2c183c301f76a2a7ab170adf7734:firefox-releases/Pkgfile
 f:99076f600572cb9dfa0ff55512108714:firefox-releases/distribution.ini
 f:cf6971669f70b440cb6ff8df8b2722ae:firefox-releases/firefox.desktop
-f:395bab8105877269423bc64e6b65244d:firefox-releases/mozilla-1669639.patch
+f:8c82f719303cb30d688cdc95bc282c1a:firefox-releases/0001-Bug-1849874-Update-from-packed_simd_2-to-packed_simd.patch
 f:d8743848c9164555d67d256814b91bd6:firefox-releases/vendor.js
-f:6e607c1936618ef4eacff6fe9234d35e:firefox-releases/.signature
+f:2272e733b387bc632517f078a2a65863:firefox-releases/.signature
 f:dfe6d9a9f3dd29777978f00ebc2b46f2:firefox-releases/.footprint
 f:c1f489d7c7ed4af6f4423394b1301334:python3-gobject/Pkgfile
 f:71ba94866e04bd429fce349df64582bf:python3-gobject/.signature
