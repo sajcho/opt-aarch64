@@ -43,9 +43,9 @@ f:a68528b0fd1e5420b6f851ae579e97a4:rust/.nostrip
 f:4dc8cdfe7a3ff6982d4a614c740fae1d:rust/.signature
 f:f902f4f75a2ece6ed85c6b8a29682853:rust/0002-tool.rs-change-dir-libexec-to-lib.patch
 f:d47375f37dac5b31279b2475530606d0:rust/.footprint
-f:a46454931f2a6cf87f548a9a1dd0b92b:gpgme/Pkgfile
-f:c096c1570779dd0d4d5962ac35b509eb:gpgme/.signature
-f:3f0c4bb24d45f564cc89cd8f86dbea43:gpgme/.footprint
+f:fb78b2170ee1e17df29c8d6358c028de:gpgme/Pkgfile
+f:6c13cb9c8ee7a1b9340daf5037366a9b:gpgme/.signature
+f:1f0d8e1a1e561d8ccb910f8eec097a8a:gpgme/.footprint
 f:b850f263eeb47801f9b5f622c8a1a14b:python3-cairo/Pkgfile
 f:fe221552030885aa60616c37e0afa7d0:python3-cairo/.signature
 f:632b5f6fc05f1282f1e99989e521f34d:python3-cairo/.footprint
@@ -62,11 +62,12 @@ f:320250ab7deadc3f7dd6965c0796bd1d:nodejs/Pkgfile
 f:04dac0395f8bb1644ede400f649013fd:nodejs/.signature
 f:8e3e133575e9820900e5cff14e75ec6c:nodejs/.footprint
 f:73472eae5b4777be69fb33cc08441db0:firefox-releases/icu74.patch
-f:9d04014535dc6de903427d0af179921b:firefox-releases/Pkgfile
+f:463253ee358bcb7a3659fd54aa23e1cf:firefox-releases/Pkgfile
 f:a221a7db4433913477ccf2ede50bcec5:firefox-releases/distribution.ini
 f:cf6971669f70b440cb6ff8df8b2722ae:firefox-releases/firefox.desktop
 f:d8743848c9164555d67d256814b91bd6:firefox-releases/vendor.js
-f:302fbf1fbafa07646add925babd2ba34:firefox-releases/.signature
+f:5b03a9a1e225bca15b1050819eae4a63:firefox-releases/.signature
+f:e8bfc5418a3be13340ae314f7a5883f5:firefox-releases/build-firefox-releases.log
 f:31e2ed5c880c907f534bf5c900e04559:firefox-releases/.footprint
 f:c1f489d7c7ed4af6f4423394b1301334:python3-gobject/Pkgfile
 f:71ba94866e04bd429fce349df64582bf:python3-gobject/.signature
