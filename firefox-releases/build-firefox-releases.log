@@ -1,0 +1,2326 @@
+=======> Building '/home/devel/packages/firefox-releases#121.0b5-1.aarch64.pkg.tar.zst'.
+bsdtar -p -o -C /home/devel/building/work/src -xf /home/devel/sources/firefox-121.0b5.source.tar.xz
+cp icu74.patch /home/devel/building/work/src
+cp distribution.ini /home/devel/building/work/src
+cp firefox.desktop /home/devel/building/work/src
+cp vendor.js /home/devel/building/work/src
++ build
++ cd firefox-121.0
++ patch -p1 -i /home/devel/building/work/src/icu74.patch
+patching file intl/lwbrk/LineBreaker.cpp
++ sed 's|3, 11|3, 12|' -i mach
++ export SHELL=/bin/bash
++ SHELL=/bin/bash
++ export BUILD_OFFICIAL=1
++ BUILD_OFFICIAL=1
++ export MOZILLA_OFFICIAL=1
++ MOZILLA_OFFICIAL=1
++ export MACH_BUILD_PYTHON_NATIVE_PACKAGE_SOURCE=none
++ MACH_BUILD_PYTHON_NATIVE_PACKAGE_SOURCE=none
++ export MOZBUILD_STATE_PATH=/home/devel/sources/mozbuild
++ MOZBUILD_STATE_PATH=/home/devel/sources/mozbuild
++ export MOZ_NOSPAM=1
++ MOZ_NOSPAM=1
++ export 'MOZ_DEBUG_FLAGS= '
++ MOZ_DEBUG_FLAGS=' '
++ export 'MOZ_MAKE_FLAGS=-j 6'
++ MOZ_MAKE_FLAGS='-j 6'
++ mkdir /home/devel/sources/rust
+mkdir: cannot create directory ‘/home/devel/sources/rust’: File exists
++ true
++ export CARGO_HOME=/home/devel/sources/rust
++ CARGO_HOME=/home/devel/sources/rust
++ cat
++ export CC=clang
++ CC=clang
++ export CXX=clang++
++ CXX=clang++
++ export 'CFLAGS=-O2 -pipe -march=armv8-a -mtune=generic -w'
++ CFLAGS='-O2 -pipe -march=armv8-a -mtune=generic -w'
++ export 'CXXFLAGS=-O2 -pipe -march=armv8-a -mtune=generic -w'
++ CXXFLAGS='-O2 -pipe -march=armv8-a -mtune=generic -w'
++ export PYTHONWARNINGS=ignore
++ PYTHONWARNINGS=ignore
++ ./mach build
+Creating local state directory: /home/devel/sources/mozbuild/srcdirs/firefox-121.0-f7fe7a019f62
+Site not up-to-date reason: "/home/devel/sources/mozbuild/srcdirs/firefox-121.0-f7fe7a019f62/_virtualenvs/build" does not exist
+ 0:00.79 W Clobber not needed.
+ 0:01.38 Using Python 3.12.0 from /home/devel/sources/mozbuild/srcdirs/firefox-121.0-f7fe7a019f62/_virtualenvs/build/bin/python
+ 0:01.38 Adding configure options from /home/devel/building/work/src/firefox-121.0/.mozconfig
+ 0:01.38   --host=aarch64-unknown-linux-gnu
+ 0:01.38   --target=aarch64-unknown-linux-gnu
+ 0:01.38   --prefix=/usr
+ 0:01.38   --disable-debug
+ 0:01.38   --disable-debug-symbols
+ 0:01.38   --disable-crashreporter
+ 0:01.38   --disable-install-strip
+ 0:01.38   --disable-jemalloc
+ 0:01.38   --disable-profiling
+ 0:01.38   --disable-strip
+ 0:01.38   --disable-tests
+ 0:01.38   --disable-updater
+ 0:01.38   --disable-necko-wifi
+ 0:01.39   --disable-jack
+ 0:01.39   --disable-smoosh
+ 0:01.39   --disable-bootstrap
+ 0:01.39   --disable-elf-hack
+ 0:01.39   --disable-valgrind
+ 0:01.39   --enable-release
+ 0:01.39   --enable-application=browser
+ 0:01.39   --enable-official-branding
+ 0:01.39   --enable-default-toolkit=cairo-gtk3-x11-wayland
+ 0:01.39   --enable-pulseaudio
+ 0:01.39   --enable-alsa
+ 0:01.39   --enable-dbus
+ 0:01.39   --enable-av1
+ 0:01.39   --enable-ffmpeg
+ 0:01.39   --enable-webrtc
+ 0:01.39   --enable-hardening
+ 0:01.39   --enable-rust-simd
+ 0:01.39   --enable-optimize
+ 0:01.39   --enable-linker=lld
+ 0:01.39   --enable-lto=thin
+ 0:01.39   --enable-system-ffi
+ 0:01.39   --enable-system-pixman
+ 0:01.39   --with-system-ffi
+ 0:01.39   --with-system-icu
+ 0:01.39   --with-system-jpeg
+ 0:01.39   --with-system-libevent
+ 0:01.39   --with-system-libvpx
+ 0:01.39   --with-system-nspr
+ 0:01.39   --with-system-nss
+ 0:01.39   --with-system-pixman
+ 0:01.39   --with-system-png
+ 0:01.39   --with-system-webp
+ 0:01.39   --with-system-zlib
+ 0:01.39   --without-wasm-sandboxed-libraries
+ 0:01.39 checking for vcs source checkout... no
+ 0:01.58 checking for a shell... /bin/sh
+ 0:01.60 checking for host system type... aarch64-unknown-linux-gnu
+ 0:01.61 checking for target system type... aarch64-unknown-linux-gnu
+ 0:02.41 checking whether cross compiling... no
+ 0:02.68 checking for Python 3... /home/devel/sources/mozbuild/srcdirs/firefox-121.0-f7fe7a019f62/_virtualenvs/build/bin/python (3.12.0)
+ 0:02.73 checking for wget... /usr/bin/wget
+ 0:02.74 checking for ccache... not found
+ 0:02.75 checking for the target C compiler... /usr/bin/clang
+ 0:02.96 checking whether the target C compiler can be used... yes
+ 0:02.96 checking the target C compiler version... 17.0.6
+ 0:03.04 checking the target C compiler works... yes
+ 0:03.04 checking for the target C++ compiler... /usr/bin/clang++
+ 0:03.20 checking whether the target C++ compiler can be used... yes
+ 0:03.20 checking the target C++ compiler version... 17.0.6
+ 0:03.29 checking the target C++ compiler works... yes
+ 0:03.29 checking for the host C compiler... /usr/bin/clang
+ 0:03.30 checking whether the host C compiler can be used... yes
+ 0:03.30 checking the host C compiler version... 17.0.6
+ 0:03.30 checking the host C compiler works... yes
+ 0:03.30 checking for the host C++ compiler... /usr/bin/clang++
+ 0:03.31 checking whether the host C++ compiler can be used... yes
+ 0:03.31 checking the host C++ compiler version... 17.0.6
+ 0:03.31 checking the host C++ compiler works... yes
+ 0:03.41 checking for target linker... lld
+ 0:03.50 checking for host linker... lld
+ 0:03.59 checking for 64-bit OS... yes
+ 0:03.69 checking for new enough STL headers from libstdc++... yes
+ 0:03.84 checking for unwind.h... yes
+ 0:04.03 checking for _Unwind_Backtrace... yes
+ 0:04.03 checking for the assembler... /usr/bin/clang
+ 0:04.11 checking for ar... /usr/bin/llvm-ar
+ 0:04.23 checking whether ar supports response files... yes
+ 0:04.29 checking for host_ar... /usr/bin/llvm-ar
+ 0:04.35 checking for nm... /usr/bin/llvm-nm
+ 0:04.36 checking for pkg_config... /usr/bin/pkg-config
+ 0:04.37 checking for pkg-config version... 2.1.0
+ 0:04.38 checking whether pkg-config is pkgconf... yes
+ 0:04.58 checking for strndup... yes
+ 0:04.76 checking for posix_memalign... yes
+ 0:04.95 checking for memalign... yes
+ 0:05.13 checking for malloc_usable_size... yes
+ 0:05.21 checking for stdint.h... yes
+ 0:05.30 checking for inttypes.h... yes
+ 0:05.40 checking for malloc.h... yes
+ 0:05.48 checking for alloca.h... yes
+ 0:05.55 checking for sys/byteorder.h... no
+ 0:05.62 checking for getopt.h... yes
+ 0:05.72 checking for unistd.h... yes
+ 0:05.80 checking for nl_types.h... yes
+ 0:05.87 checking for cpuid.h... no
+ 0:05.96 checking for fts.h... yes
+ 0:06.05 checking for sys/statvfs.h... yes
+ 0:06.13 checking for sys/statfs.h... yes
+ 0:06.21 checking for sys/vfs.h... yes
+ 0:06.31 checking for sys/mount.h... yes
+ 0:06.40 checking for sys/quota.h... yes
+ 0:06.50 checking for linux/quota.h... yes
+ 0:06.59 checking for linux/if_addr.h... yes
+ 0:06.70 checking for linux/rtnetlink.h... yes
+ 0:06.78 checking for sys/queue.h... yes
+ 0:06.87 checking for sys/types.h... yes
+ 0:06.97 checking for netinet/in.h... yes
+ 0:07.05 checking for byteswap.h... yes
+ 0:07.14 checking for memfd_create in sys/mman.h... yes
+ 0:07.23 checking for linux/perf_event.h... yes
+ 0:07.31 checking for perf_event_open system call... yes
+ 0:07.40 checking whether the C compiler supports -Wbitfield-enum-conversion... yes
+ 0:07.47 checking whether the C++ compiler supports -Wbitfield-enum-conversion... yes
+ 0:07.55 checking whether the C++ compiler supports -Wdeprecated-this-capture... yes
+ 0:07.63 checking whether the C compiler supports -Wformat-type-confusion... yes
+ 0:07.71 checking whether the C++ compiler supports -Wformat-type-confusion... yes
+ 0:07.79 checking whether the C compiler supports -Wshadow-field-in-constructor-modified... yes
+ 0:07.86 checking whether the C++ compiler supports -Wshadow-field-in-constructor-modified... yes
+ 0:07.94 checking whether the C compiler supports -Wtautological-constant-in-range-compare... yes
+ 0:08.02 checking whether the C++ compiler supports -Wtautological-constant-in-range-compare... yes
+ 0:08.09 checking whether the C compiler supports -Wno-error=tautological-type-limit-compare... yes
+ 0:08.17 checking whether the C++ compiler supports -Wno-error=tautological-type-limit-compare... yes
+ 0:08.25 checking whether the C compiler supports -Wunreachable-code-return... yes
+ 0:08.32 checking whether the C++ compiler supports -Wunreachable-code-return... yes
+ 0:08.40 checking whether the C compiler supports -Wunused-but-set-parameter... yes
+ 0:08.48 checking whether the C++ compiler supports -Wunused-but-set-parameter... yes
+ 0:08.55 checking whether the C compiler supports -Wclass-varargs... yes
+ 0:08.63 checking whether the C++ compiler supports -Wclass-varargs... yes
+ 0:08.71 checking whether the C++ compiler supports -Wempty-init-stmt... yes
+ 0:08.78 checking whether the C compiler supports -Wfloat-overflow-conversion... yes
+ 0:08.85 checking whether the C++ compiler supports -Wfloat-overflow-conversion... yes
+ 0:08.93 checking whether the C compiler supports -Wfloat-zero-conversion... yes
+ 0:09.00 checking whether the C++ compiler supports -Wfloat-zero-conversion... yes
+ 0:09.08 checking whether the C compiler supports -Wloop-analysis... yes
+ 0:09.15 checking whether the C++ compiler supports -Wloop-analysis... yes
+ 0:09.23 checking whether the C compiler supports -Wno-range-loop-analysis... yes
+ 0:09.31 checking whether the C++ compiler supports -Wno-range-loop-analysis... yes
+ 0:09.39 checking whether the C++ compiler supports -Wc++2a-compat... yes
+ 0:09.45 checking whether the C++ compiler supports -Wcomma-subscript... no
+ 0:09.53 checking whether the C compiler supports -Wenum-compare-conditional... yes
+ 0:09.60 checking whether the C++ compiler supports -Wenum-compare-conditional... yes
+ 0:09.68 checking whether the C compiler supports -Wenum-float-conversion... yes
+ 0:09.76 checking whether the C++ compiler supports -Wenum-float-conversion... yes
+ 0:09.82 checking whether the C++ compiler supports -Wvolatile... no
+ 0:09.90 checking whether the C++ compiler supports -Wno-error=deprecated... yes
+ 0:09.98 checking whether the C++ compiler supports -Wno-error=deprecated-anon-enum-enum-conversion... yes
+ 0:10.05 checking whether the C++ compiler supports -Wno-error=deprecated-enum-enum-conversion... yes
+ 0:10.13 checking whether the C++ compiler supports -Wno-error=deprecated-pragma... yes
+ 0:10.21 checking whether the C++ compiler supports -Wno-error=deprecated-this-capture... yes
+ 0:10.29 checking whether the C++ compiler supports -Wcomma... yes
+ 0:10.35 checking whether the C compiler supports -Wduplicated-cond... no
+ 0:10.42 checking whether the C++ compiler supports -Wduplicated-cond... no
+ 0:10.49 checking whether the C++ compiler supports -Wimplicit-fallthrough... yes
+ 0:10.56 checking whether the C compiler supports -Wlogical-op... no
+ 0:10.62 checking whether the C++ compiler supports -Wlogical-op... no
+ 0:10.72 checking whether the C compiler supports -Wstring-conversion... yes
+ 0:10.79 checking whether the C++ compiler supports -Wstring-conversion... yes
+ 0:10.86 checking whether the C++ compiler supports -Wno-inline-new-delete... yes
+ 0:10.93 checking whether the C compiler supports -Wno-error=maybe-uninitialized... no
+ 0:10.99 checking whether the C++ compiler supports -Wno-error=maybe-uninitialized... no
+ 0:11.07 checking whether the C compiler supports -Wno-error=deprecated-declarations... yes
+ 0:11.14 checking whether the C++ compiler supports -Wno-error=deprecated-declarations... yes
+ 0:11.22 checking whether the C compiler supports -Wno-error=array-bounds... yes
+ 0:11.30 checking whether the C++ compiler supports -Wno-error=array-bounds... yes
+ 0:11.37 checking whether the C compiler supports -Wno-error=free-nonheap-object... yes
+ 0:11.45 checking whether the C++ compiler supports -Wno-error=free-nonheap-object... yes
+ 0:11.51 checking whether the C compiler supports -Wno-multistatement-macros... no
+ 0:11.58 checking whether the C++ compiler supports -Wno-multistatement-macros... no
+ 0:11.64 checking whether the C compiler supports -Wno-error=class-memaccess... no
+ 0:11.70 checking whether the C++ compiler supports -Wno-error=class-memaccess... no
+ 0:11.77 checking whether the C compiler supports -Wno-error=atomic-alignment... yes
+ 0:11.85 checking whether the C++ compiler supports -Wno-error=atomic-alignment... yes
+ 0:11.93 checking whether the C compiler supports -Wno-error=deprecated-builtins... yes
+ 0:12.01 checking whether the C++ compiler supports -Wno-error=deprecated-builtins... yes
+ 0:12.09 checking whether the C compiler supports -Wformat... yes
+ 0:12.16 checking whether the C++ compiler supports -Wformat... yes
+ 0:12.24 checking whether the C compiler supports -Wformat-security... yes
+ 0:12.32 checking whether the C++ compiler supports -Wformat-security... yes
+ 0:12.38 checking whether the C compiler supports -Wformat-overflow=2... no
+ 0:12.45 checking whether the C++ compiler supports -Wformat-overflow=2... no
+ 0:12.58 checking whether the C compiler supports -Werror=implicit-function-declaration... yes
+ 0:12.66 checking whether the C compiler supports -Wno-psabi... yes
+ 0:12.73 checking whether the C++ compiler supports -Wno-psabi... yes
+ 0:12.82 checking whether the C compiler supports -Wthread-safety... yes
+ 0:12.89 checking whether the C++ compiler supports -Wthread-safety... yes
+ 0:12.98 checking whether the C compiler supports -Wno-error=builtin-macro-redefined... yes
+ 0:13.05 checking whether the C++ compiler supports -Wno-error=builtin-macro-redefined... yes
+ 0:13.12 checking whether the C++ compiler supports -Wno-vla-cxx-extension... no
+ 0:13.19 checking whether the C compiler supports -Wno-unknown-warning-option... yes
+ 0:13.27 checking whether the C++ compiler supports -Wno-unknown-warning-option... yes
+ 0:13.35 checking whether the C++ compiler supports -fno-sized-deallocation... yes
+ 0:13.42 checking whether the C++ compiler supports -fno-aligned-new... yes
+ 0:13.43 checking for llvm_profdata... /usr/bin/llvm-profdata
+ 0:13.53 checking for llvm-objdump... /usr/bin/llvm-objdump
+ 0:13.63 checking for readelf... /usr/bin/llvm-readelf
+ 0:13.73 checking for objcopy... /usr/bin/llvm-objcopy
+ 0:13.75 checking for alsa... yes
+ 0:13.76 checking MOZ_ALSA_CFLAGS...
+ 0:13.77 checking MOZ_ALSA_LIBS... -lasound
+ 0:13.78 checking for libpulse... yes
+ 0:13.79 checking MOZ_PULSEAUDIO_CFLAGS... -D_REENTRANT
+ 0:13.80 checking MOZ_PULSEAUDIO_LIBS... -lpulse -pthread
+ 0:13.82 checking for nspr >= 4.32... yes
+ 0:13.83 checking NSPR_CFLAGS... -I/usr/include/nspr
+ 0:13.84 checking NSPR_LIBS... -lplds4 -lplc4 -lnspr4 -lpthread -ldl
+ 0:13.84 checking for rustc... /usr/bin/rustc
+ 0:13.84 checking for cargo... /usr/bin/cargo
+ 0:14.03 checking rustc version... 1.74.0
+ 0:14.06 checking cargo version... 1.74.0
+ 0:14.48 checking for rust host triplet... aarch64-unknown-linux-gnu
+ 0:14.74 checking for rust target triplet... aarch64-unknown-linux-gnu
+ 0:14.74 checking for rustdoc... /usr/bin/rustdoc
+ 0:14.77 checking for cbindgen... /usr/bin/cbindgen
+ 0:14.77 checking for rustfmt... /usr/bin/rustfmt
+ 0:14.77 checking for clang for bindgen... /usr/bin/clang++
+ 0:14.82 checking for libclang for bindgen... /usr/lib/libclang.so
+ 0:14.88 checking that libclang is new enough... yes
+ 0:14.88 checking bindgen cflags... -x c++ -fno-sized-deallocation -fno-aligned-new -DTRACING=1 -DIMPL_LIBXUL -DMOZILLA_INTERNAL_API -DRUST_BINDGEN
+ 0:14.90 checking for libffi > 3.0.9... yes
+ 0:14.91 checking MOZ_FFI_CFLAGS...
+ 0:14.92 checking MOZ_FFI_LIBS... -L/usr/lib/../lib -lffi
+ 0:14.94 checking for icu-i18n >= 73.1... yes
+ 0:14.95 checking MOZ_ICU_CFLAGS...
+ 0:14.96 checking MOZ_ICU_LIBS... -licui18n -licuuc -licudata
+ 0:15.05 checking for tm_zone and tm_gmtoff in struct tm... yes
+ 0:15.23 checking for getpagesize... yes
+ 0:15.41 checking for gmtime_r... yes
+ 0:15.60 checking for localtime_r... yes
+ 0:15.78 checking for gettid... yes
+ 0:15.97 checking for setpriority... yes
+ 0:16.15 checking for syscall... yes
+ 0:16.34 checking for getc_unlocked... yes
+ 0:16.54 checking for pthread_getname_np... yes
+ 0:16.73 checking for pthread_get_name_np... no
+ 0:16.91 checking for strerror... yes
+ 0:17.10 checking for __cxa_demangle... yes
+ 0:17.29 checking for _getc_nolock... no
+ 0:17.47 checking for localeconv... yes
+ 0:17.51 checking for nodejs... /usr/bin/node (21.2.0)
+ 0:17.52 checking for gtk+-wayland-3.0 >= 3.14 xkbcommon >= 0.4.1... yes
+ 0:17.59 checking MOZ_WAYLAND_CFLAGS... -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/atk-1.0 -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/fribidi -I/usr/include/pixman-1 -I/usr/include/libpng16 -I/usr/include/gio-unix-2.0 -pthread -I/usr/include/libmount -I/usr/include/blkid
+ 0:17.60 checking MOZ_WAYLAND_LIBS... -lgtk-3 -lgdk-3 -lz -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0 -lxkbcommon
+ 0:17.62 checking for pango >= 1.22.0... yes
+ 0:17.64 checking MOZ_PANGO_CFLAGS... -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/freetype2 -pthread -I/usr/include/libmount -I/usr/include/blkid -I/usr/include/fribidi -I/usr/include/cairo -I/usr/include/libpng16 -I/usr/include/pixman-1
+ 0:17.65 checking MOZ_PANGO_LIBS... -lpango-1.0 -lgobject-2.0 -lglib-2.0 -lharfbuzz
+ 0:17.66 checking for fontconfig >= 2.7.0... yes
+ 0:17.68 checking _FONTCONFIG_CFLAGS... -I/usr/include/freetype2 -I/usr/include/libpng16
+ 0:17.69 checking _FONTCONFIG_LIBS... -lfontconfig -lfreetype
+ 0:17.71 checking for freetype2 >= 9.10.3... yes
+ 0:17.72 checking _FT2_CFLAGS... -I/usr/include/freetype2 -I/usr/include/libpng16
+ 0:17.73 checking _FT2_LIBS... -lfreetype
+ 0:17.74 checking for tar... /bin/tar
+ 0:17.75 checking for unzip... /usr/bin/unzip
+ 0:17.75 checking for the Mozilla API key... no
+ 0:17.75 checking for the Google Location Service API key... no
+ 0:17.75 checking for the Google Safebrowsing API key... no
+ 0:17.75 checking for the Bing API key... no
+ 0:17.75 checking for the Adjust SDK key... no
+ 0:17.75 checking for the Leanplum SDK key... no
+ 0:17.75 checking for the Pocket API key... no
+ 0:17.77 checking for libwebp >= 1.0.2 libwebpdemux >= 1.0.2... yes
+ 0:17.78 checking MOZ_WEBP_CFLAGS... -I/usr/include/webp
+ 0:17.79 checking MOZ_WEBP_LIBS... -lwebp -lwebpdemux
+ 0:17.80 checking for x11 xcb xcb-shm x11-xcb xext xrandr >= 1.4.0 xcomposite xcursor xdamage xfixes xi... yes
+ 0:17.82 checking MOZ_X11_CFLAGS...
+ 0:17.84 checking MOZ_X11_LIBS... -lxcb-shm -lX11-xcb -lX11 -lxcb -lXext -lXrandr -lXcomposite -lXcursor -lXdamage -lXfixes -lXi
+ 0:17.85 checking for ice sm... yes
+ 0:17.86 checking MOZ_X11_SM_CFLAGS... -I/usr/include/uuid
+ 0:18.05 checking for stat64... yes
+ 0:18.23 checking for lstat64... yes
+ 0:18.43 checking for truncate64... yes
+ 0:18.61 checking for statvfs64... yes
+ 0:18.80 checking for statvfs... yes
+ 0:19.00 checking for statfs64... yes
+ 0:19.18 checking for statfs... yes
+ 0:19.36 checking for lutimes... yes
+ 0:19.55 checking for posix_fadvise... yes
+ 0:19.74 checking for posix_fallocate... yes
+ 0:19.93 checking for eventfd... yes
+ 0:20.12 checking for arc4random... yes
+ 0:20.31 checking for arc4random_buf... yes
+ 0:20.50 checking for mallinfo... yes
+ 0:20.57 checking for sys/ioccom.h... no
+ 0:20.84 checking for -z pack-relative-relocs option to ld... yes
+ 0:20.88 checking for vpx >= 1.10.0... yes
+ 0:20.90 checking MOZ_LIBVPX_CFLAGS...
+ 0:20.91 checking MOZ_LIBVPX_LIBS... -lvpx -lm
+ 0:21.00 checking for vpx/vpx_decoder.h... yes
+ 0:21.19 checking for vpx_codec_dec_init_ver... yes
+ 0:21.39 checking for jpeg_destroy_compress... yes
+ 0:21.49 checking for sufficient jpeg library version... yes
+ 0:21.60 checking for sufficient libjpeg-turbo JCS_EXTENSIONS... yes
+ 0:21.62 checking for libpng >= 1.6.35... yes
+ 0:21.63 checking MOZ_PNG_CFLAGS... -I/usr/include/libpng16
+ 0:21.64 checking MOZ_PNG_LIBS... -lpng16
+ 0:21.83 checking for png_get_acTL... yes
+ 0:21.85 checking for dump_syms... not found
+ 0:22.05 checking for getcontext... yes
+ 0:22.06 checking for nss >= 3.95... yes
+ 0:22.07 checking NSS_CFLAGS... -I/usr/include/nss -I/usr/include/nspr
+ 0:22.08 checking NSS_LIBS... -lssl3 -lsmime3 -lnss3 -lnssutil3 -lplds4 -lplc4 -lnspr4 -lpthread -ldl
+ 0:22.10 checking for libevent... yes
+ 0:22.11 checking MOZ_LIBEVENT_CFLAGS...
+ 0:22.12 checking MOZ_LIBEVENT_LIBS... -levent
+ 0:22.14 checking for gtk+-3.0 >= 3.14.0 gtk+-unix-print-3.0 glib-2.0 gobject-2.0 gio-unix-2.0... yes
+ 0:22.23 checking MOZ_GTK3_CFLAGS... -I/usr/include/gtk-3.0/unix-print -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/harfbuzz -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/freetype2 -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/gio-unix-2.0 -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include -I/usr/include/at-spi2-atk/2.0 -I/usr/include/at-spi-2.0 -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include -I/usr/include/fribidi -I/usr/include/pixman-1 -I/usr/include/libpng16 -pthread -I/usr/include/libmount -I/usr/include/blkid
+ 0:22.25 checking MOZ_GTK3_LIBS... -lgtk-3 -lgdk-3 -lz -lpangocairo-1.0 -lpango-1.0 -lharfbuzz -latk-1.0 -lcairo-gobject -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lgobject-2.0 -lglib-2.0
+ 0:22.26 checking for glib-2.0 >= 2.42 gobject-2.0... yes
+ 0:22.27 checking GLIB_CFLAGS... -I/usr/include/glib-2.0 -I/usr/lib/glib-2.0/include
+ 0:22.28 checking GLIB_LIBS... -lgobject-2.0 -lglib-2.0
+ 0:22.30 checking for dbus-1 >= 0.60... yes
+ 0:22.31 checking MOZ_DBUS_CFLAGS... -I/usr/include/dbus-1.0 -I/usr/lib/dbus-1.0/include
+ 0:22.32 checking MOZ_DBUS_LIBS... -ldbus-1
+ 0:22.34 checking for pixman-1 >= 0.36.0... yes
+ 0:22.35 checking MOZ_PIXMAN_CFLAGS... -I/usr/include/pixman-1
+ 0:22.36 checking MOZ_PIXMAN_LIBS... -lpixman-1
+ 0:22.48 checking for sin_len in struct sockaddr_in... no
+ 0:22.57 checking for sin_len6 in struct sockaddr_in6... no
+ 0:22.66 checking for sa_len in struct sockaddr... no
+ 0:22.76 checking for pthread_cond_timedwait_monotonic_np... no
+ 0:22.86 checking for 32-bits ethtool_cmd.speed... yes
+ 0:22.95 checking for linux/joystick.h... yes
+ 0:22.96 checking for awk... /usr/bin/gawk
+ 0:22.96 checking for gmake... /usr/bin/make
+ 0:22.96 checking for watchman... not found
+ 0:22.97 checking for xargs... /usr/bin/xargs
+ 0:22.97 checking for rpmbuild... not found
+ 0:23.24 checking for strip... /usr/bin/llvm-strip
+ 0:23.25 checking for zlib >= 1.2.3... yes
+ 0:23.26 checking MOZ_ZLIB_CFLAGS...
+ 0:23.27 checking MOZ_ZLIB_LIBS... -lz
+ 0:23.27 checking for m4... /usr/bin/m4
+ 0:23.36 creating cache ./config.cache
+ 0:23.39 checking host system type... aarch64-unknown-linux-gnu
+ 0:23.41 checking target system type... aarch64-unknown-linux-gnu
+ 0:23.42 checking build system type... aarch64-unknown-linux-gnu
+ 0:23.50 checking for Cygwin environment... no
+ 0:23.56 checking for mingw32 environment... no
+ 0:23.74 checking for executable suffix... no
+ 0:23.75 checking for gcc... (cached) /usr/bin/clang -std=gnu99
+ 0:23.75 checking whether the C compiler (/usr/bin/clang -std=gnu99 -O2 -pipe -march=armv8-a -mtune=generic -w  -fuse-ld=lld -Wl,-z,pack-relative-relocs) works... (cached) yes
+ 0:23.75 checking whether the C compiler (/usr/bin/clang -std=gnu99 -O2 -pipe -march=armv8-a -mtune=generic -w  -fuse-ld=lld -Wl,-z,pack-relative-relocs) is a cross-compiler... no
+ 0:23.75 checking whether we are using GNU C... (cached) yes
+ 0:23.75 checking whether /usr/bin/clang -std=gnu99 accepts -g... (cached) yes
+ 0:23.75 checking for c++... (cached) /usr/bin/clang++
+ 0:23.75 checking whether the C++ compiler (/usr/bin/clang++ -O2 -pipe -march=armv8-a -mtune=generic -w  -fuse-ld=lld -Wl,-z,pack-relative-relocs) works... (cached) yes
+ 0:23.75 checking whether the C++ compiler (/usr/bin/clang++ -O2 -pipe -march=armv8-a -mtune=generic -w  -fuse-ld=lld -Wl,-z,pack-relative-relocs) is a cross-compiler... no
+ 0:23.75 checking whether we are using GNU C++... (cached) yes
+ 0:23.75 checking whether /usr/bin/clang++ accepts -g... (cached) yes
+ 0:24.01 checking for --noexecstack option to as... yes
+ 0:24.20 checking for -z noexecstack option to ld... yes
+ 0:24.40 checking for -z text option to ld... yes
+ 0:24.58 checking for -z relro option to ld... yes
+ 0:24.76 checking for -z nocopyreloc option to ld... yes
+ 0:24.95 checking for -Bsymbolic-functions option to ld... yes
+ 0:25.14 checking for --build-id=sha1 option to ld... yes
+ 0:25.31 checking for --ignore-unresolved-symbol option to ld... no
+ 0:25.55 checking whether the linker supports Identical Code Folding... no
+ 0:26.32 checking whether removing dead symbols breaks debugging... no
+ 0:26.40 checking for working const... yes
+ 0:26.47 checking for mode_t... yes
+ 0:26.54 checking for off_t... yes
+ 0:26.61 checking for pid_t... yes
+ 0:26.70 checking for size_t... yes
+ 0:27.05 checking whether 64-bits std::atomic requires -latomic... no
+ 0:27.14 checking for dirent.h that defines DIR... yes
+ 0:27.32 checking for opendir in -ldir... no
+ 0:27.51 checking for gethostbyname_r in -lc_r... no
+ 0:27.69 checking for library containing dlopen... none required
+ 0:27.80 checking for dlfcn.h... yes
+ 0:27.99 checking for dladdr... yes
+ 0:28.18 checking for socket in -lsocket... no
+ 0:28.36 checking for pthread_create in -lpthreads... no
+ 0:28.55 checking for pthread_create in -lpthread... yes
+ 0:28.72 checking whether /usr/bin/clang -std=gnu99 accepts -pthread... egrep: warning: egrep is obsolescent; using grep -E
+ 0:28.72 egrep: warning: egrep is obsolescent; using grep -E
+ 0:28.73 yes
+ 0:28.83 checking for pthread.h... yes
+ 0:29.05 checking for clock_gettime(CLOCK_MONOTONIC)...
+ 0:29.28 checking for res_ninit()... yes
+ 0:29.48 checking for __thread keyword for TLS variables... yes
+ 0:29.58 checking for malloc.h... yes
+ 0:29.67 checking whether malloc_usable_size definition can use const argument... no
+ 0:29.75 checking for valloc in malloc.h... yes
+ 0:29.81 checking for valloc in unistd.h... no
+ 0:29.88 checking for _aligned_malloc in malloc.h... no
+ 0:29.88 checking if app-specific confvars.sh exists... /home/devel/building/work/src/firefox-121.0/browser/confvars.sh
+ 0:29.98 checking for valid C compiler optimization flags... yes
+ 0:29.98 checking for -pipe support... yes
+ 0:30.18 checking what kind of list files are supported by the linker... linkerscript
+ 0:30.24 updating cache ./config.cache
+ 0:30.24 creating ./config.data
+ 0:30.26 js/src> Refreshing /home/devel/building/work/src/firefox-121.0/js/src/old-configure with /home/devel/building/work/src/firefox-121.0/build/autoconf/autoconf.sh
+ 0:30.41 js/src> loading cache ./config.cache
+ 0:30.43 js/src> checking host system type... aarch64-unknown-linux-gnu
+ 0:30.45 js/src> checking target system type... aarch64-unknown-linux-gnu
+ 0:30.47 js/src> checking build system type... aarch64-unknown-linux-gnu
+ 0:30.47 js/src> checking for Cygwin environment... (cached) no
+ 0:30.47 js/src> checking for mingw32 environment... (cached) no
+ 0:30.47 js/src> checking for executable suffix... (cached) no
+ 0:30.47 js/src> checking for gcc... (cached) /usr/bin/clang -std=gnu99
+ 0:30.47 js/src> checking whether the C compiler (/usr/bin/clang -std=gnu99 -O2 -pipe -march=armv8-a -mtune=generic -w  -fuse-ld=lld -Wl,-z,pack-relative-relocs) works... (cached) yes
+ 0:30.47 js/src> checking whether the C compiler (/usr/bin/clang -std=gnu99 -O2 -pipe -march=armv8-a -mtune=generic -w  -fuse-ld=lld -Wl,-z,pack-relative-relocs) is a cross-compiler... no
+ 0:30.47 js/src> checking whether we are using GNU C... (cached) yes
+ 0:30.48 js/src> checking whether /usr/bin/clang -std=gnu99 accepts -g... (cached) yes
+ 0:30.48 js/src> checking for c++... (cached) /usr/bin/clang++
+ 0:30.48 js/src> checking whether the C++ compiler (/usr/bin/clang++ -O2 -pipe -march=armv8-a -mtune=generic -w  -fuse-ld=lld -Wl,-z,pack-relative-relocs) works... (cached) yes
+ 0:30.48 js/src> checking whether the C++ compiler (/usr/bin/clang++ -O2 -pipe -march=armv8-a -mtune=generic -w  -fuse-ld=lld -Wl,-z,pack-relative-relocs) is a cross-compiler... no
+ 0:30.48 js/src> checking whether we are using GNU C++... (cached) yes
+ 0:30.48 js/src> checking whether /usr/bin/clang++ accepts -g... (cached) yes
+ 0:30.76 js/src> checking for --noexecstack option to as... yes
+ 0:30.95 js/src> checking for -z noexecstack option to ld... yes
+ 0:31.13 js/src> checking for -z text option to ld... yes
+ 0:31.32 js/src> checking for -z relro option to ld... yes
+ 0:31.50 js/src> checking for -z nocopyreloc option to ld... yes
+ 0:31.68 js/src> checking for -Bsymbolic-functions option to ld... yes
+ 0:31.86 js/src> checking for --build-id=sha1 option to ld... yes
+ 0:32.07 js/src> checking whether the linker supports Identical Code Folding... no
+ 0:32.82 js/src> checking whether removing dead symbols breaks debugging... no
+ 0:32.83 js/src> checking for working const... (cached) yes
+ 0:32.83 js/src> checking for mode_t... (cached) yes
+ 0:32.83 js/src> checking for off_t... (cached) yes
+ 0:32.83 js/src> checking for pid_t... (cached) yes
+ 0:32.83 js/src> checking for size_t... (cached) yes
+ 0:32.93 js/src> checking for ssize_t... yes
+ 0:32.93 js/src> checking whether 64-bits std::atomic requires -latomic... (cached) no
+ 0:32.94 js/src> checking for dirent.h that defines DIR... (cached) yes
+ 0:32.95 js/src> checking for opendir in -ldir... (cached) no
+ 0:32.95 js/src> checking for gethostbyname_r in -lc_r... (cached) no
+ 0:32.95 js/src> checking for library containing dlopen... (cached) none required
+ 0:32.96 js/src> checking for dlfcn.h... (cached) yes
+ 0:32.96 js/src> checking for dladdr... (cached) yes
+ 0:32.97 js/src> checking for socket in -lsocket... (cached) no
+ 0:32.98 js/src> checking for pthread_create in -lpthreads... (cached) no
+ 0:32.98 js/src> checking for pthread_create in -lpthread... (cached) yes
+ 0:33.15 js/src> checking whether /usr/bin/clang -std=gnu99 accepts -pthread... egrep: warning: egrep is obsolescent; using grep -E
+ 0:33.15 js/src> egrep: warning: egrep is obsolescent; using grep -E
+ 0:33.16 js/src> yes
+ 0:33.16 js/src> checking for clock_gettime(CLOCK_MONOTONIC)... (cached)
+ 0:33.37 js/src> checking for sin in -lm... yes
+ 0:33.38 js/src> checking for res_ninit()... (cached) yes
+ 0:33.58 js/src> checking for nl_langinfo and CODESET... yes
+ 0:33.58 js/src> checking for __thread keyword for TLS variables... (cached) yes
+ 0:33.68 js/src> checking for valid optimization flags... yes
+ 0:33.68 js/src> checking for -pipe support... yes
+ 0:33.87 js/src> checking what kind of list files are supported by the linker... linkerscript
+ 0:33.88 js/src> checking for malloc.h... (cached) yes
+ 0:33.97 js/src> checking whether malloc_usable_size definition can use const argument... no
+ 0:34.04 js/src> checking for valloc in malloc.h... yes
+ 0:34.11 js/src> checking for valloc in unistd.h... no
+ 0:34.18 js/src> checking for _aligned_malloc in malloc.h... no
+ 0:34.19 js/src> updating cache ./config.cache
+ 0:34.20 js/src> creating ./config.data
+ 0:34.22 Creating config.status
+ 0:35.16 Reticulating splines...
+ 0:36.27  0:01.23 W File already read. Skipping: /home/devel/building/work/src/firefox-121.0/intl/components/moz.build
+ 0:37.19  0:02.15 W File already read. Skipping: /home/devel/building/work/src/firefox-121.0/gfx/angle/targets/angle_common/moz.build
+ 1:04.84 Finished reading 1949 moz.build files in 8.46s
+ 1:04.84 Read 13 gyp files in parallel contributing 0.00s to total wall time
+ 1:04.84 Processed into 12834 build config descriptors in 5.81s
+ 1:04.84 RecursiveMake backend executed in 8.22s
+ 1:04.84   4102 total backend files; 4102 created; 0 updated; 0 unchanged; 0 deleted; 20 -> 1532 Makefile
+ 1:04.84 FasterMake backend executed in 0.85s
+ 1:04.84   13 total backend files; 13 created; 0 updated; 0 unchanged; 0 deleted
+ 1:04.84 Clangd backend executed in 5.66s
+ 1:04.84   1003 total backend files; 3 created; 0 updated; 1000 unchanged; 0 deleted
+ 1:04.84 Total wall time: 29.79s; CPU time: 29.67s; Efficiency: 100%; Untracked: 0.79s
+ 1:06.50 W Adding make options from /home/devel/building/work/src/firefox-121.0/.mozconfig
+    MOZ_OBJDIR=/home/devel/building/work/src/firefox-121.0/objdir
+    OBJDIR=/home/devel/building/work/src/firefox-121.0/objdir
+    FOUND_MOZCONFIG=/home/devel/building/work/src/firefox-121.0/.mozconfig
+    export FOUND_MOZCONFIG
+ 1:06.50 /usr/bin/make -f client.mk -j6 -s
+ 1:06.52 make[1]: warning: -j6 forced in submake: resetting jobserver mode.
+ 1:07.00 Elapsed: 0.00s; From dist/private: Kept 0 existing; Added/updated 0; Removed 0 files and 0 directories.
+ 1:07.17 Elapsed: 0.00s; From dist/public: Kept 0 existing; Added/updated 0; Removed 0 files and 0 directories.
+ 1:07.20 Elapsed: 0.20s; From _tests: Kept 13 existing; Added/updated 674; Removed 0 files and 0 directories.
+ 1:07.57 Elapsed: 0.40s; From dist/bin: Kept 11 existing; Added/updated 2718; Removed 0 files and 0 directories.
+ 1:07.75 Elapsed: 0.75s; From dist/include: Kept 1845 existing; Added/updated 4402; Removed 0 files and 0 directories.
+ 1:07.90 ./mozilla-config.h.stub
+ 1:07.90 ./buildid.h.stub
+ 1:07.90 ./source-repo.h.stub
+ 1:07.90 ./RelationType.h.stub
+ 1:07.91 ./Role.h.stub
+ 1:07.91 ./stl.sentinel.stub
+ 1:08.39 ./buildconfig.rs.stub
+ 1:08.39 ./cbindgen-metadata.json.stub
+ 1:08.40 ./UseCounterList.h.stub
+ 1:08.41 ./UseCounterWorkerList.h.stub
+ 1:08.41 config
+ 1:08.63 ./ServoCSSPropList.py.stub
+ 1:08.79 ./encodingsgroups.properties.h.stub
+ 1:08.89 ./BaseChars.h.stub
+ 1:08.93 ./IsCombiningDiacritic.h.stub
+ 1:09.06 ./js-confdefs.h.stub
+ 1:09.39 ./js-config.h.stub
+ 1:09.40 ./ProfilingCategoryList.h.stub
+ 1:09.86 ./ReservedWordsGenerated.h.stub
+ 1:10.08 ./StatsPhasesGenerated.h.stub
+ 1:10.55 ./MIROpsGenerated.h.stub
+ 1:10.73 ./LIROpsGenerated.h.stub
+ 1:10.78 ./CacheIROpsGenerated.h.stub
+ 1:10.83 ./AtomicOperationsGenerated.h.stub
+ 1:11.04 ./WasmIntrinsicGenerated.h.stub
+ 1:11.53 ./FrameIdList.h.stub
+ 1:12.08 ./FrameTypeList.h.stub
+ 1:12.13 ./CountedUnknownProperties.h.stub
+ 1:12.21 ./registered_field_trials.h.stub
+ 1:12.42 ./EventGIFFTMap.h.stub
+ 1:12.59 ./HistogramGIFFTMap.h.stub
+ 1:12.63 ./ScalarGIFFTMap.h.stub
+ 1:12.94 ./factory.rs.stub
+ 1:13.44 ./NimbusFeatureManifest.h.stub
+ 1:17.90 ./TelemetryScalarData.h.stub
+ 1:18.50 ./TelemetryScalarEnums.h.stub
+ 1:19.08 ./TelemetryEventData.h.stub
+ 1:20.84 ./TelemetryEventEnums.h.stub
+ 1:21.32 ./TelemetryProcessEnums.h.stub
+ 1:22.35 ./TelemetryProcessData.h.stub
+ 1:22.88 ./TelemetryUserInteractionData.h.stub
+ 1:22.91 ./TelemetryUserInteractionNameMap.h.stub
+ 1:23.41 ./CrashAnnotations.h.stub
+ 1:23.45 ./profiling_categories.rs.stub
+ 1:23.93 ./ErrorList.h.stub
+ 1:24.10 ./ErrorNamesInternal.h.stub
+ 1:24.49 ./error_list.rs.stub
+ 1:24.58 ./Services.h.stub
+ 1:24.95 ./GeckoProcessTypes.h.stub
+ 1:25.03 ./nsGkAtomList.h.stub
+ 1:25.41 ./nsGkAtomConsts.h.stub
+ 1:25.50 ./xpidl.stub.stub
+ 1:26.45 ./application.ini.stub
+ 1:26.46 config/nsinstall_real
+ 1:26.58 ./GeneratedElementDocumentState.h.stub
+ 1:26.72 ./CSS2Properties.webidl.stub
+ 1:27.05 ./data_encoding_ffi_generated.h.stub
+ 1:27.31 ./mime_guess_ffi_generated.h.stub
+ 1:27.59 ./audioipc2_client_ffi_generated.h.stub
+ 1:27.87 ./audioipc2_server_ffi_generated.h.stub
+ 1:28.15 ./midir_impl_ffi_generated.h.stub
+ 1:28.51 ./origin_trials_ffi_generated.h.stub
+ 1:28.82 ./webrender_ffi_generated.h.stub
+ 1:29.09 ./wgpu_ffi_generated.h.stub
+ 1:29.39 ./mapped_hyph.h.stub
+ 1:30.44 ./fluent_ffi_generated.h.stub
+ 1:30.63 ./l10nregistry_ffi_generated.h.stub
+ 1:31.09 ./localization_ffi_generated.h.stub
+ 1:31.38 ./fluent_langneg_ffi_generated.h.stub
+ 1:31.47 ./oxilangtag_ffi_generated.h.stub
+ 1:31.68 ./unic_langid_ffi_generated.h.stub
+ 1:31.78 ./selfhosted.out.h.stub
+ 1:31.94 ./nsCSSPropertyID.h.stub
+ 1:32.08 ./ServoCSSPropList.h.stub
+ 1:32.24 ./CompositorAnimatableProperties.h.stub
+ 1:32.33 ./ServoStyleConsts.h.stub
+ 1:32.37 /usr/bin/clang++ -E -o self-hosting-preprocessed.pp -DCROSS_COMPILE= -DHAVE_64BIT_BUILD=1 -DXP_UNIX=1 -DXP_LINUX=1 -DMOZ_BUILD_APP=browser -DMOZILLA_OFFICIAL=1 -DRELEASE_OR_BETA=1 -DEARLY_BETA_OR_EARLIER=1 -DMOZILLA_VERSION="121.0" -DMOZILLA_VERSION_U=121.0 -DMOZILLA_UAVERSION="121.0" -DMOZ_UPDATE_CHANNEL=default -DMOZ_DIAGNOSTIC_ASSERT_ENABLED=1 -DHAVE_VISIBILITY_HIDDEN_ATTRIBUTE=1 -DHAVE_VISIBILITY_ATTRIBUTE=1 -DHAVE_UNWIND_H=1 -DHAVE_STRNDUP=1 -DHAVE_POSIX_MEMALIGN=1 -DHAVE_MEMALIGN=1 -DHAVE_MALLOC_USABLE_SIZE=1 -DHAVE_STDINT_H=1 -DHAVE_INTTYPES_H=1 -DSTDC_HEADERS=1 -DHAVE_MALLOC_H=1 -DHAVE_ALLOCA_H=1 -DHAVE_GETOPT_H=1 -DHAVE_UNISTD_H=1 -DHAVE_NL_TYPES_H=1 -DHAVE_FTS_H=1 -DHAVE_SYS_STATVFS_H=1 -DHAVE_SYS_STATFS_H=1 -DHAVE_SYS_VFS_H=1 -DHAVE_SYS_MOUNT_H=1 -DHAVE_SYS_QUOTA_H=1 -DHAVE_LINUX_QUOTA_H=1 -DHAVE_LINUX_IF_ADDR_H=1 -DHAVE_LINUX_RTNETLINK_H=1 -DHAVE_SYS_QUEUE_H=1 -DHAVE_SYS_TYPES_H=1 -DHAVE_NETINET_IN_H=1 -DHAVE_BYTESWAP_H=1 -DHAVE_MEMFD_CREATE=1 -DHAVE_LINUX_PERF_EVENT_H=1 -DMOZ_LTO=1 -DMOZ_DLL_PREFIX="lib" -DMOZ_DLL_SUFFIX=".so" -DMOZ_GECKO_PROFILER=1 -DMOZ_GECKO_PROFILER_PARSE_ELF=1 -DMOZ_PROFILER_MEMORY=1 -DMOZ_ALSA=1 -DMOZ_PULSEAUDIO=1 -DJS_64BIT=1 -DJS_PUNBOX64=1 -DSTATIC_JS_API=1 -DMOZ_STATIC_JS=1 -DJS_CODEGEN_ARM64=1 -DMOZ_AARCH64_JSCVT=0 -DBUILD_CTYPES=1 -DJS_HAS_CTYPES=1 -DMOZ_RUST_SIMD=1 -DENABLE_WASM_FUNCTION_REFERENCES=1 -DENABLE_WASM_TAIL_CALLS=1 -DENABLE_WASM_GC=1 -DENABLE_SHARED_MEMORY=1 -DENABLE_WASM_EXTENDED_CONST=1 -DENABLE_WASM_SIMD=1 -DJS_DEFAULT_JITREPORT_GRANULARITY=3 -DMOZ_SYSTEM_ICU=1 -DJS_HAS_INTL_API=1 -DU_USING_ICU_NAMESPACE=0 -DMOZJS_MAJOR_VERSION=121 -DMOZJS_MINOR_VERSION=0 -DWASM_HAS_HEAPREG=1 -DHAVE_TM_ZONE_TM_GMTOFF=1 -DHAVE_GETPAGESIZE=1 -DHAVE_GMTIME_R=1 -DHAVE_LOCALTIME_R=1 -DHAVE_GETTID=1 -DHAVE_SETPRIORITY=1 -DHAVE_SYSCALL=1 -DHAVE_GETC_UNLOCKED=1 -DHAVE_PTHREAD_GETNAME_NP=1 -DHAVE_STRERROR=1 -DHAVE__UNWIND_BACKTRACE=1 -DHAVE_LOCALECONV=1 -DJSON_USE_EXCEPTION=0 -DMOZ_WIDGET_GTK=1 -DMOZ_WAYLAND=1 -DMOZ_ENABLE_VAAPI=1 -DMOZ_ENABLE_V4L2=1 -DGL_PROVIDER_EGL=1 -DMOZ_PDF_PRINTING=1 -DMOZ_INSTRUMENT_EVENT_LOOP=1 -DUSE_FC_FREETYPE=1 -DMOZ_HAVE_FREETYPE2=1 -DMOZ_FFMPEG=1 -DMOZ_DAV1D_ASM=1 -DMOZ_AV1=1 -DMOZ_SAMPLE_TYPE_FLOAT32=1 -DMOZ_VORBIS=1 -DMOZ_REAL_TIME_TRACING=1 -DMOZ_PLACES=1 -DMOZ_SERVICES_HEALTHREPORT=1 -DMOZ_NORMANDY=1 -DMOZ_DEDICATED_PROFILES=1 -DMOZ_BLOCK_PROFILE_DOWNGRADE=1 -DMOZ_TELEMETRY_REPORTING=1 -DNS_PRINTING=1 -DNS_PRINT_PREVIEW=1 -DMOZ_WEBSPEECH=1 -DMOZ_WEBSPEECH_TEST_BACKEND=1 -DENABLE_WEBDRIVER=1 -DMOZ_WEBRTC=1 -DMOZ_SCTP=1 -DMOZ_SRTP=1 -DMOZ_WEBRTC_SIGNALING=1 -DMOZ_PEERCONNECTION=1 -DMOZ_WEBRTC_ASSERT_ALWAYS=1 -DMOZ_RAW=1 -DMOZ_X11=1 -DHAVE_STAT64=1 -DHAVE_LSTAT64=1 -DHAVE_TRUNCATE64=1 -DHAVE_STATVFS64=1 -DHAVE_STATVFS=1 -DHAVE_STATFS64=1 -DHAVE_STATFS=1 -DHAVE_LUTIMES=1 -DHAVE_POSIX_FADVISE=1 -DHAVE_POSIX_FALLOCATE=1 -DHAVE_EVENTFD=1 -DHAVE_ARC4RANDOM=1 -DHAVE_ARC4RANDOM_BUF=1 -DHAVE_MALLINFO=1 -DMOZ_PROXY_DIRECT_FAILOVER=1 -DACCESSIBILITY=1 -DMOZ_REQUIRE_SIGNING=1 -DMOZ_BUNDLED_FONTS=1 -DHAVE_VPX_VPX_DECODER_H=1 -DMOZ_FFVPX=1 -DMOZ_FFVPX_AUDIOONLY=1 -DMOZ_HAS_REMOTE=1 -DMOZ_ENABLE_FORKSERVER=1 -DHAVE_GETCONTEXT=1 -DMOZ_BACKGROUNDTASKS=1 -DMOZ_VERIFY_MAR_SIGNATURE=1 -DMOZ_OXIDIZED_BREAKPAD=1 -DMOZ_DOM_STREAMS=1 -DMOZ_DATA_REPORTING=1 -DGDK_VERSION_MIN_REQUIRED=GDK_VERSION_3_14 -DGDK_VERSION_MAX_ALLOWED=GDK_VERSION_3_14 -DGLIB_VERSION_MIN_REQUIRED=GLIB_VERSION_2_42 -DGLIB_VERSION_MAX_ALLOWED=GLIB_VERSION_2_42 -DMOZ_ACCESSIBILITY_ATK=1 -DMOZ_ENABLE_DBUS=1 -DMOZ_LOGGING=1 -DFORCE_PR_LOG=1 -DMOZ_AUTH_EXTENSION=1 -DMOZ_SANDBOX=1 -DMOZ_CONTENT_TEMP_DIR=1 -DENABLE_SYSTEM_EXTENSION_DIRS=1 -DMOZ_USER_DIR=".mozilla" -DHAVE_LINUX_JOYSTICK_H=1 -DMOZ_ICU4X=1 -DHAVE_DIRENT_H=1 -DHAVE_DLOPEN=1 -DHAVE_DLADDR=1 -D_REENTRANT=1 -DHAVE_PTHREAD_H=1 -DHAVE_CLOCK_MONOTONIC=1 -DHAVE_RES_NINIT=1 -DHAVE_THREAD_TLS_KEYWORD=1 -DMALLOC_H=<malloc.h> -DMALLOC_USABLE_SIZE_CONST_PTR= -DHAVE_VALLOC=1 -DTARGET_XPCOM_ABI="aarch64-gcc3" -DMOZ_OFFICIAL_BRANDING=1 -DMOZ_GLUE_IN_PROGRAM=1 -DMOZ_MACBUNDLE_ID=org.mozilla.firefox -DMOZ_APP_UA_NAME="" -DMOZ_APP_UA_VERSION="121.0" -DBROWSER_CHROME_URL=chrome://browser/content/browser.xhtml -DBROWSER_CHROME_URL_QUOTED="chrome://browser/content/browser.xhtml" -DNO_NSPR_10_SUPPORT=1 -DNDEBUG=1 -DTRIMMED=1 self-hosting-cpp-input.cpp
+ 1:32.43 ./mp4parse_ffi_generated.h.stub
+ 1:32.66 ./MozURL_ffi.h.stub
+ 1:32.66 ./rust_helper.h.stub
+ 1:32.82 ./neqo_glue_ffi_generated.h.stub
+ 1:33.06 ./fog_ffi_generated.h.stub
+ 1:33.15 ./jog_ffi_generated.h.stub
+ 1:33.28 ./dap_ffi_generated.h.stub
+ 1:33.44 ./TelemetryHistogramEnums.h.stub
+ 1:33.47 ./TelemetryHistogramNameMap.h.stub
+ 1:33.90 ./profiler_ffi_generated.h.stub
+ 1:34.06 ./gk_rust_utils_ffi_generated.h.stub
+ 1:34.32 ./application.ini.h.stub
+ 1:34.35 config/system-header.sentinel.stub
+ 1:35.48 accessible/xpcom/xpcAccEvents.h.stub
+ 1:37.58 modules/libpref/StaticPrefListAll.h.stub
+ 1:38.54 toolkit/components/glean/GleanMetrics.h.stub
+ 1:38.54 toolkit/components/glean/GleanPings.h.stub
+ 1:40.42 xpcom/components/Components.h.stub
+ 1:40.51 WARNING: mkdir -dot- requested by /usr/bin/make -C /home/devel/building/work/src/firefox-121.0/objdir/config/makefiles/xpidl xpidl
+ 1:40.51 config/makefiles/xpidl/Bits.xpt
+ 1:40.52 config/makefiles/xpidl/accessibility.xpt
+ 1:41.15 config/makefiles/xpidl/alerts.xpt
+ 1:41.23 config/makefiles/xpidl/appshell.xpt
+ 1:41.38 config/makefiles/xpidl/appstartup.xpt
+ 1:41.88 config/makefiles/xpidl/autocomplete.xpt
+ 1:42.18 config/makefiles/xpidl/autoplay.xpt
+ 1:42.50 config/makefiles/xpidl/backgroundhangmonitor.xpt
+ 1:42.67 config/makefiles/xpidl/browser-element.xpt
+ 1:43.02 config/makefiles/xpidl/browser-newtab.xpt
+ 1:43.13 config/makefiles/xpidl/browsercompsbase.xpt
+ 1:43.29 config/makefiles/xpidl/caps.xpt
+ 1:43.67 config/makefiles/xpidl/captivedetect.xpt
+ 1:43.74 config/makefiles/xpidl/cascade_bindings.xpt
+ 1:43.91 config/makefiles/xpidl/chrome.xpt
+ 1:44.35 config/makefiles/xpidl/commandhandler.xpt
+ 1:44.51 config/makefiles/xpidl/commandlines.xpt
+ 1:44.63 config/makefiles/xpidl/composer.xpt
+ 1:45.00 config/makefiles/xpidl/content_events.xpt
+ 1:45.30 config/makefiles/xpidl/content_geckomediaplugins.xpt
+ 1:45.34 config/makefiles/xpidl/docshell.xpt
+ 1:45.62 config/makefiles/xpidl/dom.xpt
+ 1:45.93 config/makefiles/xpidl/dom_audiochannel.xpt
+ 1:46.06 config/makefiles/xpidl/dom_base.xpt
+ 1:46.65 config/makefiles/xpidl/dom_bindings.xpt
+ 1:46.77 config/makefiles/xpidl/dom_events.xpt
+ 1:47.21 config/makefiles/xpidl/dom_geolocation.xpt
+ 1:47.41 config/makefiles/xpidl/dom_html.xpt
+ 1:47.80 config/makefiles/xpidl/dom_identitycredential.xpt
+ 1:48.10 config/makefiles/xpidl/dom_indexeddb.xpt
+ 1:48.20 config/makefiles/xpidl/dom_localstorage.xpt
+ 1:48.47 config/makefiles/xpidl/dom_media.xpt
+ 1:48.82 config/makefiles/xpidl/dom_network.xpt
+ 1:48.85 config/makefiles/xpidl/dom_notification.xpt
+ 1:49.08 config/makefiles/xpidl/dom_payments.xpt
+ 1:49.48 config/makefiles/xpidl/dom_power.xpt
+ 1:49.51 config/makefiles/xpidl/dom_push.xpt
+ 1:49.70 config/makefiles/xpidl/dom_quota.xpt
+ 1:50.14 config/makefiles/xpidl/dom_security.xpt
+ 1:50.38 config/makefiles/xpidl/dom_serializers.xpt
+ 1:50.61 config/makefiles/xpidl/dom_sidebar.xpt
+ 1:50.86 config/makefiles/xpidl/dom_simpledb.xpt
+ 1:51.12 config/makefiles/xpidl/dom_storage.xpt
+ 1:51.25 config/makefiles/xpidl/dom_system.xpt
+ 1:51.47 config/makefiles/xpidl/dom_webauthn.xpt
+ 1:51.79 config/makefiles/xpidl/dom_webspeechrecognition.xpt
+ 1:51.90 config/makefiles/xpidl/dom_webspeechsynth.xpt
+ 1:52.10 config/makefiles/xpidl/dom_workers.xpt
+ 1:52.51 config/makefiles/xpidl/dom_xslt.xpt
+ 1:52.58 config/makefiles/xpidl/dom_xul.xpt
+ 1:52.75 config/makefiles/xpidl/downloads.xpt
+ 1:53.19 config/makefiles/xpidl/editor.xpt
+ 1:53.19 config/makefiles/xpidl/enterprisepolicies.xpt
+ 1:53.58 config/makefiles/xpidl/extensions.xpt
+ 1:53.78 config/makefiles/xpidl/exthandler.xpt
+ 1:54.13 config/makefiles/xpidl/fastfind.xpt
+ 1:54.20 config/makefiles/xpidl/fog.xpt
+ 1:54.42 config/makefiles/xpidl/gfx.xpt
+ 1:54.81 config/makefiles/xpidl/html5.xpt
+ 1:54.93 config/makefiles/xpidl/htmlparser.xpt
+ 1:55.06 config/makefiles/xpidl/http-sfv.xpt
+ 1:55.44 config/makefiles/xpidl/imglib2.xpt
+ 1:55.55 config/makefiles/xpidl/inspector.xpt
+ 1:55.69 config/makefiles/xpidl/intl.xpt
+ 1:56.12 config/makefiles/xpidl/jar.xpt
+ 1:56.30 config/makefiles/xpidl/jsdevtools.xpt
+ 1:56.57 config/makefiles/xpidl/kvstore.xpt
+ 1:56.75 config/makefiles/xpidl/layout_base.xpt
+ 1:57.18 config/makefiles/xpidl/layout_xul_tree.xpt
+ 1:57.20 config/makefiles/xpidl/locale.xpt
+ 1:57.40 config/makefiles/xpidl/loginmgr.xpt
+ 1:57.84 config/makefiles/xpidl/migration.xpt
+ 1:57.85 config/makefiles/xpidl/mimetype.xpt
+ 1:58.05 config/makefiles/xpidl/mozfind.xpt
+ 1:58.50 config/makefiles/xpidl/mozintl.xpt
+ 1:58.65 config/makefiles/xpidl/necko.xpt
+ 1:58.76 config/makefiles/xpidl/necko_about.xpt
+ 1:59.18 config/makefiles/xpidl/necko_cache2.xpt
+ 1:59.30 config/makefiles/xpidl/necko_cookie.xpt
+ 1:59.79 config/makefiles/xpidl/necko_dns.xpt
+ 2:00.10 config/makefiles/xpidl/necko_file.xpt
+ 2:00.33 config/makefiles/xpidl/necko_http.xpt
+ 2:00.58 config/makefiles/xpidl/necko_res.xpt
+ 2:00.97 config/makefiles/xpidl/necko_socket.xpt
+ 2:01.13 config/makefiles/xpidl/necko_strconv.xpt
+ 2:01.62 config/makefiles/xpidl/necko_viewsource.xpt
+ 2:01.76 config/makefiles/xpidl/necko_websocket.xpt
+ 2:02.40 config/makefiles/xpidl/necko_webtransport.xpt
+ 2:02.42 config/makefiles/xpidl/parentalcontrols.xpt
+ 2:02.58 config/makefiles/xpidl/peerconnection.xpt
+ 2:03.17 config/makefiles/xpidl/pipnss.xpt
+ 2:03.20 config/makefiles/xpidl/places.xpt
+ 2:03.21 config/makefiles/xpidl/plugin.xpt
+ 2:03.84 config/makefiles/xpidl/pref.xpt
+ 2:03.87 config/makefiles/xpidl/prefetch.xpt
+ 2:04.19 config/makefiles/xpidl/profiler.xpt
+ 2:04.47 config/makefiles/xpidl/remote.xpt
+ 2:04.63 config/makefiles/xpidl/reputationservice.xpt
+ 2:04.67 config/makefiles/xpidl/sandbox.xpt
+ 2:04.83 config/makefiles/xpidl/satchel.xpt
+ 2:05.12 config/makefiles/xpidl/services.xpt
+ 2:05.29 config/makefiles/xpidl/sessionstore.xpt
+ 2:05.31 config/makefiles/xpidl/shellservice.xpt
+ 2:05.49 config/makefiles/xpidl/shistory.xpt
+ 2:05.78 config/makefiles/xpidl/spellchecker.xpt
+ 2:05.96 config/makefiles/xpidl/startupcache.xpt
+ 2:06.01 config/makefiles/xpidl/storage.xpt
+ 2:06.15 config/makefiles/xpidl/telemetry.xpt
+ 2:06.59 config/makefiles/xpidl/thumbnails.xpt
+ 2:06.62 config/makefiles/xpidl/toolkit_antitracking.xpt
+ 2:06.64 config/makefiles/xpidl/toolkit_asyncshutdown.xpt
+ 2:07.22 config/makefiles/xpidl/toolkit_backgroundtasks.xpt
+ 2:07.33 config/makefiles/xpidl/toolkit_cleardata.xpt
+ 2:07.33 config/makefiles/xpidl/toolkit_contentanalysis.xpt
+ 2:07.56 config/makefiles/xpidl/toolkit_cookiebanners.xpt
+ 2:07.90 config/makefiles/xpidl/toolkit_crashservice.xpt
+ 2:07.99 config/makefiles/xpidl/toolkit_finalizationwitness.xpt
+ 2:08.00 config/makefiles/xpidl/toolkit_modules.xpt
+ 2:08.23 config/makefiles/xpidl/toolkit_processtools.xpt
+ 2:08.60 config/makefiles/xpidl/toolkit_resistfingerprinting.xpt
+ 2:08.61 config/makefiles/xpidl/toolkit_search.xpt
+ 2:08.73 config/makefiles/xpidl/toolkit_shell.xpt
+ 2:08.88 config/makefiles/xpidl/toolkit_xulstore.xpt
+ 2:09.23 config/makefiles/xpidl/toolkitprofile.xpt
+ 2:09.28 config/makefiles/xpidl/txmgr.xpt
+ 2:09.41 config/makefiles/xpidl/txtsvc.xpt
+ 2:09.52 config/makefiles/xpidl/uconv.xpt
+ 2:09.86 config/makefiles/xpidl/update.xpt
+ 2:09.99 config/makefiles/xpidl/uriloader.xpt
+ 2:10.09 config/makefiles/xpidl/url-classifier.xpt
+ 2:10.15 config/makefiles/xpidl/urlformatter.xpt
+ 2:10.52 config/makefiles/xpidl/webBrowser_core.xpt
+ 2:10.62 config/makefiles/xpidl/webbrowserpersist.xpt
+ 2:10.99 config/makefiles/xpidl/webextensions.xpt
+ 2:11.16 config/makefiles/xpidl/webextensions-storage.xpt
+ 2:11.23 config/makefiles/xpidl/webvtt.xpt
+ 2:11.34 config/makefiles/xpidl/widget.xpt
+ 2:11.72 config/makefiles/xpidl/windowcreator.xpt
+ 2:11.87 config/makefiles/xpidl/windowwatcher.xpt
+ 2:11.88 config/makefiles/xpidl/xpcom_base.xpt
+ 2:11.99 config/makefiles/xpidl/xpcom_components.xpt
+ 2:12.50 config/makefiles/xpidl/xpcom_ds.xpt
+ 2:12.72 config/makefiles/xpidl/xpcom_io.xpt
+ 2:13.00 config/makefiles/xpidl/xpcom_system.xpt
+ 2:13.25 config/makefiles/xpidl/xpcom_threads.xpt
+ 2:13.77 config/makefiles/xpidl/xpconnect.xpt
+ 2:13.91 config/makefiles/xpidl/xul.xpt
+ 2:14.16 config/makefiles/xpidl/xulapp.xpt
+ 2:14.61 config/makefiles/xpidl/zipwriter.xpt
+ 2:15.28 config/makefiles/xpidl/xptdata.stub
+ 2:31.40 browser/app
+ 2:31.40 mfbt
+ 2:31.40 memory/build
+ 2:31.42 build/pure_virtual
+ 2:31.42 memory/mozalloc
+ 2:35.51 mozglue/baseprofiler
+ 2:39.21 mozglue/build
+ 2:39.34 mozglue/interposers
+ 2:40.00 mozglue/misc
+ 2:41.00 xpcom/glue/standalone
+ 2:43.90    Compiling unicode-ident v1.0.6
+ 2:44.17    Compiling proc-macro2 v1.0.69
+ 2:46.15    Compiling quote v1.0.28
+ 2:47.73    Compiling serde v1.0.192
+ 2:47.94    Compiling cfg-if v1.0.0
+ 2:48.03    Compiling autocfg v1.1.0 (/home/devel/building/work/src/firefox-121.0/third_party/rust/autocfg)
+ 2:48.07 dom/media/fake-cdm
+ 2:49.35    Compiling libc v0.2.150
+ 2:54.62    Compiling syn v2.0.39
+ 3:02.57    Compiling version_check v0.9.4
+ 3:02.86    Compiling memchr v2.5.0
+ 3:03.05    Compiling libm v0.2.6
+ 3:03.22    Compiling num-traits v0.2.15
+ 3:07.04    Compiling minimal-lexical v0.2.1
+ 3:07.52    Compiling getrandom v0.2.11
+ 3:08.35    Compiling nom v7.1.3
+ 3:08.60    Compiling glob v0.3.1
+ 3:09.91    Compiling lazy_static v1.4.0
+ 3:10.03    Compiling thiserror v1.0.40
+ 3:10.10    Compiling mozbuild v0.1.0 (/home/devel/building/work/src/firefox-121.0/build/rust/mozbuild)
+ 3:11.01    Compiling log v0.4.17
+ 3:11.96    Compiling once_cell v1.18.0
+ 3:13.00    Compiling ahash v0.7.6
+ 3:13.13    Compiling packed_simd v0.3.9
+ 3:13.26    Compiling semver v1.0.16
+ 3:14.81    Compiling pkg-config v0.3.26
+ 3:15.28    Compiling hashbrown v0.12.3
+ 3:15.51    Compiling indexmap v1.9.3
+ 3:16.07    Compiling cc v1.0.73
+ 3:18.82    Compiling siphasher v0.3.10
+ 3:21.88    Compiling unicase v2.6.0
+ 3:22.45    Compiling itoa v1.0.5
+ 3:22.94    Compiling anyhow v1.0.69
+ 3:23.73    Compiling unicode-xid v0.2.4
+ 3:23.94    Compiling synstructure v0.13.0
+ 3:24.36    Compiling camino v1.1.2
+ 3:25.81    Compiling mime_guess v2.0.4
+ 3:26.81    Compiling paste v1.0.11
+ 3:31.30    Compiling thin-vec v0.2.12
+ 3:33.32    Compiling serde_json v1.0.93
+ 3:40.23    Compiling ryu v1.0.12
+ 3:41.73    Compiling mime v0.3.16
+ 3:42.25    Compiling bitflags v2.4.0
+ 3:45.20    Compiling plain v0.2.3
+ 3:45.45    Compiling bytes v1.4.0
+ 3:45.84    Compiling askama_escape v0.10.3
+ 3:46.14    Compiling fs-err v2.9.0
+ 3:48.38    Compiling weedle2 v4.0.0
+ 3:48.54    Compiling heck v0.4.1
+ 3:50.40    Compiling clang-sys v1.6.0
+ 3:52.40    Compiling aho-corasick v0.7.20
+ 3:52.78    Compiling libloading v0.7.4
+ 3:54.08    Compiling regex-syntax v0.6.28
+ 3:56.45    Compiling stable_deref_trait v1.2.0
+ 3:56.59    Compiling byteorder v1.4.3
+ 3:57.88    Compiling bindgen v0.68.1
+ 3:59.29    Compiling static_assertions v1.1.0
+ 4:00.61    Compiling cexpr v0.6.0
+ 4:13.31    Compiling regex v1.7.1
+ 4:32.59    Compiling encoding_rs v0.8.33
+ 4:35.10    Compiling rustc-hash v1.1.0
+ 4:35.32    Compiling shlex v1.1.0
+ 4:36.24    Compiling lazycell v1.3.0
+ 4:36.48    Compiling peeking_take_while v0.1.2
+ 4:47.52    Compiling cstr v0.2.11
+ 4:50.88    Compiling scopeguard v1.1.0
+ 4:51.14    Compiling threadbound v0.1.5
+ 4:51.35    Compiling crossbeam-utils v0.8.14
+ 4:53.22    Compiling matches v0.1.10
+ 4:53.33    Compiling unicode-bidi v0.3.13
+ 5:03.94    Compiling percent-encoding v2.2.0
+ 5:05.14    Compiling ident_case v1.0.1
+ 5:05.41    Compiling strsim v0.10.0
+ 5:08.54    Compiling fnv v1.0.7
+ 5:08.67    Compiling darling_core v0.20.1
+ 5:10.62    Compiling lock_api v0.4.9
+ 5:11.19    Compiling parking_lot_core v0.9.8
+ 5:14.35    Compiling bindgen v0.66.999 (/home/devel/building/work/src/firefox-121.0/build/rust/bindgen)
+ 5:19.06    Compiling rand_core v0.6.4
+ 5:20.06    Compiling typenum v1.16.0
+ 5:21.05    Compiling generic-array v0.14.6
+ 5:21.54    Compiling ppv-lite86 v0.2.17
+ 5:22.37    Compiling base64 v0.21.3
+ 5:23.09    Compiling rand_chacha v0.3.1
+ 5:25.04    Compiling time v0.1.45
+ 5:27.94    Compiling num-integer v0.1.45
+ 5:28.91    Compiling rand v0.8.5
+ 5:28.97    Compiling lmdb-rkv-sys v0.11.2
+ 5:30.33    Compiling vcpkg v0.2.999 (/home/devel/building/work/src/firefox-121.0/build/rust/vcpkg)
+ 5:30.49    Compiling libsqlite3-sys v0.26.0
+ 5:36.53    Compiling termcolor v1.4.0
+ 5:40.35    Compiling crypto-common v0.1.6
+ 5:40.70    Compiling block-buffer v0.10.3
+ 5:41.23    Compiling phf_shared v0.11.2
+ 5:41.37    Compiling slab v0.4.8
+ 5:41.79    Compiling crc32fast v1.3.2
+ 5:42.07    Compiling arrayref v0.3.6
+ 5:42.39    Compiling phf_generator v0.11.2
+ 5:42.68    Compiling digest v0.10.6
+ 5:43.72    Compiling ffi-support v0.4.4
+ 5:43.76    Compiling hashlink v0.8.1
+ 5:45.62    Compiling ordered-float v3.4.0
+ 5:45.71    Compiling cpufeatures v0.2.8
+ 5:45.89    Compiling memoffset v0.9.0
+ 5:45.97    Compiling fallible-iterator v0.2.0
+ 5:46.50    Compiling id-arena v2.2.1
+ 5:46.98    Compiling adler v1.0.2
+ 5:47.43    Compiling fallible-streaming-iterator v0.1.9
+ 5:47.49    Compiling async-task v4.3.0
+ 5:47.99    Compiling miniz_oxide v0.7.1
+ 5:49.38    Compiling futures-core v0.3.28
+ 5:49.64    Compiling crossbeam-channel v0.5.6
+ 5:50.17    Compiling whatsys v0.3.1
+ 5:51.22    Compiling flate2 v1.0.26
+ 5:54.51    Compiling crossbeam-epoch v0.9.14
+ 5:55.10    Compiling serde_derive v1.0.192
+ 5:55.20    Compiling thiserror-impl v1.0.40
+ 5:56.08    Compiling scroll_derive v0.11.1
+ 5:56.21    Compiling uniffi_checksum_derive v0.24.3
+ 6:03.58    Compiling xpcom_macros v0.1.0 (/home/devel/building/work/src/firefox-121.0/xpcom/rust/xpcom/xpcom_macros)
+ 6:06.99    Compiling scroll v0.11.0
+ 6:08.38    Compiling goblin v0.7.1
+ 6:25.54    Compiling zerofrom-derive v0.1.2 (https://github.com/unicode-org/icu4x?rev=14e9a3a9857be74582abe2dfa7ab799c5eaac873#14e9a3a9)
+ 6:32.44    Compiling goblin v0.6.999 (/home/devel/building/work/src/firefox-121.0/build/rust/goblin)
+ 6:32.57    Compiling yoke-derive v0.7.1 (https://github.com/unicode-org/icu4x?rev=14e9a3a9857be74582abe2dfa7ab799c5eaac873#14e9a3a9)
+ 6:33.28    Compiling zerovec-derive v0.9.4 (https://github.com/unicode-org/icu4x?rev=14e9a3a9857be74582abe2dfa7ab799c5eaac873#14e9a3a9)
+ 7:00.78    Compiling displaydoc v0.2.4
+ 7:19.21    Compiling darling_macro v0.20.1
+ 7:27.26    Compiling darling v0.20.1
+ 7:27.40    Compiling futures-task v0.3.28
+ 7:28.29    Compiling futures-channel v0.3.28
+ 7:28.93    Compiling cmake v0.1.999 (/home/devel/building/work/src/firefox-121.0/build/rust/cmake)
+ 7:28.98    Compiling rustix v0.38.13
+ 7:29.04    Compiling cubeb-sys v0.10.3
+ 7:29.55    Compiling serde_with_macros v3.0.0
+ 7:32.25    Compiling derive_more-impl v1.0.0-beta.2
+ 7:34.79    Compiling zerofrom v0.1.2
+ 7:35.87    Compiling memoffset v0.8.999 (/home/devel/building/work/src/firefox-121.0/build/rust/memoffset)
+ 7:37.02    Compiling smallvec v1.11.1
+ 7:37.37    Compiling toml v0.5.11
+ 7:38.20    Compiling nsstring v0.1.0 (/home/devel/building/work/src/firefox-121.0/xpcom/rust/nsstring)
+ 7:52.73    Compiling cargo-platform v0.1.2
+ 7:56.53    Compiling basic-toml v0.1.2
+ 7:59.85    Compiling cargo_metadata v0.15.3
+ 8:00.82    Compiling uniffi_meta v0.24.3
+ 8:04.96    Compiling bitflags v1.999.999 (/home/devel/building/work/src/firefox-121.0/build/rust/bitflags)
+ 8:05.09    Compiling nserror v0.1.0 (/home/devel/building/work/src/firefox-121.0/xpcom/rust/nserror)
+ 8:05.82    Compiling uniffi_testing v0.24.3
+ 8:06.56    Compiling bincode v1.3.3
+ 8:09.70    Compiling uniffi_core v0.24.3
+ 8:12.49    Compiling askama_derive v0.12.1
+ 8:12.88    Compiling xpcom v0.1.0 (/home/devel/building/work/src/firefox-121.0/xpcom/rust/xpcom)
+ 8:15.53    Compiling tinyvec v1.999.999 (/home/devel/building/work/src/firefox-121.0/build/rust/tinyvec)
+ 8:15.62    Compiling unicode-normalization v0.1.22
+ 8:19.18    Compiling idna v0.2.3
+ 8:26.95    Compiling url v2.1.0
+ 8:31.98    Compiling yoke v0.7.1
+ 8:32.98    Compiling zerovec v0.9.4
+ 8:39.85    Compiling parking_lot v0.12.1
+ 8:40.83    Compiling tinystr v0.7.1
+ 8:41.81    Compiling uuid v1.3.0
+ 8:42.80    Compiling arrayvec v0.7.2
+ 8:44.28    Compiling euclid v0.22.7
+ 8:45.47    Compiling unic-langid-impl v0.9.1
+ 8:46.64    Compiling lmdb-rkv v0.14.0
+ 8:48.70    Compiling unic-langid v0.9.1
+ 8:48.81    Compiling rkv v0.18.4
+ 8:51.28    Compiling rusqlite v0.29.0
+ 8:51.46    Compiling chrono v0.4.19
+ 9:03.83    Compiling app_units v0.7.3
+ 9:04.25    Compiling interrupt-support v0.1.0 (https://github.com/mozilla/application-services?rev=c82bccfa500813f273f4db0ead64fc73bfa2b34c#c82bccfa)
+ 9:05.27    Compiling serde_bytes v0.11.9
+ 9:05.54    Compiling zeitstempel v0.1.1
+ 9:05.73    Compiling rayon-core v1.12.0
+ 9:06.40    Compiling linux-raw-sys v0.4.7
+ 9:07.53    Compiling futures-sink v0.3.28
+ 9:07.79    Compiling time-core v0.1.1
+ 9:08.13    Compiling khronos_api v3.1.0
+ 9:09.79    Compiling futures-util v0.3.28
+ 9:10.78    Compiling time-macros v0.2.10
+ 9:15.11    Compiling fluent-langneg v0.13.0
+ 9:16.30    Compiling moz_task v0.1.0 (/home/devel/building/work/src/firefox-121.0/xpcom/rust/moz_task)
+ 9:16.83    Compiling storage_variant v0.1.0 (/home/devel/building/work/src/firefox-121.0/storage/variant)
+ 9:17.00    Compiling derive_more v1.0.0-beta.2
+ 9:17.29    Compiling serde_with v3.0.0
+ 9:20.85    Compiling error-support-macros v0.1.0 (https://github.com/mozilla/application-services?rev=c82bccfa500813f273f4db0ead64fc73bfa2b34c#c82bccfa)
+ 9:21.11    Compiling inherent v1.0.7
+ 9:22.22    Compiling futures-macro v0.3.28
+ 9:28.32    Compiling malloc_size_of_derive v0.1.3 (/home/devel/building/work/src/firefox-121.0/xpcom/rust/malloc_size_of_derive)
+ 9:29.81    Compiling phf_macros v0.11.2
+ 9:34.06    Compiling askama v0.12.0
+ 9:34.99    Compiling uniffi_bindgen v0.24.3
+ 9:36.28    Compiling type-map v0.4.0
+ 9:36.62    Compiling env_logger v0.10.0
+ 9:39.48    Compiling fxhash v0.2.1
+ 9:39.91    Compiling pin-project-lite v0.2.9
+ 9:44.70    Compiling fastrand v2.0.0
+ 9:45.74    Compiling dtoa v0.4.8
+ 9:46.08    Compiling futures-io v0.3.28
+ 9:46.53    Compiling smallbitvec v2.5.1
+ 9:46.72    Compiling pin-utils v0.1.0
+ 9:47.09    Compiling atomic_refcell v0.1.9
+ 9:47.43    Compiling time v0.3.23
+ 9:48.04    Compiling dtoa-short v0.3.3
+ 9:48.65    Compiling tempfile v3.8.0
+ 9:50.22    Compiling phf v0.11.2
+ 9:50.86    Compiling intl-memoizer v0.5.1
+ 9:53.91    Compiling serde_with v1.999.999 (/home/devel/building/work/src/firefox-121.0/build/rust/serde_with)
+ 9:54.54    Compiling crossbeam-deque v0.8.2
+ 9:55.56    Compiling derive_more v0.99.999 (/home/devel/building/work/src/firefox-121.0/build/rust/derive_more)
+ 9:55.93    Compiling sync-guid v0.1.0 (https://github.com/mozilla/application-services?rev=c82bccfa500813f273f4db0ead64fc73bfa2b34c#c82bccfa)
+ 9:59.04    Compiling intl_pluralrules v7.0.2
+10:04.04    Compiling webrender_build v0.0.2 (/home/devel/building/work/src/firefox-121.0/gfx/wr/webrender_build)
+10:09.58    Compiling serde_path_to_error v0.1.11
+10:11.42    Compiling derive_common v0.0.1 (/home/devel/building/work/src/firefox-121.0/servo/components/derive_common)
+10:12.31    Compiling fluent-syntax v0.11.0
+10:14.35    Compiling cssparser-macros v0.6.1 (https://github.com/servo/rust-cssparser?rev=aaa966d9d6ae70c4b8a62bb5e3a14c068bb7dff0#aaa966d9)
+10:15.42    Compiling phf_codegen v0.11.2
+10:15.83    Compiling bindgen v0.64.999 (/home/devel/building/work/src/firefox-121.0/build/rust/bindgen-0.64)
+10:15.94    Compiling libdbus-sys v0.2.2
+10:16.72    Compiling either v1.8.1
+10:17.43    Compiling litemap v0.7.0
+10:18.10    Compiling xml-rs v0.8.4
+10:22.47    Compiling uniffi_build v0.24.3
+10:22.62    Compiling neqo-common v0.6.6 (https://github.com/mozilla/neqo?tag=v0.6.6#34b2c3c4)
+10:23.05    Compiling writeable v0.5.2
+10:24.11    Compiling self_cell v0.10.2
+10:24.28    Compiling fluent-bundle v0.15.2
+10:24.31    Compiling itertools v0.10.5
+10:24.89    Compiling icu_locid v1.2.0
+10:32.51    Compiling cssparser v0.33.0 (https://github.com/servo/rust-cssparser?rev=aaa966d9d6ae70c4b8a62bb5e3a14c068bb7dff0#aaa966d9)
+10:35.19    Compiling gl_generator v0.14.0
+10:36.17    Compiling neqo-crypto v0.6.6 (https://github.com/mozilla/neqo?tag=v0.6.6#34b2c3c4)
+10:39.72    Compiling selectors v0.22.0 (/home/devel/building/work/src/firefox-121.0/servo/components/selectors)
+10:41.13    Compiling cubeb-core v0.10.4
+10:43.45    Compiling qlog v0.9.0
+10:46.02    Compiling wr_malloc_size_of v0.0.2 (/home/devel/building/work/src/firefox-121.0/gfx/wr/wr_malloc_size_of)
+10:46.46    Compiling static_prefs v0.1.0 (/home/devel/building/work/src/firefox-121.0/modules/libpref/init/static_prefs)
+10:46.58    Compiling gecko-profiler v0.1.0 (/home/devel/building/work/src/firefox-121.0/tools/profiler/rust-api)
+10:46.58    Compiling icu_provider_macros v1.2.0 (https://github.com/unicode-org/icu4x?rev=14e9a3a9857be74582abe2dfa7ab799c5eaac873#14e9a3a9)
+10:47.50    Compiling sha2 v0.10.6
+10:49.72    Compiling servo_arc v0.1.1 (/home/devel/building/work/src/firefox-121.0/servo/components/servo_arc)
+10:50.48    Compiling glslopt v0.1.9
+10:50.62    Compiling glsl v6.0.2
+10:52.65    Compiling async-trait v0.1.68
+10:52.82    Compiling rust_decimal v1.28.1
+11:02.38    Compiling icu_provider v1.2.0
+11:07.20    Compiling glsl-to-cxx v0.1.0 (/home/devel/building/work/src/firefox-121.0/gfx/wr/glsl-to-cxx)
+11:08.11    Compiling to_shmem v0.0.1 (/home/devel/building/work/src/firefox-121.0/servo/components/to_shmem)
+11:29.94    Compiling gleam v0.15.0
+11:30.27    Compiling rayon v1.6.1
+11:46.15    Compiling prost-derive v0.12.1
+11:46.72    Compiling to_shmem_derive v0.0.1 (/home/devel/building/work/src/firefox-121.0/servo/components/to_shmem_derive)
+11:47.20    Compiling futures-executor v0.3.28
+11:49.09    Compiling pkcs11-bindings v0.1.5
+11:51.77    Compiling profiler-macros v0.1.0 (/home/devel/building/work/src/firefox-121.0/tools/profiler/rust-api/macros)
+11:55.09    Compiling peek-poke-derive v0.3.0 (/home/devel/building/work/src/firefox-121.0/gfx/wr/peek-poke/peek-poke-derive)
+11:58.45    Compiling num_cpus v1.15.0
+12:00.49    Compiling jobserver v0.1.25
+12:03.30    Compiling alsa-sys v0.3.1
+12:03.69    Compiling error-chain v0.12.4
+12:04.07    Compiling memmap2 v0.5.9
+12:04.38    Compiling precomputed-hash v0.1.1
+12:04.49    Compiling same-file v1.0.6
+12:04.86    Compiling bit-vec v0.6.3
+12:05.07    Compiling crossbeam-queue v0.3.8
+12:05.15    Compiling new_debug_unreachable v1.0.4
+12:05.25    Compiling strck v0.1.2
+12:05.73    Compiling data-encoding v2.3.3
+12:05.95    Compiling ash v0.37.3+1.3.251
+12:06.48    Compiling unicode-width v0.1.10
+12:06.72    Compiling bit-set v0.5.3
+12:06.77    Compiling codespan-reporting v0.11.1
+12:07.32    Compiling strck_ident v0.1.2
+12:13.74    Compiling walkdir v2.3.2
+12:18.42    Compiling peek-poke v0.3.0 (/home/devel/building/work/src/firefox-121.0/gfx/wr/peek-poke)
+12:18.54    Compiling build-parallel v0.1.2
+12:19.42    Compiling swgl v0.1.0 (/home/devel/building/work/src/firefox-121.0/gfx/wr/swgl)
+12:23.35    Compiling futures v0.3.28
+12:23.84    Compiling dbus v0.6.5
+12:33.68    Compiling prost v0.12.1
+12:35.37    Compiling fluent-pseudo v0.3.1
+12:37.09    Compiling sql-support v0.1.0 (https://github.com/mozilla/application-services?rev=c82bccfa500813f273f4db0ead64fc73bfa2b34c#c82bccfa)
+12:39.16    Compiling icu_collections v1.2.0
+12:41.35    Compiling nss-gk-api v0.3.0
+12:45.91    Compiling spirv v0.2.0+1.5.4
+12:55.28    Compiling nix v0.26.2
+12:57.69    Compiling gpu-descriptor-types v0.1.1
+12:58.28    Compiling rustc_version v0.4.0
+13:00.30    Compiling indexmap v2.999.999 (/home/devel/building/work/src/firefox-121.0/build/rust/indexmap)
+13:00.45    Compiling gpu-alloc-types v0.3.0
+13:01.48    Compiling dom v0.1.0 (/home/devel/building/work/src/firefox-121.0/dom/base/rust)
+13:02.72    Compiling ron v0.8.1
+13:03.10    Compiling bindgen v0.63.999 (/home/devel/building/work/src/firefox-121.0/build/rust/bindgen-0.63)
+13:03.21    Compiling audioipc2 v0.5.0 (https://github.com/mozilla/audioipc?rev=6be424d75f1367e70f2f5ddcacd6d0237e81a6a9#6be424d7)
+13:04.37    Compiling nss_build_common v0.1.0 (https://github.com/mozilla/application-services?rev=c82bccfa500813f273f4db0ead64fc73bfa2b34c#c82bccfa)
+13:04.85    Compiling hexf-parse v0.2.1
+13:05.44    Compiling void v1.0.2
+13:06.34    Compiling chunky-vec v0.1.0
+13:06.69    Compiling utf8_iter v1.0.3
+13:06.94    Compiling diplomat_core v0.5.2 (https://github.com/rust-diplomat/diplomat?rev=8d125999893fedfdf30595e97334c21ec4b18da9#8d125999)
+13:07.09    Compiling icu_segmenter v1.2.1
+13:16.35    Compiling naga v0.14.0 (https://github.com/gfx-rs/wgpu?rev=3ec547cdcaaa14488327d8f1b5f7736278c4178d#3ec547cd)
+13:19.03    Compiling webext-storage v0.1.0 (https://github.com/mozilla/application-services?rev=c82bccfa500813f273f4db0ead64fc73bfa2b34c#c82bccfa)
+13:19.56    Compiling malloc_size_of v0.0.1 (/home/devel/building/work/src/firefox-121.0/servo/components/malloc_size_of)
+13:23.60    Compiling uniffi_macros v0.24.3
+13:35.78    Compiling fluent-fallback v0.7.0
+13:38.41    Compiling ohttp v0.3.1
+13:52.39    Compiling mozglue-static v0.1.0 (/home/devel/building/work/src/firefox-121.0/mozglue/static/rust)
+13:53.74    Compiling audio_thread_priority v0.30.0
+13:56.11    Compiling gpu-alloc v0.6.0
+14:01.81    Compiling gpu-descriptor v0.2.3
+14:02.76    Compiling nix v0.24.99 (/home/devel/building/work/src/firefox-121.0/build/rust/nix)
+14:02.89    Compiling viaduct v0.1.0 (https://github.com/mozilla/application-services?rev=c82bccfa500813f273f4db0ead64fc73bfa2b34c#c82bccfa)
+14:11.31    Compiling fluent v0.16.0
+14:11.46    Compiling sfv v0.9.3
+14:12.55    Compiling neqo-transport v0.6.6 (https://github.com/mozilla/neqo?tag=v0.6.6#34b2c3c4)
+14:44.52    Compiling webrender v0.62.0 (/home/devel/building/work/src/firefox-121.0/gfx/wr/webrender)
+14:48.00    Compiling uniffi v0.24.3
+14:48.37    Compiling glean-core v55.0.0
+14:49.41    Compiling error-support v0.1.0 (https://github.com/mozilla/application-services?rev=c82bccfa500813f273f4db0ead64fc73bfa2b34c#c82bccfa)
+14:50.46    Compiling sync15 v0.1.0 (https://github.com/mozilla/application-services?rev=c82bccfa500813f273f4db0ead64fc73bfa2b34c#c82bccfa)
+14:56.00    Compiling remote_settings v0.1.0 (https://github.com/mozilla/application-services?rev=c82bccfa500813f273f4db0ead64fc73bfa2b34c#c82bccfa)
+14:57.04    Compiling golden_gate v0.1.0 (/home/devel/building/work/src/firefox-121.0/services/sync/golden_gate)
+15:03.88    Compiling glean v55.0.0
+15:05.38    Compiling firefox-on-glean v0.1.0 (/home/devel/building/work/src/firefox-121.0/toolkit/components/glean/api)
+15:07.99    Compiling webrender_api v0.62.0 (/home/devel/building/work/src/firefox-121.0/gfx/wr/webrender_api)
+15:42.14    Compiling style v0.0.1 (/home/devel/building/work/src/firefox-121.0/servo/components/style)
+15:50.83    Compiling icu_provider_adapters v1.2.0
+15:56.59    Compiling cubeb v0.10.3
+15:56.88    Compiling wgpu-types v0.18.0 (https://github.com/gfx-rs/wgpu?rev=3ec547cdcaaa14488327d8f1b5f7736278c4178d#3ec547cd)
+15:57.03    Compiling enumset_derive v0.8.1
+16:03.76    Compiling keccak v0.1.4
+16:05.28    Compiling libudev-sys v0.1.3 (/home/devel/building/work/src/firefox-121.0/dom/webauthn/libudev-sys)
+16:10.42    Compiling mio v0.8.8
+16:13.86    Compiling freetype v0.7.0
+16:16.22    Compiling iovec v0.1.4
+16:16.62    Compiling replace_with v0.1.7
+16:16.86    Compiling tracy-rs v0.1.2
+16:17.07    Compiling cose v0.1.4 (https://github.com/franziskuskiefer/cose-rust?rev=43c22248d136c8b38fe42ea709d08da6355cf04b#43c22248)
+16:17.81    Compiling svg_fmt v0.4.1
+16:19.40    Compiling raw-window-handle v0.6.0
+16:19.85    Compiling encoding_c_mem v0.2.6
+16:20.49    Compiling encoding_c v0.9.8
+16:21.15    Compiling profiling v1.0.7
+16:21.16    Compiling murmurhash3 v0.0.5
+16:21.27    Compiling half v1.8.2
+16:21.65    Compiling authenticator v0.4.0-alpha.23
+16:22.32    Compiling rust_cascade v1.5.0
+16:22.99    Compiling serde_cbor v0.11.2
+16:23.86    Compiling wgpu-hal v0.18.0 (https://github.com/gfx-rs/wgpu?rev=3ec547cdcaaa14488327d8f1b5f7736278c4178d#3ec547cd)
+16:24.91    Compiling etagere v0.2.7
+16:29.11    Compiling l10nregistry v0.3.0 (/home/devel/building/work/src/firefox-121.0/intl/l10n/rust/l10nregistry-rs)
+16:37.67    Compiling enumset v1.1.2
+16:40.52    Compiling libudev v0.2.0
+16:41.76    Compiling sha3 v0.10.8
+16:44.68    Compiling icu_testdata v1.2.0 (/home/devel/building/work/src/firefox-121.0/intl/icu_testdata)
+16:47.69    Compiling alsa v0.7.0
+17:04.13    Compiling wr_glyph_rasterizer v0.1.0 (/home/devel/building/work/src/firefox-121.0/gfx/wr/wr_glyph_rasterizer)
+17:10.53    Compiling suggest v0.1.0 (https://github.com/mozilla/application-services?rev=c82bccfa500813f273f4db0ead64fc73bfa2b34c#c82bccfa)
+17:11.15    Compiling tabs v0.1.0 (https://github.com/mozilla/application-services?rev=c82bccfa500813f273f4db0ead64fc73bfa2b34c#c82bccfa)
+17:11.56    Compiling neqo-qpack v0.6.6 (https://github.com/mozilla/neqo?tag=v0.6.6#34b2c3c4)
+17:12.40    Compiling fluent-ffi v0.1.0 (/home/devel/building/work/src/firefox-121.0/intl/l10n/rust/fluent-ffi)
+17:22.88    Compiling diplomat v0.5.2 (https://github.com/rust-diplomat/diplomat?rev=8d125999893fedfdf30595e97334c21ec4b18da9#8d125999)
+17:26.64    Compiling style_traits v0.0.1 (/home/devel/building/work/src/firefox-121.0/servo/components/style_traits)
+17:28.80    Compiling cubeb-backend v0.10.3
+17:29.40    Compiling style_derive v0.0.1 (/home/devel/building/work/src/firefox-121.0/servo/components/style_derive)
+17:38.84    Compiling plane-split v0.18.0
+17:40.71    Compiling uluru v3.0.0
+17:42.20    Compiling num-derive v0.4.0
+17:46.03    Compiling owning_ref v0.4.1
+17:46.51    Compiling fallible_collections v0.4.6
+17:47.70    Compiling pulse-ffi v0.1.0 (https://github.com/mozilla/cubeb-pulse-rs?rev=cf48897be5cbe147d051ebbbe1eaf5fd8fb6bbc9#cf48897b)
+17:49.36    Compiling dirs-sys v0.3.7
+17:49.65    Compiling bitreader v0.3.6
+17:50.76    Compiling topological-sort v0.1.0
+17:51.18    Compiling memalloc v0.1.0
+17:51.45    Compiling diplomat-runtime v0.5.2 (https://github.com/rust-diplomat/diplomat?rev=8d125999893fedfdf30595e97334c21ec4b18da9#8d125999)
+17:51.71    Compiling subtle v2.5.0
+17:51.86    Compiling runloop v0.1.0
+17:52.78    Compiling quick-error v1.2.3
+17:52.99    Compiling moz_cbor v0.1.2
+17:54.71    Compiling cache-padded v1.2.0
+17:54.87    Compiling unicode-segmentation v1.10.0
+17:56.12    Compiling hex v0.4.3
+17:56.52    Compiling ringbuf v0.2.8
+17:58.97    Compiling dns-parser v0.8.0
+18:02.06    Compiling prio v0.15.3
+18:04.30    Compiling icu_capi v1.2.2
+18:12.85    Compiling midir v0.7.0 (https://github.com/mozilla/midir.git?rev=519e651241e867af3391db08f9ae6400bc023e18#519e6512)
+18:15.69    Compiling mp4parse v0.17.0 (https://github.com/mozilla/mp4parse-rust?rev=d262e40e7b80f949dcdb4db21caa6dbf1a8b2043#d262e40e)
+18:24.41    Compiling dirs v4.0.0
+18:24.92    Compiling pulse v0.3.0 (https://github.com/mozilla/cubeb-pulse-rs?rev=cf48897be5cbe147d051ebbbe1eaf5fd8fb6bbc9#cf48897b)
+18:29.66    Compiling neqo-http3 v0.6.6 (https://github.com/mozilla/neqo?tag=v0.6.6#34b2c3c4)
+19:03.13    Compiling l10nregistry-ffi v0.1.0 (/home/devel/building/work/src/firefox-121.0/intl/l10n/rust/l10nregistry-ffi)
+19:22.76    Compiling wgpu-core v0.18.0 (https://github.com/gfx-rs/wgpu?rev=3ec547cdcaaa14488327d8f1b5f7736278c4178d#3ec547cd)
+19:37.14    Compiling app_services_logger v0.1.0 (/home/devel/building/work/src/firefox-121.0/services/common/app_services_logger)
+19:40.23    Compiling dogear v0.5.0
+19:56.46    Compiling storage v0.1.0 (/home/devel/building/work/src/firefox-121.0/storage/rust)
+19:58.17    Compiling unic-langid-ffi v0.1.0 (/home/devel/building/work/src/firefox-121.0/intl/locale/rust/unic-langid-ffi)
+20:00.37    Compiling webrtc-sdp v0.3.10
+20:25.53    Compiling origin-trial-token v0.1.1
+20:28.41    Compiling bhttp v0.3.1
+20:29.69    Compiling sha1 v0.10.5
+20:30.90    Compiling md-5 v0.10.5
+20:30.90    Compiling object v0.32.0
+20:31.32    Compiling chardetng v0.1.9 (https://github.com/hsivonen/chardetng?rev=3484d3e3ebdc8931493aa5df4d7ee9360a90e76b#3484d3e3)
+20:35.91    Compiling xmldecl v0.2.0
+20:36.23    Compiling socket2 v0.4.9
+20:39.11    Compiling remove_dir_all v0.5.3
+20:39.21    Compiling typed-arena-nomut v0.1.0
+20:39.59    Compiling oxilangtag v0.1.3
+20:40.45    Compiling rustc-demangle v0.1.21
+20:41.58    Compiling oxilangtag-ffi v0.1.0 (/home/devel/building/work/src/firefox-121.0/intl/locale/rust/oxilangtag-ffi)
+20:42.24    Compiling profiler_helper v0.1.0 (/home/devel/building/work/src/firefox-121.0/tools/profiler/rust-helper)
+20:43.50    Compiling wpf-gpu-raster v0.1.0 (https://github.com/FirefoxGraphics/wpf-gpu-raster?rev=99979da091fd58fba8477e7fcdf5ec0727102916#99979da0)
+20:46.50    Compiling webrender_bindings v0.1.0 (/home/devel/building/work/src/firefox-121.0/gfx/webrender_bindings)
+20:47.10    Compiling mdns_service v0.1.1 (/home/devel/building/work/src/firefox-121.0/dom/media/webrtc/transport/mdns_service)
+20:52.49    Compiling encoding_glue v0.1.0 (/home/devel/building/work/src/firefox-121.0/intl/encoding_glue)
+20:53.56    Compiling chardetng_c v0.1.2 (https://github.com/hsivonen/chardetng_c?rev=ed8a4c6f900a90d4dbc1d64b856e61490a1c3570#ed8a4c6f)
+20:53.89    Compiling crypto_hash v0.1.0 (/home/devel/building/work/src/firefox-121.0/security/manager/ssl/crypto_hash)
+20:56.79    Compiling binary_http v0.1.0 (/home/devel/building/work/src/firefox-121.0/netwerk/protocol/http/binary_http)
+20:58.04    Compiling origin-trials-ffi v0.1.0 (/home/devel/building/work/src/firefox-121.0/dom/origin-trials/ffi)
+20:58.54    Compiling rsdparsa_capi v0.1.0 (/home/devel/building/work/src/firefox-121.0/dom/media/webrtc/sdp/rsdparsa_capi)
+21:01.43    Compiling wgpu_bindings v0.1.0 (/home/devel/building/work/src/firefox-121.0/gfx/wgpu_bindings)
+21:09.61    Compiling fluent-langneg-ffi v0.1.0 (/home/devel/building/work/src/firefox-121.0/intl/locale/rust/fluent-langneg-ffi)
+21:12.97    Compiling bookmark_sync v0.1.0 (/home/devel/building/work/src/firefox-121.0/toolkit/components/places/bookmark_sync)
+21:29.00    Compiling gecko_logger v0.1.0 (/home/devel/building/work/src/firefox-121.0/xpcom/rust/gecko_logger)
+21:32.98    Compiling jsrust_shared v0.1.0 (/home/devel/building/work/src/firefox-121.0/js/src/rust/shared)
+21:42.48    Compiling localization-ffi v0.1.0 (/home/devel/building/work/src/firefox-121.0/intl/l10n/rust/localization-ffi)
+22:06.14    Compiling geckoservo v0.0.1 (/home/devel/building/work/src/firefox-121.0/servo/ports/geckolib)
+22:15.44    Compiling neqo_glue v0.1.0 (/home/devel/building/work/src/firefox-121.0/netwerk/socket/neqo_glue)
+22:16.71    Compiling webext_storage_bridge v0.1.0 (/home/devel/building/work/src/firefox-121.0/toolkit/components/extensions/storage/webext_storage_bridge)
+22:26.32    Compiling cubeb-pulse v0.4.1 (https://github.com/mozilla/cubeb-pulse-rs?rev=cf48897be5cbe147d051ebbbe1eaf5fd8fb6bbc9#cf48897b)
+22:31.28    Compiling mp4parse_capi v0.17.0 (https://github.com/mozilla/mp4parse-rust?rev=d262e40e7b80f949dcdb4db21caa6dbf1a8b2043#d262e40e)
+22:31.97    Compiling authrs_bridge v0.1.0 (/home/devel/building/work/src/firefox-121.0/dom/webauthn/authrs_bridge)
+23:24.38    Compiling midir_impl v0.1.0 (/home/devel/building/work/src/firefox-121.0/dom/midi/midir_impl)
+23:27.45    Compiling dap_ffi v0.1.0 (/home/devel/building/work/src/firefox-121.0/toolkit/components/telemetry/dap/ffi)
+23:39.90    Compiling oblivious_http v0.1.0 (/home/devel/building/work/src/firefox-121.0/netwerk/protocol/http/oblivious_http)
+23:43.54    Compiling mime-guess-ffi v0.1.0 (/home/devel/building/work/src/firefox-121.0/dom/fs/parent/rust/mime-guess-ffi)
+23:43.76    Compiling cose-c v0.1.5
+23:44.54    Compiling audioipc2-client v0.5.0 (https://github.com/mozilla/audioipc?rev=6be424d75f1367e70f2f5ddcacd6d0237e81a6a9#6be424d7)
+23:59.28    Compiling jog v0.1.0 (/home/devel/building/work/src/firefox-121.0/toolkit/components/glean/bindings/jog)
+24:08.91    Compiling fog_control v0.1.0 (/home/devel/building/work/src/firefox-121.0/toolkit/components/glean)
+24:09.94    Compiling data_storage v0.0.1 (/home/devel/building/work/src/firefox-121.0/security/manager/ssl/data_storage)
+24:14.44    Compiling audioipc2-server v0.5.0 (https://github.com/mozilla/audioipc?rev=6be424d75f1367e70f2f5ddcacd6d0237e81a6a9#6be424d7)
+24:21.97    Compiling cascade_bloom_filter v0.1.0 (/home/devel/building/work/src/firefox-121.0/toolkit/components/cascade_bloom_filter)
+24:22.67    Compiling cert_storage v0.0.1 (/home/devel/building/work/src/firefox-121.0/security/manager/ssl/cert_storage)
+24:27.85    Compiling http_sfv v0.1.0 (/home/devel/building/work/src/firefox-121.0/netwerk/base/http-sfv)
+24:30.71    Compiling data-encoding-ffi v0.1.0 (/home/devel/building/work/src/firefox-121.0/dom/fs/parent/rust/data-encoding-ffi)
+24:30.90    Compiling mapped_hyph v0.4.3 (https://github.com/jfkthame/mapped_hyph.git?rev=c7651a0cffff41996ad13c44f689bd9cd2192c01#c7651a0c)
+24:38.03    Compiling rure v0.2.2 (/home/devel/building/work/src/firefox-121.0/third_party/rust/rure)
+24:38.92    Compiling kvstore v0.1.0 (/home/devel/building/work/src/firefox-121.0/toolkit/components/kvstore)
+24:42.11    Compiling mozurl v0.0.1 (/home/devel/building/work/src/firefox-121.0/netwerk/base/mozurl)
+24:43.56    Compiling processtools v0.1.0 (/home/devel/building/work/src/firefox-121.0/toolkit/components/processtools)
+24:44.05    Compiling aa-stroke v0.1.0 (https://github.com/FirefoxGraphics/aa-stroke?rev=ed4206ea11703580cd1d4fc63371a527b29d8252#ed4206ea)
+24:44.11    Compiling gkrust_utils v0.1.0 (/home/devel/building/work/src/firefox-121.0/xpcom/rust/gkrust_utils)
+24:44.30    Compiling netwerk_helper v0.0.1 (/home/devel/building/work/src/firefox-121.0/netwerk/base/rust-helper)
+24:46.21    Compiling moz_asserts v0.1.0 (/home/devel/building/work/src/firefox-121.0/mozglue/static/rust/moz_asserts)
+24:46.31    Compiling qcms v0.2.0 (/home/devel/building/work/src/firefox-121.0/gfx/qcms)
+24:46.78    Compiling prefs_parser v0.0.1 (/home/devel/building/work/src/firefox-121.0/modules/libpref/parser)
+24:47.33    Compiling mozilla-central-workspace-hack v0.1.0 (/home/devel/building/work/src/firefox-121.0/build/workspace-hack)
+24:47.57 dom/media/gmp-plugin-openh264
+24:48.52 ipc/app
+24:51.58    Compiling gkrust-shared v0.1.0 (/home/devel/building/work/src/firefox-121.0/toolkit/library/rust/shared)
+24:52.48 toolkit/library/build/libxul.so.symbols.stub
+24:52.51 accessible/aom
+24:53.29 accessible/atk
+24:58.08 accessible/base
+25:42.40 accessible/basetypes
+26:24.59 accessible/generic
+26:24.70 accessible/html
+26:50.03 accessible/ipc
+27:55.87 accessible/xpcom
+28:01.58 accessible/xul
+28:10.12 browser/components/about
+28:54.02 browser/components/shell
+29:02.69 caps
+29:25.12 chrome
+29:43.50 config/external/gkcodecs/libgkcodecs.so.symbols.stub
+29:44.14 media/libogg
+29:44.85 media/libopus
+30:05.75 media/libtheora
+30:05.79 media/libvorbis
+30:08.26 media/libsoundtouch/src
+30:13.73 config/external/rlbox
+30:13.82 config/external/sqlite/libmozsqlite3.so.symbols.stub
+30:14.41 third_party/sqlite3/src
+30:17.09 devtools/platform
+30:19.94 devtools/shared/heapsnapshot
+30:23.26 docshell/base
+30:32.54 docshell/build
+31:09.62 docshell/shistory
+31:11.66 dom/abort
+31:26.01 dom/animation
+31:26.60    Compiling gkrust v0.1.0 (/home/devel/building/work/src/firefox-121.0/toolkit/library/rust)
+32:19.01 dom/audiochannel
+32:22.35 dom/base/UseCounterMetrics.cpp.stub
+32:23.03 dom/battery
+32:26.30 dom/bindings
+32:48.38 dom/broadcastchannel
+32:56.86 dom/cache
+33:45.52 dom/canvas
+34:01.74 dom/clients/api
+34:06.43 dom/clients/manager
+35:17.90 dom/commandhandler
+35:44.77 dom/console
+37:35.63 dom/credentialmanagement/identity
+38:07.08 dom/credentialmanagement
+38:43.22 dom/crypto
+38:52.26 dom/debugger
+38:53.14 dom/encoding
+39:06.18 dom/events
+40:17.20 dom/fetch
+40:31.67 dom/file/ipc
+42:49.97 dom/file
+42:59.24 dom/file/uri
+43:15.51 dom/filesystem/compat
+44:20.93 dom/filesystem
+44:56.28 dom/flex
+44:59.42 dom/fs/api
+45:15.50 dom/fs/child
+46:53.38 dom/fs/parent/datamodel
+47:08.24 dom/fs/parent
+47:10.85 dom/fs/shared
+47:29.44 dom/gamepad
+47:41.89 dom/geolocation
+48:02.16 dom/grid
+48:24.08 dom/html/input
+48:24.76 dom/html
+48:26.10 dom/indexedDB
+49:47.16 dom/ipc/jsactor
+51:01.33 dom/ipc
+51:43.23 dom/jsurl
+52:01.15 dom/l10n
+52:05.11 dom/localstorage
+52:21.60 dom/locks
+53:02.43 dom/mathml
+53:19.14 dom/media/autoplay
+54:49.19 dom/media/bridge
+54:54.58 dom/media/doctor
+55:00.37 dom/media/driftcontrol
+55:14.76 dom/media/eme
+55:18.23 dom/media/encoder
+55:23.73 dom/media/flac
+55:46.62 dom/media/gmp
+56:12.59     Finished release [optimized] target(s) in 53m 40s
+56:16.52 dom/media/gmp/widevine-adapter
+56:16.53 dom/media/imagecapture
+56:25.23 toolkit/library/rust/libgkrust.a
+56:25.25 dom/media/ipc
+56:56.98 dom/media/mediacapabilities
+57:01.29 dom/media/mediacontrol
+57:04.78 dom/media/mediasession
+57:08.85 dom/media/mediasink
+57:20.12 dom/media/mediasource
+57:44.11 dom/media/mp3
+57:54.11 dom/media/mp4
+58:18.68 dom/media/ogg
+58:19.00 dom/media/platforms/agnostic/bytestreams
+58:27.21 dom/media/platforms/agnostic/eme
+58:28.90 dom/media/platforms/agnostic/gmp
+58:37.04 dom/media/platforms/ffmpeg/ffmpeg57
+58:38.46 dom/media/platforms/ffmpeg/ffmpeg58
+59:11.75 dom/media/platforms/ffmpeg/ffmpeg59
+59:14.51 dom/media/platforms/ffmpeg/ffmpeg60
+59:17.06 dom/media/platforms/ffmpeg/ffvpx
+59:28.77 dom/media/platforms/ffmpeg/libav53
+59:43.20 dom/media/platforms/ffmpeg/libav54
+59:46.17 dom/media/platforms/ffmpeg/libav55
+59:48.64 dom/media/platforms/ffmpeg
+59:48.94 dom/media/platforms/omx
+59:57.12 dom/media/platforms
+60:03.10 dom/media/systemservices
+60:18.43 dom/media
+60:45.95 dom/media/utils
+60:48.95 dom/media/wave
+60:56.28 dom/media/webaudio/blink
+61:00.47 dom/media/webaudio
+62:00.95 dom/media/webcodecs
+62:30.52 dom/media/webm
+62:36.38 dom/media/webrtc/common
+62:38.72 dom/media/webrtc/jsapi
+62:43.60 dom/media/webrtc/jsep
+62:59.39 dom/media/webrtc/libwebrtcglue
+63:02.76 dom/media/webrtc/sdp
+63:13.36 dom/media/webrtc
+63:58.43 dom/media/webrtc/transport/build
+64:05.93 dom/media/webrtc/transport/ipc
+64:13.00 dom/media/webrtc/transport/third_party/nICEr
+64:18.92 dom/media/webrtc/transport/third_party/nrappkit
+64:20.85 dom/media/webrtc/transportbridge
+64:27.40 dom/media/webspeech/recognition
+65:16.95 dom/media/webspeech/synth/speechd
+65:17.71 dom/media/webspeech/synth
+65:18.55 dom/media/webvtt
+65:19.13 dom/messagechannel
+65:26.21 dom/midi
+65:49.14 dom/network
+65:58.14 dom/notification
+66:09.79 dom/origin-trials/keys.inc.stub
+66:10.58 dom/payments/ipc
+66:13.90 dom/payments
+66:21.42 dom/performance
+66:40.67 dom/permission
+66:50.88 dom/plugins/base
+66:58.35 dom/power
+66:59.75 dom/promise
+67:01.79 dom/prototype
+67:16.46 dom/push
+67:21.29 dom/quota
+67:52.23 dom/reporting
+67:57.20 dom/script
+68:04.16 dom/security/featurepolicy
+68:28.23 dom/security/sanitizer
+68:31.55 dom/security
+68:31.97 dom/serializers
+68:41.09 dom/serviceworkers
+69:30.36 dom/simpledb
+69:39.78 dom/smil
+69:42.58 dom/storage
+70:11.24 dom/streams
+70:23.85 dom/svg
+70:44.72 dom/system/linux
+70:54.69 dom/system
+70:54.86 dom/url
+70:58.49 dom/vr
+72:01.90 dom/webauthn
+72:13.09 dom/webbrowserpersist
+72:21.31 dom/webgpu
+72:42.35 dom/webscheduling
+73:01.26 dom/websocket
+73:09.45 dom/webtransport/api
+73:10.06 dom/webtransport/child
+73:11.13 dom/webtransport/parent
+73:22.10 dom/webtransport/shared
+73:27.07 dom/workers/loader
+73:39.56 dom/workers/remoteworkers
+73:46.57 dom/workers/sharedworkers
+73:55.92 dom/workers
+74:06.79 dom/worklet/loader
+74:21.59 dom/worklet
+74:32.50 dom/xhr
+74:41.63 dom/xml
+74:43.36 dom/xslt/base
+74:53.54 dom/xslt/xml
+74:58.64 dom/xslt/xpath
+75:16.85 dom/xslt/xslt
+75:19.69 dom/xul
+75:28.15 editor/composer
+75:33.59 editor/libeditor
+75:53.26 editor/spellchecker
+76:08.61 editor/txmgr
+76:11.52 extensions/auth
+76:31.79 extensions/permissions
+76:34.50 extensions/pref/autoconfig/src
+76:37.56 extensions/spellcheck/hunspell/glue
+76:39.95 extensions/spellcheck/hunspell/src
+76:49.02 extensions/spellcheck/src
+77:04.67 gfx/2d
+77:30.58 gfx/angle/targets/angle_common
+77:35.34 gfx/angle/targets/preprocessor
+77:36.96 gfx/angle/targets/translator
+77:41.88 gfx/cairo/cairo/src
+78:19.05 gfx/config
+78:19.59 gfx/gl
+78:23.84 gfx/graphite2/src
+78:41.34 gfx/harfbuzz/src
+78:45.36 gfx/ipc
+79:00.88 gfx/layers
+79:52.47 gfx/ots/src
+80:25.68 gfx/skia
+80:54.09 gfx/src
+81:21.92 gfx/thebes
+81:30.12 gfx/vr/service/openvr
+82:30.62 gfx/vr/service
+82:43.13 gfx/vr
+84:56.88 gfx/webrender_bindings
+87:22.47 gfx/ycbcr
+88:26.91 hal
+88:27.25 image/build
+88:50.38 image/decoders/icon/gtk
+89:05.19 image/decoders/icon
+89:13.31 image/decoders
+89:24.29 image/encoders/bmp
+89:31.66 image/encoders/ico
+89:36.62 image/encoders/jpeg
+89:42.04 image/encoders/png
+89:42.51 image/encoders/webp
+89:47.60 image
+89:47.61 intl/components
+90:03.47 intl/hyphenation/glue
+90:06.09 intl/l10n
+90:15.34 intl/locale/gtk
+90:20.53 intl/locale
+90:38.73 intl/lwbrk
+90:44.19 intl/strres
+90:53.85 intl/uconv
+90:54.59 intl/unicharutil/util
+90:56.32 ipc/chromium
+91:01.81 ipc/glue
+91:02.28 ipc/ipdl
+92:13.20 ipc/testshell
+92:14.20 js/loader
+92:26.84 js/src/debugger
+92:34.15 js/src/frontend
+93:14.29 js/src/gc/StatsPhasesGenerated.inc.stub
+93:32.62 js/src/irregexp
+93:33.12 js/src/jit
+93:57.13 js/src
+94:40.73 js/src/util
+94:49.62 js/src/wasm
+95:38.12 modules/fdlibm/src
+95:54.67 js/xpconnect/loader
+96:48.78 js/xpconnect/src
+96:53.65 js/xpconnect/wrappers
+98:10.14 layout/base
+98:51.36 layout/build
+100:13.79 layout/forms
+100:26.86 layout/generic
+101:27.53 layout/inspector
+101:38.38 layout/ipc
+101:41.34 layout/mathml
+101:57.69 layout/painting
+103:08.60 layout/printing
+103:13.05 layout/style/nsComputedDOMStyleGenerated.inc.stub
+103:13.05 layout/style/nsCSSPropsGenerated.inc.stub
+103:18.98 layout/svg
+103:44.93 layout/tables
+104:05.37 layout
+104:07.83 layout/xul
+104:18.84 layout/xul/tree
+104:21.81 media/kiss_fft
+104:22.67 media/libaom
+104:46.33 media/libcubeb/src
+104:48.69 media/libdav1d/asm
+104:48.69 media/libdav1d/asm/cdef.o
+104:48.77 media/libdav1d/asm/cdef16.o
+104:48.99 media/libdav1d/asm/cdef_tmpl.o
+104:49.20 media/libdav1d/asm/filmgrain.o
+104:49.37 media/libdav1d/asm/filmgrain16.o
+104:49.64 media/libdav1d/asm/ipred.o
+104:49.90 media/libdav1d/asm/ipred16.o
+104:50.15 media/libdav1d/asm/itx.o
+104:50.42 media/libdav1d/asm/itx16.o
+104:50.79 media/libdav1d/asm/loopfilter.o
+104:51.15 media/libdav1d/asm/loopfilter16.o
+104:51.36 media/libdav1d/asm/looprestoration.o
+104:51.56 media/libdav1d/asm/looprestoration16.o
+104:51.76 media/libdav1d/asm/looprestoration_common.o
+104:51.97 media/libdav1d/asm/looprestoration_tmpl.o
+104:52.14 media/libdav1d/asm/mc.o
+104:52.27 media/libdav1d/asm/mc16.o
+104:52.77 media/libdav1d/asm/msac.o
+104:53.08 media/libdav1d/asm/refmvs.o
+104:53.27 media/libdav1d/16bd_cdef_apply_tmpl.c.stub
+104:53.27 media/libdav1d/8bd_cdef_apply_tmpl.c.stub
+104:53.46 media/libdav1d/16bd_cdef_tmpl.c.stub
+104:54.11 media/libjpeg
+104:54.36 media/libdav1d/8bd_cdef_tmpl.c.stub
+104:55.23 media/libdav1d/16bd_fg_apply_tmpl.c.stub
+104:56.07 media/libdav1d/8bd_fg_apply_tmpl.c.stub
+104:56.30 media/libdav1d/16bd_filmgrain_tmpl.c.stub
+104:56.90 media/libmkv
+104:57.11 media/libdav1d/8bd_filmgrain_tmpl.c.stub
+104:57.56 media/libdav1d/16bd_ipred_prepare_tmpl.c.stub
+104:58.08 media/libdav1d/8bd_ipred_prepare_tmpl.c.stub
+104:58.29 media/libnestegg/src
+104:58.62 media/libdav1d/16bd_ipred_tmpl.c.stub
+104:59.15 media/libdav1d/8bd_ipred_tmpl.c.stub
+104:59.67 media/libdav1d/16bd_itx_tmpl.c.stub
+104:59.71 media/libdav1d/8bd_itx_tmpl.c.stub
+105:00.23 media/libspeex_resampler/src
+105:00.50 media/libdav1d/16bd_lf_apply_tmpl.c.stub
+105:00.88 media/libdav1d/8bd_lf_apply_tmpl.c.stub
+105:01.40 media/libdav1d/16bd_loopfilter_tmpl.c.stub
+105:01.94 media/libdav1d/8bd_loopfilter_tmpl.c.stub
+105:02.18 media/libdav1d/16bd_looprestoration_tmpl.c.stub
+105:02.51 media/libyuv/libyuv
+105:02.98 media/libdav1d/8bd_looprestoration_tmpl.c.stub
+105:03.77 media/libdav1d/16bd_lr_apply_tmpl.c.stub
+105:04.52 media/libdav1d/8bd_lr_apply_tmpl.c.stub
+105:05.31 media/libdav1d/16bd_mc_tmpl.c.stub
+105:06.08 media/libdav1d/8bd_mc_tmpl.c.stub
+105:06.85 media/libdav1d/16bd_recon_tmpl.c.stub
+105:07.46 media/mozva
+105:07.63 media/libdav1d/8bd_recon_tmpl.c.stub
+105:08.11 media/psshparser
+105:11.91 memory/volatile
+105:12.51 modules/brotli
+105:15.34 modules/libjar
+105:15.55 modules/libjar/zipwriter
+105:15.93 modules/libpref
+105:16.41 modules/woff2
+105:16.60 netwerk/base/http-sfv
+105:16.91 netwerk/base/mozurl
+105:20.06 netwerk/base/ascii_pac_utils.inc.stub
+105:20.61 netwerk/build
+105:21.77 netwerk/cache2
+105:24.28 netwerk/cookie
+105:37.25 netwerk/dns/etld_data.inc.stub
+105:40.45 netwerk/ipc
+105:44.82 netwerk/mime
+105:50.25 netwerk/protocol/about
+106:15.17 netwerk/protocol/data
+106:22.50 netwerk/protocol/file
+106:57.95 netwerk/protocol/gio
+106:58.38 netwerk/protocol/http
+107:19.27 netwerk/protocol/res
+107:26.33 netwerk/protocol/viewsource
+107:53.44 netwerk/protocol/websocket
+107:57.85 netwerk/protocol/webtransport
+108:01.83 netwerk/sctp/datachannel
+108:14.03 netwerk/sctp/src
+108:54.78 netwerk/socket
+109:04.29 netwerk/streamconv/converters
+109:08.83 netwerk/streamconv
+109:15.03 netwerk/system/linux
+109:18.92 netwerk/system/netlink
+109:21.83 netwerk/system
+109:24.76 netwerk/url-classifier
+109:27.26 other-licenses/snappy
+109:30.94 parser/expat/lib
+109:33.71 parser/html
+109:43.63 parser/htmlparser
+109:44.10 parser/prototype
+110:01.74 security/certverifier
+110:04.59 security/ct
+110:09.08 security/manager/pki
+110:12.95 security/manager/ssl/nsSTSPreloadListGenerated.inc.stub
+110:12.95 security/manager/ssl/xpcshell.inc.stub
+110:15.58 security/nss/lib/mozpkix
+110:16.33 security/manager/ssl/addons-public.inc.stub
+110:18.32 security/sandbox/common
+110:22.42 security/manager/ssl/addons-public-intermediate.inc.stub
+110:22.97 security/sandbox/linux/broker
+110:24.58 security/manager/ssl/addons-stage.inc.stub
+110:25.41 security/sandbox/linux/glue
+110:26.11 security/manager/ssl/content-signature-prod.inc.stub
+110:26.96 security/sandbox/linux/launch
+110:28.86 security/manager/ssl/content-signature-stage.inc.stub
+110:29.38 security/sandbox/linux/reporter
+110:30.25 security/sandbox/linux
+110:37.91 security/manager/ssl/content-signature-dev.inc.stub
+110:44.36 security/manager/ssl/content-signature-local.inc.stub
+110:45.44 startupcache
+110:47.67 storage
+110:47.79 third_party/drm/libdrm
+110:50.60 third_party/gbm/libgbm
+110:55.71 third_party/libepoxy
+111:00.06 third_party/libsrtp/src
+111:02.26 third_party/libwebrtc/api/adaptation/resource_adaptation_api_gn
+111:02.72 third_party/libwebrtc/api/audio/aec3_config_gn
+111:04.87 third_party/libwebrtc/api/audio/aec3_factory_gn
+111:06.23 third_party/libwebrtc/api/audio/audio_frame_api_gn
+111:06.74 third_party/libwebrtc/api/audio_codecs/L16/audio_decoder_L16_gn
+111:09.88 third_party/libwebrtc/api/audio_codecs/L16/audio_encoder_L16_gn
+111:10.08 third_party/libwebrtc/api/audio_codecs/audio_codecs_api_gn
+111:10.53 third_party/libwebrtc/api/audio_codecs/builtin_audio_decoder_factory_gn
+111:11.00 third_party/libwebrtc/api/audio_codecs/builtin_audio_encoder_factory_gn
+111:11.04 third_party/libwebrtc/api/audio_codecs/g711/audio_decoder_g711_gn
+111:12.73 third_party/libwebrtc/api/audio_codecs/g711/audio_encoder_g711_gn
+111:13.95 third_party/libwebrtc/api/audio_codecs/g722/audio_decoder_g722_gn
+111:14.20 third_party/libwebrtc/api/audio_codecs/g722/audio_encoder_g722_gn
+111:14.33 third_party/libwebrtc/api/audio_codecs/ilbc/audio_decoder_ilbc_gn
+111:15.05 third_party/libwebrtc/api/audio_codecs/ilbc/audio_encoder_ilbc_gn
+111:15.58 third_party/libwebrtc/api/audio_codecs/opus/audio_decoder_multiopus_gn
+111:16.85 third_party/libwebrtc/api/audio_codecs/opus/audio_decoder_opus_gn
+111:17.03 third_party/libwebrtc/api/audio_codecs/opus/audio_encoder_multiopus_gn
+111:17.81 third_party/libwebrtc/api/audio_codecs/opus/audio_encoder_opus_config_gn
+111:18.94 third_party/libwebrtc/api/audio_codecs/opus/audio_encoder_opus_gn
+111:19.83 third_party/libwebrtc/api/audio_options_api_gn
+111:20.26 third_party/libwebrtc/api/crypto/options_gn
+111:20.68 third_party/libwebrtc/api/field_trials_registry_gn
+111:20.83 third_party/libwebrtc/api/media_stream_interface_gn
+111:21.19 third_party/libwebrtc/api/neteq/default_neteq_controller_factory_gn
+111:22.56 third_party/libwebrtc/api/neteq/neteq_api_gn
+111:23.00 third_party/libwebrtc/api/neteq/tick_timer_gn
+111:24.30 third_party/libwebrtc/api/rtc_error_gn
+111:24.58 third_party/libwebrtc/api/rtc_event_log/rtc_event_log_gn
+111:24.92 third_party/libwebrtc/api/rtp_headers_gn
+111:25.31 third_party/libwebrtc/api/rtp_packet_info_gn
+111:25.79 third_party/libwebrtc/api/rtp_parameters_gn
+111:25.98 third_party/libwebrtc/api/rtp_sender_setparameters_callback_gn
+111:27.58 third_party/libwebrtc/api/task_queue/pending_task_safety_flag_gn
+111:27.82 third_party/libwebrtc/api/task_queue/task_queue_gn
+111:28.60 third_party/libwebrtc/api/transport/bitrate_settings_gn
+111:28.62 third_party/libwebrtc/api/transport/field_trial_based_config_gn
+111:29.60 third_party/libwebrtc/api/transport/goog_cc_gn
+111:30.72 third_party/libwebrtc/api/transport/network_control_gn
+111:30.73 third_party/libwebrtc/api/transport/rtp/dependency_descriptor_gn
+111:31.13 third_party/libwebrtc/api/transport_api_gn
+111:31.18 third_party/libwebrtc/api/units/data_rate_gn
+111:31.64 third_party/libwebrtc/api/units/data_size_gn
+111:33.40 third_party/libwebrtc/api/units/frequency_gn
+111:34.11 third_party/libwebrtc/api/units/time_delta_gn
+111:34.63 third_party/libwebrtc/api/units/timestamp_gn
+111:34.65 third_party/libwebrtc/api/video/builtin_video_bitrate_allocator_factory_gn
+111:34.83 third_party/libwebrtc/api/video/encoded_frame_gn
+111:35.23 third_party/libwebrtc/api/video/encoded_image_gn
+111:36.54 third_party/libwebrtc/api/video/frame_buffer_gn
+111:37.64 third_party/libwebrtc/api/video/video_adaptation_gn
+111:37.67 third_party/libwebrtc/api/video/video_bitrate_allocation_gn
+111:38.79 third_party/libwebrtc/api/video/video_bitrate_allocator_gn
+111:39.47 third_party/libwebrtc/api/video/video_frame_gn
+111:41.29 third_party/libwebrtc/api/video/video_frame_i010_gn
+111:42.76 third_party/libwebrtc/api/video/video_frame_metadata_gn
+111:43.60 third_party/libwebrtc/api/video/video_rtp_headers_gn
+111:44.51 third_party/libwebrtc/api/video_codecs/rtc_software_fallback_wrappers_gn
+111:44.58 third_party/libwebrtc/api/video_codecs/scalability_mode_gn
+111:44.93 third_party/libwebrtc/api/video_codecs/video_codecs_api_gn
+111:46.42 third_party/libwebrtc/api/video_codecs/vp8_temporal_layers_factory_gn
+111:46.63 third_party/libwebrtc/audio/audio_gn
+111:47.39 third_party/libwebrtc/audio/utility/audio_frame_operations_gn
+111:51.94 third_party/libwebrtc/call/adaptation/resource_adaptation_gn
+111:52.45 third_party/libwebrtc/call/bitrate_allocator_gn
+111:52.71 third_party/libwebrtc/call/bitrate_configurator_gn
+111:52.74 third_party/libwebrtc/call/call_gn
+111:52.95 third_party/libwebrtc/call/call_interfaces_gn
+111:55.70 third_party/libwebrtc/call/rtp_interfaces_gn
+111:58.76 third_party/libwebrtc/call/rtp_receiver_gn
+112:00.53 third_party/libwebrtc/call/rtp_sender_gn
+112:01.84 third_party/libwebrtc/call/version_gn
+112:01.97 third_party/libwebrtc/call/video_stream_api_gn
+112:04.32 third_party/libwebrtc/common_audio/common_audio_c_gn
+112:06.76 third_party/libwebrtc/common_audio/common_audio_cc_gn
+112:09.33 third_party/libwebrtc/common_audio/common_audio_gn
+112:09.45 third_party/libwebrtc/common_audio/common_audio_neon_c_gn
+112:10.57 third_party/libwebrtc/common_audio/common_audio_neon_gn
+112:11.25 third_party/libwebrtc/common_audio/fir_filter_factory_gn
+112:13.38 third_party/libwebrtc/common_audio/third_party/ooura/fft_size_128_gn
+112:14.25 third_party/libwebrtc/common_audio/third_party/ooura/fft_size_256_gn
+112:14.35 third_party/libwebrtc/common_audio/third_party/spl_sqrt_floor/spl_sqrt_floor_gn
+112:14.54 third_party/libwebrtc/common_video/common_video_gn
+112:14.91 third_party/libwebrtc/common_video/generic_frame_descriptor/generic_frame_descriptor_gn
+112:15.74 third_party/libwebrtc/logging/rtc_event_audio_gn
+112:15.81 third_party/libwebrtc/logging/rtc_event_bwe_gn
+112:18.31 third_party/libwebrtc/logging/rtc_event_field_gn
+112:18.83 third_party/libwebrtc/logging/rtc_event_number_encodings_gn
+112:21.00 third_party/libwebrtc/logging/rtc_event_pacing_gn
+112:21.73 third_party/libwebrtc/logging/rtc_event_rtp_rtcp_gn
+112:21.94 third_party/libwebrtc/logging/rtc_event_video_gn
+112:22.45 third_party/libwebrtc/logging/rtc_stream_config_gn
+112:24.19 third_party/libwebrtc/media/codec_gn
+112:24.59 third_party/libwebrtc/media/media_constants_gn
+112:24.69 third_party/libwebrtc/media/rtc_media_base_gn
+112:26.14 third_party/libwebrtc/media/rtc_simulcast_encoder_adapter_gn
+112:26.90 third_party/libwebrtc/modules/async_audio_processing/async_audio_processing_gn
+112:27.41 third_party/libwebrtc/modules/audio_coding/audio_coding_gn
+112:27.88 third_party/libwebrtc/modules/audio_coding/audio_coding_opus_common_gn
+112:31.06 third_party/libwebrtc/modules/audio_coding/audio_encoder_cng_gn
+112:31.22 third_party/libwebrtc/modules/audio_coding/audio_network_adaptor_config_gn
+112:31.41 third_party/libwebrtc/modules/audio_coding/audio_network_adaptor_gn
+112:32.20 third_party/libwebrtc/modules/audio_coding/default_neteq_factory_gn
+112:33.44 third_party/libwebrtc/modules/audio_coding/g711_c_gn
+112:33.63 third_party/libwebrtc/modules/audio_coding/g711_gn
+112:35.08 third_party/libwebrtc/modules/audio_coding/g722_c_gn
+112:35.34 third_party/libwebrtc/modules/audio_coding/g722_gn
+112:35.43 third_party/libwebrtc/modules/audio_coding/ilbc_c_gn
+112:37.00 third_party/libwebrtc/modules/audio_coding/ilbc_gn
+112:37.61 third_party/libwebrtc/modules/audio_coding/isac_vad_gn
+112:37.67 third_party/libwebrtc/modules/audio_coding/legacy_encoded_audio_frame_gn
+112:37.89 third_party/libwebrtc/modules/audio_coding/neteq_gn
+112:40.60 third_party/libwebrtc/modules/audio_coding/pcm16b_c_gn
+112:40.71 third_party/libwebrtc/modules/audio_coding/pcm16b_gn
+112:41.28 third_party/libwebrtc/modules/audio_coding/red_gn
+112:41.40 third_party/libwebrtc/modules/audio_coding/webrtc_cng_gn
+112:41.69 third_party/libwebrtc/modules/audio_coding/webrtc_multiopus_gn
+112:44.07 third_party/libwebrtc/modules/audio_coding/webrtc_opus_gn
+112:44.33 third_party/libwebrtc/modules/audio_coding/webrtc_opus_wrapper_gn
+112:46.57 third_party/libwebrtc/modules/audio_mixer/audio_frame_manipulator_gn
+112:47.07 third_party/libwebrtc/modules/audio_mixer/audio_mixer_impl_gn
+112:47.88 third_party/libwebrtc/modules/audio_processing/aec3/aec3_gn
+112:50.05 third_party/libwebrtc/modules/audio_processing/aec_dump/null_aec_dump_factory_gn
+112:52.61 third_party/libwebrtc/modules/audio_processing/aec_dump_interface_gn
+112:55.97 third_party/libwebrtc/modules/audio_processing/aecm/aecm_core_gn
+112:59.50 third_party/libwebrtc/modules/audio_processing/agc/agc_gn
+113:01.05 third_party/libwebrtc/modules/audio_processing/agc/legacy_agc_gn
+113:02.06 third_party/libwebrtc/modules/audio_processing/agc/level_estimation_gn
+113:04.09 third_party/libwebrtc/modules/audio_processing/agc2/adaptive_digital_gain_controller_gn
+113:04.55 third_party/libwebrtc/modules/audio_processing/agc2/biquad_filter_gn
+113:05.27 third_party/libwebrtc/modules/audio_processing/agc2/clipping_predictor_gn
+113:05.86 third_party/libwebrtc/modules/audio_processing/agc2/cpu_features_gn
+113:06.53 third_party/libwebrtc/modules/audio_processing/agc2/fixed_digital_gn
+113:07.56 third_party/libwebrtc/modules/audio_processing/agc2/gain_applier_gn
+113:08.24 third_party/libwebrtc/modules/audio_processing/agc2/input_volume_controller_gn
+113:08.62 third_party/libwebrtc/modules/audio_processing/agc2/input_volume_stats_reporter_gn
+113:09.03 third_party/libwebrtc/modules/audio_processing/agc2/noise_level_estimator_gn
+113:10.27 third_party/libwebrtc/modules/audio_processing/agc2/rnn_vad/rnn_vad_auto_correlation_gn
+113:10.43 third_party/libwebrtc/modules/audio_processing/agc2/rnn_vad/rnn_vad_gn
+113:10.53 third_party/libwebrtc/modules/audio_processing/agc2/rnn_vad/rnn_vad_layers_gn
+113:12.44 third_party/libwebrtc/modules/audio_processing/agc2/rnn_vad/rnn_vad_lp_residual_gn
+113:12.68 third_party/libwebrtc/modules/audio_processing/agc2/rnn_vad/rnn_vad_pitch_gn
+113:12.97 third_party/libwebrtc/modules/audio_processing/agc2/rnn_vad/rnn_vad_spectral_features_gn
+113:13.84 third_party/libwebrtc/modules/audio_processing/agc2/saturation_protector_gn
+113:14.81 third_party/libwebrtc/modules/audio_processing/agc2/speech_level_estimator_gn
+113:15.04 third_party/libwebrtc/modules/audio_processing/agc2/vad_wrapper_gn
+113:15.54 third_party/libwebrtc/modules/audio_processing/api_gn
+113:16.68 third_party/libwebrtc/modules/audio_processing/apm_logging_gn
+113:17.30 third_party/libwebrtc/modules/audio_processing/audio_buffer_gn
+113:17.31 third_party/libwebrtc/modules/audio_processing/audio_frame_proxies_gn
+113:18.87 third_party/libwebrtc/modules/audio_processing/audio_processing_gn
+113:20.11 third_party/libwebrtc/modules/audio_processing/audio_processing_statistics_gn
+113:20.94 third_party/libwebrtc/modules/audio_processing/capture_levels_adjuster/capture_levels_adjuster_gn
+113:22.17 third_party/libwebrtc/modules/audio_processing/gain_controller2_gn
+113:23.21 third_party/libwebrtc/modules/audio_processing/high_pass_filter_gn
+113:23.63 third_party/libwebrtc/modules/audio_processing/ns/ns_gn
+113:24.41 third_party/libwebrtc/modules/audio_processing/optionally_built_submodule_creators_gn
+113:24.71 third_party/libwebrtc/modules/audio_processing/rms_level_gn
+113:25.69 third_party/libwebrtc/modules/audio_processing/transient/transient_suppressor_impl_gn
+113:27.48 third_party/libwebrtc/modules/audio_processing/transient/voice_probability_delay_unit_gn
+113:27.73 third_party/libwebrtc/modules/audio_processing/utility/cascaded_biquad_filter_gn
+113:28.23 third_party/libwebrtc/modules/audio_processing/utility/legacy_delay_estimator_gn
+113:29.78 third_party/libwebrtc/modules/audio_processing/utility/pffft_wrapper_gn
+113:29.79 third_party/libwebrtc/modules/audio_processing/vad/vad_gn
+113:30.78 third_party/libwebrtc/modules/congestion_controller/congestion_controller_gn
+113:31.13 third_party/libwebrtc/modules/congestion_controller/goog_cc/alr_detector_gn
+113:31.35 third_party/libwebrtc/modules/congestion_controller/goog_cc/delay_based_bwe_gn
+113:32.85 third_party/libwebrtc/modules/congestion_controller/goog_cc/estimators_gn
+113:33.86 third_party/libwebrtc/modules/congestion_controller/goog_cc/goog_cc_gn
+113:34.90 third_party/libwebrtc/modules/congestion_controller/goog_cc/link_capacity_estimator_gn
+113:35.93 third_party/libwebrtc/modules/congestion_controller/goog_cc/loss_based_bwe_v1_gn
+113:37.39 third_party/libwebrtc/modules/congestion_controller/goog_cc/loss_based_bwe_v2_gn
+113:37.66 third_party/libwebrtc/modules/congestion_controller/goog_cc/probe_controller_gn
+113:38.40 third_party/libwebrtc/modules/congestion_controller/goog_cc/pushback_controller_gn
+113:39.97 third_party/libwebrtc/modules/congestion_controller/goog_cc/send_side_bwe_gn
+113:41.88 third_party/libwebrtc/modules/congestion_controller/rtp/control_handler_gn
+113:42.72 third_party/libwebrtc/modules/congestion_controller/rtp/transport_feedback_gn
+113:43.27 third_party/libwebrtc/modules/desktop_capture/desktop_capture_gn
+113:43.57 third_party/libwebrtc/modules/desktop_capture/primitives_gn
+113:50.66 third_party/libwebrtc/modules/pacing/interval_budget_gn
+113:50.82 third_party/libwebrtc/modules/pacing/pacing_gn
+113:52.84 third_party/libwebrtc/modules/portal/portal_gn
+113:54.48 third_party/libwebrtc/modules/remote_bitrate_estimator/remote_bitrate_estimator_gn
+113:58.06 third_party/libwebrtc/modules/rtp_rtcp/leb128_gn
+113:58.19 third_party/libwebrtc/modules/rtp_rtcp/rtp_rtcp_format_gn
+113:59.66 third_party/libwebrtc/modules/rtp_rtcp/rtp_rtcp_gn
+114:13.44 third_party/libwebrtc/modules/rtp_rtcp/rtp_video_header_gn
+114:17.93 third_party/libwebrtc/modules/third_party/fft/fft_gn
+114:19.52 third_party/libwebrtc/modules/third_party/g711/g711_3p_gn
+114:19.63 third_party/libwebrtc/modules/third_party/g722/g722_3p_gn
+114:25.68 third_party/libwebrtc/modules/video_capture/video_capture_internal_impl_gn
+114:25.87 third_party/libwebrtc/modules/video_capture/video_capture_module_gn
+114:28.87 third_party/libwebrtc/modules/video_coding/chain_diff_calculator_gn
+114:31.93 third_party/libwebrtc/modules/video_coding/codecs/av1/av1_svc_config_gn
+114:33.48 third_party/libwebrtc/modules/video_coding/encoded_frame_gn
+114:34.18 third_party/libwebrtc/modules/video_coding/frame_dependencies_calculator_gn
+114:34.62 third_party/libwebrtc/modules/video_coding/frame_helpers_gn
+114:36.72 third_party/libwebrtc/modules/video_coding/nack_requester_gn
+114:38.79 third_party/libwebrtc/modules/video_coding/packet_buffer_gn
+114:38.79 third_party/libwebrtc/modules/video_coding/svc/scalability_mode_util_gn
+114:39.64 third_party/libwebrtc/modules/video_coding/svc/scalability_structures_gn
+114:41.77 third_party/libwebrtc/modules/video_coding/svc/scalable_video_controller_gn
+114:46.04 third_party/libwebrtc/modules/video_coding/svc/svc_rate_allocator_gn
+114:46.15 third_party/libwebrtc/modules/video_coding/timing/decode_time_percentile_filter_gn
+114:46.73 third_party/libwebrtc/modules/video_coding/timing/frame_delay_variation_kalman_filter_gn
+114:46.76 third_party/libwebrtc/modules/video_coding/timing/inter_frame_delay_variation_calculator_gn
+114:48.82 third_party/libwebrtc/modules/video_coding/timing/jitter_estimator_gn
+114:49.06 third_party/libwebrtc/modules/video_coding/timing/rtt_filter_gn
+114:49.62 third_party/libwebrtc/modules/video_coding/timing/timestamp_extrapolator_gn
+114:50.67 third_party/libwebrtc/modules/video_coding/timing/timing_module_gn
+114:50.95 third_party/libwebrtc/modules/video_coding/video_codec_interface_gn
+114:52.67 third_party/libwebrtc/modules/video_coding/video_coding_gn
+114:52.89 third_party/libwebrtc/modules/video_coding/video_coding_utility_gn
+114:53.15 third_party/libwebrtc/modules/video_coding/webrtc_libvpx_interface_gn
+114:55.57 third_party/libwebrtc/modules/video_coding/webrtc_vp8_gn
+114:55.62 third_party/libwebrtc/modules/video_coding/webrtc_vp8_scalability_gn
+114:56.02 third_party/libwebrtc/modules/video_coding/webrtc_vp8_temporal_layers_gn
+114:57.14 third_party/libwebrtc/modules/video_coding/webrtc_vp9_gn
+115:02.89 third_party/libwebrtc/modules/video_coding/webrtc_vp9_helpers_gn
+115:04.69 third_party/libwebrtc/rtc_base/async_resolver_interface_gn
+115:07.47 third_party/libwebrtc/rtc_base/audio_format_to_string_gn
+115:07.57 third_party/libwebrtc/rtc_base/bit_buffer_gn
+115:07.83 third_party/libwebrtc/rtc_base/bitrate_tracker_gn
+115:08.33 third_party/libwebrtc/rtc_base/bitstream_reader_gn
+115:10.68 third_party/libwebrtc/rtc_base/byte_buffer_gn
+115:11.01 third_party/libwebrtc/rtc_base/checks_gn
+115:11.28 third_party/libwebrtc/rtc_base/containers/flat_containers_internal_gn
+115:11.52 third_party/libwebrtc/rtc_base/copy_on_write_buffer_gn
+115:11.96 third_party/libwebrtc/rtc_base/criticalsection_gn
+115:13.63 third_party/libwebrtc/rtc_base/event_tracer_gn
+115:13.79 third_party/libwebrtc/rtc_base/experiments/alr_experiment_gn
+115:14.05 third_party/libwebrtc/rtc_base/experiments/balanced_degradation_settings_gn
+115:14.40 third_party/libwebrtc/rtc_base/experiments/bandwidth_quality_scaler_settings_gn
+115:14.55 third_party/libwebrtc/rtc_base/experiments/cpu_speed_experiment_gn
+115:15.28 third_party/libwebrtc/rtc_base/experiments/encoder_info_settings_gn
+115:18.40 third_party/libwebrtc/rtc_base/experiments/field_trial_parser_gn
+115:18.42 third_party/libwebrtc/rtc_base/experiments/keyframe_interval_settings_experiment_gn
+115:18.52 third_party/libwebrtc/rtc_base/experiments/min_video_bitrate_experiment_gn
+115:19.71 third_party/libwebrtc/rtc_base/experiments/normalize_simulcast_size_experiment_gn
+115:21.90 third_party/libwebrtc/rtc_base/experiments/quality_rampup_experiment_gn
+115:22.23 third_party/libwebrtc/rtc_base/experiments/quality_scaler_settings_gn
+115:22.96 third_party/libwebrtc/rtc_base/experiments/quality_scaling_experiment_gn
+115:23.35 third_party/libwebrtc/rtc_base/experiments/rate_control_settings_gn
+115:23.53 third_party/libwebrtc/rtc_base/experiments/rtt_mult_experiment_gn
+115:26.48 third_party/libwebrtc/rtc_base/experiments/stable_target_rate_experiment_gn
+115:26.64 third_party/libwebrtc/rtc_base/frequency_tracker_gn
+115:26.87 third_party/libwebrtc/rtc_base/histogram_percentile_counter_gn
+115:27.42 third_party/libwebrtc/rtc_base/ip_address_gn
+115:27.95 third_party/libwebrtc/rtc_base/logging_gn
+115:29.05 third_party/libwebrtc/rtc_base/memory/aligned_malloc_gn
+115:29.28 third_party/libwebrtc/rtc_base/net_helpers_gn
+115:29.51 third_party/libwebrtc/rtc_base/network/sent_packet_gn
+115:29.74 third_party/libwebrtc/rtc_base/network_constants_gn
+115:30.94 third_party/libwebrtc/rtc_base/network_route_gn
+115:31.04 third_party/libwebrtc/rtc_base/null_socket_server_gn
+115:31.53 third_party/libwebrtc/rtc_base/platform_thread_gn
+115:31.74 third_party/libwebrtc/rtc_base/platform_thread_types_gn
+115:31.99 third_party/libwebrtc/rtc_base/race_checker_gn
+115:32.02 third_party/libwebrtc/rtc_base/random_gn
+115:32.27 third_party/libwebrtc/rtc_base/rate_limiter_gn
+115:33.69 third_party/libwebrtc/rtc_base/rate_statistics_gn
+115:34.20 third_party/libwebrtc/rtc_base/rate_tracker_gn
+115:34.22 third_party/libwebrtc/rtc_base/rtc_event_gn
+115:34.23 third_party/libwebrtc/rtc_base/rtc_numerics_gn
+115:35.20 third_party/libwebrtc/rtc_base/rtc_task_queue_gn
+115:35.56 third_party/libwebrtc/rtc_base/sample_counter_gn
+115:36.38 third_party/libwebrtc/rtc_base/socket_address_gn
+115:37.15 third_party/libwebrtc/rtc_base/socket_gn
+115:37.19 third_party/libwebrtc/rtc_base/stringutils_gn
+115:37.93 third_party/libwebrtc/rtc_base/synchronization/sequence_checker_internal_gn
+115:38.33 third_party/libwebrtc/rtc_base/synchronization/yield_gn
+115:38.48 third_party/libwebrtc/rtc_base/synchronization/yield_policy_gn
+115:38.75 third_party/libwebrtc/rtc_base/system/file_wrapper_gn
+115:38.89 third_party/libwebrtc/rtc_base/task_utils/repeating_task_gn
+115:40.34 third_party/libwebrtc/rtc_base/third_party/base64/base64_gn
+115:40.40 third_party/libwebrtc/rtc_base/third_party/sigslot/sigslot_gn
+115:41.04 third_party/libwebrtc/rtc_base/threading_gn
+115:41.23 third_party/libwebrtc/rtc_base/timeutils_gn
+115:41.30 third_party/libwebrtc/rtc_base/weak_ptr_gn
+115:41.56 third_party/libwebrtc/rtc_base/zero_memory_gn
+115:42.79 third_party/libwebrtc/system_wrappers/denormal_disabler_gn
+115:42.91 third_party/libwebrtc/system_wrappers/field_trial_gn
+115:43.48 third_party/libwebrtc/system_wrappers/metrics_gn
+115:44.13 third_party/libwebrtc/system_wrappers/system_wrappers_gn
+115:44.48 third_party/libwebrtc/third_party/abseil-cpp/absl/base/log_severity_gn
+115:44.96 third_party/libwebrtc/third_party/abseil-cpp/absl/base/raw_logging_internal_gn
+115:45.91 third_party/libwebrtc/third_party/abseil-cpp/absl/base/throw_delegate_gn
+115:46.69 third_party/libwebrtc/third_party/abseil-cpp/absl/numeric/int128_gn
+115:47.61 third_party/libwebrtc/third_party/abseil-cpp/absl/strings/string_view_gn
+115:47.85 third_party/libwebrtc/third_party/abseil-cpp/absl/strings/strings_gn
+115:48.27 third_party/libwebrtc/third_party/abseil-cpp/absl/types/bad_optional_access_gn
+115:48.97 third_party/libwebrtc/third_party/abseil-cpp/absl/types/bad_variant_access_gn
+115:49.07 third_party/libwebrtc/third_party/pffft/pffft_gn
+115:49.70 third_party/libwebrtc/third_party/rnnoise/rnn_vad_gn
+115:49.86 third_party/libwebrtc/video/adaptation/video_adaptation_gn
+115:50.06 third_party/libwebrtc/video/config/encoder_config_gn
+115:51.12 third_party/libwebrtc/video/config/streams_config_gn
+115:51.20 third_party/libwebrtc/video/decode_synchronizer_gn
+115:51.33 third_party/libwebrtc/video/frame_cadence_adapter_gn
+115:52.78 third_party/libwebrtc/video/frame_decode_timing_gn
+115:53.31 third_party/libwebrtc/video/frame_dumping_decoder_gn
+115:56.63 third_party/libwebrtc/video/render/incoming_video_stream_gn
+115:58.11 third_party/libwebrtc/video/render/video_render_frames_gn
+115:58.20 third_party/libwebrtc/video/task_queue_frame_decode_scheduler_gn
+115:58.67 third_party/libwebrtc/video/unique_timestamp_counter_gn
+116:00.19 third_party/libwebrtc/video/video_gn
+116:02.25 third_party/libwebrtc/video/video_receive_stream_timeout_tracker_gn
+116:02.93 third_party/libwebrtc/video/video_stream_buffer_controller_gn
+116:03.92 third_party/libwebrtc/video/video_stream_encoder_impl_gn
+116:06.04 third_party/msgpack
+116:06.61 third_party/pipewire/libpipewire
+116:07.52 third_party/sipcc
+116:09.87 toolkit/components/alerts
+116:11.36 toolkit/components/antitracking/bouncetrackingprotection
+116:11.62 toolkit/components/antitracking
+116:17.00 toolkit/components/autocomplete
+116:30.32 toolkit/components/backgroundhangmonitor
+116:34.29 toolkit/components/backgroundtasks
+116:40.92 toolkit/components/browser
+116:41.33 toolkit/components/build
+116:45.19 toolkit/components/cascade_bloom_filter
+116:48.79 toolkit/components/clearsitedata
+116:50.57 toolkit/components/commandlines
+116:54.13 toolkit/components/contentanalysis
+117:00.02 toolkit/components/cookiebanners
+117:13.08 toolkit/components/credentialmanagement
+117:16.38 toolkit/components/ctypes
+117:17.88 toolkit/components/downloads
+117:21.48 toolkit/components/extensions
+117:22.56 toolkit/components/extensions/webidl-api
+117:31.65 toolkit/components/extensions/webrequest
+117:33.61 toolkit/components/finalizationwitness
+117:36.89 toolkit/components/find
+117:40.22 toolkit/components/formautofill
+117:57.74 toolkit/components/glean
+118:12.66 toolkit/components/glean/xpcom
+118:13.44 toolkit/components/jsoncpp/src/lib_json
+118:24.25 toolkit/components/mediasniffer
+118:27.59 toolkit/components/mozintl
+118:27.92 toolkit/components/nimbus
+118:32.31 toolkit/components/parentalcontrols
+118:34.76 toolkit/components/places
+118:36.03 toolkit/components/printingui/ipc
+118:37.33 toolkit/components/processtools
+118:42.90 toolkit/components/protobuf
+118:48.42 toolkit/components/reflect
+118:57.72 toolkit/components/remote
+118:58.55 toolkit/components/reputationservice
+119:01.31 toolkit/components/resistfingerprinting
+119:19.66 toolkit/components/satchel
+119:32.51 toolkit/components/sessionstore
+119:40.35 toolkit/components/startup
+119:42.96 toolkit/components/statusfilter
+119:45.93 toolkit/components/telemetry/TelemetryHistogramData.inc.stub
+119:48.77 toolkit/components/terminator
+119:48.98 toolkit/components/typeaheadfind
+119:53.83 toolkit/components/uniffi-js
+119:55.74 toolkit/components/url-classifier
+120:10.14 toolkit/components/viaduct
+120:10.59 toolkit/components/windowwatcher
+120:24.00 toolkit/crashreporter
+120:25.43 toolkit/library/buildid.cpp.stub
+120:26.31 toolkit/mozapps/extensions
+120:28.23 toolkit/profile
+120:29.25 toolkit/system/gnome
+120:48.03 toolkit/system/unixproxy
+120:48.32 toolkit/xre
+121:00.60 tools/performance
+121:04.61 tools/profiler
+121:17.41 uriloader/base
+121:49.77 uriloader/exthandler
+121:57.89 uriloader/prefetch
+122:04.18 uriloader/preload
+122:14.14 view
+122:14.67 widget/gtk/mozgtk
+122:16.02 widget/gtk/mozwayland
+122:18.46 widget/gtk
+122:21.58 widget/gtk/wayland
+123:01.06 widget/headless
+123:04.63 widget
+123:36.54 widget/x11
+123:50.40 xpcom/base
+124:29.93 xpcom/build/Services.cpp.stub
+124:49.94 xpcom/components
+125:30.95 xpcom/ds
+125:40.51 xpcom/io
+125:51.93 xpcom/reflect/xptcall/md/unix/xptcinvoke_asm_aarch64.o
+125:51.93 xpcom/reflect/xptcall/md/unix/xptcstubs_asm_aarch64.o
+125:52.34 xpcom/reflect/xptcall/md/unix
+126:04.32 xpcom/reflect/xptcall
+126:04.96 xpcom/reflect/xptinfo
+126:09.77 xpcom/string
+126:19.48 xpcom/threads
+126:20.49 xpfe/appshell
+126:23.39 js/xpconnect/shell
+126:32.26 media/ffvpx/libavcodec/libmozavcodec.so.symbols.stub
+126:33.06 media/ffvpx/libavcodec/aarch64
+126:33.10 media/ffvpx/libavutil/libmozavutil.so.symbols.stub
+126:33.60 media/ffvpx/libavcodec/aarch64/fft_neon.o
+126:33.70 media/ffvpx/libavcodec/aarch64/idctdsp_neon.o
+126:33.88 media/ffvpx/libavcodec/aarch64/mpegaudiodsp_neon.o
+126:33.90 media/ffvpx/libavutil/aarch64
+126:34.02 media/ffvpx/libavutil/aarch64/float_dsp_neon.o
+126:34.05 media/ffvpx/libavcodec/aarch64/simple_idct_neon.o
+126:34.39 media/ffvpx/libavutil
+126:34.42 media/gmp-clearkey/0.1
+126:45.54 modules/xz-embedded
+126:46.51 security/manager/ssl/builtins/dynamic-library/libnssckbi.so.symbols.stub
+126:47.36 security/manager/ssl/ipcclientcerts/dynamic-library/libipcclientcerts.so.symbols.stub
+126:51.91 toolkit/components/telemetry/pingsender
+126:54.47 toolkit/xre/glxtest
+126:54.85 widget/gtk/v4l2test
+126:55.44 widget/gtk/vaapitest
+126:57.80 build/pure_virtual/libpure_virtual.a
+126:57.89 dom/media/fake-cdm/libfake.so
+127:01.45 dom/media/gmp-plugin-openh264/libfakeopenh264.so
+127:02.01 config/external/gkcodecs/libgkcodecs.so
+127:02.76 config/external/lgpllibs/liblgpllibs.so
+127:03.13 config/external/sqlite/libmozsqlite3.so
+127:06.23 dom/base
+127:07.65    Compiling builtins-static v0.1.0 (/home/devel/building/work/src/firefox-121.0/security/manager/ssl/builtins)
+127:15.97    Compiling mozilla-central-workspace-hack v0.1.0 (/home/devel/building/work/src/firefox-121.0/build/workspace-hack)
+127:55.74 dom/origin-trials
+128:11.94 js/src/gc
+128:13.32     Finished release [optimized] target(s) in 1m 17s
+128:14.97 security/manager/ssl/builtins/libbuiltins_static.a
+128:30.69 layout/style
+128:34.13 media/libdav1d
+128:59.24 netwerk/base
+130:02.12 netwerk/dns
+131:15.51 security/manager/ssl
+131:21.48 security/sandbox/linux/libmozsandbox.so
+133:13.08 toolkit/components/telemetry
+133:19.80 toolkit/library/buildid.cpp.stub
+133:20.34 toolkit/library
+133:32.09 widget/gtk/mozgtk/libmozgtk.so
+134:36.21 widget/gtk/mozwayland/libmozwayland.so
+134:36.34 xpcom/build
+134:46.54 media/ffvpx/libavcodec
+134:47.45 media/ffvpx/libavutil/libmozavutil.so
+135:05.42 media/gmp-clearkey/0.1/libclearkey.so
+135:12.07 security/manager/ssl/builtins/dynamic-library
+135:22.11 security/manager/ssl/ipcclientcerts/dynamic-library
+135:25.53 toolkit/components/telemetry/pingsender/pingsender
+135:29.61 toolkit/xre/glxtest/glxtest
+135:31.64 widget/gtk/v4l2test/v4l2test
+135:32.11 widget/gtk/vaapitest/vaapitest
+135:33.29 browser/app/firefox
+135:42.62 js/src/build/libjs_static.a
+135:44.15 media/ffvpx/libavcodec/libmozavcodec.so
+135:47.74    Compiling rsclientcerts v0.1.0 (/home/devel/building/work/src/firefox-121.0/security/manager/ssl/rsclientcerts)
+135:48.51    Compiling mozilla-central-workspace-hack v0.1.0 (/home/devel/building/work/src/firefox-121.0/build/workspace-hack)
+135:48.63 security/manager/ssl/builtins/dynamic-library/libnssckbi.so
+135:52.31    Compiling ipcclientcerts-static v0.1.0 (/home/devel/building/work/src/firefox-121.0/security/manager/ssl/ipcclientcerts)
+136:23.02 toolkit/library/build/libxul.so
+136:27.98     Finished release [optimized] target(s) in 54.68s
+136:29.28 security/manager/ssl/ipcclientcerts/libipcclientcerts_static.a
+136:29.30 security/manager/ssl/ipcclientcerts/dynamic-library/libipcclientcerts.so
+152:08.15 ipc/app/plugin-container
+152:08.16 js/xpconnect/shell/xpcshell
+152:25.31 ./MacOS-files.txt.stub
+152:25.31 ./source-repo.h.stub
+152:25.31 ./buildid.h.stub
+152:25.34 ./node.stub.stub
+152:25.80 ./node.stub.stub
+152:25.81 ./node.stub.stub
+152:25.98 ./node.stub.stub
+152:26.07 ./node.stub.stub
+152:26.07 ./node.stub.stub
+152:26.10 ./node.stub.stub
+152:26.20 Executing "/usr/bin/node /home/devel/building/work/src/firefox-121.0/devtools/client/shared/build/build.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/ast/index.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/ast/setInScopeLines.js /home/devel/building/work/src/firefox-121.0/objdir/dist/bin/browser/chrome/devtools/modules/devtools/client/debugger/src/actions/ast"
+152:26.21 Executing "/usr/bin/node /home/devel/building/work/src/firefox-121.0/devtools/client/shared/build/build.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/event-listeners.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/exceptions.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/expressions.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/file-search.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/index.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/navigation.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/preview.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/project-text-search.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/quick-open.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/source-actors.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/sources-tree.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/tabs.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/toolbox.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/tracing.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/threads.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/ui.js /home/devel/building/work/src/firefox-121.0/objdir/dist/bin/browser/chrome/devtools/modules/devtools/client/debugger/src/actions"
+152:26.42 Executing "/usr/bin/node /home/devel/building/work/src/firefox-121.0/devtools/client/shared/build/build.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/constants.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/main.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/vendors.js /home/devel/building/work/src/firefox-121.0/objdir/dist/bin/browser/chrome/devtools/modules/devtools/client/debugger/src"
+152:26.50 Executing "/usr/bin/node /home/devel/building/work/src/firefox-121.0/devtools/client/shared/build/build.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/pause/breakOnNext.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/pause/commands.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/pause/continueToHere.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/pause/expandScopes.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/pause/fetchFrames.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/pause/fetchScopes.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/pause/index.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/pause/inlinePreview.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/pause/mapFrames.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/pause/mapScopes.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/pause/paused.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/pause/pauseOnDebuggerStatement.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/pause/pauseOnExceptions.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/pause/resetBreakpointsPaneState.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/pause/resumed.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/pause/selectFrame.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/pause/skipPausing.js /home/devel/building/work/src/firefox-121.0/objdir/dist/bin/browser/chrome/devtools/modules/devtools/client/debugger/src/actions/pause"
+152:26.68 Executing "/usr/bin/node /home/devel/building/work/src/firefox-121.0/devtools/client/shared/build/build.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/context-menus/breakpoint.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/context-menus/breakpoint-heading.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/context-menus/frame.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/context-menus/editor.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/context-menus/editor-breakpoint.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/context-menus/index.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/context-menus/outline.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/context-menus/source-tree-item.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/context-menus/tab.js /home/devel/building/work/src/firefox-121.0/objdir/dist/bin/browser/chrome/devtools/modules/devtools/client/debugger/src/actions/context-menus"
+152:26.69 Executing "/usr/bin/node /home/devel/building/work/src/firefox-121.0/devtools/client/shared/build/build.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/breakpoints/breakpointPositions.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/breakpoints/index.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/breakpoints/modify.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/breakpoints/syncBreakpoint.js /home/devel/building/work/src/firefox-121.0/objdir/dist/bin/browser/chrome/devtools/modules/devtools/client/debugger/src/actions/breakpoints"
+152:27.18 ./node.stub.stub
+152:27.67 ./node.stub.stub
+152:28.21 Executing "/usr/bin/node /home/devel/building/work/src/firefox-121.0/devtools/client/shared/build/build.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/utils/middleware/context.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/utils/middleware/log.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/utils/middleware/promise.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/utils/middleware/thunk.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/utils/middleware/timing.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/utils/middleware/wait-service.js /home/devel/building/work/src/firefox-121.0/objdir/dist/bin/browser/chrome/devtools/modules/devtools/client/debugger/src/actions/utils/middleware"
+152:28.38 Executing "/usr/bin/node /home/devel/building/work/src/firefox-121.0/devtools/client/shared/build/build.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/sources/blackbox.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/sources/breakableLines.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/sources/index.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/sources/loadSourceText.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/sources/newSources.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/sources/prettyPrint.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/sources/select.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/sources/symbols.js /home/devel/building/work/src/firefox-121.0/objdir/dist/bin/browser/chrome/devtools/modules/devtools/client/debugger/src/actions/sources"
+152:28.85 ./node.stub.stub
+152:28.92 ./node.stub.stub
+152:29.50 ./node.stub.stub
+152:29.50 Executing "/usr/bin/node /home/devel/building/work/src/firefox-121.0/devtools/client/shared/build/build.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/client/firefox/commands.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/client/firefox/create.js /home/devel/building/work/src/firefox-121.0/objdir/dist/bin/browser/chrome/devtools/modules/devtools/client/debugger/src/client/firefox"
+152:29.70 ./node.stub.stub
+152:29.72 Executing "/usr/bin/node /home/devel/building/work/src/firefox-121.0/devtools/client/shared/build/build.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/actions/utils/create-store.js /home/devel/building/work/src/firefox-121.0/objdir/dist/bin/browser/chrome/devtools/modules/devtools/client/debugger/src/actions/utils"
+152:30.10 ./node.stub.stub
+152:30.19 Executing "/usr/bin/node /home/devel/building/work/src/firefox-121.0/devtools/client/shared/build/build.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/client/firefox.js /home/devel/building/work/src/firefox-121.0/objdir/dist/bin/browser/chrome/devtools/modules/devtools/client/debugger/src/client"
+152:30.43 Executing "/usr/bin/node /home/devel/building/work/src/firefox-121.0/devtools/client/shared/build/build.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/Editor/Preview/ExceptionPopup.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/Editor/Preview/index.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/Editor/Preview/Popup.js /home/devel/building/work/src/firefox-121.0/objdir/dist/bin/browser/chrome/devtools/modules/devtools/client/debugger/src/components/Editor/Preview"
+152:30.79 ./node.stub.stub
+152:30.82 Executing "/usr/bin/node /home/devel/building/work/src/firefox-121.0/devtools/client/shared/build/build.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/Editor/BlackboxLines.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/Editor/Breakpoint.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/Editor/Breakpoints.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/Editor/ColumnBreakpoint.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/Editor/ColumnBreakpoints.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/Editor/ConditionalPanel.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/Editor/DebugLine.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/Editor/EmptyLines.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/Editor/Exception.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/Editor/Exceptions.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/Editor/Footer.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/Editor/HighlightLine.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/Editor/HighlightLines.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/Editor/index.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/Editor/InlinePreview.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/Editor/InlinePreviewRow.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/Editor/InlinePreviews.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/Editor/SearchInFileBar.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/Editor/Tab.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/Editor/Tabs.js /home/devel/building/work/src/firefox-121.0/objdir/dist/bin/browser/chrome/devtools/modules/devtools/client/debugger/src/components/Editor"
+152:31.03 ./node.stub.stub
+152:31.32 Executing "/usr/bin/node /home/devel/building/work/src/firefox-121.0/devtools/client/shared/build/build.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/App.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/QuickOpenModal.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/ShortcutsModal.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/WelcomeBox.js /home/devel/building/work/src/firefox-121.0/objdir/dist/bin/browser/chrome/devtools/modules/devtools/client/debugger/src/components"
+152:31.35 ./node.stub.stub
+152:31.55 Executing "/usr/bin/node /home/devel/building/work/src/firefox-121.0/devtools/client/shared/build/build.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/PrimaryPanes/index.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/PrimaryPanes/Outline.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/PrimaryPanes/OutlineFilter.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/PrimaryPanes/ProjectSearch.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/PrimaryPanes/SourcesTree.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/PrimaryPanes/SourcesTreeItem.js /home/devel/building/work/src/firefox-121.0/objdir/dist/bin/browser/chrome/devtools/modules/devtools/client/debugger/src/components/PrimaryPanes"
+152:31.61 ./node.stub.stub
+152:32.25 Executing "/usr/bin/node /home/devel/building/work/src/firefox-121.0/devtools/client/shared/build/build.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/SecondaryPanes/Breakpoints/Breakpoint.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/SecondaryPanes/Breakpoints/BreakpointHeading.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/SecondaryPanes/Breakpoints/ExceptionOption.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/SecondaryPanes/Breakpoints/index.js /home/devel/building/work/src/firefox-121.0/objdir/dist/bin/browser/chrome/devtools/modules/devtools/client/debugger/src/components/SecondaryPanes/Breakpoints"
+152:32.58 Executing "/usr/bin/node /home/devel/building/work/src/firefox-121.0/devtools/client/shared/build/build.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/SecondaryPanes/CommandBar.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/SecondaryPanes/DOMMutationBreakpoints.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/SecondaryPanes/EventListeners.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/SecondaryPanes/Expressions.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/SecondaryPanes/index.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/SecondaryPanes/Scopes.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/SecondaryPanes/Thread.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/SecondaryPanes/Threads.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/SecondaryPanes/WhyPaused.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/SecondaryPanes/XHRBreakpoints.js /home/devel/building/work/src/firefox-121.0/objdir/dist/bin/browser/chrome/devtools/modules/devtools/client/debugger/src/components/SecondaryPanes"
+152:32.81 ./node.stub.stub
+152:33.40 Executing "/usr/bin/node /home/devel/building/work/src/firefox-121.0/devtools/client/shared/build/build.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/SecondaryPanes/Frames/Frame.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/SecondaryPanes/Frames/FrameIndent.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/SecondaryPanes/Frames/Group.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/SecondaryPanes/Frames/index.js /home/devel/building/work/src/firefox-121.0/objdir/dist/bin/browser/chrome/devtools/modules/devtools/client/debugger/src/components/SecondaryPanes/Frames"
+152:33.77 ./node.stub.stub
+152:34.52 Executing "/usr/bin/node /home/devel/building/work/src/firefox-121.0/devtools/client/shared/build/build.js /home/devel/building/work/src/firefox-121.0/objdir/dist/bin/browser/chrome/devtools/modules/devtools/client/debugger/src/components/shared/Button/styles"
+152:34.70 ./node.stub.stub
+152:34.98 ./node.stub.stub
+152:35.01 ./node.stub.stub
+152:35.24 Executing "/usr/bin/node /home/devel/building/work/src/firefox-121.0/devtools/client/shared/build/build.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/shared/Button/CloseButton.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/shared/Button/CommandBarButton.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/shared/Button/index.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/shared/Button/PaneToggleButton.js /home/devel/building/work/src/firefox-121.0/objdir/dist/bin/browser/chrome/devtools/modules/devtools/client/debugger/src/components/shared/Button"
+152:35.41 ./node.stub.stub
+152:35.60 Executing "/usr/bin/node /home/devel/building/work/src/firefox-121.0/devtools/client/shared/build/build.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/shared/AccessibleImage.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/shared/Accordion.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/shared/Badge.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/shared/BracketArrow.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/shared/Dropdown.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/shared/Modal.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/shared/Popover.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/shared/PreviewFunction.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/shared/ResultList.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/shared/SearchInput.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/shared/SourceIcon.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/components/shared/SmartGap.js /home/devel/building/work/src/firefox-121.0/objdir/dist/bin/browser/chrome/devtools/modules/devtools/client/debugger/src/components/shared"
+152:35.62 Executing "/usr/bin/node /home/devel/building/work/src/firefox-121.0/devtools/client/shared/build/build.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/context-menu/menu.js /home/devel/building/work/src/firefox-121.0/objdir/dist/bin/browser/chrome/devtools/modules/devtools/client/debugger/src/context-menu"
+152:36.11 ./node.stub.stub
+152:36.26 Executing "/usr/bin/node /home/devel/building/work/src/firefox-121.0/devtools/client/shared/build/build.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/reducers/ast.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/reducers/breakpoints.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/reducers/event-listeners.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/reducers/exceptions.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/reducers/expressions.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/reducers/index.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/reducers/pause.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/reducers/pending-breakpoints.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/reducers/quick-open.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/reducers/source-actors.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/reducers/source-blackbox.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/reducers/sources.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/reducers/sources-content.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/reducers/sources-tree.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/reducers/tabs.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/reducers/threads.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/reducers/ui.js /home/devel/building/work/src/firefox-121.0/objdir/dist/bin/browser/chrome/devtools/modules/devtools/client/debugger/src/reducers"
+152:36.28 ./node.stub.stub
+152:36.58 Executing "/usr/bin/node /home/devel/building/work/src/firefox-121.0/devtools/client/shared/build/build.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/selectors/ast.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/selectors/breakpointAtLocation.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/selectors/breakpoints.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/selectors/breakpointSources.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/selectors/event-listeners.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/selectors/exceptions.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/selectors/expressions.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/selectors/index.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/selectors/isLineInScope.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/selectors/isSelectedFrameVisible.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/selectors/pause.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/selectors/pending-breakpoints.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/selectors/quick-open.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/selectors/source-actors.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/selectors/source-blackbox.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/selectors/sources-tree.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/selectors/sources-content.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/selectors/sources.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/selectors/tabs.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/selectors/threads.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/selectors/visibleBreakpoints.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/selectors/visibleColumnBreakpoints.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/selectors/ui.js /home/devel/building/work/src/firefox-121.0/objdir/dist/bin/browser/chrome/devtools/modules/devtools/client/debugger/src/selectors"
+152:36.75 ./node.stub.stub
+152:36.94 ./node.stub.stub
+152:36.98 Executing "/usr/bin/node /home/devel/building/work/src/firefox-121.0/devtools/client/shared/build/build.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/breakpoint/breakpointPositions.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/breakpoint/index.js /home/devel/building/work/src/firefox-121.0/objdir/dist/bin/browser/chrome/devtools/modules/devtools/client/debugger/src/utils/breakpoint"
+152:37.51 Executing "/usr/bin/node /home/devel/building/work/src/firefox-121.0/devtools/client/shared/build/build.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/assert.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/ast.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/async-value.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/bootstrap.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/build-query.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/clipboard.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/connect.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/context.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/dbg.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/DevToolsUtils.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/environment.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/expressions.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/evaluation-result.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/function.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/indentation.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/isMinified.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/location.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/log.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/memoize.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/memoizeLast.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/memoizableAction.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/path.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/prefs.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/preview.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/quick-open.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/result-list.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/selected-location.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/shallow-equal.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/source-maps.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/source-queue.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/source.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/tabs.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/task.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/telemetry.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/text.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/ui.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/url.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/utils.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/wasm.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/worker.js /home/devel/building/work/src/firefox-121.0/objdir/dist/bin/browser/chrome/devtools/modules/devtools/client/debugger/src/utils"
+152:37.54 Executing "/usr/bin/node /home/devel/building/work/src/firefox-121.0/devtools/client/shared/build/build.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/editor/create-editor.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/editor/get-expression.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/editor/index.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/editor/source-documents.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/editor/source-editor.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/editor/source-search.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/editor/tokens.js /home/devel/building/work/src/firefox-121.0/objdir/dist/bin/browser/chrome/devtools/modules/devtools/client/debugger/src/utils/editor"
+152:38.21 ./node.stub.stub
+152:38.65 Executing "/usr/bin/node /home/devel/building/work/src/firefox-121.0/devtools/client/shared/build/build.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/pause/frames/annotateFrames.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/pause/frames/collapseFrames.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/pause/frames/displayName.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/pause/frames/getLibraryFromUrl.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/pause/frames/index.js /home/devel/building/work/src/firefox-121.0/objdir/dist/bin/browser/chrome/devtools/modules/devtools/client/debugger/src/utils/pause/frames"
+152:38.70 ./node.stub.stub
+152:39.37 Executing "/usr/bin/node /home/devel/building/work/src/firefox-121.0/devtools/client/shared/build/build.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/pause/index.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/pause/scopes.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/pause/why.js /home/devel/building/work/src/firefox-121.0/objdir/dist/bin/browser/chrome/devtools/modules/devtools/client/debugger/src/utils/pause"
+152:39.55 ./node.stub.stub
+152:39.64 ./node.stub.stub
+152:40.23 Executing "/usr/bin/node /home/devel/building/work/src/firefox-121.0/devtools/client/shared/build/build.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/sources-tree/getURL.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/sources-tree/utils.js /home/devel/building/work/src/firefox-121.0/objdir/dist/bin/browser/chrome/devtools/modules/devtools/client/debugger/src/utils/sources-tree"
+152:40.27 ./node.stub.stub
+152:40.37 Executing "/usr/bin/node /home/devel/building/work/src/firefox-121.0/devtools/client/shared/build/build.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/pause/mapScopes/buildGeneratedBindingList.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/pause/mapScopes/filtering.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/pause/mapScopes/findGeneratedBindingFromPosition.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/pause/mapScopes/getApplicableBindingsForOriginalPosition.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/pause/mapScopes/index.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/pause/mapScopes/locColumn.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/pause/mapScopes/mappingContains.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/pause/mapScopes/optimizedOut.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/pause/mapScopes/positionCmp.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/utils/pause/mapScopes/rangeMetadata.js /home/devel/building/work/src/firefox-121.0/objdir/dist/bin/browser/chrome/devtools/modules/devtools/client/debugger/src/utils/pause/mapScopes"
+152:40.54 ./node.stub.stub
+152:40.75 ./node.stub.stub
+152:40.78 Executing "/usr/bin/node /home/devel/building/work/src/firefox-121.0/devtools/client/shared/build/build.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/workers/parser/index.js /home/devel/building/work/src/firefox-121.0/objdir/dist/bin/browser/chrome/devtools/modules/devtools/client/debugger/src/workers/parser"
+152:41.00 Executing "/usr/bin/node /home/devel/building/work/src/firefox-121.0/devtools/client/shared/build/build.js /home/devel/building/work/src/firefox-121.0/objdir/dist/bin/browser/chrome/devtools/modules/devtools/client/debugger/src/workers"
+152:41.19 Executing "/usr/bin/node /home/devel/building/work/src/firefox-121.0/devtools/client/shared/build/build.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/workers/pretty-print/index.js /home/devel/building/work/src/firefox-121.0/objdir/dist/bin/browser/chrome/devtools/modules/devtools/client/debugger/src/workers/pretty-print"
+152:41.34 Executing "/usr/bin/node /home/devel/building/work/src/firefox-121.0/devtools/client/shared/build/build.js /home/devel/building/work/src/firefox-121.0/devtools/client/debugger/src/workers/search/index.js /home/devel/building/work/src/firefox-121.0/objdir/dist/bin/browser/chrome/devtools/modules/devtools/client/debugger/src/workers/search"
+152:41.79 ./reserved-js-words.js.stub
+152:42.46 ./spidermonkey_checks.stub
+152:42.85 ./fake_remote_dafsa.bin.stub
+152:43.77 ./last_modified.json.stub
+152:43.93 ./aboutNetErrorCodes.js.stub
+152:43.94 ./feature_definitions.json.stub
+152:44.02 ./FeatureManifest.sys.mjs.stub
+152:44.03 ./PromiseWorker.js.stub
+152:44.28 ./PromiseWorker.mjs.stub
+152:44.52 ./ScalarArtifactDefinitions.json.stub
+152:44.61 ./EventArtifactDefinitions.json.stub
+152:44.99 ./glean_checks.stub
+152:45.01 ./dependentlibs.list.stub
+152:45.03 ./multilocale.txt.stub
+152:45.68 ./built_in_addons.json.stub
+152:47.11 TEST-PASS | check_spidermonkey_style.py | ok
+152:47.90 ✨ Your metrics are Glean! ✨
+152:47.92 ./application.ini.stub
+152:48.16 TEST-PASS | check_macroassembler_style.py | ok
+152:48.43 TEST-PASS | check_js_opcode.py | ok
+152:49.25 toolkit/locales/update.locale.stub
+152:49.26 toolkit/locales/locale.ini.stub
+152:59.21 W 0 compiler warnings present.
+153:08.98 W Overall system resources - Wall time: 9188s; CPU: 0%; Read bytes: 0; Write bytes: 0; Read time: 0; Write time: 0
+153:09.09 We know it took a while, but your build finally finished successfully!
+153:09.09 If you are building Firefox often, SCCache can save you a lot of time. You can learn more here: https://firefox-source-docs.mozilla.org/setup/configuring_build_options.html#sccache
+ Config object not found by mach.
+Configure complete!
+Be sure to run |mach build| to pick up any changes
+To view a profile of the build, run |mach resource-usage|.
+To take your build for a test drive, run: |mach run|
+For more information on what to do now, see https://firefox-source-docs.mozilla.org/setup/contributing_code.html
++ DESTDIR=/home/devel/building/work/pkg
++ ./mach install
+ 0:00.43 /usr/bin/make -C . -j6 -s -w install
+ 0:00.55 make: Entering directory '/home/devel/building/work/src/firefox-121.0/objdir'
+ 0:00.56 make[1]: Entering directory '/home/devel/building/work/src/firefox-121.0/objdir/browser/installer'
+ 0:00.56 BUILDSTATUS@browser/installer START_file_generate multilocale.txt
+ 0:00.96 BUILDSTATUS@browser/installer END_file_generate multilocale.txt
+ 0:07.85 Generating XPT artifacts archive (firefox-121.0.en-US.linux-aarch64.xpt_artifacts.zip)
+ 0:07.85 BUILDSTATUS@browser/installer START_zip firefox-121.0.en-US.linux-aarch64.xpt_artifacts.zip
+ 0:08.48 BUILDSTATUS@browser/installer END_zip firefox-121.0.en-US.linux-aarch64.xpt_artifacts.zip
+ 0:09.18 make[1]: Leaving directory '/home/devel/building/work/src/firefox-121.0/objdir/browser/installer'
+ 0:09.18 make: Leaving directory '/home/devel/building/work/src/firefox-121.0/objdir'
+Site not up-to-date reason: "/home/devel/sources/mozbuild/srcdirs/firefox-121.0-f7fe7a019f62/_virtualenvs/common" does not exist
++ install -D -m 0644 /home/devel/building/work/src/firefox.desktop /home/devel/building/work/pkg/usr/share/applications/firefox.desktop
++ rm /home/devel/building/work/pkg/usr/lib/firefox/firefox
++ ln -s firefox-bin /home/devel/building/work/pkg/usr/lib/firefox/firefox
++ for i in 16 22 24 32 48 64 128 256
++ install -D -m 0644 browser/branding/official/default16.png /home/devel/building/work/pkg/usr/share/icons/hicolor/16x16/apps/firefox.png
++ for i in 16 22 24 32 48 64 128 256
++ install -D -m 0644 browser/branding/official/default22.png /home/devel/building/work/pkg/usr/share/icons/hicolor/22x22/apps/firefox.png
++ for i in 16 22 24 32 48 64 128 256
++ install -D -m 0644 browser/branding/official/default24.png /home/devel/building/work/pkg/usr/share/icons/hicolor/24x24/apps/firefox.png
++ for i in 16 22 24 32 48 64 128 256
++ install -D -m 0644 browser/branding/official/default32.png /home/devel/building/work/pkg/usr/share/icons/hicolor/32x32/apps/firefox.png
++ for i in 16 22 24 32 48 64 128 256
++ install -D -m 0644 browser/branding/official/default48.png /home/devel/building/work/pkg/usr/share/icons/hicolor/48x48/apps/firefox.png
++ for i in 16 22 24 32 48 64 128 256
++ install -D -m 0644 browser/branding/official/default64.png /home/devel/building/work/pkg/usr/share/icons/hicolor/64x64/apps/firefox.png
++ for i in 16 22 24 32 48 64 128 256
++ install -D -m 0644 browser/branding/official/default128.png /home/devel/building/work/pkg/usr/share/icons/hicolor/128x128/apps/firefox.png
++ for i in 16 22 24 32 48 64 128 256
++ install -D -m 0644 browser/branding/official/default256.png /home/devel/building/work/pkg/usr/share/icons/hicolor/256x256/apps/firefox.png
++ install -d /home/devel/building/work/pkg/etc/revdep.d
++ echo /usr/lib/firefox/
+=======> Build result:
+drwxr-xr-x  0 root   root        0 Nov 30 23:34 etc/
+drwxr-xr-x  0 root   root        0 Nov 30 23:34 etc/revdep.d/
+-rw-r--r--  0 root   root       18 Nov 30 23:34 etc/revdep.d/firefox-releases
+drwxr-xr-x  0 root   root        0 Nov 30 23:34 usr/
+drwxr-xr-x  0 root   root        0 Nov 30 23:34 usr/lib/
+drwxr-xr-x  0 root   root        0 Nov 30 23:34 usr/share/
+drwxr-xr-x  0 root   root        0 Nov 30 23:34 usr/bin/
+lrwxrwxrwx  0 root   root        0 Nov 30 23:34 usr/bin/firefox -> /usr/lib/firefox/firefox
+drwxr-xr-x  0 root   root        0 Nov 30 23:34 usr/share/icons/
+drwxr-xr-x  0 root   root        0 Nov 30 23:34 usr/share/applications/
+-rw-r--r--  0 root   root      149 Nov 30 23:34 usr/share/applications/firefox.desktop
+drwxr-xr-x  0 root   root        0 Nov 30 23:34 usr/share/icons/hicolor/
+drwxr-xr-x  0 root   root        0 Nov 30 23:34 usr/share/icons/hicolor/22x22/
+drwxr-xr-x  0 root   root        0 Nov 30 23:34 usr/share/icons/hicolor/64x64/
+drwxr-xr-x  0 root   root        0 Nov 30 23:34 usr/share/icons/hicolor/32x32/
+drwxr-xr-x  0 root   root        0 Nov 30 23:34 usr/share/icons/hicolor/16x16/
+drwxr-xr-x  0 root   root        0 Nov 30 23:34 usr/share/icons/hicolor/48x48/
+drwxr-xr-x  0 root   root        0 Nov 30 23:34 usr/share/icons/hicolor/256x256/
+drwxr-xr-x  0 root   root        0 Nov 30 23:34 usr/share/icons/hicolor/24x24/
+drwxr-xr-x  0 root   root        0 Nov 30 23:34 usr/share/icons/hicolor/128x128/
+drwxr-xr-x  0 root   root        0 Nov 30 23:34 usr/share/icons/hicolor/128x128/apps/
+-rw-r--r--  0 root   root    13513 Nov 30 23:34 usr/share/icons/hicolor/128x128/apps/firefox.png
+drwxr-xr-x  0 root   root        0 Nov 30 23:34 usr/share/icons/hicolor/24x24/apps/
+-rw-r--r--  0 root   root     1312 Nov 30 23:34 usr/share/icons/hicolor/24x24/apps/firefox.png
+drwxr-xr-x  0 root   root        0 Nov 30 23:34 usr/share/icons/hicolor/256x256/apps/
+-rw-r--r--  0 root   root    32441 Nov 30 23:34 usr/share/icons/hicolor/256x256/apps/firefox.png
+drwxr-xr-x  0 root   root        0 Nov 30 23:34 usr/share/icons/hicolor/48x48/apps/
+-rw-r--r--  0 root   root     3448 Nov 30 23:34 usr/share/icons/hicolor/48x48/apps/firefox.png
+drwxr-xr-x  0 root   root        0 Nov 30 23:34 usr/share/icons/hicolor/16x16/apps/
+-rw-r--r--  0 root   root      722 Nov 30 23:34 usr/share/icons/hicolor/16x16/apps/firefox.png
+drwxr-xr-x  0 root   root        0 Nov 30 23:34 usr/share/icons/hicolor/32x32/apps/
+-rw-r--r--  0 root   root     1948 Nov 30 23:34 usr/share/icons/hicolor/32x32/apps/firefox.png
+drwxr-xr-x  0 root   root        0 Nov 30 23:34 usr/share/icons/hicolor/64x64/apps/
+-rw-r--r--  0 root   root     5459 Nov 30 23:34 usr/share/icons/hicolor/64x64/apps/firefox.png
+drwxr-xr-x  0 root   root        0 Nov 30 23:34 usr/share/icons/hicolor/22x22/apps/
+-rw-r--r--  0 root   root     1134 Nov 30 23:34 usr/share/icons/hicolor/22x22/apps/firefox.png
+drwxr-xr-x  0 root   root        0 Nov 30 23:34 usr/lib/firefox/
+-rwxr-xr-x  0 root   root     4576 Nov 30 23:34 usr/lib/firefox/libmozgtk.so
+drwxr-xr-x  0 root   root        0 Nov 30 23:34 usr/lib/firefox/fonts/
+-rwxr-xr-x  0 root   root    14672 Nov 30 23:34 usr/lib/firefox/vaapitest
+-rw-r--r--  0 root   root 31670004 Nov 30 23:34 usr/lib/firefox/omni.ja
+drwxr-xr-x  0 root   root        0 Nov 30 23:34 usr/lib/firefox/gmp-clearkey/
+-rw-r--r--  0 root   root      540 Nov 30 23:34 usr/lib/firefox/application.ini
+lrwxrwxrwx  0 root   root        0 Nov 30 23:34 usr/lib/firefox/firefox -> firefox-bin
+-rwxr-xr-x  0 root   root    39784 Nov 30 23:34 usr/lib/firefox/liblgpllibs.so
+-rwxr-xr-x  0 root   root   314608 Nov 30 23:34 usr/lib/firefox/libipcclientcerts.so
+drwxr-xr-x  0 root   root        0 Nov 30 23:34 usr/lib/firefox/browser/
+-rwxr-xr-x  0 root   root   470856 Nov 30 23:34 usr/lib/firefox/firefox-bin
+-rwxr-xr-x  0 root   root    10528 Nov 30 23:34 usr/lib/firefox/libmozwayland.so
+-rwxr-xr-x  0 root   root 115097328 Nov 30 23:34 usr/lib/firefox/libxul.so
+drwxr-xr-x  0 root   root         0 Nov 30 23:34 usr/lib/firefox/defaults/
+-rwxr-xr-x  0 root   root    129936 Nov 30 23:34 usr/lib/firefox/libmozsandbox.so
+-rwxr-xr-x  0 root   root   1054448 Nov 30 23:34 usr/lib/firefox/libmozsqlite3.so
+-rwxr-xr-x  0 root   root     19704 Nov 30 23:34 usr/lib/firefox/glxtest
+-rw-r--r--  0 root   root         0 Nov 30 23:34 usr/lib/firefox/removed-files
+-rwxr-xr-x  0 root   root    537528 Nov 30 23:34 usr/lib/firefox/libgkcodecs.so
+-rwxr-xr-x  0 root   root    211664 Nov 30 23:34 usr/lib/firefox/libmozavutil.so
+-rwxr-xr-x  0 root   root      9840 Nov 30 23:34 usr/lib/firefox/v4l2test
+-rw-r--r--  0 root   root       162 Nov 30 23:34 usr/lib/firefox/platform.ini
+-rw-r--r--  0 root   root       104 Nov 30 23:34 usr/lib/firefox/dependentlibs.list
+-rwxr-xr-x  0 root   root    258776 Nov 30 23:34 usr/lib/firefox/libmozavcodec.so
+-rwxr-xr-x  0 root   root    475448 Nov 30 23:34 usr/lib/firefox/pingsender
+drwxr-xr-x  0 root   root         0 Nov 30 23:34 usr/lib/firefox/defaults/pref/
+-rw-r--r--  0 root   root       429 Nov 30 23:34 usr/lib/firefox/defaults/pref/channel-prefs.js
+-rw-r--r--  0 root   root  41094561 Nov 30 23:34 usr/lib/firefox/browser/omni.ja
+drwxr-xr-x  0 root   root         0 Nov 30 23:34 usr/lib/firefox/browser/features/
+drwxr-xr-x  0 root   root         0 Nov 30 23:34 usr/lib/firefox/browser/chrome/
+drwxr-xr-x  0 root   root         0 Nov 30 23:34 usr/lib/firefox/browser/chrome/icons/
+drwxr-xr-x  0 root   root         0 Nov 30 23:34 usr/lib/firefox/browser/chrome/icons/default/
+-rw-r--r--  0 root   root      5459 Nov 29 14:18 usr/lib/firefox/browser/chrome/icons/default/default64.png
+-rw-r--r--  0 root   root     13513 Nov 29 14:18 usr/lib/firefox/browser/chrome/icons/default/default128.png
+-rw-r--r--  0 root   root      1948 Nov 29 14:18 usr/lib/firefox/browser/chrome/icons/default/default32.png
+-rw-r--r--  0 root   root      3448 Nov 29 14:18 usr/lib/firefox/browser/chrome/icons/default/default48.png
+-rw-r--r--  0 root   root       722 Nov 29 14:18 usr/lib/firefox/browser/chrome/icons/default/default16.png
+-rw-r--r--  0 root   root    172270 Nov 30 23:34 usr/lib/firefox/browser/features/screenshots@mozilla.org.xpi
+-rw-r--r--  0 root   root     62452 Nov 30 23:34 usr/lib/firefox/browser/features/pictureinpicture@mozilla.org.xpi
+-rw-r--r--  0 root   root      9893 Nov 30 23:34 usr/lib/firefox/browser/features/webcompat-reporter@mozilla.org.xpi
+-rw-r--r--  0 root   root    433472 Nov 30 23:34 usr/lib/firefox/browser/features/webcompat@mozilla.org.xpi
+-rw-r--r--  0 root   root    134822 Nov 30 23:34 usr/lib/firefox/browser/features/formautofill@mozilla.org.xpi
+drwxr-xr-x  0 root   root         0 Nov 30 23:34 usr/lib/firefox/gmp-clearkey/0.1/
+-rw-r--r--  0 root   root       225 Nov 30 23:34 usr/lib/firefox/gmp-clearkey/0.1/manifest.json
+-rwxr-xr-x  0 root   root     63048 Nov 30 23:34 usr/lib/firefox/gmp-clearkey/0.1/libclearkey.so
+-rw-r--r--  0 root   root   1474284 Nov 29 14:18 usr/lib/firefox/fonts/TwemojiMozilla.ttf
+=======> Building '/home/devel/packages/firefox-releases#121.0b5-1.aarch64.pkg.tar.zst' succeeded.
+=======> Installing '/home/devel/packages/firefox-releases#121.0b5-1.aarch64.pkg.tar.zst'.
+pkgadd -u /home/devel/packages/firefox-releases#121.0b5-1.aarch64.pkg.tar.zst
+=======> Installing '/home/devel/packages/firefox-releases#121.0b5-1.aarch64.pkg.tar.zst' succeeded.
+2:35:56
