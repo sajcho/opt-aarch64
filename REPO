@@ -29,8 +29,8 @@ f:43ae50f47a1dc700976ecb60f53e8291:ruby/Pkgfile
 f:d7224759494b53ba032a654dad348bad:ruby/rubygems-avoid-platform-specific-gems.patch
 f:2785cb8906caf4155a398c4e4891bec9:ruby/.signature
 f:3875d925f0fd31cc24ced20f0ff51943:ruby/.footprint
-f:0b253e1d1c32b9b5930eebb949feb73b:imagemagick/Pkgfile
-f:30382568576791f092c4186b895cbd98:imagemagick/.signature
+f:f3cfc5370ae3c205d39b8b31f718742b:imagemagick/Pkgfile
+f:9018aa4a2912dd6d8f8fb8908c8ba58a:imagemagick/.signature
 f:3d0a0b34950cfcd778037b665c31e986:imagemagick/.footprint
 f:cad810d150fe3fde76c1aeaa51b7259d:libnvme/Pkgfile
 f:31d49bf1763892f906b8ba6d29417202:libnvme/doc-test.patch
@@ -58,8 +58,8 @@ f:deddaa92adfc83618aca5783378896e5:perl-xml-simple/.footprint
 f:f38e1c7aa65bd160efaa80e6d0ee4955:mold/Pkgfile
 f:66c4673c1660056a36b3681f11bd68f9:mold/.signature
 f:08850ab6b21b2829b619c10f46438941:mold/.footprint
-f:320250ab7deadc3f7dd6965c0796bd1d:nodejs/Pkgfile
-f:04dac0395f8bb1644ede400f649013fd:nodejs/.signature
+f:35c60d36a42a2ae5c1e371f5fecd7331:nodejs/Pkgfile
+f:9a86ef485f0d4270fe7aec7f07df3cd8:nodejs/.signature
 f:8e3e133575e9820900e5cff14e75ec6c:nodejs/.footprint
 f:73472eae5b4777be69fb33cc08441db0:firefox-releases/icu74.patch
 f:463253ee358bcb7a3659fd54aa23e1cf:firefox-releases/Pkgfile
