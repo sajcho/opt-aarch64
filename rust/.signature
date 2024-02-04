@@ -1,7 +1,7 @@
 untrusted comment: verify with opt-aarch64.pub
-RWTNf7wOqRnfnrTHwTQhXZ8eC4enWHg7Ptr6plCpt/eRNhcK+2hWxqxYpA3i8ubMAFTPJANVkJQONYjmynyQSUo3U1osTErijAg=
-SHA256 (Pkgfile) = 601ea161b24ab7df96d429486b44b33fd558b3936aa734fef1ff54fbb006d1c7
-SHA256 (.footprint) = b0dae406ae6efa1e8037c0003515505d30cf81c9f8b3d593ec7c83302da475ae
-SHA256 (rustc-1.74.1-src.tar.xz) = b98c09d968529212fb29eec7d6d3e9bdaa869810679b7fb86a1ca69469d75f5e
-SHA256 (0001-dist.rs-change-dir-libexec-to-lib.patch) = 027875cf3ced367d8552590ff44527891dadb46d5edda7282c107eea1552fbeb
-SHA256 (0002-tool.rs-change-dir-libexec-to-lib.patch) = c5fb60b7adb8516317fb83d4ae98a861342e7ec94d71dc9874242fce2fc2a14c
+RWTNf7wOqRnfnpDQ2kVwGgPPR77J2k+EwuNGD17Y5+mIK1pf29cTJ7cPFWiLaeON22SqanNa5blwbPNZDHo8ExdGHM9Fk+S+Ugo=
+SHA256 (Pkgfile) = 36945a97c9ccf88eb7986ca02ea989bcc2b499adfdaa989f7697cffbd0582d0e
+SHA256 (.footprint) = 777584371c88b212c85edf500adbf6b706996c4c145cd760ded5f2525e96fc0c
+SHA256 (rustc-1.75.0-src.tar.xz) = 4526f786d673e4859ff2afa0bab2ba13c918b796519a25c1acce06dba9542340
+SHA256 (0001-dist.rs-change-dir-libexec-to-lib.patch) = 6913ac718047f61dd8a68540fc0b5aad2f091aac14d8832f5b3ecc455e2b6cc9
+SHA256 (0002-tool.rs-change-dir-libexec-to-lib.patch) = 8992fe2f4605e0d6e2e58af09f35872c689a254d278262eb59d94fedbf52b9d6
