@@ -7,7 +7,6 @@ d:rust
 d:gpgme
 d:perl-xml-simple
 d:nodejs
-d:firefox-releases
 d:llvm-toolchain
 d:perl-uri
 f:1c7277ac1b16e6e7f510a3b5787f85d7:perl-xml-parser/Pkgfile
@@ -41,14 +40,6 @@ f:deddaa92adfc83618aca5783378896e5:perl-xml-simple/.footprint
 f:3cd1c8979d6eaf5bfb4caca2ec08e48a:nodejs/Pkgfile
 f:f0547699f2719800d51924e5603b9c1c:nodejs/.signature
 f:8e3e133575e9820900e5cff14e75ec6c:nodejs/.footprint
-f:73472eae5b4777be69fb33cc08441db0:firefox-releases/icu74.patch
-f:dfb98fef3fff3bd1ca56f384486f59c5:firefox-releases/Pkgfile
-f:a221a7db4433913477ccf2ede50bcec5:firefox-releases/distribution.ini
-f:cf6971669f70b440cb6ff8df8b2722ae:firefox-releases/firefox.desktop
-f:d8743848c9164555d67d256814b91bd6:firefox-releases/vendor.js
-f:3345fd886ba69e21329c80c7b2b53e23:firefox-releases/.signature
-f:4c86ff49911d7efca46d87d03a49a425:firefox-releases/build-firefox-releases.log
-f:31e2ed5c880c907f534bf5c900e04559:firefox-releases/.footprint
 f:3a56a4e09450a4bc9e2a6d17478f8679:llvm-toolchain/README
 f:04324e840eaa94457058c381e1e3e329:llvm-toolchain/Pkgfile
 f:3dc9b7a0a63b3da453c252f7df193e5a:llvm-toolchain/.signature
