@@ -1,9 +1,0 @@
-untrusted comment: verify with opt-aarch64.pub
-RWTNf7wOqRnfnhjGXemO4ezB/CTVxwSdD3UDiuw4cvKy6EaQKBFJSLxM+n3JNOvN09HWj1RE9pJ0dVMi5hOz/qI382AQK0gvoQM=
-SHA256 (Pkgfile) = d1554539ffe57ea88ffdc240b63ff5ad33102f7266791a9c6e146b37e5f1e659
-SHA256 (.footprint) = 607483cb45d0a2716f5937b885510962ea0c2e34234610fdf8a8965e3ee141a7
-SHA256 (firefox-121.0b8.source.tar.xz) = 6a1350c60c900743a8b4841dffc22707b40d978626be3b906f6a0f0451e9f7d3
-SHA256 (icu74.patch) = 83f4ea4cb5b89f81bfc9f42cc3d3f16e4df8bf3a2c9f0c27e90032c759a2ab86
-SHA256 (distribution.ini) = d343992aee9eaa03463cabf3fbe9868162a435b8b64c66f69fc72dc297dfe86f
-SHA256 (firefox.desktop) = 8ba3439f3dfc5cab883641969c93d8d15f8f20d7188d9568346b2edad52d6f91
-SHA256 (vendor.js) = ceadf102b784b0b494caf15d60351f0a803a3d1dc3b6c892705b3fdebec57a48
