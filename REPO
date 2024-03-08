@@ -18,8 +18,8 @@ f:dac014c840d7d35278a85c20ca4666d5:gobject-introspection/.footprint
 f:90a6bb15ace0b8890cd6940ffba78604:ruby/Pkgfile
 f:184f1599d8af4ea61ece50b6001283e2:ruby/.signature
 f:5edcdcf56c9482ed74be87998c578750:ruby/.footprint
-f:1cf249d703ae7934489248ddb5d75f9b:imagemagick/Pkgfile
-f:2ef438262abe5db98ebf85bb2e0ce226:imagemagick/.signature
+f:a2407337e40e48d83ca27829fdad9b0c:imagemagick/Pkgfile
+f:ecdb9377be1758d984e0af79ee9d43b3:imagemagick/.signature
 f:c71ad221c16b1154eaa3b3f59d27fe0c:imagemagick/.footprint
 f:cad810d150fe3fde76c1aeaa51b7259d:libnvme/Pkgfile
 f:31d49bf1763892f906b8ba6d29417202:libnvme/doc-test.patch
@@ -37,8 +37,8 @@ f:1f0d8e1a1e561d8ccb910f8eec097a8a:gpgme/.footprint
 f:fb0257ca8f203545751417155f12e549:perl-xml-simple/Pkgfile
 f:ddd410b1e8e514a08ea588a320af4961:perl-xml-simple/.signature
 f:deddaa92adfc83618aca5783378896e5:perl-xml-simple/.footprint
-f:3cd1c8979d6eaf5bfb4caca2ec08e48a:nodejs/Pkgfile
-f:f0547699f2719800d51924e5603b9c1c:nodejs/.signature
+f:6de984b795a7879ce684cc7bf232d571:nodejs/Pkgfile
+f:d6c86e630b11c0dabda751ac03fd9755:nodejs/.signature
 f:8e3e133575e9820900e5cff14e75ec6c:nodejs/.footprint
 f:3a56a4e09450a4bc9e2a6d17478f8679:llvm-toolchain/README
 f:04324e840eaa94457058c381e1e3e329:llvm-toolchain/Pkgfile
