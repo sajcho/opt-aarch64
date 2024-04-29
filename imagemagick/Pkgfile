@@ -5,18 +5,22 @@
 
 name=imagemagick
 _realname=ImageMagick
-version=7.1.1-29
+version=7.1.1-31
 release=1
 source=(https://imagemagick.org/archive/releases/${_realname}-${version}.tar.xz)
 
 build() {
 	cd ${_realname}-${version}
 
+	sed '/INSTALL_BASE/d' -i PerlMagick/Makefile.PL.in
+
 	./configure \
+		--build=$CHOST \
+		--host=$CHOST \
 		--prefix=/usr \
 		--sysconfdir=/etc \
 		--enable-shared \
-		--enable-static \
+		--disable-static \
 		--with-modules \
 		--with-perl=yes \
 		--with-lcms=yes \
