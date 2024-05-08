@@ -7,8 +7,10 @@ d:libnvme
 d:rust
 d:gpgme
 d:perl-xml-simple
+d:gnu-efi
 d:llvm-toolchain
 d:perl-uri
+d:grub2-efi
 f:1c7277ac1b16e6e7f510a3b5787f85d7:perl-xml-parser/Pkgfile
 f:09eee4402631b1984cfb7910566453f4:perl-xml-parser/.signature
 f:8116428fb41f6380f4a7085dd28c0020:perl-xml-parser/.footprint
@@ -40,6 +42,9 @@ f:1f0d8e1a1e561d8ccb910f8eec097a8a:gpgme/.footprint
 f:fb0257ca8f203545751417155f12e549:perl-xml-simple/Pkgfile
 f:ddd410b1e8e514a08ea588a320af4961:perl-xml-simple/.signature
 f:deddaa92adfc83618aca5783378896e5:perl-xml-simple/.footprint
+f:08abdbcfc54c38484706c7913c338b83:gnu-efi/Pkgfile
+f:9ae76841a7bebe340ccfdd801143d683:gnu-efi/.signature
+f:65b87ecc92c41f9fdb4e22d4a00328c1:gnu-efi/.footprint
 f:3a56a4e09450a4bc9e2a6d17478f8679:llvm-toolchain/README
 f:623512f45e85eaea5ac96283eb6104cc:llvm-toolchain/Pkgfile
 f:1ef288b25560cfcf9d70bf41a6d81507:llvm-toolchain/.signature
@@ -47,3 +52,11 @@ f:3e357e6c4cbc1ed8c9a20a3809108efb:llvm-toolchain/.footprint
 f:bb0790ff6102a19f72069364c72fe493:perl-uri/Pkgfile
 f:4944349e3d9e312179efe42dbf1ca61f:perl-uri/.signature
 f:92035abda3d42278925b89658790d48c:perl-uri/.footprint
+f:00af920c8299f318646d8b7e6bd34cb0:grub2-efi/saux-grub-theme.tar.xz
+f:6807357a87869289ae92809d8a04cba6:grub2-efi/unifont-15.1.01.bdf
+f:3756a1bc80ea5a35cdf4fe409aa0e705:grub2-efi/Pkgfile
+f:f4de5e4f012e3d63c9b71eb3b25f6a83:grub2-efi/grub2-efi-build.log
+f:44c716526c2225053d2e4a4f23b3d3c0:grub2-efi/grub.default
+f:5b734aaa1f07d4206eb3683fc345e93d:grub2-efi/.signature
+f:43e08eb0137bd7ffafda6bf4c7a9b327:grub2-efi/extra_deps.lst
+f:ec9d47e7173de6ce16a1ad00d2089e7e:grub2-efi/.footprint
