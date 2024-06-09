@@ -1,5 +1,5 @@
 untrusted comment: verify with opt-aarch64.pub
-RWTNf7wOqRnfnkcIC4uff06ehxhz3+5wus+h68W0z3z371Nv8AZcKePyZ5iUHcVfGKKcGE7ws23Di9RnN8+nmzLvhKRNnuFXtQ0=
-SHA256 (Pkgfile) = d32fc10b8a030621525c613a824b1697a0b068e808d3bc7deb1948812840f4ea
-SHA256 (.footprint) = ca0a816fc462bd9488ba2a771f60b9d11fed40d4cebe1a797c8a25447f5b8aa0
-SHA256 (gobject-introspection-1.78.1.tar.xz) = bd7babd99af7258e76819e45ba4a6bc399608fe762d83fde3cac033c50841bb4
+RWTNf7wOqRnfnu6SrfLqgfio8I5GMr+j4gpCO1cl+PMpPGLRonxS9qQykR55HE0xvEM/eFw0Cef5MtQNmV936OgVHhY1++szTQM=
+SHA256 (Pkgfile) = e9c26575613a5bc872c25718fe6cd0ee6d8be330a1af0fae7b4bc05527e8da31
+SHA256 (.footprint) = e4f11881ef09dce073ed45a30fd6f364165579a2a1ef4c973494ded55592463f
+SHA256 (gobject-introspection-1.80.1.tar.xz) = a1df7c424e15bda1ab639c00e9051b9adf5cea1a9e512f8a603b53cd199bc6d8
