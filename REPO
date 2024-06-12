@@ -1,5 +1,4 @@
 d:perl-xml-parser
-d:zig-bin
 d:gobject-introspection
 d:ruby
 d:imagemagick
@@ -14,9 +13,6 @@ d:grub2-efi
 f:1c7277ac1b16e6e7f510a3b5787f85d7:perl-xml-parser/Pkgfile
 f:09eee4402631b1984cfb7910566453f4:perl-xml-parser/.signature
 f:8116428fb41f6380f4a7085dd28c0020:perl-xml-parser/.footprint
-f:62ef662a1c5f60c2bf20ae8edd67ff61:zig-bin/Pkgfile
-f:e1053b8421c116bf7af81421cdba373f:zig-bin/.signature
-f:dfdcfe81470388efc5a70779e1f8e6b6:zig-bin/.footprint
 f:c7e03a3bd41b4f90886011caa4785598:gobject-introspection/Pkgfile
 f:23458387c6c4c53b6551af7a4ed3f63b:gobject-introspection/.signature
 f:04732bae7787632de9e42f5add59e54a:gobject-introspection/.footprint
