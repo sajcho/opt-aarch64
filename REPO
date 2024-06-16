@@ -27,11 +27,11 @@ f:31d49bf1763892f906b8ba6d29417202:libnvme/doc-test.patch
 f:7002113b2d237bd125ee37ae80c66aaf:libnvme/.signature
 f:f6f8baba44f78cce77a9a5a384e90503:libnvme/.footprint
 f:fa8e466b2e4d33e772904b015a717088:rust/0001-dist.rs-change-dir-libexec-to-lib.patch
-f:3e7e15ad8235ac3e9585903ca6f7f9f3:rust/Pkgfile
+f:c934288e53418603ada47da939c179cb:rust/Pkgfile
 f:a68528b0fd1e5420b6f851ae579e97a4:rust/.nostrip
-f:75f3538bdbb4a3ff09c2f9da14b36109:rust/.signature
+f:76d2ff30bf248a18f2e9c65a88d160ae:rust/.signature
 f:905228300383957419fa135624928c1b:rust/0002-tool.rs-change-dir-libexec-to-lib.patch
-f:fcfe6b7614936c16d686890f38b02370:rust/.footprint
+f:79c8c1da5afa9794088d9cf362e76e44:rust/.footprint
 f:fb78b2170ee1e17df29c8d6358c028de:gpgme/Pkgfile
 f:6c13cb9c8ee7a1b9340daf5037366a9b:gpgme/.signature
 f:1f0d8e1a1e561d8ccb910f8eec097a8a:gpgme/.footprint
