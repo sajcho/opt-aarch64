@@ -27,11 +27,11 @@ f:31d49bf1763892f906b8ba6d29417202:libnvme/doc-test.patch
 f:7002113b2d237bd125ee37ae80c66aaf:libnvme/.signature
 f:f6f8baba44f78cce77a9a5a384e90503:libnvme/.footprint
 f:fa8e466b2e4d33e772904b015a717088:rust/0001-dist.rs-change-dir-libexec-to-lib.patch
-f:c934288e53418603ada47da939c179cb:rust/Pkgfile
+f:84437cb91e75e65ce7af521e5a0b67a6:rust/Pkgfile
 f:a68528b0fd1e5420b6f851ae579e97a4:rust/.nostrip
-f:76d2ff30bf248a18f2e9c65a88d160ae:rust/.signature
+f:364b6a3584fe877fc7b86a1278abbdac:rust/.signature
 f:905228300383957419fa135624928c1b:rust/0002-tool.rs-change-dir-libexec-to-lib.patch
-f:79c8c1da5afa9794088d9cf362e76e44:rust/.footprint
+f:b8224bbcc99d88e53749d980296a10ed:rust/.footprint
 f:fb78b2170ee1e17df29c8d6358c028de:gpgme/Pkgfile
 f:6c13cb9c8ee7a1b9340daf5037366a9b:gpgme/.signature
 f:1f0d8e1a1e561d8ccb910f8eec097a8a:gpgme/.footprint
@@ -42,9 +42,9 @@ f:08abdbcfc54c38484706c7913c338b83:gnu-efi/Pkgfile
 f:9ae76841a7bebe340ccfdd801143d683:gnu-efi/.signature
 f:65b87ecc92c41f9fdb4e22d4a00328c1:gnu-efi/.footprint
 f:3a56a4e09450a4bc9e2a6d17478f8679:llvm-toolchain/README
-f:2d18015280b11e7a76dfa2759bb165d7:llvm-toolchain/Pkgfile
-f:5bf53df1bd43111654051f05a46c8a16:llvm-toolchain/.signature
-f:0bfffdc1d1bb6aa3ac22fc7a2607b488:llvm-toolchain/.footprint
+f:df8212884f7c065e1133d10ff63e0acb:llvm-toolchain/Pkgfile
+f:4432bae5b5d61022689486dcd2b26a07:llvm-toolchain/.signature
+f:782850f7af031319e1cb51037a7e8196:llvm-toolchain/.footprint
 f:bb0790ff6102a19f72069364c72fe493:perl-uri/Pkgfile
 f:4944349e3d9e312179efe42dbf1ca61f:perl-uri/.signature
 f:92035abda3d42278925b89658790d48c:perl-uri/.footprint
