@@ -9,9 +9,9 @@ d:grub2-efi
 f:c7e03a3bd41b4f90886011caa4785598:gobject-introspection/Pkgfile
 f:23458387c6c4c53b6551af7a4ed3f63b:gobject-introspection/.signature
 f:04732bae7787632de9e42f5add59e54a:gobject-introspection/.footprint
-f:a55432dc70b84bea454e84959778ae5b:ruby/Pkgfile
-f:ec4227a03ad45fb6f3fc48f3bb30156c:ruby/.signature
-f:1e17c0cf5d94d6b9c6bbfd5e5838090b:ruby/.footprint
+f:0d39df911329958480ae434196555fe2:ruby/Pkgfile
+f:c9b33eb6794e042ffd2003ebac135867:ruby/.signature
+f:9c6d5c846acf1da817bb99bbc6949b47:ruby/.footprint
 f:cad810d150fe3fde76c1aeaa51b7259d:libnvme/Pkgfile
 f:31d49bf1763892f906b8ba6d29417202:libnvme/doc-test.patch
 f:7002113b2d237bd125ee37ae80c66aaf:libnvme/.signature
